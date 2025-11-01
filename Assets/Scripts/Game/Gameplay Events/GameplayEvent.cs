@@ -24,6 +24,10 @@ public abstract class GameplayEvent {
         OnEventTriggered();
     }
     
+    public void Reset() {
+        _triggered = false;
+    }
+    
     public void OnValidate() {
         TimeSpan t = TimeSpan.FromSeconds(timestampInSeconds);
         timestampFormatted = $"{(int)t.Minutes:D2}:{(int)t.Seconds:D2}";

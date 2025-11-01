@@ -11,12 +11,6 @@ public class GlobalVariableManager {
     [Tooltip("Each level earned, the experience needed to level up is multiplied by this amount")]
     [SerializeField] private float experienceNeededIncrease = 1.15f;
 
-    [Header("Global Player Variables")] 
-    [SerializeField] private PlayerVariables playerBaseVariables;
-    [Tooltip("Multiplies base stats. (Permanent Upgrades)")]
-    [SerializeField] private PlayerVariables playerVariableMultiplier;
-    [SerializeField, ReadOnly] private PlayerVariables playerCurrentVariables;
-
     [Header("Controllers")]
     [SerializeField] private ProgressBarController xpBarController;
     
@@ -64,14 +58,8 @@ public class GlobalVariableManager {
         gameCurrentVariables = gameBaseVariables.Copy();
     }
     
-    [ContextMenu("Debug GlobalVars - Reset Player Stats")]
-    public void ResetPlayerVariables() {
-        playerCurrentVariables = playerBaseVariables.Copy() * playerVariableMultiplier.Copy();
-    }
-    
     [ContextMenu("Debug GlobalVars - Reset All")]
     public void ResetAll() {
-        ResetPlayerVariables();
         ResetGameVariables();
         UpdateXpBarUI();
         UpdateCurrentLevelUI();

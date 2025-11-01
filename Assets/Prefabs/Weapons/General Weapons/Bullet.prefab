@@ -113,11 +113,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   preset: {fileID: 11400000, guid: 7e7e2ec5bc9778641b98f115c7728aab, type: 2}
   currentBehaviour:
-    rid: 8748631059360121277
+    rid: 8748631077656723534
   references:
     version: 2
     RefIds:
-    - rid: 8748631059360121277
+    - rid: 8748631077656723534
       type: {class: LinearShotStrategy, ns: , asm: Assembly-CSharp}
       data: 
 --- !u!212 &4052143771903301830

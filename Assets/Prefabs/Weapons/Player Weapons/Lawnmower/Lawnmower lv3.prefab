@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3563621314620407211
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5669871012635451015}
+  - component: {fileID: 5648415117104448952}
+  - component: {fileID: 2924686280725606046}
+  m_Layer: 9
+  m_Name: Lawnmower lv3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5669871012635451015
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3563621314620407211}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5648415117104448952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3563621314620407211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8959654e1c1ed4f4b958c6e3d9e59c26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <BaseStats>k__BackingField:
+    attackDamage: 6
+    attackRateInSeconds: 3
+    attackSize: 3
+  currentStats:
+    attackDamage: 0
+    attackRateInSeconds: 0
+    attackSize: 0
+  targetLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  aimDirection: {x: 0, y: 0}
+  bulletFactory:
+    prefabToCreate: {fileID: 698526753970158529, guid: 01c204ccaf97e414a9be9a54a7ac11cb, type: 3}
+    centralizedFactory: {fileID: 0}
+    autoFindCentralizedFactory: 1
+  preset: {fileID: 11400000, guid: 288c8ee57a2da3c429ed045ef7061f15, type: 2}
+  bulletStats:
+    speed: 400
+    lifeTime: 5
+    penetrationCount: 12
+    pushForce: 0
+  firstShotOffset: 0
+  useParentTransform: 0
+  destroyOnWeaponDestroy: 0
+  fireAudioEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  offset: 2
+  left: 1
+  right: 0
+  top: 0
+  bottom: 0
+--- !u!114 &2924686280725606046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3563621314620407211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7e21112da93c3e4f97e0cbb5d61dcce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fixedAimDirection: {x: 1, y: 0}

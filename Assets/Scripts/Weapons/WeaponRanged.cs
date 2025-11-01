@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class WeaponRanged : Weapon {
     [Header("Factory Settings")]
-    [SerializeField] private Factory bulletFactory;
+    [SerializeField] protected Factory bulletFactory;
 
     [Header("Bullet Settings")]
-    [SerializeField] private BulletPresetSO preset;
-    [SerializeField] private BulletStats bulletStats;
+    [SerializeField] protected BulletPresetSO preset;
+    [SerializeField] protected BulletStats bulletStats;
     [SerializeField] private float firstShotOffset = 0f;
     [SerializeField] private bool useParentTransform = false;
     [SerializeField] private bool destroyOnWeaponDestroy = false;
@@ -14,13 +14,13 @@ public class WeaponRanged : Weapon {
     [Header("Audio Events")]
     [SerializeField] private AK.Wwise.Event fireAudioEvent;
     
-    private void Shoot(IBullet bullet, BulletPresetSO bulletPreset, Vector2 direction, float damage, BulletStats stats) {
+    protected void Shoot(IBullet bullet, BulletPresetSO bulletPreset, Vector2 direction, float damage, BulletStats stats) {
         bullet.Shoot(bulletPreset, direction, targetLayer, damage, stats, useParentTransform ? transform.parent.transform : gameObject.transform);
 
         fireAudioEvent?.Post(gameObject);
     }
     
-    private void HandleAttack() {
+    protected virtual void HandleAttack() {
         if (aimDirection.sqrMagnitude < 0.001f) return;
         if (Time.time < NextAttack) return;
         if (!preset) return;

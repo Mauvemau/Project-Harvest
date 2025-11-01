@@ -11,10 +11,9 @@ public class CameraController : MonoBehaviour, IControllableCamera {
     private Bounds _mapBounds;
     private Camera _cam;
 
-    public Vector3 GetScreenToWorldPoint(Vector2 mousePosition) {
-        return _cam.ScreenToWorldPoint(mousePosition);
-    }
-    
+    public Vector3 GetScreenToWorldPoint(Vector2 mousePosition) => _cam.ScreenToWorldPoint(mousePosition);
+    public Camera GetCameraReference() => _cam;
+
     private void LateUpdate() {
         if (!targetReference || !_cam) return;
 

@@ -5,10 +5,10 @@ using Random = UnityEngine.Random;
 public class MyGameManager : MonoBehaviour {
     [Header("Gameplay Events")]
     [SerializeField] GameplayEventManager gameplayEventManager;
-    
-    [Header("Weapon Upgrades Manager")] 
+
+    [Header("Weapon Upgrades Manager")]
     [SerializeField] private WeaponUpgradeManager weaponUpgradeManager;
-    
+
     [Header("Global Variables")]
     [SerializeField] private GlobalVariableManager globalVariableManager;
 
@@ -17,13 +17,14 @@ public class MyGameManager : MonoBehaviour {
     [SerializeField] private SpawnerPH spawnManager;
     [SerializeField] private InputManager inputManager;
 
-    [Header("Game Time")] 
+    [Header("Game Time")]
     [SerializeField] private GameTimeManager timeManager;
     [SerializeField] private float timerPollingInterval = 1f;
 
-    [Header("Event Invokers")] 
+    [Header("Event Invokers")]
     [SerializeField] private VoidEventChannelSO onDefeatChannel;
     [SerializeField] private VoidEventChannelSO onOpenPauseMenuChannel;
+    [SerializeField] private VoidEventChannelSO onCloseAllMenusChannel;
     [SerializeField] private BoolEventChannelSO onToggleHudChannel;
 
     [Header("Event Listeners")]
@@ -59,12 +60,10 @@ public class MyGameManager : MonoBehaviour {
     private void TogglePause() {
         if (!_gameStarted) return;
         if (!timeManager.IsGamePaused()) {
-            if (onOpenPauseMenuChannel) {
-                onOpenPauseMenuChannel?.RaiseEvent();
-            }
+            onOpenPauseMenuChannel?.RaiseEvent();
         }
         else {
-            // Allow player to close the pause menu by hitting the pause key again
+            // onCloseAllMenusChannel?.RaiseEvent();
         }
     }
     
@@ -104,6 +103,7 @@ public class MyGameManager : MonoBehaviour {
     
     [ContextMenu("Debug - Start Game")]
     private void StartGame() {
+        gameplayEventManager.Reset();
         weaponUpgradeManager.Init();
         playerCharacter.SetActive(true);
         inputManager.SetPlayerInputEnabled(true);
@@ -135,7 +135,6 @@ public class MyGameManager : MonoBehaviour {
     }
     
     private void OnValidate() {
-        globalVariableManager.ResetPlayerVariables();
         gameplayEventManager.OnValidate();
     }
 

@@ -18,6 +18,17 @@ public class GameplayEventManager {
             gameplayEvent.OnValidate();
         }
     }
+
+    private void ResetEvents(IEnumerable<GameplayEvent> gameplayEvents) {
+        foreach (GameplayEvent gameplayEvent in gameplayEvents) {
+            gameplayEvent.Reset();
+        }
+    }
+    
+    public void Reset() {
+        ResetEvents(changeSpawnRateEvents);
+        ResetEvents(spawnEnemyEvents);
+    }
     
     public void Update(float currentGameTime) {
         PollEvents(changeSpawnRateEvents, currentGameTime);

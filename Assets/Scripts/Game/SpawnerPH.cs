@@ -23,7 +23,8 @@ public class SpawnerPH : MonoBehaviour {
     [SerializeField, Min(0)] private float currentSpawnRate = 1f;
 
     private Factory _specificEnemyFactory = new Factory();
-    
+
+    private float _baseSpawnRate = 0f;
     private float _nextSpawn = 0f;
 
     // Public
@@ -130,6 +131,10 @@ public class SpawnerPH : MonoBehaviour {
         return factories[^1].Factory;
     }
 
+    private void ResetSpawnRate() {
+        currentSpawnRate = _baseSpawnRate;
+    }
+
     private void Update() {
         if (!shouldSpawn) return;
         if (_nextSpawn > Time.time) return;
@@ -141,14 +146,20 @@ public class SpawnerPH : MonoBehaviour {
         chosenFactory?.Create(spawnPos, Quaternion.identity, Vector3.one);
     }
 
+    private void Awake() {
+        _baseSpawnRate = currentSpawnRate;
+    }
+
     private void OnEnable() {
         ChangeSpawnRateEvent.OnChangeContinuousSpawnRate += ChangeSpawnRate;
         SpawnEnemyEvent.OnSpawnEnemyBatch += SpawnEnemyBatch;
+        MyGameManager.OnGameEnd += ResetSpawnRate;
     }
 
     private void OnDisable() {
         ChangeSpawnRateEvent.OnChangeContinuousSpawnRate -= ChangeSpawnRate;
-        SpawnEnemyEvent.OnSpawnEnemyBatch += SpawnEnemyBatch;
+        SpawnEnemyEvent.OnSpawnEnemyBatch -= SpawnEnemyBatch;
+        MyGameManager.OnGameEnd -= ResetSpawnRate;
     }
 }
 
