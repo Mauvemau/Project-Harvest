@@ -53,9 +53,9 @@
 									<ChildrenList>
 										<AudioFileSource Name="Tarantula_loop" ID="{CD9DCA16-75FC-470F-825A-BE2BFE7F1193}">
 											<PropertyList>
-												<Property Name="CrossfadeDuration" Type="Real64" Value="424.307"/>
-												<Property Name="LoopBegin" Type="Real64" Value="0.453299508482067"/>
-												<Property Name="LoopEnd" Type="Real64" Value="1.27507049161972"/>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="738.63"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0.761646927714147"/>
+												<Property Name="LoopEnd" Type="Real64" Value="1.84371118682693"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 											</PropertyList>
 											<Language>SFX</Language>
