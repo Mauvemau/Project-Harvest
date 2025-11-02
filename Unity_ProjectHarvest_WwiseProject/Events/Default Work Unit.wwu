@@ -143,6 +143,39 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_MandragoraShooterDeath" ID="{29464442-2E13-4A13-8167-E5CA6609EA14}">
+					<ChildrenList>
+						<Action Name="" ID="{EB51E1D0-D76C-4276-85E6-612A2F9FAE11}" ShortID="32127719">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MandragoraShooterDeath" ID="{E1B2F549-A6CC-48B3-AEF3-81B4DCCE8C12}" WorkUnitID="{2A900AED-FB27-46FF-9350-EB1B5CFF717C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_ButtonPause" ID="{60D87090-188A-4DC2-8209-E2878E7F1DF3}">
+					<ChildrenList>
+						<Action Name="" ID="{55206E41-B413-44EF-A011-CBDE13C59436}" ShortID="916537810">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="hvst_sfx_pauseButton_v1" ID="{FD0FC02F-9EFC-4C13-B5D0-672DCB121408}" WorkUnitID="{2A900AED-FB27-46FF-9350-EB1B5CFF717C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_MandragoraHealerSpawn" ID="{341980F8-2F6A-4519-8471-A75C08131E35}">
+					<ChildrenList>
+						<Action Name="" ID="{A472B7D3-CD84-48E8-86CD-C82AB392C57B}" ShortID="241482560">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MandragoraHealerSpawn" ID="{DF497F25-3F32-4468-B964-322CB0DF943E}" WorkUnitID="{2A900AED-FB27-46FF-9350-EB1B5CFF717C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
