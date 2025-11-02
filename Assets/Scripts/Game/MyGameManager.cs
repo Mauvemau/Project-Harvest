@@ -33,7 +33,7 @@ public class MyGameManager : MonoBehaviour {
     [SerializeField] private VoidEventChannelSO onExitAppChannel;
     
     [Header("Debug Controls")]
-    [SerializeField] private bool spawnOnStart = true;
+    [SerializeField] private bool spawnEnemies = true;
     
     private bool _gameStarted = false;
     private ITimer _currentGameTimer;
@@ -108,7 +108,7 @@ public class MyGameManager : MonoBehaviour {
         playerCharacter.SetActive(true);
         inputManager.SetPlayerInputEnabled(true);
         SetHudEnabled(true);
-        if (spawnOnStart) {
+        if (spawnEnemies) {
             spawnManager.SetSpawning(true);
         }
         _currentGameTimer.Start();
@@ -121,8 +121,10 @@ public class MyGameManager : MonoBehaviour {
         timeManager.Update();
         
         if (timeManager.IsGamePaused()) return;
-        gameplayEventManager.Update(_currentGameTimer.CurrentTime);
-        
+        if (spawnEnemies) {
+            gameplayEventManager.Update(_currentGameTimer.CurrentTime);
+        }
+
         if (Time.time < _nextTimerPoll) return;
         _nextTimerPoll = Time.time + timerPollingInterval;
         OnUpdateGameTimer?.Invoke(_currentGameTimer.CurrentTime);
