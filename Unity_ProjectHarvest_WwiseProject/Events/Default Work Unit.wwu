@@ -84,7 +84,7 @@
 						<Action Name="" ID="{FF8CCC02-C0C4-4670-A90F-494309C993CC}" ShortID="302581254">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="SchytheAttack" ID="{3933B38B-FAEA-4094-A6F1-62911675F02C}" WorkUnitID="{2A900AED-FB27-46FF-9350-EB1B5CFF717C}"/>
+									<ObjectRef Name="SchytheAttack" ID="{3933B38B-FAEA-4094-A6F1-62911675F02C}" WorkUnitID="{061E61C0-CF7C-48F0-988D-B18066483043}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -105,14 +105,14 @@
 						<Action Name="" ID="{2C745813-2914-478D-983B-0C6A3DB2B379}" ShortID="326426964">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Tarantula" ID="{3B52C13B-A211-4690-8641-8362B0C9E8B1}" WorkUnitID="{2A900AED-FB27-46FF-9350-EB1B5CFF717C}"/>
+									<ObjectRef Name="Tarantula" ID="{3B52C13B-A211-4690-8641-8362B0C9E8B1}" WorkUnitID="{061E61C0-CF7C-48F0-988D-B18066483043}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 						<Action Name="" ID="{948A8C77-A08C-456C-8990-A3CC7DAA851E}" ShortID="316312045">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Tarantula_Attack" ID="{003780D9-A2B7-49B2-8673-83AB410B8C59}" WorkUnitID="{2A900AED-FB27-46FF-9350-EB1B5CFF717C}"/>
+									<ObjectRef Name="Tarantula_Attack" ID="{003780D9-A2B7-49B2-8673-83AB410B8C59}" WorkUnitID="{061E61C0-CF7C-48F0-988D-B18066483043}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
