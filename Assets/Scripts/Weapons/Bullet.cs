@@ -24,7 +24,7 @@ public class Bullet : MonoBehaviour, IBullet {
 
     private readonly HashSet<Collider2D> _currentOverlaps = new HashSet<Collider2D>();
 
-    public void Shoot(BulletPresetSO presetToSet, Vector2 direction, LayerMask targetLayer, float damage, BulletStats stats, Transform weaponTransform = null) {
+    public void Shoot(BulletPresetSO presetToSet, Vector2 direction, LayerMask targetLayer, float damage, BulletStats stats, Transform weaponTransform = null, bool mirrored = false) {
         if (presetToSet) {
             preset = presetToSet;
             SetUpPreset();
@@ -40,6 +40,7 @@ public class Bullet : MonoBehaviour, IBullet {
 
         _timeOfDeath = Time.time + _currentBulletStats.lifeTime;
         currentBehaviour.Init(transform, _rb, _aimDirection, _currentBulletStats.speed, weaponTransform);
+        _spriteRenderer.flipX = mirrored;
         _spriteRenderer.enabled = true;
         _shot = true;
     }

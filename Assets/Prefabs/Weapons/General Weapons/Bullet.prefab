@@ -113,13 +113,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   preset: {fileID: 11400000, guid: 7e7e2ec5bc9778641b98f115c7728aab, type: 2}
   currentBehaviour:
-    rid: 8748631077656723534
+    rid: 3817803482039320719
   references:
     version: 2
     RefIds:
-    - rid: 8748631077656723534
+    - rid: 3817803482039320719
       type: {class: LinearShotStrategy, ns: , asm: Assembly-CSharp}
-      data: 
+      data:
+        fixedRotation: 0
 --- !u!212 &4052143771903301830
 SpriteRenderer:
   m_ObjectHideFlags: 0

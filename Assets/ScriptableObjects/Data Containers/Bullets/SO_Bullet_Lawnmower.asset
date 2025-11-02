@@ -25,4 +25,5 @@ MonoBehaviour:
     RefIds:
     - rid: 1122120478021648485
       type: {class: LinearShotStrategy, ns: , asm: Assembly-CSharp}
-      data: 
+      data:
+        fixedRotation: 1

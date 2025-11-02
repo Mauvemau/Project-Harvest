@@ -14,8 +14,8 @@ public class WeaponRanged : Weapon {
     [Header("Audio Events")]
     [SerializeField] private AK.Wwise.Event fireAudioEvent;
     
-    protected void Shoot(IBullet bullet, BulletPresetSO bulletPreset, Vector2 direction, float damage, BulletStats stats) {
-        bullet.Shoot(bulletPreset, direction, targetLayer, damage, stats, useParentTransform ? transform.parent.transform : gameObject.transform);
+    protected void Shoot(IBullet bullet, BulletPresetSO bulletPreset, Vector2 direction, float damage, BulletStats stats, bool mirrored = false) {
+        bullet.Shoot(bulletPreset, direction, targetLayer, damage, stats, useParentTransform ? transform.parent.transform : gameObject.transform, mirrored);
 
         fireAudioEvent?.Post(gameObject);
     }
