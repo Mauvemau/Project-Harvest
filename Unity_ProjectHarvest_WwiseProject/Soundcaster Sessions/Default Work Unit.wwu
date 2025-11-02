@@ -25,7 +25,7 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="None" ID="{1949EEB3-69F2-4CE7-8631-684B93938458}"/>
+						<CurrentStateRef Name="Harvest_Combat" ID="{093046DC-DF7A-407D-B5BD-086421FD76E3}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Healthy" ID="{B52D66F8-AA47-4F9F-BDAD-8BC6EC7FA98F}"/>
@@ -80,7 +80,7 @@
 				<SoundcasterSession Name="Tarantula_Test" ID="{4FE698C5-38EB-4457-BD19-D9095DC80902}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="Play_TarantulaAttack" ID="{EEFC995F-6743-48A1-AAF7-9FA72C2E3ED4}" WorkUnitID="{D5FE0764-4F64-45A3-BBE5-9C04E443A2D8}"/>
+							<ObjectRef Name="Play_SpiderwebThrow" ID="{EEFC995F-6743-48A1-AAF7-9FA72C2E3ED4}" WorkUnitID="{D5FE0764-4F64-45A3-BBE5-9C04E443A2D8}"/>
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>

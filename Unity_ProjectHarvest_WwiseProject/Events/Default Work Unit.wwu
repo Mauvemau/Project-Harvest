@@ -90,7 +90,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_TarantulaAttack" ID="{EEFC995F-6743-48A1-AAF7-9FA72C2E3ED4}">
+				<Event Name="Play_SpiderwebThrow" ID="{EEFC995F-6743-48A1-AAF7-9FA72C2E3ED4}">
 					<ChildrenList>
 						<Action Name="" ID="{81BACA17-F966-4266-BBD4-2CEBCF0EA46C}" ShortID="138233885">
 							<PropertyList>

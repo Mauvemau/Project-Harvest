@@ -19,7 +19,7 @@ namespace AK
         static const AkUniqueID PLAY_BUTTONPRESS = 2652178615U;
         static const AkUniqueID PLAY_MANDRAGORASHOOTER = 3211203716U;
         static const AkUniqueID PLAY_SCHYTHEATTACK = 126154U;
-        static const AkUniqueID PLAY_TARANTULAATTACK = 3483513970U;
+        static const AkUniqueID PLAY_SPIDERWEBTHROW = 887679931U;
         static const AkUniqueID START = 1281810935U;
         static const AkUniqueID TARANTULA_HIT = 3994421637U;
     } // namespace EVENTS
