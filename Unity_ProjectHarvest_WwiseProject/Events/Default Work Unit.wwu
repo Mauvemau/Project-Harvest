@@ -130,6 +130,17 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{9C31406B-789F-4806-9A74-C2311EC2A908}" ShortID="1073466693">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Delay" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Tarantula" ID="{3B52C13B-A211-4690-8641-8362B0C9E8B1}" WorkUnitID="{061E61C0-CF7C-48F0-988D-B18066483043}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 			</ChildrenList>
