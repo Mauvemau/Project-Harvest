@@ -18,7 +18,10 @@ namespace AK
         static const AkUniqueID PLAY_BUTTONHOVER = 479606568U;
         static const AkUniqueID PLAY_BUTTONPRESS = 2652178615U;
         static const AkUniqueID PLAY_MANDRAGORASHOOTER = 3211203716U;
+        static const AkUniqueID PLAY_SCHYTHEATTACK = 126154U;
+        static const AkUniqueID PLAY_TARANTULAATTACK = 3483513970U;
         static const AkUniqueID START = 1281810935U;
+        static const AkUniqueID TARANTULA_HIT = 3994421637U;
     } // namespace EVENTS
 
     namespace STATES
@@ -39,6 +42,17 @@ namespace AK
 
     namespace SWITCHES
     {
+        namespace ATTACK_TARANTULA
+        {
+            static const AkUniqueID GROUP = 2860818536U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID HIT = 1116398592U;
+                static const AkUniqueID LOOP = 691006007U;
+            } // namespace SWITCH
+        } // namespace ATTACK_TARANTULA
+
         namespace BOOMERANG
         {
             static const AkUniqueID GROUP = 1198215643U;

@@ -29,6 +29,7 @@
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Healthy" ID="{B52D66F8-AA47-4F9F-BDAD-8BC6EC7FA98F}"/>
+						<CurrentSwitchRef Name="Hit" ID="{652CD1DC-A0F5-4F85-965B-E9A7C7AFCB3B}"/>
 						<CurrentSwitchRef Name="Boomerang_Lev12" ID="{FA4F8F50-E01A-4664-841C-640CE406D0D5}"/>
 						<CurrentSwitchRef Name="No" ID="{AB94F416-0319-49E1-AAB2-DE33432CEDEA}"/>
 					</CurrentSwitchList>
@@ -75,6 +76,36 @@
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+				<SoundcasterSession Name="Tarantula_Test" ID="{4FE698C5-38EB-4457-BD19-D9095DC80902}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_TarantulaAttack" ID="{EEFC995F-6743-48A1-AAF7-9FA72C2E3ED4}" WorkUnitID="{D5FE0764-4F64-45A3-BBE5-9C04E443A2D8}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Tarantula_Hit" ID="{17EE7B9F-0EB1-4D8B-B1B6-0B40AD2CA2C3}" WorkUnitID="{D5FE0764-4F64-45A3-BBE5-9C04E443A2D8}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Toro_Distance" ID="{B9C20ECB-8150-486C-8532-9773CF5A725A}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Player_Health" ID="{3F9A1CB9-1438-4BCE-8194-924B5CC15166}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Music_Volume" ID="{ED00DA30-E895-4DA4-81E1-56E555706DE3}"/>
+							<Value>80</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Hit" ID="{652CD1DC-A0F5-4F85-965B-E9A7C7AFCB3B}"/>
+					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
 		</WorkUnit>

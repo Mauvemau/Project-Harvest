@@ -55,6 +55,12 @@
 						<Switch Name="Boomerang_Lev3" ID="{F075D1E5-35A5-47BD-8CA7-56DC8BFBD0AE}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="Attack_Tarantula" ID="{C31AB358-9001-42EB-8CAE-041EEAC6EBAD}">
+					<ChildrenList>
+						<Switch Name="Loop" ID="{68F748C5-8919-4BCA-AAD9-21AFA1583814}"/>
+						<Switch Name="Hit" ID="{652CD1DC-A0F5-4F85-965B-E9A7C7AFCB3B}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>
