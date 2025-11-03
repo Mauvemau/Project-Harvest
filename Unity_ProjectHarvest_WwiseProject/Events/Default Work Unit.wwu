@@ -176,6 +176,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<WorkUnit Name="RosarioWU" ID="{B0584BF8-363A-4994-B333-BC68BAEE0201}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

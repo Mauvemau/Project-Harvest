@@ -29,7 +29,7 @@
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Healthy" ID="{B52D66F8-AA47-4F9F-BDAD-8BC6EC7FA98F}"/>
-						<CurrentSwitchRef Name="Loop" ID="{68F748C5-8919-4BCA-AAD9-21AFA1583814}"/>
+						<CurrentSwitchRef Name="Hit" ID="{652CD1DC-A0F5-4F85-965B-E9A7C7AFCB3B}"/>
 						<CurrentSwitchRef Name="Boomerang_Lev3" ID="{F075D1E5-35A5-47BD-8CA7-56DC8BFBD0AE}"/>
 						<CurrentSwitchRef Name="No" ID="{AB94F416-0319-49E1-AAB2-DE33432CEDEA}"/>
 					</CurrentSwitchList>

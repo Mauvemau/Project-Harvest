@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID MANDRAKE_STEPS = 282088238U;
         static const AkUniqueID PLAY_BLACKBERRYHIT = 2538688676U;
         static const AkUniqueID PLAY_BOOMERANGTHROW = 2116017054U;
         static const AkUniqueID PLAY_BUTTONHOVER = 479606568U;
@@ -25,6 +26,7 @@ namespace AK
         static const AkUniqueID START = 1281810935U;
         static const AkUniqueID TARANTULA_ATTACK = 4165231998U;
         static const AkUniqueID TARANTULA_HIT = 3994421637U;
+        static const AkUniqueID WITCH_STEPS = 2001225474U;
     } // namespace EVENTS
 
     namespace STATES
