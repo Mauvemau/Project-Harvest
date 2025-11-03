@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -99,9 +100,14 @@ public class Scanner : MonoBehaviour {
             transform.position = _fixedWorldPosition;
         }
     }
-
+    
     private void OnValidate() {
         SetUpCollider();
+    }
+
+    private void OnDisable() {
+        _currentOverlaps.Clear();
+        amountOverlaps = 0;
     }
 }
 

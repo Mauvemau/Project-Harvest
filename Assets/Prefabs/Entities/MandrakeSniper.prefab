@@ -204,6 +204,7 @@ MonoBehaviour:
   threatTargetReference: {fileID: 0}
   characterSpriteReference: {fileID: 5717135572370234133}
   healthBarReference: {fileID: 8570558148526515536}
+  weaponRemoteControl: {fileID: 0}
   currentBehaviour:
     rid: 8748630567095894170
   maxHealth: 8
