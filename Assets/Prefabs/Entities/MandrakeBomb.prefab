@@ -209,7 +209,7 @@ MonoBehaviour:
     rid: 3817803483392508030
   maxHealth: 10
   currentHealth: 0
-  movementSpeed: 10
+  movementSpeed: 15
   pushResistanceMultiplier: 1
   alwaysFaceTarget: 0
   damageFeedbackManager:
@@ -256,7 +256,7 @@ MonoBehaviour:
     - rid: 3817803483392508030
       type: {class: FollowTargetSinePatternStrategy, ns: , asm: Assembly-CSharp}
       data:
-        sineAmplitude: 10
+        sineAmplitude: 5
         sineFrequency: 10
         stopDistance: 3
         lockOnTargetPosition: 1

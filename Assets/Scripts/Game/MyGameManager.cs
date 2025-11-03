@@ -121,9 +121,7 @@ public class MyGameManager : MonoBehaviour {
         timeManager.Update();
         
         if (timeManager.IsGamePaused()) return;
-        if (spawnEnemies) {
-            gameplayEventManager.Update(_currentGameTimer.CurrentTime);
-        }
+        gameplayEventManager.Update(_currentGameTimer.CurrentTime, !spawnEnemies);
 
         if (Time.time < _nextTimerPoll) return;
         _nextTimerPoll = Time.time + timerPollingInterval;

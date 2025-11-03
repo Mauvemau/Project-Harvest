@@ -44,7 +44,7 @@ public class SpawnerPH : MonoBehaviour {
     // Private
 
     private void SpawnEnemyBatch(List<GameObject> prefabs) {
-        if (!shouldSpawn) return;
+        //if (!shouldSpawn) return;
         if (prefabs.Count <= 0) return;
         _specificEnemyFactory?.SetFindCentralizedFactory(true);
         
