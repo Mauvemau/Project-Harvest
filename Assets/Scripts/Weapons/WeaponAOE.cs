@@ -34,7 +34,7 @@ public class AOE {
         scanner.SetRadius(AttackRadius);
         scanner.SetPosition(TargetPoint, true);
 
-        GameObject[] targets = scanner.GetAll();
+        GameObject[] targets = scanner.GetAllOverlaps();
         foreach (GameObject target in targets) {
             if (!target.TryGetComponent(out IDamageable damageable)) continue;
             damageable.TakeDamage(_damage);

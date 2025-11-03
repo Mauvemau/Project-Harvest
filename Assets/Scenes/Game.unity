@@ -1852,6 +1852,32 @@ MonoBehaviour:
             m_Calls: []
       enemyBatch:
       - {fileID: 4579851862573548496, guid: beb980beae75b9a42ae40223a26b09eb, type: 3}
+    spawnDebugEnemyEvents:
+    - timestampInSeconds: 5
+      timestampFormatted: 00:05
+      eventCallbacks:
+        unityEvent:
+          m_PersistentCalls:
+            m_Calls: []
+      enemyBatch:
+      - {fileID: 480428550303005909, guid: d78780e8869c06743bfc2dcf1c26c4aa, type: 3}
+    - timestampInSeconds: 7
+      timestampFormatted: 00:07
+      eventCallbacks:
+        unityEvent:
+          m_PersistentCalls:
+            m_Calls: []
+      enemyBatch:
+      - {fileID: 480428550303005909, guid: d78780e8869c06743bfc2dcf1c26c4aa, type: 3}
+      - {fileID: 480428550303005909, guid: d78780e8869c06743bfc2dcf1c26c4aa, type: 3}
+    - timestampInSeconds: 10
+      timestampFormatted: 00:10
+      eventCallbacks:
+        unityEvent:
+          m_PersistentCalls:
+            m_Calls: []
+      enemyBatch:
+      - {fileID: 480428550303005909, guid: d78780e8869c06743bfc2dcf1c26c4aa, type: 3}
   weaponUpgradeManager:
     weaponDatabase:
     - {fileID: 11400000, guid: 5a389d344323a0940a88548151be01a0, type: 2}
@@ -6596,6 +6622,10 @@ MonoBehaviour:
     expandable: 1
     pool: []
   - objectToPool: {fileID: 2717563465280112146, guid: 45ac2d3e72879db41bf9ee1bd5ce9501, type: 3}
+    poolSize: 6
+    expandable: 1
+    pool: []
+  - objectToPool: {fileID: 480428550303005909, guid: d78780e8869c06743bfc2dcf1c26c4aa, type: 3}
     poolSize: 6
     expandable: 1
     pool: []

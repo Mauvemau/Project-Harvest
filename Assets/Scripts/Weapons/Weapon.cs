@@ -20,6 +20,8 @@ public abstract class Weapon : MonoBehaviour, IWeapon {
         NextAttack = 0;
     }
 
+    public virtual void PerformManualAttack() { }
+    
     public void AimWeapon(Vector2 direction) {
         aimDirection = direction;
     }

@@ -10,6 +10,8 @@ public class Enemy : MonoBehaviour, IDamageable, IPushable, IFacingDirection {
     [SerializeField] private SpriteRenderer characterSpriteReference;
     [Tooltip("A health bar will be updated based on the entity's health values if set")]
     [SerializeField] private HealthBar healthBarReference;
+    [Tooltip("Set if you want the enemy to directly control a weapon")] 
+    [SerializeField] private Weapon weaponRemoteControl;
 
     [Header("Behaviour Settings")]
     [SerializeReference, SubclassSelector] private ICharacterBehaviourStrategy currentBehaviour = new StandbyStrategy();
@@ -165,6 +167,14 @@ public class Enemy : MonoBehaviour, IDamageable, IPushable, IFacingDirection {
         healthBarReference.SetCurrentValue(currentHealth);
         healthBarReference.gameObject.SetActive(currentHealth < maxHealth);
     }
+
+    private void UpdateWeaponControl() {
+        if (!weaponRemoteControl) return;
+        if (!_alive || currentBehaviour == null || !threatTargetReference) return;
+
+        if (!currentBehaviour.GetIsAtTargetPosition()) return;
+        weaponRemoteControl.PerformManualAttack();
+    }
     
     private void BaseInit() {
         _alive = false;
@@ -183,6 +193,7 @@ public class Enemy : MonoBehaviour, IDamageable, IPushable, IFacingDirection {
 
     private void Update() {
         damageFeedbackManager.Update();
+        UpdateWeaponControl();
     }
 
     private void Awake() {
@@ -207,7 +218,7 @@ public class Enemy : MonoBehaviour, IDamageable, IPushable, IFacingDirection {
         if (currentBehaviour == null) return;
         if (!drawAIGizmo) return;
         UnityEditor.Handles.color = comfortGizmoColor;
-        UnityEditor.Handles.DrawWireDisc(transform.position, Vector3.back, currentBehaviour.GetComforRadius());
+        UnityEditor.Handles.DrawWireDisc(transform.position, Vector3.back, currentBehaviour.GetComfortRadius());
         UnityEditor.Handles.color = awarenessGizmoColor;
         UnityEditor.Handles.DrawWireDisc(transform.position, Vector3.back, currentBehaviour.GetAwarenessRadius());
 #endif
