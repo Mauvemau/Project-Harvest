@@ -14,7 +14,7 @@ public class Scanner : MonoBehaviour {
     private Vector3 _fixedWorldPosition =  Vector3.zero;
     private CircleCollider2D _col;
     
-    public GameObject GetClosest(Vector2 position) {
+    public GameObject GetClosestOverlap(Vector2 position) {
         GameObject closest = null;
         float closestDist = float.MaxValue;
 
@@ -32,7 +32,7 @@ public class Scanner : MonoBehaviour {
         return closest;
     }
 
-    public GameObject[] GetAll() {
+    public GameObject[] GetAllOverlaps() {
         List<GameObject> result = new List<GameObject>();
         foreach (Collider2D col in _currentOverlaps) {
             if (col && col.gameObject.activeInHierarchy)
@@ -42,6 +42,7 @@ public class Scanner : MonoBehaviour {
     }
 
     public void SetRadius(float radius) {
+        if (!_col) return;
         scannerRadius = radius;
         _col.radius = scannerRadius;
     }

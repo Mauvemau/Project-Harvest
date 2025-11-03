@@ -207,7 +207,7 @@ public class Enemy : MonoBehaviour, IDamageable, IPushable, IFacingDirection {
         if (currentBehaviour == null) return;
         if (!drawAIGizmo) return;
         UnityEditor.Handles.color = comfortGizmoColor;
-        UnityEditor.Handles.DrawWireDisc(transform.position, Vector3.back, currentBehaviour.GetComforRadius());
+        UnityEditor.Handles.DrawWireDisc(transform.position, Vector3.back, currentBehaviour.GetComfortRadius());
         UnityEditor.Handles.color = awarenessGizmoColor;
         UnityEditor.Handles.DrawWireDisc(transform.position, Vector3.back, currentBehaviour.GetAwarenessRadius());
 #endif

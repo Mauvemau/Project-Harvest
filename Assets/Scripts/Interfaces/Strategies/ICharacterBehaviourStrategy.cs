@@ -6,9 +6,13 @@ public interface ICharacterBehaviourStrategy {
     /// </summary>
     public Vector2 GetDirectionVector();
     /// <summary>
+    /// Returns if the character is currently standing at their target position
+    /// </summary>
+    public bool GetIsAtTargetPosition();
+    /// <summary>
     /// Used to draw gizmos for the AI.
     /// </summary>
-    public float GetComforRadius();
+    public float GetComfortRadius();
     /// <summary>
     /// Used to draw gizmos for the AI.
     /// </summary>

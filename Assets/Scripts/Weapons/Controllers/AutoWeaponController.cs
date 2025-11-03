@@ -18,7 +18,7 @@ public class AutoWeaponController : WeaponController {
     private float _nextPoll = 0f;
 
     private void HandleTargetting() {
-        GameObject closest = scannerReference.GetClosest(transform.position);
+        GameObject closest = scannerReference.GetClosestOverlap(transform.position);
         if (!closest) {
             AimWeapon(Vector2.zero);
             return;
