@@ -16,11 +16,11 @@ namespace AK
         static const AkUniqueID PLAY_BLACKBERRYHIT = 2538688676U;
         static const AkUniqueID PLAY_BOOMERANGTHROW = 2116017054U;
         static const AkUniqueID PLAY_BUTTONHOVER = 479606568U;
-        static const AkUniqueID PLAY_BUTTONPAUSE = 2750761056U;
         static const AkUniqueID PLAY_BUTTONPRESS = 2652178615U;
-        static const AkUniqueID PLAY_MANDRAGORAHEALERSPAWN = 255250776U;
+        static const AkUniqueID PLAY_MANDRAGORAHEALER_SPAWN = 1370226511U;
         static const AkUniqueID PLAY_MANDRAGORASHOOTER = 3211203716U;
-        static const AkUniqueID PLAY_MANDRAGORASHOOTERDEATH = 3898840282U;
+        static const AkUniqueID PLAY_MANDRAKESHOOTERDEATH = 2098766855U;
+        static const AkUniqueID PLAY_PAUSE = 4233560256U;
         static const AkUniqueID START = 1281810935U;
     } // namespace EVENTS
 
