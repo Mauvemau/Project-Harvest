@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{326B3AC4-91B5-4FB7-AA05-E29BC4145962}" SchemaVersion="123" RootDocumentID="{D5FE0764-4F64-45A3-BBE5-9C04E443A2D8}" ParentDocumentID="{D5FE0764-4F64-45A3-BBE5-9C04E443A2D8}">
+	<Events>
+		<WorkUnit Name="Agustina_WU" ID="{326B3AC4-91B5-4FB7-AA05-E29BC4145962}" OwnerID="{D5FE0764-4F64-45A3-BBE5-9C04E443A2D8}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="Play_SmallMandrakeCry" ID="{8C6085CB-4B54-4CF7-A0E5-E02F447B5080}">
+					<ChildrenList>
+						<Action Name="" ID="{40BCDD1F-6475-4C41-AF18-673396E9BD33}" ShortID="437909629">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Cry" ID="{52FEDAC8-F6AD-456A-B07E-59ADDCFFE6B3}" WorkUnitID="{8C1E1988-488E-4D21-9DBB-6F3C3F36AB36}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_SmallMandrakeRecibeDamage" ID="{52CFC720-8387-467C-A3FB-85E720BAE3CC}">
+					<ChildrenList>
+						<Action Name="" ID="{98CF40B6-C474-4E54-975E-D544C943E121}" ShortID="382242489">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Damage" ID="{D4C59AB3-A83D-48A2-B913-0FC7C310F935}" WorkUnitID="{8C1E1988-488E-4D21-9DBB-6F3C3F36AB36}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_ShooterMandrakeRecibeDamage" ID="{E7191AEF-91C5-4F07-A0F9-D8646149F578}">
+					<ChildrenList>
+						<Action Name="" ID="{A2A74468-B8B0-4DD5-93F3-BB846EB161A7}" ShortID="640160290">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Damage" ID="{D1064CDB-9BB8-4928-9C33-00792018D376}" WorkUnitID="{8C1E1988-488E-4D21-9DBB-6F3C3F36AB36}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_ShooterMandrakeCry" ID="{367BE532-29C0-47E8-AE2C-55D95D15B0C4}">
+					<ChildrenList>
+						<Action Name="" ID="{BE01BD07-ECD1-4684-8DB9-FF9A68575E66}" ShortID="633504797">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Cry" ID="{8CD83FC9-1E28-4F3B-97CA-0C0D4AB9418A}" WorkUnitID="{8C1E1988-488E-4D21-9DBB-6F3C3F36AB36}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_ToroMandrakeCry" ID="{B9CD54FF-400D-4810-B15A-23F1F1709236}">
+					<ChildrenList>
+						<Action Name="" ID="{C41631E6-21C1-4FB2-A0D1-CD239FF2A001}" ShortID="842300524">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Cry" ID="{87673B9C-0B90-4CCE-AAB5-CBD5B2164B62}" WorkUnitID="{8C1E1988-488E-4D21-9DBB-6F3C3F36AB36}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_ToroMandrakeRecibeDamage" ID="{E0BD90B4-9A43-41B7-9870-F00D50BDA755}">
+					<ChildrenList>
+						<Action Name="" ID="{26534A04-F941-4C64-9732-7E5323EC07A8}" ShortID="715008437">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Damage" ID="{A775E598-4171-475E-99E6-703D2CE94875}" WorkUnitID="{8C1E1988-488E-4D21-9DBB-6F3C3F36AB36}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

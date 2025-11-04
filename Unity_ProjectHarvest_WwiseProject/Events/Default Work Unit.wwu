@@ -177,6 +177,7 @@
 					</ChildrenList>
 				</Event>
 				<WorkUnit Name="RosarioWU" ID="{B0584BF8-363A-4994-B333-BC68BAEE0201}" PersistMode="Reference"/>
+				<WorkUnit Name="Agustina_WU" ID="{326B3AC4-91B5-4FB7-AA05-E29BC4145962}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
