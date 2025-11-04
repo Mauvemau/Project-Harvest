@@ -1,0 +1,1199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{061E61C0-CF7C-48F0-988D-B18066483043}" SchemaVersion="123">
+	<AudioObjects>
+		<WorkUnit Name="Rosario_WU" ID="{061E61C0-CF7C-48F0-988D-B18066483043}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="Tarantula" ID="{AD82AA81-FA77-4BA1-919B-22EFB20CB060}" ShortID="46902231">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="5m" ID="{7B443898-9A9F-48F2-9B18-8249E7E06532}" WorkUnitID="{534FA15F-9837-4037-8FF4-5DDCE2062302}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<SwitchContainer Name="Tarantula" ID="{3B52C13B-A211-4690-8641-8362B0C9E8B1}" ShortID="970293174">
+							<PropertyList>
+								<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="Loop" ID="{68F748C5-8919-4BCA-AAD9-21AFA1583814}" WorkUnitID="{DF53EFBD-A7B1-453C-9F7E-E77A28B7452B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="Attack_Tarantula" ID="{C31AB358-9001-42EB-8CAE-041EEAC6EBAD}" WorkUnitID="{DF53EFBD-A7B1-453C-9F7E-E77A28B7452B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Tarantula_loop" ID="{B003CB8A-3EAA-4CE5-95D3-D26C33660F4A}" ShortID="155690939">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Tarantula_loop" ID="{CD9DCA16-75FC-470F-825A-BE2BFE7F1193}">
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="738.63"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0.761646927714147"/>
+												<Property Name="LoopEnd" Type="Real64" Value="1.84371118682693"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Tarantula\Tarantula_loop.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="765128151"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Tarantula_loop" ID="{CD9DCA16-75FC-470F-825A-BE2BFE7F1193}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<RandomSequenceContainer Name="Hit" ID="{F702EE17-AB02-4BE6-B606-7D4D60CD69EA}" ShortID="961568642">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{31C39D53-D136-443F-8C77-BC4B690FF5C2}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="200"/>
+															<Property Name="Min" Type="Real64" Value="-200"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Tarantula_hits" ID="{03EF3332-7D46-4827-91C2-FE2F3256887C}" ShortID="784244316">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Tarantula_hits" ID="{86746D79-F6AF-4FA3-9714-1533AAAB7F93}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0912013513787749"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.160688095286413"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.447320977483707"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Tarantula\Tarantula_hits.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="227445383"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Tarantula_hits" ID="{86746D79-F6AF-4FA3-9714-1533AAAB7F93}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Tarantula_hits_01" ID="{0689D4C3-1C8A-41D2-A692-717F553DBB50}" ShortID="755589450">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Tarantula_hits" ID="{0F5DC54D-5185-45A1-8B20-11DE61DF4809}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0738296654018655"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.11613082401644"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.39407786322528"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Tarantula\Tarantula_hits.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="87127948"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Tarantula_hits" ID="{0F5DC54D-5185-45A1-8B20-11DE61DF4809}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Tarantula_hits_02" ID="{4C36CA11-A702-490F-A52E-AF64AA9E0F50}" ShortID="119642300">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Tarantula_hits" ID="{12274E9E-8786-4517-93CA-F6A168301FCB}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0434292149422737"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0521150579307286"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.62425263884104"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.87614214908451"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Tarantula\Tarantula_hits.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="92839079"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Tarantula_hits" ID="{12274E9E-8786-4517-93CA-F6A168301FCB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Tarantula_hits_03" ID="{8C98E6A6-B7E7-497F-990F-848873B8228F}" ShortID="775606541">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Tarantula_hits" ID="{22F25F1D-88E4-4397-9CA9-BAFAB1AE4401}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0564579794249558"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0347433719538186"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.31912007791742"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Tarantula\Tarantula_hits.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1045678528"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Tarantula_hits" ID="{22F25F1D-88E4-4397-9CA9-BAFAB1AE4401}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Hit" ID="{F702EE17-AB02-4BE6-B606-7D4D60CD69EA}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Tarantula_loop" ID="{B003CB8A-3EAA-4CE5-95D3-D26C33660F4A}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Loop" ID="{68F748C5-8919-4BCA-AAD9-21AFA1583814}"/>
+										<ItemList>
+											<ItemRef Name="Tarantula_loop" ID="{B003CB8A-3EAA-4CE5-95D3-D26C33660F4A}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Hit" ID="{652CD1DC-A0F5-4F85-965B-E9A7C7AFCB3B}"/>
+										<ItemList>
+											<ItemRef Name="Hit" ID="{F702EE17-AB02-4BE6-B606-7D4D60CD69EA}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+						<Sound Name="Tarantula_Attack" ID="{003780D9-A2B7-49B2-8673-83AB410B8C59}" ShortID="1048822920">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Tarantula_Attack" ID="{5B09E7DF-3B39-441B-AB0B-836F90C58BB5}">
+									<Language>SFX</Language>
+									<AudioFile>Tarantula\Tarantula_Attack.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="277526424"/>
+									</MediaIDList>
+								</AudioFileSource>
+								<AudioFileSource Name="Tarantula_Attack(v2)" ID="{CB903D08-7A13-4C6C-BA62-618B66916451}">
+									<Language>SFX</Language>
+									<AudioFile>Tarantula_Attack(v2).wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="408968933"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Tarantula_Attack(v2)" ID="{CB903D08-7A13-4C6C-BA62-618B66916451}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+				<Sound Name="SchytheAttack" ID="{3933B38B-FAEA-4094-A6F1-62911675F02C}" ShortID="213135163">
+					<PropertyList>
+						<Property Name="Highpass" Type="int16">
+							<ValueList>
+								<Value>15</Value>
+							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{7A2BC3CA-33AC-41A6-99FB-981EC23F3DBB}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="30"/>
+											<Property Name="Min" Type="Real64" Value="-15"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>10</Value>
+							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{2104A7AC-048E-483F-9FF2-9CB4F4FAFF0A}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="20"/>
+											<Property Name="Min" Type="Real64" Value="-10"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>-50</Value>
+							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{049BD4C8-980C-4A41-9E27-193439F3A6A5}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="100"/>
+											<Property Name="Min" Type="Real64" Value="-100"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-3</Value>
+							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{25E7D5B9-24A3-4EC1-9BFA-CD85E19E10AB}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="3"/>
+											<Property Name="Min" Type="Real64" Value="-3"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Guadania1" ID="{EF3197E4-A498-4013-9612-3A8CAAD27C3C}">
+							<Language>SFX</Language>
+							<AudioFile>Guadaña 1.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="999072919"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Guadania1" ID="{EF3197E4-A498-4013-9612-3A8CAAD27C3C}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<RandomSequenceContainer Name="MandrakeS_Steps" ID="{EB617E3B-9AAD-441C-8E4D-E1F2D3E048C6}" ShortID="730303938">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>4</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{74DF564A-DBC8-4013-A751-D953B07BD09C}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="150"/>
+											<Property Name="Min" Type="Real64" Value="-150"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="5m" ID="{7B443898-9A9F-48F2-9B18-8249E7E06532}" WorkUnitID="{534FA15F-9837-4037-8FF4-5DDCE2062302}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="StepType1" ID="{81CF6C1E-2EA3-4759-8907-B49AFF819685}" ShortID="964126932">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{E69770ED-7338-4111-BDEF-A9540CE0E04C}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Steps_01" ID="{E384116B-875B-451C-932F-E2F12D5245A9}" ShortID="75473704">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Steps" ID="{B0C3027F-118F-46FD-9A89-66906CBAD50B}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0260575301756109"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.033502538797214"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0632825732836264"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.2791877756264"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Steps.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="741098680"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Steps" ID="{B0C3027F-118F-46FD-9A89-66906CBAD50B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Steps_02" ID="{4E91335D-4968-4692-9BE7-A4518099A0AE}" ShortID="359135463">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Steps" ID="{33E574B2-E01C-447B-BE2D-442A23950A5F}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0260575301756109"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0595600689728248"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.506260586269011"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.766835840341403"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Steps.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="737564239"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Steps" ID="{33E574B2-E01C-447B-BE2D-442A23950A5F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Steps_03" ID="{F5156625-C351-43AD-A204-DE00A0E570E4}" ShortID="333787908">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Steps" ID="{C405E10D-22C5-41CF-B610-CED69997545A}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0260575301756109"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.033502538797214"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.923181069078784"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.19864634039438"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Steps.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="283427064"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Steps" ID="{C405E10D-22C5-41CF-B610-CED69997545A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Steps_04" ID="{70437481-B9AE-488F-B356-6580C0FE7892}" ShortID="524426849">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Steps" ID="{7097B15F-701E-4EB3-AF32-3163BA95583A}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0260575301756109"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0297800344864123"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="1.38849410792898"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.63790184906897"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Steps.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="585251798"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Steps" ID="{7097B15F-701E-4EB3-AF32-3163BA95583A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="StepType2" ID="{FE8865AE-8019-468C-8C89-C9487C0FC142}" ShortID="819455380">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{B50945F6-36AC-4CF6-945B-CBD283195A05}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Steps_01" ID="{C9C8E6E8-8459-4610-ABF4-88E7EFEC426C}" ShortID="654128536">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Steps" ID="{6CAECA80-9880-42A8-8240-619F71E7F704}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0260575301756109"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.033502538797214"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.278583487685307"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.521150555828501"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Steps.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="627497836"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Steps" ID="{6CAECA80-9880-42A8-8240-619F71E7F704}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Steps_02" ID="{C881DEDD-611A-4221-A130-30F740F382B2}" ShortID="896159023">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Steps" ID="{29C88A5A-CFEE-4DF9-8F74-2C67F9FC9DE2}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0260575301756109"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0595600689728248"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.751945870781913"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.945516047259877"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Steps.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="452988651"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Steps" ID="{29C88A5A-CFEE-4DF9-8F74-2C67F9FC9DE2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Steps_03" ID="{F8269484-B08E-4059-AC82-CE59C886CB32}" ShortID="376979641">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Steps" ID="{4474026F-F5A0-44CB-BD2F-020495ED6E70}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0260575301756109"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.033502538797214"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="1.14653132772688"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.38849406024526"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Steps.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="158864961"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Steps" ID="{4474026F-F5A0-44CB-BD2F-020495ED6E70}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Steps_04" ID="{E476FCAE-5E50-4941-965A-72D4B8B2CFD9}" ShortID="499117327">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Steps" ID="{E187DDD0-3B82-4DF3-96F8-DFE93E9EF41E}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0260575301756109"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0297800344864123"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="1.55600680191505"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.77935701287943"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Steps.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="715047983"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Steps" ID="{E187DDD0-3B82-4DF3-96F8-DFE93E9EF41E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Playlist">
+							<Reference>
+								<ObjectRef Name="StepType1" ID="{81CF6C1E-2EA3-4759-8907-B49AFF819685}" WorkUnitID="{061E61C0-CF7C-48F0-988D-B18066483043}"/>
+							</Reference>
+							<Reference>
+								<ObjectRef Name="StepType2" ID="{FE8865AE-8019-468C-8C89-C9487C0FC142}" WorkUnitID="{061E61C0-CF7C-48F0-988D-B18066483043}"/>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</RandomSequenceContainer>
+				<ActorMixer Name="Witch_Steps" ID="{AB50AD0B-98F8-4570-BD6B-13F25E42A787}" ShortID="339571615">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Cloths" ID="{268E93F5-652C-434D-90A4-578ACF3C10D2}" ShortID="280232358">
+							<PropertyList>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Step_Cloth1" ID="{F776B829-FC93-4DF1-82F4-7D5EEDE11C08}" ShortID="952738531">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Step_Cloth1" ID="{4538BC26-BAC1-4E87-B4FD-D3591D7A68EF}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.00727603477800689"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0131878130351375"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Step_Cloth1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="138110476"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Step_Cloth1" ID="{4538BC26-BAC1-4E87-B4FD-D3591D7A68EF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Step_Cloth2" ID="{0A5CCBE7-2C44-4451-BE48-350BDF00E054}" ShortID="866610680">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Step_Cloth2" ID="{3CADB526-9B46-461F-BA93-80C4D54AA740}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0179138946338045"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0183732252654405"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Step_Cloth2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1044457442"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Step_Cloth2" ID="{3CADB526-9B46-461F-BA93-80C4D54AA740}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Step_Cloth3" ID="{7A16B79C-669C-4AFD-ACC4-84636A040195}" ShortID="69095001">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Step_Cloth3" ID="{B9F75AC4-CAB8-44E1-8E51-4B846C9938C5}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0241018652021478"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0150068217296392"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Step_Cloth3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="666942655"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Step_Cloth3" ID="{B9F75AC4-CAB8-44E1-8E51-4B846C9938C5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Step_Cloth4" ID="{FD1D3636-A8BF-42F7-BBB8-42D8F6D7A71A}" ShortID="76646201">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Step_Cloth4" ID="{64DAA874-BE8B-49D6-BF30-AF42C39E530C}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0236471130285224"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0159163260768901"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Step_Cloth4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="875795106"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Step_Cloth4" ID="{64DAA874-BE8B-49D6-BF30-AF42C39E530C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Step_Cloth5" ID="{6744EB04-1D4D-40AD-AEC1-BB64CDF24575}" ShortID="268116952">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Step_Cloth5" ID="{D1DB9A96-F65C-4136-8A5F-E02F105D55EE}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0190995912922681"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0245566173757732"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Step_Cloth5.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="913711604"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Step_Cloth5" ID="{D1DB9A96-F65C-4136-8A5F-E02F105D55EE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Step_Cloth6" ID="{340461F7-13EC-4B4B-8740-B53B382D9C9B}" ShortID="965615589">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Step_Cloth6" ID="{50559AA2-5279-4569-B2C5-A09B3F7A760A}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0131878130351375"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0154615739032646"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Step_Cloth6.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="963657703"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Step_Cloth6" ID="{50559AA2-5279-4569-B2C5-A09B3F7A760A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Step_Cloth8" ID="{D47711F8-64B1-49E2-B33E-9D2B5411274B}" ShortID="322361496">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Step_Cloth8" ID="{7CD0F01E-6B0F-4EFF-AB63-1675C5FBF05C}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.026375626070275"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0172805825977664"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Step_Cloth8.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="694491644"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Step_Cloth8" ID="{7CD0F01E-6B0F-4EFF-AB63-1675C5FBF05C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Step_Cloth7" ID="{4B132FF3-6D0C-41B0-9A89-F6FAA9B85F6E}" ShortID="181181066">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Step_Cloth７" ID="{8D6CE54F-3224-492E-AE84-9B45011DDFC8}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0109140521670103"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0140973173823883"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Step_Cloth７.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="717188944"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Step_Cloth７" ID="{8D6CE54F-3224-492E-AE84-9B45011DDFC8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Playlist">
+									<Reference>
+										<ObjectRef Name="Step_Cloth1" ID="{F776B829-FC93-4DF1-82F4-7D5EEDE11C08}" WorkUnitID="{061E61C0-CF7C-48F0-988D-B18066483043}"/>
+									</Reference>
+									<Reference>
+										<ObjectRef Name="Step_Cloth2" ID="{0A5CCBE7-2C44-4451-BE48-350BDF00E054}" WorkUnitID="{061E61C0-CF7C-48F0-988D-B18066483043}"/>
+									</Reference>
+									<Reference>
+										<ObjectRef Name="Step_Cloth3" ID="{7A16B79C-669C-4AFD-ACC4-84636A040195}" WorkUnitID="{061E61C0-CF7C-48F0-988D-B18066483043}"/>
+									</Reference>
+									<Reference>
+										<ObjectRef Name="Step_Cloth4" ID="{FD1D3636-A8BF-42F7-BBB8-42D8F6D7A71A}" WorkUnitID="{061E61C0-CF7C-48F0-988D-B18066483043}"/>
+									</Reference>
+									<Reference>
+										<ObjectRef Name="Step_Cloth5" ID="{6744EB04-1D4D-40AD-AEC1-BB64CDF24575}" WorkUnitID="{061E61C0-CF7C-48F0-988D-B18066483043}"/>
+									</Reference>
+									<Reference>
+										<ObjectRef Name="Step_Cloth6" ID="{340461F7-13EC-4B4B-8740-B53B382D9C9B}" WorkUnitID="{061E61C0-CF7C-48F0-988D-B18066483043}"/>
+									</Reference>
+									<Reference>
+										<ObjectRef Name="Step_Cloth7" ID="{4B132FF3-6D0C-41B0-9A89-F6FAA9B85F6E}" WorkUnitID="{061E61C0-CF7C-48F0-988D-B18066483043}"/>
+									</Reference>
+									<Reference>
+										<ObjectRef Name="Step_Cloth8" ID="{D47711F8-64B1-49E2-B33E-9D2B5411274B}" WorkUnitID="{061E61C0-CF7C-48F0-988D-B18066483043}"/>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Steps" ID="{8709BC6A-AA90-4B17-8402-3FC1CF3280D2}" ShortID="535240021">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Step_Step1" ID="{9FDB0AA7-E70D-45D1-9513-52AABCADFB66}" ShortID="126422786">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Step_Step1" ID="{270305AA-D90C-4719-91DB-ED96CDE975FE}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0104592999933849"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.00818553912525777"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Step_Step1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="497170702"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Step_Step1" ID="{270305AA-D90C-4719-91DB-ED96CDE975FE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Step_Step2" ID="{92008351-AD2A-4223-8322-2BF6528F54BE}" ShortID="672100809">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Step_Step2" ID="{2DA4C62C-D0F9-49D6-B02C-DEDC1CCAB6C3}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.00643062884290417"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0257225153716167"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Step_Step2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="391336259"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Step_Step2" ID="{2DA4C62C-D0F9-49D6-B02C-DEDC1CCAB6C3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Step_Step3" ID="{C481C7F9-1BB0-4B28-9840-D2B8A4EF7597}" ShortID="265890568">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Step_Step3" ID="{FC51BF44-513E-4FEA-9861-01CE052661E5}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0154615739032646"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0195543434658935"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Step_Step3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1040353449"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Step_Step3" ID="{FC51BF44-513E-4FEA-9861-01CE052661E5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Step_Step4" ID="{198F5A5E-4039-4BE0-A8F2-8E0E4F38AD10}" ShortID="1043663418">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Step_Step4" ID="{AF4C49D0-56B7-4177-8BC6-DE254DCE973E}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0250113695493987"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0109140521670103"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Step_Step4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="651331569"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Step_Step4" ID="{AF4C49D0-56B7-4177-8BC6-DE254DCE973E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Step_Step5" ID="{6F0AE339-56E3-496A-9C4B-DDEFB0627761}" ShortID="739077603">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Step_Step5" ID="{1BA30DA5-9CCE-41E7-A3CE-47DB293D6EED}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0100045478197595"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0131878130351375"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Step_Step5.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="894629149"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Step_Step5" ID="{1BA30DA5-9CCE-41E7-A3CE-47DB293D6EED}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Step_Step6" ID="{42598565-6AB1-4C9D-9ACA-B194025A6B20}" ShortID="502047690">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Step_Step6" ID="{1377E8DC-A795-4C4F-83FD-08B2F06EA052}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0127330608615121"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.00682128260438147"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Step_Step6.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="9744287"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Step_Step6" ID="{1377E8DC-A795-4C4F-83FD-08B2F06EA052}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Step_Step8" ID="{0BE080B1-8B35-4F2B-815F-1442650A086C}" ShortID="92380937">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Step_Step8" ID="{60F9A5F7-9BA6-42BE-A296-07C89773399E}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0122783086878866"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.00773078695163232"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Step_Step8.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="522164532"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Step_Step8" ID="{60F9A5F7-9BA6-42BE-A296-07C89773399E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Step_Step7" ID="{A9C36F7F-4350-4A1E-AF89-941C154CECE3}" ShortID="222110544">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Step_Step７" ID="{ED997F8C-C02E-4F41-AC90-F16816652AC1}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0059117782571306"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.00682128260438142"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Step_Step７.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="594223306"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Step_Step７" ID="{ED997F8C-C02E-4F41-AC90-F16816652AC1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

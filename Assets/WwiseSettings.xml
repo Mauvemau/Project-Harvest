@@ -10,7 +10,7 @@
     <LoadSoundEngineInEditMode>true</LoadSoundEngineInEditMode>
     <ShowMissingRigidBodyWarning>true</ShowMissingRigidBodyWarning>
     <ShowSpatialAudioWarningMsg>true</ShowSpatialAudioWarningMsg>
-    <WwiseInstallationPathMac></WwiseInstallationPathMac>
+    <WwiseInstallationPathMac>/Applications/Audiokinetic/Wwise2024.1.7.8863/Wwise.app</WwiseInstallationPathMac>
     <WwiseInstallationPathWindows>C:\Audiokinetic\Wwise2024.1.7.8863</WwiseInstallationPathWindows>
     <WwiseProjectPath>../Unity_ProjectHarvest_WwiseProject/Unity_ProjectHarvest_WwiseProject.wproj</WwiseProjectPath>
     <UseWaapi>true</UseWaapi>
