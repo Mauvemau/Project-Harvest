@@ -8,6 +8,13 @@
   "CacheRoot": "../../../../Unity_ProjectHarvest_WwiseProject/.cache",
   "Platforms": [
    {
+    "Name": "Android",
+    "GUID": "{BA8590AC-E34E-4F7F-BD3F-F8370E3A60D8}",
+    "BasePlatform": "Android",
+    "BasePlatformGUID": "{A2D401DE-B8B6-4FEB-8142-137C34D507CA}",
+    "Path": "../../../../Unity_ProjectHarvest_WwiseProject/GeneratedSoundBanks/Android"
+   },
+   {
     "Name": "Mac",
     "GUID": "{B9975DAE-8D2C-4A77-9B6C-E2B9B81C1C93}",
     "BasePlatform": "Mac",
@@ -31,6 +38,6 @@
     "UseAsStandIn": "true"
    }
   ],
-  "FileHash": "{F276D81F-EADD-257F-0EAB-78357A7FB643}"
+  "FileHash": "{935C657A-0C86-EFF7-B78D-30F76E31313C}"
  }
 }
