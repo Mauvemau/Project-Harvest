@@ -1852,32 +1852,7 @@ MonoBehaviour:
             m_Calls: []
       enemyBatch:
       - {fileID: 4579851862573548496, guid: beb980beae75b9a42ae40223a26b09eb, type: 3}
-    spawnDebugEnemyEvents:
-    - timestampInSeconds: 5
-      timestampFormatted: 00:05
-      eventCallbacks:
-        unityEvent:
-          m_PersistentCalls:
-            m_Calls: []
-      enemyBatch:
-      - {fileID: 480428550303005909, guid: d78780e8869c06743bfc2dcf1c26c4aa, type: 3}
-    - timestampInSeconds: 7
-      timestampFormatted: 00:07
-      eventCallbacks:
-        unityEvent:
-          m_PersistentCalls:
-            m_Calls: []
-      enemyBatch:
-      - {fileID: 480428550303005909, guid: d78780e8869c06743bfc2dcf1c26c4aa, type: 3}
-      - {fileID: 480428550303005909, guid: d78780e8869c06743bfc2dcf1c26c4aa, type: 3}
-    - timestampInSeconds: 10
-      timestampFormatted: 00:10
-      eventCallbacks:
-        unityEvent:
-          m_PersistentCalls:
-            m_Calls: []
-      enemyBatch:
-      - {fileID: 480428550303005909, guid: d78780e8869c06743bfc2dcf1c26c4aa, type: 3}
+    spawnDebugEnemyEvents: []
   weaponUpgradeManager:
     weaponDatabase:
     - {fileID: 11400000, guid: 5a389d344323a0940a88548151be01a0, type: 2}
@@ -2013,7 +1988,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
