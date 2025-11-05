@@ -42,65 +42,58 @@ public class WeaponUpgradeManager {
     
     public static event Action<List<WeaponDisplayContainer>> OnUpgradesReady = delegate {};
     public static event Action<List<WeaponDisplayContainer>> OnUpdateInventory = delegate {};
-
-    public List<WeaponDisplayContainer> GetSelectableWeapons(int count) {
-        List<WeaponDisplayContainer> result = new List<WeaponDisplayContainer>();
-        HashSet<WeaponUpgradePlanSO> usedPlans = new HashSet<WeaponUpgradePlanSO>();
-
+    
+    public List<WeaponDisplayContainer> GetSelectableWeapons(int count)
+    {
         bool inventoryFull = playerCurrentlyEquippedPlans.Length >= _inventoryLimit;
         
-        List<WeaponUpgradePlanSO> shuffledPlans = new List<WeaponUpgradePlanSO>(weaponDatabase);
-        for (int i = 0; i < shuffledPlans.Count; i++) {
-            int swapIndex = Random.Range(i, shuffledPlans.Count);
-            (shuffledPlans[i], shuffledPlans[swapIndex]) = (shuffledPlans[swapIndex], shuffledPlans[i]);
+        List<WeaponUpgradePlanSO> basePlans = inventoryFull
+            ? new List<WeaponUpgradePlanSO>(playerCurrentlyEquippedPlans)
+            : new List<WeaponUpgradePlanSO>(weaponDatabase);
+        
+        for (int i = 0; i < basePlans.Count; i++) {
+            int swapIndex = Random.Range(i, basePlans.Count);
+            (basePlans[i], basePlans[swapIndex]) = (basePlans[swapIndex], basePlans[i]);
         }
-
-        foreach (WeaponUpgradePlanSO plan in shuffledPlans) {
-            if (usedPlans.Contains(plan)) continue;
-
+        
+        List<WeaponUpgradePlanSO> filtered = new List<WeaponUpgradePlanSO>();
+        foreach (WeaponUpgradePlanSO plan in basePlans) {
             bool isEquipped = playerCurrentlyEquippedPlans.Contains(plan);
+            int currentLevel = isEquipped ? playerInventoryReference.GetPlanLevel(plan) : -1;
 
-            if (inventoryFull && !isEquipped) {
-                continue;
-            }
+            bool canUpgrade = !isEquipped || currentLevel + 1 < plan.UpgradesCount;
+            if (!canUpgrade) continue;
 
-            int nextLevel = 0;
-            bool canUpgrade = false;
-
-            if (isEquipped) {
-                int currentLevel = playerInventoryReference.GetPlanLevel(plan);
-                nextLevel = currentLevel + 1;
-                canUpgrade = nextLevel < plan.UpgradesCount;
-                
-                if (inventoryFull && !canUpgrade)
-                    continue;
-            }
-            
-            if (!isEquipped) {
-                result.Add(new WeaponDisplayContainer(
-                    plan.WeaponName,
-                    0,
-                    plan.GetDescriptionOfLevel(0),
-                    plan.WeaponIcon
-                ));
-            } 
-            else if (canUpgrade) {
-                result.Add(new WeaponDisplayContainer(
-                    plan.WeaponName,
-                    nextLevel,
-                    plan.GetDescriptionOfLevel(nextLevel),
-                    plan.WeaponIcon
-                ));
-            }
-
-            usedPlans.Add(plan);
-
-            if (result.Count >= count) {
-                break;
-            }
+            filtered.Add(plan);
         }
 
-        currentlyAvailablePlans = usedPlans.ToList();
+        if (filtered.Count > count)
+            filtered = filtered.Take(count).ToList();
+        
+        currentlyAvailablePlans = filtered;
+        
+        if (filtered.Count == 0) {
+            filtered.Add(weaponDatabase[0]);
+        }
+        
+        List<WeaponDisplayContainer> result = new List<WeaponDisplayContainer>();
+        for (int i = 0; i < Mathf.Min(count, filtered.Count); i++) {
+            WeaponUpgradePlanSO plan = filtered[i];
+            bool isEquipped = playerCurrentlyEquippedPlans.Contains(plan);
+            int currentLevel = isEquipped ? playerInventoryReference.GetPlanLevel(plan) : -1;
+            int nextLevel = currentLevel + 1;
+
+            string description = plan.GetDescriptionOfLevel(Mathf.Max(0, nextLevel));
+            int displayLevel = Mathf.Max(0, nextLevel);
+
+            result.Add(new WeaponDisplayContainer(
+                plan.WeaponName,
+                displayLevel,
+                description,
+                plan.WeaponIcon
+            ));
+        }
+
         return result;
     }
 
