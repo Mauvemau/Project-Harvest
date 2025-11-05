@@ -112,6 +112,69 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_XPBar" ID="{A922F159-F19F-464F-9C1D-329A80D49939}">
+					<ChildrenList>
+						<Action Name="" ID="{34412E92-D97E-4B92-8981-4871C6374380}" ShortID="355577173">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="XPBar" ID="{D2EAC87B-0272-49D0-B157-E287DB39D4DC}" WorkUnitID="{2A900AED-FB27-46FF-9350-EB1B5CFF717C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{1A3A8919-42DB-4764-893C-9C1E454ED9C2}" ShortID="358979268">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="36"/>
+								<Property Name="SeekPercent" Type="Real64" Value="100">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{F6377235-CB9F-494D-A112-5B12FD169943}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-50"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="SeekTime" Type="Real64" Value="1">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{915ECBA4-1F26-41B4-84EA-B5CF1F12E444}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-0.5"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="XPBar" ID="{D2EAC87B-0272-49D0-B157-E287DB39D4DC}" WorkUnitID="{2A900AED-FB27-46FF-9350-EB1B5CFF717C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_XPBar" ID="{9DB77C80-A749-4E12-8858-C507AD332D06}">
+					<ChildrenList>
+						<Action Name="" ID="{7C2E5BC5-826D-42CC-BA58-4E6B72A58520}" ShortID="984725003">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="XPBar" ID="{D2EAC87B-0272-49D0-B157-E287DB39D4DC}" WorkUnitID="{2A900AED-FB27-46FF-9350-EB1B5CFF717C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
