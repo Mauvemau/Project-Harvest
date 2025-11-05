@@ -16,6 +16,11 @@
 						<RandomSequenceContainer Name="Damage" ID="{D4C59AB3-A83D-48A2-B913-0FC7C310F935}" ShortID="750715773">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
@@ -29,6 +34,12 @@
 											</Modifier>
 										</ModifierInfo>
 									</ModifierList>
+								</Property>
+								<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ModifierList>
@@ -54,6 +65,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="comun 1_01_01-123" ID="{8A5EE389-A33B-484E-8A44-2AA24DA52BE7}" ShortID="226406313">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -76,6 +94,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="comun 1_01_01-171" ID="{54E12A2C-8A33-4F46-A366-A6BD626ABD72}" ShortID="977456466">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -98,6 +123,18 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="comun 1_01_01-175" ID="{0C633729-CD0E-45A6-B15E-275C3CF24F3D}" ShortID="454782995">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -120,6 +157,18 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="comun 1_01_01-179" ID="{8A85C62C-DBD1-41A0-B977-874B703B1BEF}" ShortID="420959330">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -142,6 +191,18 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="comun 1_01_01-183" ID="{17E27319-C3F5-4CD0-AA5A-1BF595911977}" ShortID="963879353">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -164,6 +225,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="comun 1_01_01-187" ID="{F01EDC60-C205-4BCD-89A0-F5669BAFC702}" ShortID="163489501">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -186,6 +254,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="comun 1_01_01-191" ID="{836C70F7-5C87-46E7-AC13-9A146E8ABF67}" ShortID="89007219">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -208,6 +283,18 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="comun 1_01_01-195" ID="{A45ED75D-742C-46F7-801B-6207F924464E}" ShortID="548658704">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -230,6 +317,18 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="comun 1_01_01-199" ID="{AA78AADE-D2AC-4A31-8CF4-4F868DA45C88}" ShortID="870702742">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -252,6 +351,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Sil 1" ID="{93B0B5F0-7CAC-433D-B512-C28EA9792953}" ShortID="184247262">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>30</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -274,6 +380,18 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Sil 2" ID="{AB76AC62-7B49-4F78-B68C-A1F203F26752}" ShortID="858599750">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -296,6 +414,18 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Sil 3" ID="{57597C41-73DC-4412-BD15-FAF24260CBEA}" ShortID="976482810">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -318,6 +448,18 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Sil 4" ID="{9757415F-CA9B-4AE8-A19E-893F79BA88C8}" ShortID="175005121">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -340,6 +482,18 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Sil 5" ID="{461A910A-1264-403F-B667-E861833C601A}" ShortID="281990712">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -362,6 +516,18 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Sil 6" ID="{47EBD227-6B66-48D0-85F5-C6D1E99C99FE}" ShortID="490969859">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -384,6 +550,18 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Sil 7" ID="{3C584CC3-8457-4C6E-B6E2-BCDA58FA5833}" ShortID="534498406">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -406,6 +584,18 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Sil 8" ID="{C635DEA7-06CE-4E52-AF33-D5E32872FBEF}" ShortID="36940846">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -432,7 +622,18 @@
 						<RandomSequenceContainer Name="Cry" ID="{52FEDAC8-F6AD-456A-B07E-59ADDCFFE6B3}" ShortID="62987464">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -447,7 +648,7 @@
 									<PropertyList>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>33</Value>
+												<Value>5</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -474,9 +675,14 @@
 								</Sound>
 								<Sound Name="comun 1_01_01-99" ID="{151EB069-59EF-4B05-AB9F-55A20F156723}" ShortID="909596845">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>19</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -503,9 +709,14 @@
 								</Sound>
 								<Sound Name="comun 1_01_01-115" ID="{98545F76-858F-411F-81EF-E251C0999A2A}" ShortID="727346457">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>24</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -539,7 +750,7 @@
 										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>21</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -573,7 +784,7 @@
 										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>24</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -600,9 +811,14 @@
 								</Sound>
 								<Sound Name="comun 1_01_01-131" ID="{7EF36D26-86D7-48FC-A713-ED14AA15BB25}" ShortID="936613960">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>30</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -636,7 +852,7 @@
 										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>23</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -670,7 +886,7 @@
 										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>18</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -697,9 +913,14 @@
 								</Sound>
 								<Sound Name="comun 1_01_01-143" ID="{F0025A7E-4097-44EC-82C5-01972B6A073D}" ShortID="907169871">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>22</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -733,7 +954,7 @@
 										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>9</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -760,9 +981,14 @@
 								</Sound>
 								<Sound Name="comun 1_01_01-151" ID="{FB740565-5929-44B8-9E68-3E692E0C2381}" ShortID="102718259">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>40</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -796,7 +1022,7 @@
 										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>18</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -830,7 +1056,7 @@
 										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>10</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -864,7 +1090,7 @@
 										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>11</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -898,7 +1124,7 @@
 										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>8</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -932,7 +1158,7 @@
 										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>2</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -966,7 +1192,7 @@
 										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>29</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -995,7 +1221,7 @@
 									<PropertyList>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>12</Value>
+												<Value>5</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1029,7 +1255,7 @@
 										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>30</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1058,7 +1284,7 @@
 									<PropertyList>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>22</Value>
+												<Value>5</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1092,7 +1318,7 @@
 										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>17</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1126,7 +1352,7 @@
 										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>27</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1155,7 +1381,7 @@
 									<PropertyList>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>26</Value>
+												<Value>5</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1169,6 +1395,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="comun 1_01_01-43" ID="{9ECE19D0-7E60-464E-B670-C6A04C4E96F8}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0725044166169515"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.867552963454549"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>comun 1.01_01-43.wav</AudioFile>
 											<MediaIDList>
@@ -1182,9 +1413,14 @@
 								</Sound>
 								<Sound Name="comun 1_01_01-47" ID="{DE980CF5-BFDF-4802-9BD7-4CA5FABE9263}" ShortID="619942755">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>28</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1211,9 +1447,14 @@
 								</Sound>
 								<Sound Name="comun 1_01_01-51" ID="{FA9505CF-009E-4F9B-861D-38DAA0384A54}" ShortID="501530439">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>19</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1247,7 +1488,7 @@
 										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>22</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1274,9 +1515,14 @@
 								</Sound>
 								<Sound Name="comun 1_01_01-59" ID="{A9995B49-6196-44CF-BC00-FB688303CCB6}" ShortID="199262406">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>11</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1303,9 +1549,14 @@
 								</Sound>
 								<Sound Name="comun 1_01_01-63" ID="{469F5047-C7FD-4DFD-94A8-6099F0DD4DCD}" ShortID="15368095">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>24</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1332,9 +1583,14 @@
 								</Sound>
 								<Sound Name="comun 1_01_01-67" ID="{CD664E4F-39A8-4891-B7B7-21B1948FCFFB}" ShortID="194135461">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>28</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1361,9 +1617,14 @@
 								</Sound>
 								<Sound Name="comun 1_01_01-71" ID="{766489B2-B551-41F1-8D5A-58AF1DA07CAE}" ShortID="418665861">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>13</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1390,9 +1651,14 @@
 								</Sound>
 								<Sound Name="comun 1_01_01-75" ID="{10480FE2-0C95-4BB7-BB92-F7E85A0E4A6F}" ShortID="1038843139">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>23</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1419,9 +1685,14 @@
 								</Sound>
 								<Sound Name="comun 1_01_01-79" ID="{FAB3A90F-412D-48F3-A3E6-BB41D380CCE2}" ShortID="517237273">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>23</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1448,9 +1719,14 @@
 								</Sound>
 								<Sound Name="comun 1_01_01-83" ID="{43AE0235-8D9E-42AE-AF7D-C693A723D1FE}" ShortID="256742953">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>21</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1477,9 +1753,14 @@
 								</Sound>
 								<Sound Name="comun 1_01_01-87" ID="{0DD6C9E1-8C72-4D41-9F0C-446F1794D63F}" ShortID="771175325">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>19</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1506,9 +1787,14 @@
 								</Sound>
 								<Sound Name="comun 1_01_01-91" ID="{8284F376-7203-4738-BA49-764BCD4073D2}" ShortID="228164287">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>13</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1535,9 +1821,14 @@
 								</Sound>
 								<Sound Name="comun 1_01_01-95" ID="{2C3F08C8-CD3B-4463-BA74-4DECD9F9FDD9}" ShortID="496554785">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>30</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1564,9 +1855,14 @@
 								</Sound>
 								<Sound Name="comun 1_01_01-103" ID="{99E77FFE-A755-43FF-B293-6CD4E7CD42B6}" ShortID="427395099">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>35</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1593,9 +1889,14 @@
 								</Sound>
 								<Sound Name="comun 1_01_01-108" ID="{4CC0A82C-DC6E-4A94-A2E2-09B4BA771A8C}" ShortID="266583246">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>35</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1622,9 +1923,14 @@
 								</Sound>
 								<Sound Name="comun 1_01_01-111" ID="{5EDB5665-D418-464D-9D03-CCBD82F5F634}" ShortID="462265488">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>28</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1687,7 +1993,7 @@
 										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>72</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1721,7 +2027,7 @@
 										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>67</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1755,7 +2061,7 @@
 										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>54</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1789,7 +2095,7 @@
 										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>66</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1823,7 +2129,7 @@
 										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>65</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1857,7 +2163,7 @@
 										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>67</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1891,7 +2197,7 @@
 										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>69</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1925,7 +2231,7 @@
 										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>75</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1959,7 +2265,7 @@
 										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>73</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1993,7 +2299,7 @@
 										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>78</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2027,7 +2333,7 @@
 										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>72</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2069,6 +2375,11 @@
 						<RandomSequenceContainer Name="Damage" ID="{D1064CDB-9BB8-4928-9C33-00792018D376}" ShortID="21998303">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
@@ -2083,6 +2394,11 @@
 										</ModifierInfo>
 									</ModifierList>
 								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -2095,6 +2411,11 @@
 							<ChildrenList>
 								<Sound Name="Sil 5" ID="{7796C7A0-146F-4684-9402-F5BFF98DCE08}" ShortID="377733507">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
 												<Value>66</Value>
@@ -2124,6 +2445,11 @@
 								</Sound>
 								<Sound Name="Sil 6" ID="{4A70AD1F-728E-4CAF-B829-3015CFD4E322}" ShortID="193394723">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
 												<Value>64</Value>
@@ -2153,6 +2479,11 @@
 								</Sound>
 								<Sound Name="Sil 7" ID="{FA2804BB-19BE-4C70-AED8-E2BB63D60663}" ShortID="90807359">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
 												<Value>54</Value>
@@ -2181,6 +2512,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Sil 8" ID="{9BC7D4A2-6E08-4A5F-B2B4-B3B026EC6AFE}" ShortID="469335844">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -2204,6 +2542,11 @@
 								</Sound>
 								<Sound Name="Shooter 1_01_01-61" ID="{9A5F7059-7BBB-4ED2-9412-10A88E511A51}" ShortID="762401984">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
 												<Value>34</Value>
@@ -2233,6 +2576,11 @@
 								</Sound>
 								<Sound Name="Shooter 1_01_01-123" ID="{F3C8359F-0EAA-4C3A-9736-6A74541C9315}" ShortID="368703444">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
 												<Value>36</Value>
@@ -2262,6 +2610,11 @@
 								</Sound>
 								<Sound Name="Shooter 1_01_01-143" ID="{59B605B1-CD7F-480F-A841-6C3FA3BB84BE}" ShortID="549590256">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
 												<Value>37</Value>
@@ -2342,6 +2695,11 @@
 								</Sound>
 								<Sound Name="Shooter 1_01_01-179" ID="{B30793D3-5963-4EAE-BEBA-9517D44A43DE}" ShortID="983400018">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
 												<Value>30</Value>
@@ -2371,6 +2729,11 @@
 								</Sound>
 								<Sound Name="Shooter 1_01_01-183" ID="{6FA6B803-5BA2-4808-98C0-A9737720975F}" ShortID="256884548">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
 												<Value>33</Value>
@@ -2458,6 +2821,11 @@
 								</Sound>
 								<Sound Name="Shooter 1_01_01-195" ID="{5142D739-3E8E-4B7D-B740-BE17432A3A46}" ShortID="344466745">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
 												<Value>29</Value>
@@ -2487,6 +2855,11 @@
 								</Sound>
 								<Sound Name="Shooter 1_01_01-199" ID="{B9E26853-E579-434E-B7F3-332146F4C2C8}" ShortID="259677336">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
 												<Value>63</Value>
@@ -2519,7 +2892,18 @@
 						<RandomSequenceContainer Name="Cry" ID="{8CD83FC9-1E28-4F3B-97CA-0C0D4AB9418A}" ShortID="938366576">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -2531,6 +2915,18 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="Sil 6" ID="{02FB4E65-7ED2-4831-A082-D718FC0DB876}" ShortID="712305249">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -2554,9 +2950,14 @@
 								</Sound>
 								<Sound Name="Sil 7" ID="{ADA54CAD-3EE1-45B4-93B4-32C2A615E99B}" ShortID="1012474042">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>76</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2583,9 +2984,14 @@
 								</Sound>
 								<Sound Name="Sil 8" ID="{240466E3-A535-4B7E-B548-794516D85657}" ShortID="734331450">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>69</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2612,9 +3018,14 @@
 								</Sound>
 								<Sound Name="Sil 9" ID="{5F876572-9071-4AA3-B6D1-F87FA230B8C9}" ShortID="436728882">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>71</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2641,9 +3052,14 @@
 								</Sound>
 								<Sound Name="SIl 10" ID="{780A01D1-E5A8-435A-92DB-ED2A8C3DBAD8}" ShortID="8909457">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>85</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2670,9 +3086,14 @@
 								</Sound>
 								<Sound Name="Sil 11" ID="{2A2309B6-DD02-47FE-AD85-B686B2BD58E0}" ShortID="865395954">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>67</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2699,9 +3120,14 @@
 								</Sound>
 								<Sound Name="Sil 12" ID="{C5F7F861-63CC-47C5-9270-C1F399282489}" ShortID="44346888">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>79</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2728,9 +3154,14 @@
 								</Sound>
 								<Sound Name="Shooter 1_01_01-65" ID="{A9ED4ADC-0938-4A01-AA1F-7ED314A364B1}" ShortID="950867323">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>25</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2759,7 +3190,7 @@
 									<PropertyList>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>32</Value>
+												<Value>3</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2786,9 +3217,14 @@
 								</Sound>
 								<Sound Name="Shooter 1_01_01-111" ID="{EA2214F0-2188-4E26-AC69-AA1A88B65D8A}" ShortID="261110833">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>25</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2815,9 +3251,14 @@
 								</Sound>
 								<Sound Name="Shooter 1_01_01-115" ID="{7367AD33-40B6-4032-BACC-065BB084A9C3}" ShortID="274663142">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>34</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2843,6 +3284,18 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Shooter 1_01_01-119" ID="{7EB2B5E1-B7FF-4513-92DF-1EF0543967CD}" ShortID="30131623">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -2866,9 +3319,14 @@
 								</Sound>
 								<Sound Name="Shooter 1_01_01-128" ID="{DE05088C-DBCD-4388-87E1-F04283F7B7E0}" ShortID="847984780">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>31</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2895,9 +3353,14 @@
 								</Sound>
 								<Sound Name="Shooter 1_01_01-139" ID="{5165A10D-A1AE-46D4-8E5A-96E9D67B2480}" ShortID="886619678">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>26</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2924,9 +3387,14 @@
 								</Sound>
 								<Sound Name="Shooter 1_01_01-155" ID="{D8741268-F629-4C96-94E5-D382DC2C0982}" ShortID="330529902">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>21</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2953,9 +3421,14 @@
 								</Sound>
 								<Sound Name="Shooter 1_01_01-159" ID="{630D2CD0-E9B4-4730-9580-85EED21BC02E}" ShortID="248685009">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>26</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2982,9 +3455,14 @@
 								</Sound>
 								<Sound Name="Shooter 1_01_01-167" ID="{C8C60041-D2CE-4D7B-B0EA-B713E12C58D3}" ShortID="713858362">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>24</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3013,7 +3491,7 @@
 									<PropertyList>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>13</Value>
+												<Value>5</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3040,9 +3518,14 @@
 								</Sound>
 								<Sound Name="Shooter 1_01_01-07" ID="{877A8A17-41A9-4697-8F1F-BACB9DB5084F}" ShortID="712190595">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>15</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3069,9 +3552,14 @@
 								</Sound>
 								<Sound Name="Shooter 1_01_01-11" ID="{73DE25FB-340D-43F0-9591-CC2F14A6B0E7}" ShortID="184402133">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>42</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3098,9 +3586,14 @@
 								</Sound>
 								<Sound Name="Shooter 1_01_01-15" ID="{7A6B3908-9FF6-4E60-9CD8-00AF3BBE6CBD}" ShortID="108487496">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>22</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3127,9 +3620,14 @@
 								</Sound>
 								<Sound Name="Shooter 1_01_01-19" ID="{C5427C53-FA62-49FB-910B-3A067E1BFF5F}" ShortID="360040225">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>36</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3158,7 +3656,7 @@
 									<PropertyList>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>26</Value>
+												<Value>5</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3185,9 +3683,14 @@
 								</Sound>
 								<Sound Name="Shooter 1_01_01-27" ID="{7DF751D2-3BD3-4116-98CF-4F3BF2473A2C}" ShortID="163858400">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>18</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3216,7 +3719,7 @@
 									<PropertyList>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>41</Value>
+												<Value>5</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3243,9 +3746,14 @@
 								</Sound>
 								<Sound Name="Shooter 1_01_01-35" ID="{768596EE-5121-4B8C-9339-B736F73BB92D}" ShortID="126526553">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>33</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3272,9 +3780,14 @@
 								</Sound>
 								<Sound Name="Shooter 1_01_01-40" ID="{74E3410E-92C6-49E6-B4C8-C2A95DE8EBFE}" ShortID="652343544">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>30</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3301,9 +3814,14 @@
 								</Sound>
 								<Sound Name="Shooter 1_01_01-41" ID="{255B0F70-E5B3-49B6-B018-8C2E943F4A26}" ShortID="381656017">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>32</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3330,9 +3848,14 @@
 								</Sound>
 								<Sound Name="Shooter 1_01_01-45" ID="{5FB8BDAB-67BA-46B2-93E1-2588EAFF491A}" ShortID="667206149">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>26</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3359,9 +3882,14 @@
 								</Sound>
 								<Sound Name="Shooter 1_01_01-49" ID="{8DF1BE83-B6CC-4EB2-A403-B45D18AF4559}" ShortID="89613668">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>26</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3388,9 +3916,14 @@
 								</Sound>
 								<Sound Name="Shooter 1_01_01-53" ID="{7D55504C-A4B1-4085-840C-6671468C9CB0}" ShortID="920681536">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>31</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3417,9 +3950,14 @@
 								</Sound>
 								<Sound Name="Shooter 1_01_01-57" ID="{10C9ED8B-175E-423C-8BF9-E3C3B9824622}" ShortID="395476751">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>18</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3446,9 +3984,14 @@
 								</Sound>
 								<Sound Name="Shooter 1_01_01-131" ID="{A4A80E4B-6519-4584-9D2E-31308E83EDBC}" ShortID="1065132027">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>33</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3475,9 +4018,14 @@
 								</Sound>
 								<Sound Name="Shooter 1_01_01-135" ID="{8AE269CD-F91E-4839-82F2-D956E56EB975}" ShortID="959847397">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>30</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3504,9 +4052,14 @@
 								</Sound>
 								<Sound Name="Shooter 1_01_01-147" ID="{3FBEDFAF-9B01-4D4E-8F67-ADB0E706AB6B}" ShortID="424014038">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>34</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3533,9 +4086,14 @@
 								</Sound>
 								<Sound Name="Shooter 1_01_01-151" ID="{55F9D5A7-9AFF-4E86-82FA-2046AED8DD69}" ShortID="516320012">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>36</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3562,9 +4120,14 @@
 								</Sound>
 								<Sound Name="Shooter 1_01_01-171" ID="{F3E73914-5BD2-47EE-B6C8-4AB424267482}" ShortID="306733052">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>63</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3591,9 +4154,14 @@
 								</Sound>
 								<Sound Name="Shooter 1_01_01-73" ID="{D34CFFB8-F50C-4489-979D-F1AA9F184795}" ShortID="441872074">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>27</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3620,9 +4188,14 @@
 								</Sound>
 								<Sound Name="Shooter 1_01_01-77" ID="{317A2E51-F5B3-4E5A-BAD0-57B1B4AF5E65}" ShortID="211275839">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>30</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3649,9 +4222,14 @@
 								</Sound>
 								<Sound Name="Shooter 1_01_01-81" ID="{32D1B50A-BCE4-442B-AD25-3AA5682718CC}" ShortID="53139130">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>29</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3678,9 +4256,14 @@
 								</Sound>
 								<Sound Name="Shooter 1_01_01-85" ID="{B45B1B62-9E21-4399-B396-21119F9731B4}" ShortID="646794962">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>32</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3707,9 +4290,14 @@
 								</Sound>
 								<Sound Name="Shooter 1_01_01-89" ID="{3440C7D4-1438-4FC6-80D5-2E62FBE4A39D}" ShortID="900275221">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>35</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3736,9 +4324,14 @@
 								</Sound>
 								<Sound Name="Shooter 1_01_01-93" ID="{A6FB422C-41FC-4A96-8BBD-34DBE13562D1}" ShortID="871658839">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>24</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3765,9 +4358,14 @@
 								</Sound>
 								<Sound Name="Shooter 1_01_01-95" ID="{3FE5F2A3-AA30-4E44-B9C3-E7769F4D29B7}" ShortID="389914674">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>26</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3793,6 +4391,18 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Shooter 1_01_01-99" ID="{9FA84437-B802-4C80-A29A-DC86559235CF}" ShortID="519796">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -3816,9 +4426,14 @@
 								</Sound>
 								<Sound Name="Shooter 1_01_01-103" ID="{9B76E648-7544-4A14-8961-26CC4DAFCC04}" ShortID="1008896609">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>29</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3845,9 +4460,14 @@
 								</Sound>
 								<Sound Name="Shooter 1_01_01-107" ID="{7E2D3713-8928-4EC3-A646-09DAAD88CD27}" ShortID="573353169">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>30</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3873,6 +4493,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Sil 1" ID="{7C24C5C0-5266-42CF-8C59-17CAD3D59430}" ShortID="397029689">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>70</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -3896,9 +4523,14 @@
 								</Sound>
 								<Sound Name="Sil 2" ID="{17FA4C5A-8D8D-49C1-8DD2-39F1AAC85782}" ShortID="726270569">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>70</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3925,9 +4557,14 @@
 								</Sound>
 								<Sound Name="Sil 3" ID="{3E196DFD-8D8A-42A7-A458-27C03B9206B0}" ShortID="507786576">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>92</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3954,9 +4591,14 @@
 								</Sound>
 								<Sound Name="Sil 4" ID="{640DD02B-BA5A-4E60-BF5E-1351CE559A95}" ShortID="133798822">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>66</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3983,9 +4625,14 @@
 								</Sound>
 								<Sound Name="Sil 5" ID="{C8EE36F6-1618-43BE-BADC-2456B9CAC1D0}" ShortID="490872806">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>77</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -4027,6 +4674,11 @@
 						<RandomSequenceContainer Name="Damage" ID="{A775E598-4171-475E-99E6-703D2CE94875}" ShortID="994996406">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
@@ -4041,6 +4693,11 @@
 										</ModifierInfo>
 									</ModifierList>
 								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -4052,6 +4709,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="Toro 1_01_01-31" ID="{6B3AA05D-895B-4C87-A2B0-EC7319C5F444}" ShortID="484283852">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -4074,6 +4738,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Toro 1_01_01-47" ID="{B0185E99-CBED-46AA-86C8-E4F20E449FA2}" ShortID="809223715">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -4096,6 +4767,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Toro 1_01_01-55" ID="{A51D4AB8-C623-41B9-84DA-CB0CE6B6C659}" ShortID="46186046">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -4118,6 +4796,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Toro 1_01_01-59" ID="{24520114-CBC0-45C9-A63D-583EA40850F2}" ShortID="240131818">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -4150,6 +4835,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Toro 1_01_01-63" ID="{8B9E4DD2-D065-4E73-8A0D-A2D55E73F65B}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.351947973414165"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.826484539442915"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Toro 1.01_01-63.wav</AudioFile>
 											<MediaIDList>
@@ -4172,6 +4862,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Toro 1_01_01-83" ID="{15373D32-15AB-46C4-AB0D-C6648CCEA924}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.235043903676475"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.284526830766259"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="1.36078049496907"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.32982113267542"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Toro 1.01_01-83.wav</AudioFile>
 											<MediaIDList>
@@ -4184,6 +4881,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Toro 1_01_01-91" ID="{D5CD7A93-DEDA-466A-A3D0-5A35F72FE143}" ShortID="6688922">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -4206,6 +4910,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Toro 1_01_01-95" ID="{63B79E20-9EA7-484D-86DE-92588B9F2A37}" ShortID="449305326">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -4216,6 +4927,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Toro 1_01_01-95" ID="{0C7E052A-18D8-44B8-82EA-0E9348E6BDF3}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.101723577918076"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="2.10567806290417"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Toro 1.01_01-95.wav</AudioFile>
 											<MediaIDList>
@@ -4238,6 +4954,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Toro 1_01_01-108" ID="{A99A8265-2CF3-42F3-B4D7-4FFF6B0B7F8B}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0970926796517721"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.618965944677834"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Toro 1.01_01-108.wav</AudioFile>
 											<MediaIDList>
@@ -4260,6 +4981,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Toro 1_01_01-112" ID="{1D53CB91-4839-499E-B07D-28544139296B}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.285788617482999"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.01564878414123"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Toro 1.01_01-112.wav</AudioFile>
 											<MediaIDList>
@@ -4272,6 +4998,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Toro 1_01_01-116" ID="{3CC79CF7-2C88-4903-9431-084E9BE71980}" ShortID="989436417">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -4294,6 +5027,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Toro 1_01_01-124" ID="{EAE6BD23-5E33-4AB4-8616-A774683C0A27}" ShortID="672859330">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -4316,6 +5056,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Toro 1_01_01-132" ID="{0B3B2F00-294E-4D15-A56D-4FCF6C987277}" ShortID="328732085">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -4326,6 +5073,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Toro 1_01_01-132" ID="{CAEB3CA9-A8A6-4885-8B87-7D605F3E10AC}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0477138228532745"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.161886184680753"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.289691067323452"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.01221462030333"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Toro 1.01_01-132.wav</AudioFile>
 											<MediaIDList>
@@ -4338,6 +5092,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Toro 1_01_01-136" ID="{3A51CF1D-B8A7-4FA6-8CDD-B027FA4A6BFF}" ShortID="170807824">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -4360,6 +5121,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Toro 1_01_01-140" ID="{E8A7C8A5-047E-4C82-85BE-D0F38AB1C4FA}" ShortID="605502183">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -4382,6 +5150,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Toro 1_01_01-144" ID="{C34D23D2-76D1-47B9-870D-444142565BB9}" ShortID="485761320">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -4404,6 +5179,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Toro 1_01_01-148" ID="{FC5D4856-ADD7-4717-81E6-64DAD634AAA5}" ShortID="958175811">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -4426,6 +5208,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Toro 1_01_01-152" ID="{E13A94B5-ED2B-466E-BD88-E9BEFCA41DD4}" ShortID="15845291">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -4448,6 +5237,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Toro 1_01_01-156" ID="{46F300D2-4929-42EF-9FA8-F2012043DFDA}" ShortID="834832001">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -4470,6 +5266,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Toro 1_01_01-158" ID="{DDE90A71-C45C-48A7-B63E-DF9285505730}" ShortID="79612096">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -4492,6 +5295,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Toro 1_01_01-162" ID="{E373C295-3E6B-420C-9802-97815C8A0439}" ShortID="798752764">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -4514,6 +5324,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Toro 1_01_01-166" ID="{CE85293C-C1DA-4954-B1F3-2D2BF269B428}" ShortID="912837444">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -4536,6 +5353,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Toro 1_01_01-170" ID="{F1B9F50A-0D6E-467C-8B24-165834027C37}" ShortID="488031224">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -4560,6 +5384,18 @@
 							</ChildrenList>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Cry" ID="{87673B9C-0B90-4CCE-AAB5-CBD5B2164B62}" ShortID="531141990">
+							<PropertyList>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -4573,7 +5409,7 @@
 									<PropertyList>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>20</Value>
+												<Value>10</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -4587,6 +5423,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Toro 1_01_01-27" ID="{8A560C55-947A-450C-860D-DE5E9E207020}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0750829277968987"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.103960976949552"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="1.21287806441144"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.02435121508342"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Toro 1.01_01-27.wav</AudioFile>
 											<MediaIDList>
@@ -4599,6 +5442,18 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Toro 1_01_01-35" ID="{359E3F5F-86ED-4FE8-8ABB-D73ED4C718E6}" ShortID="1030317629">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -4622,9 +5477,14 @@
 								</Sound>
 								<Sound Name="Toro 1_01_01-39" ID="{CD46E956-A0F9-43B9-B034-BC8BC6CB64A1}" ShortID="534002221">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>29</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -4650,6 +5510,18 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Toro 1_01_01-43" ID="{DCB8CC11-35C6-4538-A825-FC672D86BAF9}" ShortID="865624059">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -4672,6 +5544,18 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Toro 1_01_01-67" ID="{C2345E68-6217-4C6A-9E7D-5BE8F2474F52}" ShortID="227608915">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -4694,6 +5578,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Toro 1_01_01-71" ID="{6EBB0861-AA4C-44D5-B5F9-91B946283E26}" ShortID="290412898">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -4704,6 +5595,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Toro 1_01_01-71" ID="{4C808526-B513-4B1F-9ECB-F655D6C18C3F}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.319375615003632"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.896025971218822"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Toro 1.01_01-71.wav</AudioFile>
 											<MediaIDList>
@@ -4719,7 +5615,7 @@
 									<PropertyList>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>34</Value>
+												<Value>10</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -4733,6 +5629,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Toro 1_01_01-87" ID="{66C12D9E-38BC-4A6A-BAE9-FDC4CCA9641B}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.156266665458679"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.781333351453145"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Toro 1.01_01-87.wav</AudioFile>
 											<MediaIDList>
@@ -4746,9 +5647,14 @@
 								</Sound>
 								<Sound Name="Toro 1_01_01-128" ID="{F02F2C21-3528-4EC5-91EC-8C7B396BBFC6}" ShortID="992217178">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>31</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -4775,9 +5681,14 @@
 								</Sound>
 								<Sound Name="Toro 1_01_01-03" ID="{BAC6B8CB-3B7D-47FC-AB4D-5052BDAF2979}" ShortID="480226466">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>29</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -4804,9 +5715,14 @@
 								</Sound>
 								<Sound Name="Toro 1_01_01-07" ID="{E74DEAB4-362A-4FC0-836F-6BE5B86E7BAB}" ShortID="1010920347">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>27</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -4833,9 +5749,14 @@
 								</Sound>
 								<Sound Name="Toro 1_01_01-11" ID="{23F9BA32-E014-4DAF-9AEA-35A4499A1E65}" ShortID="202579932">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>32</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -4862,9 +5783,14 @@
 								</Sound>
 								<Sound Name="Toro 1_01_01-15" ID="{83DFF6F8-FC9B-4453-B1DD-D28BA58E2903}" ShortID="365212732">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>28</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -4890,6 +5816,18 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Toro 1_01_01-19" ID="{C5A4927F-E7C9-4B70-910B-215505EDA9CB}" ShortID="490317821">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -4912,6 +5850,18 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Toro 1_01_01-23" ID="{CE1E271C-FC29-4FBD-B7CC-8097EB01E6FC}" ShortID="465330998">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -4935,9 +5885,14 @@
 								</Sound>
 								<Sound Name="Toro 1_01_01-51" ID="{FAE90591-569C-4409-85F8-23F4B2722DFC}" ShortID="562685525">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>23</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -4964,9 +5919,14 @@
 								</Sound>
 								<Sound Name="Toro 1_01_01-75" ID="{BCB62523-C8E7-45D1-AF2A-E766DEA25EAE}" ShortID="97820877">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>27</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -4995,7 +5955,7 @@
 									<PropertyList>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>30</Value>
+												<Value>10</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -5009,6 +5969,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Toro 1_01_01-79" ID="{73C5C9DA-6E8B-4E1C-9325-991D6BCE33D9}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.410666678009964"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.29599991499893"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Toro 1.01_01-79.wav</AudioFile>
 											<MediaIDList>
@@ -5022,9 +5987,14 @@
 								</Sound>
 								<Sound Name="Toro 1_01_01-100" ID="{BB0EC501-302B-4784-90DE-5641B3F9AFA6}" ShortID="812542784">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>35</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -5051,9 +6021,14 @@
 								</Sound>
 								<Sound Name="Toro 1_01_01-104" ID="{9D2E7704-9F53-4EAF-B4CE-50F20023E0FD}" ShortID="1018393621">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>34</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -5080,9 +6055,14 @@
 								</Sound>
 								<Sound Name="Toro 1_01_01-120" ID="{41886276-E647-4EE5-BCB3-6E377940E940}" ShortID="358236405">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>41</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -5138,9 +6118,14 @@
 								</Sound>
 								<Sound Name="Sil 2" ID="{55F9EFAD-CACD-42F6-8B88-DD01943DA095}" ShortID="721362058">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>77</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -5167,9 +6152,14 @@
 								</Sound>
 								<Sound Name="Sil 3" ID="{05E71917-84D2-474A-8E39-D9BD4937C743}" ShortID="101573012">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>74</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -5196,9 +6186,14 @@
 								</Sound>
 								<Sound Name="Sil 4" ID="{E1EF7AF1-4579-4545-9A9C-A6D6F0BE04EE}" ShortID="977814391">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>64</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -5225,9 +6220,14 @@
 								</Sound>
 								<Sound Name="Sil 5" ID="{1B8779B3-DC2C-4804-995B-ED2912E45F28}" ShortID="154218988">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>72</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -5254,9 +6254,14 @@
 								</Sound>
 								<Sound Name="Sil 6" ID="{FF3F7CD3-B8F8-4102-A683-2AD84AAB236B}" ShortID="394368286">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>70</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
