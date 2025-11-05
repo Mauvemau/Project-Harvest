@@ -72,10 +72,6 @@ public class WeaponUpgradeManager {
         
         currentlyAvailablePlans = filtered;
         
-        if (filtered.Count == 0) {
-            filtered.Add(weaponDatabase[0]);
-        }
-        
         List<WeaponDisplayContainer> result = new List<WeaponDisplayContainer>();
         for (int i = 0; i < Mathf.Min(count, filtered.Count); i++) {
             WeaponUpgradePlanSO plan = filtered[i];
@@ -100,6 +96,7 @@ public class WeaponUpgradeManager {
 
     private void HandleLevelUpgrades() {
         List<WeaponDisplayContainer> levelUpWeapons = GetSelectableWeapons(upgradesAvailablePerLevel);
+        if (levelUpWeapons.Count <= 0) return;
         OnUpgradesReady?.Invoke(levelUpWeapons);
     }
 
