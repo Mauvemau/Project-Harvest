@@ -216,6 +216,7 @@ public class Enemy : MonoBehaviour, IDamageable, IPushable, IFacingDirection {
     }
     
     private void OnEnable() {
+        currentBehaviour.Reset();
         Revive();
         TryFindThreatTarget();
         

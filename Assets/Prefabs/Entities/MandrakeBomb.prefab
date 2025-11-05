@@ -207,7 +207,7 @@ MonoBehaviour:
   weaponRemoteControl: {fileID: 8328827378351597943}
   currentBehaviour:
     rid: 3817803483392508030
-  maxHealth: 10
+  maxHealth: 30
   currentHealth: 0
   movementSpeed: 15
   pushResistanceMultiplier: 1
@@ -680,6 +680,14 @@ PrefabInstance:
     - target: {fileID: 4817818089757967235, guid: 497c61d4e35a7d64ba63d331c8d97b68, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5277298143790169985, guid: 497c61d4e35a7d64ba63d331c8d97b68, type: 3}
+      propertyPath: scannerRadius
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5794228177535454135, guid: 497c61d4e35a7d64ba63d331c8d97b68, type: 3}
+      propertyPath: m_Radius
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

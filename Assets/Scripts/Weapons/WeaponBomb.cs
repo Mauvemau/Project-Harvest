@@ -205,6 +205,12 @@ public class WeaponBomb : Weapon {
     private void OnEnable() {
         AdjustAttackRadius();
         _shouldDetonate = false;
+        _lastBeepTime = 0f;
+        _detonationStartTime = 0f;
+        _detonationDuration = 0f;
+        _isBeeping = false;
+        _beepProgress = 0f;
+        _currentFadeDuration = 0.15f;
 
         if (!_mr) return;
         Color c = fillColor;

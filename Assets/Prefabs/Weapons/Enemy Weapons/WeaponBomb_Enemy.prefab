@@ -50,8 +50,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <BaseStats>k__BackingField:
     attackDamage: 6
-    attackRateInSeconds: 2
-    attackSize: 4
+    attackRateInSeconds: 1.5
+    attackSize: 5
   currentStats:
     attackDamage: 0
     attackRateInSeconds: 0
@@ -320,7 +320,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 4
+  m_Radius: 5
 --- !u!114 &5277298143790169985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -333,7 +333,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61babe2d5ffc0094b9e9246e9b0cccc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scannerRadius: 4
+  scannerRadius: 5
   scanLayer:
     serializedVersion: 2
     m_Bits: 64

@@ -72,4 +72,13 @@ public class FollowTargetSinePatternStrategy : ICharacterBehaviourStrategy {
         Vector2 newPosition = rb.position + sineWaveMotion + pushVelocity * Time.fixedDeltaTime;
         rb.MovePosition(newPosition);
     }
+    
+    public void Reset() {
+        _targetPosition = Vector3.zero;
+        _movementDirection = Vector2.zero;
+        _locked = false;
+        _shouldStop = false;
+        _time = 0f;
+        _gripTimer = 1f;
+    }
 }

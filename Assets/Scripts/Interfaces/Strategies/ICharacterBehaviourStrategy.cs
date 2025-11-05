@@ -22,4 +22,8 @@ public interface ICharacterBehaviourStrategy {
     /// Handles the movement behaviour of the AI, put this inside a FixedUpdate block.
     /// </summary>
     public void HandleMovement(Transform transform, Rigidbody2D rb, Transform targetTransform, float movementSpeed, Vector2 pushVelocity);
+    /// <summary>
+    /// If the behaviour stores data, this functions resets the data to defaults
+    /// </summary>
+    public void Reset();
 }

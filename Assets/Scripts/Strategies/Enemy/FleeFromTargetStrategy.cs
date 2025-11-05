@@ -19,4 +19,8 @@ public class FleeFromTargetStrategy : ICharacterBehaviourStrategy {
 
         rb.MovePosition(newPosition);
     }
+
+    public void Reset() {
+        _movementDirection = Vector2.zero;
+    }
 }

@@ -325,7 +325,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterSpriteReference: {fileID: 1777398882794038304}
-  maxHealth: 10
+  maxHealth: 17
   currentHealth: 0
   moveSpeed: 6
   gripCurve:

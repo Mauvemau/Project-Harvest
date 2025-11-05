@@ -57,4 +57,9 @@ public class KeepDistanceStrategy : ICharacterBehaviourStrategy {
             _lookDirection = delta.normalized;
         }
     }
+    
+    public void Reset() {
+        _gripTimer = 0f;
+        _lookDirection = Vector2.zero;
+    }
 }

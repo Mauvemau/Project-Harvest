@@ -11,4 +11,6 @@ public class StandbyStrategy : ICharacterBehaviourStrategy {
     public void HandleMovement(Transform transform, Rigidbody2D rb, Transform targetTransform, float movementSpeed, Vector2 pushVelocity) {
         return;
     }
+
+    public void Reset() {}
 }
