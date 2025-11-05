@@ -21,12 +21,12 @@ MonoBehaviour:
   - weaponPrefab: {fileID: 9156999661277644453, guid: 093ddba06fa526f44b56715ef6dba189, type: 3}
     upgradeDescription: Attack Speed increases by 1
   - weaponPrefab: {fileID: 9156999661277644453, guid: 48c44c4e0369d464f8a5d0287d4ed83b, type: 3}
-    upgradeDescription: Size of the attack increases by 0.5
+    upgradeDescription: Size of the attack increases by 1
   - weaponPrefab: {fileID: 9156999661277644453, guid: f784e9e3eff273a4e8d29c41dcec2df2, type: 3}
     upgradeDescription: Attack Damage increases by 2
   - weaponPrefab: {fileID: 9156999661277644453, guid: 5c63b67f8a0533146b74bf62f0a8d335, type: 3}
     upgradeDescription: 'Attack Speed increases by 1.5 and the Size of the Attack
-      increases by another 0.5
+      increases by another 1
 
 '
-  weaponIcon: {fileID: -1491056770, guid: bc5494a0a20fc2145b2f037c1434c5b7, type: 3}
+  weaponIcon: {fileID: 21300000, guid: cc1a88887deb6244682db378223e167c, type: 3}

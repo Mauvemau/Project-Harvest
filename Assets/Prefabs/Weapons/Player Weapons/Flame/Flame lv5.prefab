@@ -135,7 +135,7 @@ MonoBehaviour:
   <BaseStats>k__BackingField:
     attackDamage: 5
     attackRateInSeconds: 3.5
-    attackSize: 2
+    attackSize: 2.5
   currentStats:
     attackDamage: 0
     attackRateInSeconds: 0
@@ -154,9 +154,9 @@ MonoBehaviour:
       centralizedFactory: {fileID: 0}
       autoFindCentralizedFactory: 1
     vfxPreset:
-      controller: {fileID: 9100000, guid: 1db92a6d80f946b4688cf10555bb9291, type: 2}
+      controller: {fileID: 9100000, guid: d7dd0398b16a41540b1227b4f8d4da47, type: 2}
       playbackSpeed: 1
       animationStartOffset: 0
-      color: {r: 1, g: 0.7826655, b: 0, a: 0.627451}
+      color: {r: 1, g: 1, b: 1, a: 0.627451}
     scaleOffset: {x: 4, y: 4, z: 1}
   targetAreaGizmoColor: {r: 1, g: 0, b: 1, a: 1}

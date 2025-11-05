@@ -22,8 +22,8 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 338069371b8d2df438abd8fcbd03ffe3, type: 2}
-  sprite: {fileID: 21300000, guid: c96ba4318fa526d4eb8936447e9c430f, type: 3}
-  tint: {r: 0.07450981, g: 0.7019608, b: 0.90588236, a: 1}
+  sprite: {fileID: 21300000, guid: 9ad6f9fbe50a2bf49b8d4441bbef868d, type: 3}
+  tint: {r: 1, g: 1, b: 1, a: 1}
   references:
     version: 2
     RefIds:
