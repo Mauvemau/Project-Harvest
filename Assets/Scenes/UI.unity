@@ -6243,6 +6243,10 @@ MonoBehaviour:
   midHealthColor: {r: 0.9339623, g: 0.9302531, b: 0.066082224, a: 1}
   emptyHealthColor: {r: 0.8867924, g: 0.11991217, b: 0.10457456, a: 1}
   extremeOffset: 0.1
+  healthAmountRtpc:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 5fe5162c742417b46bc9f6aa83c9ad35, type: 2}
 --- !u!1 &1576434904
 GameObject:
   m_ObjectHideFlags: 0
