@@ -23,6 +23,12 @@ namespace AK
         static const AkUniqueID PLAY_MANDRAGORASHOOTER = 3211203716U;
         static const AkUniqueID PLAY_MANDRAGORASHOOTERDEATH = 3898840282U;
         static const AkUniqueID PLAY_SCHYTHEATTACK = 126154U;
+        static const AkUniqueID PLAY_SHOOTERMANDRAKECRY = 1803350251U;
+        static const AkUniqueID PLAY_SHOOTERMANDRAKERECIBEDAMAGE = 1618169002U;
+        static const AkUniqueID PLAY_SMALLMANDRAKECRY = 3814284364U;
+        static const AkUniqueID PLAY_SMALLMANDRAKERECIBEDAMAGE = 1332341351U;
+        static const AkUniqueID PLAY_TOROMANDRAKECRY = 4031256493U;
+        static const AkUniqueID PLAY_TOROMANDRAKERECIBEDAMAGE = 1971773272U;
         static const AkUniqueID START = 1281810935U;
         static const AkUniqueID TARANTULA_ATTACK = 4165231998U;
         static const AkUniqueID TARANTULA_HIT = 3994421637U;
