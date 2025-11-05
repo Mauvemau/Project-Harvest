@@ -216,6 +216,10 @@ MonoBehaviour:
       color: {r: 1, g: 1, b: 1, a: 0.627451}
     scaleOffset: {x: 4.45, y: 4.45, z: 1}
   vfxOffsetInSeconds: -0.2
+  attackAudioEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: eb524dd4ee4b9dd4bb218af7c23e2534, type: 2}
   arcSegments: 40
   lineWidth: 0.05
   visualColor: {r: 0, g: 0.5368862, b: 1, a: 0.47058824}

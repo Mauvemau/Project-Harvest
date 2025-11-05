@@ -15,6 +15,9 @@ public class WeaponScythe : Weapon {
     [Tooltip("The vfx will start playing this many seconds before or after the attack logic")]
     [SerializeField] private float vfxOffsetInSeconds;
 
+    [Header("SFX Settings")] 
+    [SerializeField] private AK.Wwise.Event attackAudioEvent;
+
     [Header("Visual Settings")]
     [SerializeField, Min(12)] private int arcSegments = 40;
     [SerializeField] private float lineWidth = .05f;
@@ -132,6 +135,8 @@ public class WeaponScythe : Weapon {
             }
         }
 
+        attackAudioEvent?.Post(gameObject);
+        
         if (_colorCrossFadeRoutine != null)
             StopCoroutine(_colorCrossFadeRoutine);
         _colorCrossFadeRoutine = StartCoroutine(DoArcColorCrossFade());

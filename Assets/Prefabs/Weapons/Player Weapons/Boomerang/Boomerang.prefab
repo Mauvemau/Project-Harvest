@@ -68,6 +68,14 @@ MonoBehaviour:
     penetrationCount: 100
     pushForce: 8
   firstShotOffset: 0
+  useParentTransform: 0
+  destroyOnWeaponDestroy: 0
+  levelAudioSwitch:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 49c118795e21f564cb4067e0c810124c, type: 2}
 --- !u!114 &1354548757129229597
 MonoBehaviour:
   m_ObjectHideFlags: 0

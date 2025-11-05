@@ -71,10 +71,12 @@ MonoBehaviour:
   firstShotOffset: 0
   useParentTransform: 0
   destroyOnWeaponDestroy: 0
-  fireAudioEvent:
+  levelAudioSwitch:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 58f7911dcb5ec0c40accd9ea98634cdd, type: 2}
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!114 &7039349961994965108
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -212,6 +212,7 @@ MonoBehaviour:
   threatTargetReference: {fileID: 0}
   characterSpriteReference: {fileID: 4513896641768806966}
   healthBarReference: {fileID: 1449544048425970047}
+  weaponRemoteControl: {fileID: 0}
   currentBehaviour:
     rid: 8748630563905077402
   maxHealth: 10
@@ -247,6 +248,14 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  hurtAudioEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: aec7a62b35ca3cf44812a4e686a8476b, type: 2}
+  deathAudioEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
   dropManager:
     drops:
     - collectiblePrefab: {fileID: 8325983632572383665, guid: fd3b8b79613a36847b4ae453d3ed5234, type: 3}

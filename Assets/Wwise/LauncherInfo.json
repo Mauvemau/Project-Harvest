@@ -1,5 +1,5 @@
 {
-    "originalSdkFolder": "/Applications/Audiokinetic/Wwise2024.1.7.8863/SDK",
+    "originalSdkFolder": "C:\\Audiokinetic\\Wwise2024.1.7.8863\\SDK",
     "currentVersion": {
         "nickname": "",
         "build": 3596,
@@ -18,15 +18,15 @@
         },
         {
             "id": "DeploymentPlatforms",
+            "valueId": "Android"
+        },
+        {
+            "id": "DeploymentPlatforms",
             "valueId": "Mac"
         },
         {
             "id": "DeploymentPlatforms",
             "valueId": "Windows"
-        },
-        {
-            "id": "DeploymentPlatforms",
-            "valueId": "Android"
         }
     ]
 }

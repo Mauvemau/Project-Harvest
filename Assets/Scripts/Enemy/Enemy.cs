@@ -28,6 +28,11 @@ public class Enemy : MonoBehaviour, IDamageable, IPushable, IFacingDirection {
     [Header("Feedback Settings")] 
     [SerializeField] private DamageFeedbackSprite damageFeedbackManager;
 
+    [Header("SFX Settings")] 
+    [SerializeField] private AK.Wwise.Event spawnAudioEvent;
+    [SerializeField] private AK.Wwise.Event hurtAudioEvent;
+    [SerializeField] private AK.Wwise.Event deathAudioEvent;
+
     [Header("Drops Settings")] 
     [SerializeField] private DropManager dropManager;
     
@@ -46,6 +51,7 @@ public class Enemy : MonoBehaviour, IDamageable, IPushable, IFacingDirection {
 
     private Rigidbody2D _rb;
     private bool _alive;
+    private bool _loaded;
     private Vector2 _pushVelocity;
 
     //
@@ -75,6 +81,7 @@ public class Enemy : MonoBehaviour, IDamageable, IPushable, IFacingDirection {
         currentHealth = 0;
         _alive = false;
         
+        deathAudioEvent?.Post(gameObject);
         dropManager.HandleRequestDrops(transform.position);
         
         if (disableOnDeath) {
@@ -113,7 +120,7 @@ public class Enemy : MonoBehaviour, IDamageable, IPushable, IFacingDirection {
         UpdateHealthBar();
         
         if (currentHealth > maxHealth) {
-            currentHealth = maxHealth;            
+            currentHealth = maxHealth;
         }
         if (currentHealth <= 0) {
             Kill();
@@ -128,6 +135,10 @@ public class Enemy : MonoBehaviour, IDamageable, IPushable, IFacingDirection {
     public void TakeDamage(float damage) {
         SetCurrentHealth(currentHealth - damage);
         HandleDamageFeedback(damage);
+
+        if (_alive && damage > 0) {
+            hurtAudioEvent?.Post(gameObject);
+        }
     }
     
     public void RequestPush(Vector2 direction, float force) {
@@ -207,6 +218,11 @@ public class Enemy : MonoBehaviour, IDamageable, IPushable, IFacingDirection {
     private void OnEnable() {
         Revive();
         TryFindThreatTarget();
+        
+        if (_loaded) {
+            spawnAudioEvent?.Post(gameObject);
+        }
+        _loaded = true;
     }
 
     private void OnDisable() {

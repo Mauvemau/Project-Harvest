@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class WeaponRanged : Weapon {
@@ -10,14 +11,12 @@ public class WeaponRanged : Weapon {
     [SerializeField] private float firstShotOffset = 0f;
     [SerializeField] private bool useParentTransform = false;
     [SerializeField] private bool destroyOnWeaponDestroy = false;
-    
-    [Header("Audio Events")]
-    [SerializeField] private AK.Wwise.Event fireAudioEvent;
+
+    [Header("SFX Settings")] 
+    [SerializeField] private AK.Wwise.Switch levelAudioSwitch;
     
     protected void Shoot(IBullet bullet, BulletPresetSO bulletPreset, Vector2 direction, float damage, BulletStats stats, bool mirrored = false) {
-        bullet.Shoot(bulletPreset, direction, targetLayer, damage, stats, useParentTransform ? transform.parent.transform : gameObject.transform, mirrored);
-
-        fireAudioEvent?.Post(gameObject);
+        bullet.Shoot(bulletPreset, direction, targetLayer, damage, stats, useParentTransform ? transform.parent.transform : gameObject.transform, mirrored, levelAudioSwitch);
     }
     
     protected virtual void HandleAttack() {
