@@ -35469,7 +35469,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectPools:
   - objectToPool: {fileID: 4210210132979722889, guid: 637b9d4b9c5081247a9c11aff171998e, type: 3}
-    poolSize: 100
+    poolSize: 300
     expandable: 1
     pool: []
   - objectToPool: {fileID: 4579851862573548496, guid: beb980beae75b9a42ae40223a26b09eb, type: 3}
@@ -35485,7 +35485,11 @@ MonoBehaviour:
     expandable: 1
     pool: []
   - objectToPool: {fileID: 8325983632572383665, guid: fd3b8b79613a36847b4ae453d3ed5234, type: 3}
-    poolSize: 300
+    poolSize: 500
+    expandable: 1
+    pool: []
+  - objectToPool: {fileID: 8325983632572383665, guid: d44cf55090c9587488c6634cecc6a94f, type: 3}
+    poolSize: 5
     expandable: 1
     pool: []
   - objectToPool: {fileID: 698526753970158529, guid: 01c204ccaf97e414a9be9a54a7ac11cb, type: 3}
@@ -35493,7 +35497,7 @@ MonoBehaviour:
     expandable: 1
     pool: []
   - objectToPool: {fileID: 8122611192328483659, guid: 0d36fd112fc0c1b4c87accaf324d5626, type: 3}
-    poolSize: 15
+    poolSize: 20
     expandable: 1
     pool: []
 --- !u!1001 &3431711331352404105

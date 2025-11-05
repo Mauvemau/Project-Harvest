@@ -94,7 +94,7 @@ MonoBehaviour:
         unityEvent:
           m_PersistentCalls:
             m_Calls: []
-      newSpawnRate: 0.01
+      newSpawnRate: 0.05
     spawnEnemyEvents:
     - timestampInSeconds: 35
       timestampFormatted: 00:35
