@@ -1,58 +1,31 @@
 fileFormatVersion: 2
-guid: 9793057a515e1c94889c57fbac0ce7e7
+guid: 0095ebf8febfce246b359c3782f991f2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3200144186152797312
-    second: sprite_sheet(2)_0
+      213: -5047951305796308716
+    second: Flame FVX-sheet_0
   - first:
-      213: -2057165576651032874
-    second: sprite_sheet(2)_1
+      213: -5682972065330400307
+    second: Flame FVX-sheet_1
   - first:
-      213: 3553605091152132291
-    second: sprite_sheet(2)_2
+      213: 1174940301689323989
+    second: Flame FVX-sheet_2
   - first:
-      213: -1464840006404016994
-    second: sprite_sheet(2)_3
+      213: -3268343664747564232
+    second: Flame FVX-sheet_3
   - first:
-      213: 4671798103479716188
-    second: sprite_sheet(2)_4
+      213: -2314237523653029474
+    second: Flame FVX-sheet_4
   - first:
-      213: 3367078866706096834
-    second: sprite_sheet(2)_5
+      213: 7562724408416255747
+    second: Flame FVX-sheet_5
   - first:
-      213: -2332159084058912289
-    second: sprite_sheet(2)_6
+      213: 2849371349203560195
+    second: Flame FVX-sheet_6
   - first:
-      213: 244690307373140823
-    second: sprite_sheet(2)_7
-  - first:
-      213: -4691732430093057456
-    second: sprite_sheet(2)_8
-  - first:
-      213: -6113520502860022539
-    second: sprite_sheet(2)_9
-  - first:
-      213: 3523066504747371203
-    second: sprite_sheet(2)_10
-  - first:
-      213: 2218531802924431925
-    second: sprite_sheet(2)_11
-  - first:
-      213: -2269908358654385328
-    second: sprite_sheet(2)_12
-  - first:
-      213: -4724638368377908100
-    second: sprite_sheet(2)_13
-  - first:
-      213: 8713119453227300608
-    second: sprite_sheet(2)_14
-  - first:
-      213: 3678668189341230180
-    second: sprite_sheet(2)_15
-  - first:
-      213: -8899532605430568345
-    second: sprite_sheet(2)_16
+      213: 7517959222033373080
+    second: Flame FVX-sheet_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -123,7 +96,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -161,243 +134,177 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bush_1
+      name: vfx_flame_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 64
+        y: 0
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1fe6a521c506b84f8b241cc6eb1518b
-      internalID: -1190430488
+      spriteID: 2572d527e59f1b045a50211ed3835afe
+      internalID: -1566076944
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bush_2
+      name: vfx_flame_1
       rect:
         serializedVersion: 2
         x: 32
-        y: 64
+        y: 0
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67fbbde0a795a1a42aa9870aa715a937
-      internalID: 752828772
+      spriteID: 036d50191271d174db74ee60fb5d7cf6
+      internalID: 2049141023
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grass_long
+      name: vfx_flame_2
       rect:
         serializedVersion: 2
         x: 64
-        y: 64
+        y: 0
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e368a63170988e4aa3d11bbc788209e
-      internalID: 54477431
+      spriteID: 85167853dd9fd6844adddbb855bffe05
+      internalID: 1848181332
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mushroom_1
+      name: vfx_flame_3
       rect:
         serializedVersion: 2
         x: 96
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 29a2f3e9554ecc74b856094c52da0c0d
-      internalID: -959576067
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hay
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8cb8fd8fa892ba84ebe16f283c05e445
-      internalID: -26447497
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pumpkin
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7301f9808c68bb447bce27c11483003a
-      internalID: 399932689
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: grass_short
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 57e6d8de07736644d934f3b07e8efeb8
-      internalID: 1567172151
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mushroom_2
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5501a53cf3561a242a1b76db9b0467b8
-      internalID: -527409763
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ground_grass
-      rect:
-        serializedVersion: 2
-        x: 0
         y: 0
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 10ecbdd58b0bd4c428243174fcb8e065
-      internalID: -1629031592
+      spriteID: e64a053456e283e478dc5cf7299e0b4a
+      internalID: 964433026
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rock
+      name: vfx_flame_4
       rect:
         serializedVersion: 2
-        x: 32
+        x: 128
         y: 0
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ffadf4b3238eb649893a812d2f5edfb
-      internalID: 1976908253
+      spriteID: f2f139044404cd0478326ee08e5fb1f9
+      internalID: -1762955356
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mushroom_3
+      name: vfx_flame_5
       rect:
         serializedVersion: 2
-        x: 64
+        x: 160
         y: 0
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41f5e32ab3df59e4a9a78d8e9f4e8e87
-      internalID: 1652875628
+      spriteID: 75da74c6bb0fbc04094dac11a196bf1a
+      internalID: -1561236326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_flame_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d763e2c562ec8dd409d84e473f7638d2
+      internalID: -1941780748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vfx_flame_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25585b88f8d21e948bb65f35d6c8d98b
+      internalID: 219815272
       vertices: []
       indices: 
       edges: []
@@ -406,7 +313,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5f2eabbb18b4264429dbb6f0c4c753fd
+    spriteID: 229ad7aee68ebf9499ca7cd96fb060c7
     internalID: 0
     vertices: []
     indices: 
@@ -416,17 +323,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      bush_1: -1190430488
-      bush_2: 752828772
-      grass_long: 54477431
-      grass_short: 1567172151
-      ground_grass: -1629031592
-      hay: -26447497
-      mushroom_1: -959576067
-      mushroom_2: -527409763
-      mushroom_3: 1652875628
-      pumpkin: 399932689
-      rock: 1976908253
+      vfx_flame_0: -1566076944
+      vfx_flame_1: 2049141023
+      vfx_flame_2: 1848181332
+      vfx_flame_3: 964433026
+      vfx_flame_4: -1762955356
+      vfx_flame_5: -1561236326
+      vfx_flame_6: -1941780748
+      vfx_flame_7: 219815272
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
