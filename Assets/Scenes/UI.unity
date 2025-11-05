@@ -2524,7 +2524,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de666241e34d33b4eab2ce771712c8b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeLimit: 180
+  timeLimit: 240
   countdown: 1
   timeLimitReachedColor: {r: 0.745283, g: 0.10760122, b: 0.08788714, a: 1}
 --- !u!1 &624647862

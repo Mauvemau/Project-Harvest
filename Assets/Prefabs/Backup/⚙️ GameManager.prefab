@@ -1,0 +1,281 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3429000851342337797
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6243625981758291263}
+  - component: {fileID: 901040559531970695}
+  m_Layer: 0
+  m_Name: "\u2699\uFE0F GameManager"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6243625981758291263
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3429000851342337797}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &901040559531970695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3429000851342337797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da040a27a762b094b9a9477c432b949a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameplayEventManager:
+    changeSpawnRateEvents:
+    - timestampInSeconds: 30
+      timestampFormatted: 00:30
+      eventCallbacks:
+        unityEvent:
+          m_PersistentCalls:
+            m_Calls: []
+      newSpawnRate: 2
+    - timestampInSeconds: 60
+      timestampFormatted: 01:00
+      eventCallbacks:
+        unityEvent:
+          m_PersistentCalls:
+            m_Calls: []
+      newSpawnRate: 1
+    - timestampInSeconds: 90
+      timestampFormatted: 01:30
+      eventCallbacks:
+        unityEvent:
+          m_PersistentCalls:
+            m_Calls: []
+      newSpawnRate: 0.5
+    - timestampInSeconds: 150
+      timestampFormatted: 02:30
+      eventCallbacks:
+        unityEvent:
+          m_PersistentCalls:
+            m_Calls: []
+      newSpawnRate: 0.15
+    - timestampInSeconds: 170
+      timestampFormatted: 02:50
+      eventCallbacks:
+        unityEvent:
+          m_PersistentCalls:
+            m_Calls: []
+      newSpawnRate: 0
+    - timestampInSeconds: 200
+      timestampFormatted: 03:20
+      eventCallbacks:
+        unityEvent:
+          m_PersistentCalls:
+            m_Calls: []
+      newSpawnRate: 0.75
+    - timestampInSeconds: 240
+      timestampFormatted: 04:00
+      eventCallbacks:
+        unityEvent:
+          m_PersistentCalls:
+            m_Calls: []
+      newSpawnRate: 0.01
+    spawnEnemyEvents:
+    - timestampInSeconds: 35
+      timestampFormatted: 00:35
+      eventCallbacks:
+        unityEvent:
+          m_PersistentCalls:
+            m_Calls: []
+      enemyBatch:
+      - {fileID: 4579851862573548496, guid: beb980beae75b9a42ae40223a26b09eb, type: 3}
+    - timestampInSeconds: 50
+      timestampFormatted: 00:50
+      eventCallbacks:
+        unityEvent:
+          m_PersistentCalls:
+            m_Calls: []
+      enemyBatch:
+      - {fileID: 480428550303005909, guid: d78780e8869c06743bfc2dcf1c26c4aa, type: 3}
+    - timestampInSeconds: 75
+      timestampFormatted: 01:15
+      eventCallbacks:
+        unityEvent:
+          m_PersistentCalls:
+            m_Calls: []
+      enemyBatch:
+      - {fileID: 4579851862573548496, guid: beb980beae75b9a42ae40223a26b09eb, type: 3}
+      - {fileID: 4579851862573548496, guid: beb980beae75b9a42ae40223a26b09eb, type: 3}
+    - timestampInSeconds: 120
+      timestampFormatted: 02:00
+      eventCallbacks:
+        unityEvent:
+          m_PersistentCalls:
+            m_Calls: []
+      enemyBatch:
+      - {fileID: 2717563465280112146, guid: 45ac2d3e72879db41bf9ee1bd5ce9501, type: 3}
+    - timestampInSeconds: 140
+      timestampFormatted: 02:20
+      eventCallbacks:
+        unityEvent:
+          m_PersistentCalls:
+            m_Calls: []
+      enemyBatch:
+      - {fileID: 4579851862573548496, guid: beb980beae75b9a42ae40223a26b09eb, type: 3}
+    - timestampInSeconds: 180
+      timestampFormatted: 03:00
+      eventCallbacks:
+        unityEvent:
+          m_PersistentCalls:
+            m_Calls: []
+      enemyBatch:
+      - {fileID: 480428550303005909, guid: d78780e8869c06743bfc2dcf1c26c4aa, type: 3}
+    - timestampInSeconds: 184
+      timestampFormatted: 03:04
+      eventCallbacks:
+        unityEvent:
+          m_PersistentCalls:
+            m_Calls: []
+      enemyBatch:
+      - {fileID: 480428550303005909, guid: d78780e8869c06743bfc2dcf1c26c4aa, type: 3}
+      - {fileID: 4210210132979722889, guid: 637b9d4b9c5081247a9c11aff171998e, type: 3}
+      - {fileID: 4210210132979722889, guid: 637b9d4b9c5081247a9c11aff171998e, type: 3}
+    - timestampInSeconds: 187
+      timestampFormatted: 03:07
+      eventCallbacks:
+        unityEvent:
+          m_PersistentCalls:
+            m_Calls: []
+      enemyBatch:
+      - {fileID: 480428550303005909, guid: d78780e8869c06743bfc2dcf1c26c4aa, type: 3}
+      - {fileID: 480428550303005909, guid: d78780e8869c06743bfc2dcf1c26c4aa, type: 3}
+      - {fileID: 4210210132979722889, guid: 637b9d4b9c5081247a9c11aff171998e, type: 3}
+      - {fileID: 4210210132979722889, guid: 637b9d4b9c5081247a9c11aff171998e, type: 3}
+    - timestampInSeconds: 191
+      timestampFormatted: 03:11
+      eventCallbacks:
+        unityEvent:
+          m_PersistentCalls:
+            m_Calls: []
+      enemyBatch:
+      - {fileID: 480428550303005909, guid: d78780e8869c06743bfc2dcf1c26c4aa, type: 3}
+      - {fileID: 4579851862573548496, guid: beb980beae75b9a42ae40223a26b09eb, type: 3}
+    - timestampInSeconds: 195
+      timestampFormatted: 03:15
+      eventCallbacks:
+        unityEvent:
+          m_PersistentCalls:
+            m_Calls: []
+      enemyBatch:
+      - {fileID: 480428550303005909, guid: d78780e8869c06743bfc2dcf1c26c4aa, type: 3}
+      - {fileID: 4579851862573548496, guid: beb980beae75b9a42ae40223a26b09eb, type: 3}
+    - timestampInSeconds: 198
+      timestampFormatted: 03:18
+      eventCallbacks:
+        unityEvent:
+          m_PersistentCalls:
+            m_Calls: []
+      enemyBatch:
+      - {fileID: 480428550303005909, guid: d78780e8869c06743bfc2dcf1c26c4aa, type: 3}
+    - timestampInSeconds: 200
+      timestampFormatted: 03:20
+      eventCallbacks:
+        unityEvent:
+          m_PersistentCalls:
+            m_Calls: []
+      enemyBatch:
+      - {fileID: 2717563465280112146, guid: 45ac2d3e72879db41bf9ee1bd5ce9501, type: 3}
+    - timestampInSeconds: 210
+      timestampFormatted: 03:30
+      eventCallbacks:
+        unityEvent:
+          m_PersistentCalls:
+            m_Calls: []
+      enemyBatch:
+      - {fileID: 4579851862573548496, guid: beb980beae75b9a42ae40223a26b09eb, type: 3}
+      - {fileID: 4579851862573548496, guid: beb980beae75b9a42ae40223a26b09eb, type: 3}
+    - timestampInSeconds: 220
+      timestampFormatted: 03:40
+      eventCallbacks:
+        unityEvent:
+          m_PersistentCalls:
+            m_Calls: []
+      enemyBatch:
+      - {fileID: 480428550303005909, guid: d78780e8869c06743bfc2dcf1c26c4aa, type: 3}
+    - timestampInSeconds: 230
+      timestampFormatted: 03:50
+      eventCallbacks:
+        unityEvent:
+          m_PersistentCalls:
+            m_Calls: []
+      enemyBatch:
+      - {fileID: 480428550303005909, guid: d78780e8869c06743bfc2dcf1c26c4aa, type: 3}
+    - timestampInSeconds: 235
+      timestampFormatted: 03:55
+      eventCallbacks:
+        unityEvent:
+          m_PersistentCalls:
+            m_Calls: []
+      enemyBatch:
+      - {fileID: 2717563465280112146, guid: 45ac2d3e72879db41bf9ee1bd5ce9501, type: 3}
+      - {fileID: 2717563465280112146, guid: 45ac2d3e72879db41bf9ee1bd5ce9501, type: 3}
+    spawnDebugEnemyEvents: []
+  weaponUpgradeManager:
+    weaponDatabase:
+    - {fileID: 11400000, guid: 5a389d344323a0940a88548151be01a0, type: 2}
+    - {fileID: 11400000, guid: 7bae43b72744ba8499a5453b3be89803, type: 2}
+    - {fileID: 11400000, guid: 54c73147a8a069544868053419fa0969, type: 2}
+    - {fileID: 11400000, guid: 569b77d9857782048a16ce347ee67edb, type: 2}
+    - {fileID: 11400000, guid: 1269f47e596280b4ea057e527ccc4243, type: 2}
+    - {fileID: 11400000, guid: 02a0e301fafe6a941836c5f0df12e5c6, type: 2}
+    playerInventoryReference: {fileID: 0}
+    playerStartingPlan: {fileID: 11400000, guid: 5a389d344323a0940a88548151be01a0, type: 2}
+    upgradesAvailablePerLevel: 3
+    onLevelUpChannel: {fileID: 11400000, guid: 12065afae534b5d44b27039d0a206374, type: 2}
+    playerCurrentlyEquippedPlans: []
+    currentlyAvailablePlans: []
+  globalVariableManager:
+    gameBaseVariables:
+      <CurrentLevel>k__BackingField: 1
+      <ExperienceNeeded>k__BackingField: 15
+      <CurrentExperience>k__BackingField: 0
+    gameCurrentVariables:
+      <CurrentLevel>k__BackingField: 0
+      <ExperienceNeeded>k__BackingField: 0
+      <CurrentExperience>k__BackingField: 0
+    experienceNeededIncrease: 1.25
+    experienceNeededCap: 200
+    xpBarController:
+      onMaxValueUpdated: {fileID: 11400000, guid: 40ddeb8e2dbdd0743bc9384284179e46, type: 2}
+      onCurrentValueUpdated: {fileID: 11400000, guid: c28db6d21fd4cc548a72f8815dcee919, type: 2}
+    onLevelUp: {fileID: 11400000, guid: 12065afae534b5d44b27039d0a206374, type: 2}
+    onUpdateLevelValue: {fileID: 11400000, guid: 990f16423c416864db0028b0e405fd15, type: 2}
+  playerCharacter: {fileID: 0}
+  spawnManager: {fileID: 0}
+  inputManager: {fileID: 0}
+  timeManager:
+    onSetGamePaused: {fileID: 11400000, guid: bd71b75cc53da714ebacf9612b7c1658, type: 2}
+  timerPollingInterval: 1
+  onDefeatChannel: {fileID: 11400000, guid: ce7f1d0139737054db83ae3adac812ea, type: 2}
+  onOpenPauseMenuChannel: {fileID: 11400000, guid: 314fbefc6ea4c42428fb797d7245f361, type: 2}
+  onCloseAllMenusChannel: {fileID: 11400000, guid: d200c4e7198ecc844b112cb38ce492cd, type: 2}
+  onToggleHudChannel: {fileID: 11400000, guid: 949c69b1086c4924292fc7990d8c38e9, type: 2}
+  onStartGameChannel: {fileID: 11400000, guid: 4d8c5cf7ea872e544b46843ac88fd4c1, type: 2}
+  onEndGameChannel: {fileID: 11400000, guid: 642bc0dc330ce60499a85b8e230efb84, type: 2}
+  onExitAppChannel: {fileID: 11400000, guid: e22111df79a38544c9dd2a2f309d1164, type: 2}
+  spawnEnemies: 1

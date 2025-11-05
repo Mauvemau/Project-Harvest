@@ -1,4 +1,3 @@
-using Unity.VisualScripting;
 using UnityEngine;
 
 [System.Serializable]
@@ -10,6 +9,7 @@ public class GlobalVariableManager {
     [Header("Game Variables Settings")]
     [Tooltip("Each level earned, the experience needed to level up is multiplied by this amount")]
     [SerializeField] private float experienceNeededIncrease = 1.15f;
+    [SerializeField] private float experienceNeededCap = 200f;
 
     [Header("Controllers")]
     [SerializeField] private ProgressBarController xpBarController;
@@ -33,6 +33,9 @@ public class GlobalVariableManager {
             gameCurrentVariables.CurrentExperience -= gameCurrentVariables.ExperienceNeeded;
             gameCurrentVariables.CurrentLevel++;
             gameCurrentVariables.ExperienceNeeded *= experienceNeededIncrease;
+            if (gameCurrentVariables.ExperienceNeeded > experienceNeededCap) {
+                gameCurrentVariables.ExperienceNeeded = experienceNeededCap;
+            }
 
             UpdateCurrentLevelUI();
             if (onLevelUp) {
