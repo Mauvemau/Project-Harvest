@@ -295,10 +295,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   loadOnBoot:
   - sceneAsset: {fileID: 102900000, guid: 06015514ab4c881439d2c3c98f1deb98, type: 3}
-    sceneIndex: 2
+    sceneIndex: 3
   - sceneAsset: {fileID: 102900000, guid: 375b7b6047d0ed942a992aa0fa16c592, type: 3}
     sceneIndex: 1
-  bootLoadQueue: 0200000001000000
+  - sceneAsset: {fileID: 102900000, guid: 5679e9f70056fc341ac8f6436db74a94, type: 3}
+    sceneIndex: 2
+  bootLoadQueue: 030000000100000002000000
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
