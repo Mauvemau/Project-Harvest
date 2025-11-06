@@ -9,6 +9,7 @@ public class BulletPresetSO : ScriptableObject {
     [SerializeReference, SubclassSelector] private IBulletStrategy behaviour = new LinearShotStrategy();
 
     [Header("Audio Settings")] 
+    [SerializeField] private AK.Wwise.Event shotAudioEvent;
     [SerializeField] private AK.Wwise.Event hitAudioEvent;
     
     [Header("Visual Settings")]
@@ -18,5 +19,6 @@ public class BulletPresetSO : ScriptableObject {
     public IBulletStrategy Behaviour => behaviour;
     public Sprite Sprite => sprite;
     public Color Tint => tint;
+    public AK.Wwise.Event ShotAudioEvent => shotAudioEvent;
     public AK.Wwise.Event HitAudioEvent => hitAudioEvent;
 }

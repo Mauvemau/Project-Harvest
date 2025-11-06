@@ -13,12 +13,26 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID MANDRAKE_STEPS = 282088238U;
         static const AkUniqueID PLAY_BLACKBERRYHIT = 2538688676U;
         static const AkUniqueID PLAY_BOOMERANGTHROW = 2116017054U;
         static const AkUniqueID PLAY_BUTTONHOVER = 479606568U;
+        static const AkUniqueID PLAY_BUTTONPAUSE = 2750761056U;
         static const AkUniqueID PLAY_BUTTONPRESS = 2652178615U;
+        static const AkUniqueID PLAY_MANDRAGORAHEALERSPAWN = 255250776U;
         static const AkUniqueID PLAY_MANDRAGORASHOOTER = 3211203716U;
+        static const AkUniqueID PLAY_MANDRAGORASHOOTERDEATH = 3898840282U;
+        static const AkUniqueID PLAY_SCHYTHEATTACK = 126154U;
+        static const AkUniqueID PLAY_SHOOTERMANDRAKECRY = 1803350251U;
+        static const AkUniqueID PLAY_SHOOTERMANDRAKERECIBEDAMAGE = 1618169002U;
+        static const AkUniqueID PLAY_SMALLMANDRAKECRY = 3814284364U;
+        static const AkUniqueID PLAY_SMALLMANDRAKERECIBEDAMAGE = 1332341351U;
+        static const AkUniqueID PLAY_TOROMANDRAKECRY = 4031256493U;
+        static const AkUniqueID PLAY_TOROMANDRAKERECIBEDAMAGE = 1971773272U;
         static const AkUniqueID START = 1281810935U;
+        static const AkUniqueID TARANTULA_ATTACK = 4165231998U;
+        static const AkUniqueID TARANTULA_HIT = 3994421637U;
+        static const AkUniqueID WITCH_STEPS = 2001225474U;
     } // namespace EVENTS
 
     namespace STATES
@@ -39,6 +53,17 @@ namespace AK
 
     namespace SWITCHES
     {
+        namespace ATTACK_TARANTULA
+        {
+            static const AkUniqueID GROUP = 2860818536U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID HIT = 1116398592U;
+                static const AkUniqueID LOOP = 691006007U;
+            } // namespace SWITCH
+        } // namespace ATTACK_TARANTULA
+
         namespace BOOMERANG
         {
             static const AkUniqueID GROUP = 1198215643U;
@@ -90,7 +115,6 @@ namespace AK
 
     namespace BUSSES
     {
-        static const AkUniqueID DISTANCIA = 2914972013U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
         static const AkUniqueID MUSICBUS = 2886307548U;
     } // namespace BUSSES

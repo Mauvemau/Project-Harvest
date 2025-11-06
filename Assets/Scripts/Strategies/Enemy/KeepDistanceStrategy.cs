@@ -21,7 +21,8 @@ public class KeepDistanceStrategy : ICharacterBehaviourStrategy {
 
     public Vector2 GetDirectionVector() => _lookDirection;
 
-    public float GetComforRadius() => comfortRadius;
+    public bool GetIsAtTargetPosition() => false;
+    public float GetComfortRadius() => comfortRadius;
     public float GetAwarenessRadius() => awarenessRadius;
 
     public void HandleMovement(Transform transform, Rigidbody2D rb, Transform targetTransform, float movementSpeed, Vector2 pushVelocity) {
@@ -55,5 +56,10 @@ public class KeepDistanceStrategy : ICharacterBehaviourStrategy {
         else {
             _lookDirection = delta.normalized;
         }
+    }
+    
+    public void Reset() {
+        _gripTimer = 0f;
+        _lookDirection = Vector2.zero;
     }
 }

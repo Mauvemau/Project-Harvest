@@ -14,6 +14,7 @@ public class Bullet : MonoBehaviour, IBullet {
     private Rigidbody2D _rb;
     private Vector2 _aimDirection;
     private float _damage = 0f;
+    private AK.Wwise.Event _shotSoundEffect;
     private AK.Wwise.Event _hitSoundEffect;
 
     private BulletStats _currentBulletStats;
@@ -24,7 +25,7 @@ public class Bullet : MonoBehaviour, IBullet {
 
     private readonly HashSet<Collider2D> _currentOverlaps = new HashSet<Collider2D>();
 
-    public void Shoot(BulletPresetSO presetToSet, Vector2 direction, LayerMask targetLayer, float damage, BulletStats stats, Transform weaponTransform = null) {
+    public void Shoot(BulletPresetSO presetToSet, Vector2 direction, LayerMask targetLayer, float damage, BulletStats stats, Transform weaponTransform = null, bool mirrored = false, AK.Wwise.Switch audioSwitch = null) {
         if (presetToSet) {
             preset = presetToSet;
             SetUpPreset();
@@ -36,12 +37,17 @@ public class Bullet : MonoBehaviour, IBullet {
 
         _currentBulletStats = stats;
 
+        _shotSoundEffect = preset.ShotAudioEvent;
         _hitSoundEffect = preset.HitAudioEvent;
 
         _timeOfDeath = Time.time + _currentBulletStats.lifeTime;
         currentBehaviour.Init(transform, _rb, _aimDirection, _currentBulletStats.speed, weaponTransform);
+        _spriteRenderer.flipX = mirrored;
         _spriteRenderer.enabled = true;
         _shot = true;
+
+        audioSwitch?.SetValue(gameObject);
+        _shotSoundEffect?.Post(gameObject);
     }
 
     private void SetUpPreset() {

@@ -15,4 +15,4 @@ MonoBehaviour:
   objectName: Play_BoomerangThrow
   id: 2116017054
   guid: FF79C0D0-479A-4858-9AA6-736D8CCB29AD
-  IsInUserDefinedSoundBank: 0
+  IsInUserDefinedSoundBank: 1

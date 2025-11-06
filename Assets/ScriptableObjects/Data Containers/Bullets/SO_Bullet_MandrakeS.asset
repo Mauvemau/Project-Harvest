@@ -14,6 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   behaviour:
     rid: 8748630540952797304
+  shotAudioEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 58f7911dcb5ec0c40accd9ea98634cdd, type: 2}
   hitAudioEvent:
     idInternal: 0
     valueGuidInternal: 
@@ -25,4 +29,5 @@ MonoBehaviour:
     RefIds:
     - rid: 8748630540952797304
       type: {class: LinearShotStrategy, ns: , asm: Assembly-CSharp}
-      data: 
+      data:
+        fixedRotation: 0

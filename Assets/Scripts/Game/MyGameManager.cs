@@ -5,10 +5,10 @@ using Random = UnityEngine.Random;
 public class MyGameManager : MonoBehaviour {
     [Header("Gameplay Events")]
     [SerializeField] GameplayEventManager gameplayEventManager;
-    
-    [Header("Weapon Upgrades Manager")] 
+
+    [Header("Weapon Upgrades Manager")]
     [SerializeField] private WeaponUpgradeManager weaponUpgradeManager;
-    
+
     [Header("Global Variables")]
     [SerializeField] private GlobalVariableManager globalVariableManager;
 
@@ -17,13 +17,14 @@ public class MyGameManager : MonoBehaviour {
     [SerializeField] private SpawnerPH spawnManager;
     [SerializeField] private InputManager inputManager;
 
-    [Header("Game Time")] 
+    [Header("Game Time")]
     [SerializeField] private GameTimeManager timeManager;
     [SerializeField] private float timerPollingInterval = 1f;
 
-    [Header("Event Invokers")] 
+    [Header("Event Invokers")]
     [SerializeField] private VoidEventChannelSO onDefeatChannel;
     [SerializeField] private VoidEventChannelSO onOpenPauseMenuChannel;
+    [SerializeField] private VoidEventChannelSO onCloseAllMenusChannel;
     [SerializeField] private BoolEventChannelSO onToggleHudChannel;
 
     [Header("Event Listeners")]
@@ -32,7 +33,7 @@ public class MyGameManager : MonoBehaviour {
     [SerializeField] private VoidEventChannelSO onExitAppChannel;
     
     [Header("Debug Controls")]
-    [SerializeField] private bool spawnOnStart = true;
+    [SerializeField] private bool spawnEnemies = true;
     
     private bool _gameStarted = false;
     private ITimer _currentGameTimer;
@@ -59,12 +60,10 @@ public class MyGameManager : MonoBehaviour {
     private void TogglePause() {
         if (!_gameStarted) return;
         if (!timeManager.IsGamePaused()) {
-            if (onOpenPauseMenuChannel) {
-                onOpenPauseMenuChannel?.RaiseEvent();
-            }
+            onOpenPauseMenuChannel?.RaiseEvent();
         }
         else {
-            // Allow player to close the pause menu by hitting the pause key again
+            // onCloseAllMenusChannel?.RaiseEvent();
         }
     }
     
@@ -109,7 +108,7 @@ public class MyGameManager : MonoBehaviour {
         playerCharacter.SetActive(true);
         inputManager.SetPlayerInputEnabled(true);
         SetHudEnabled(true);
-        if (spawnOnStart) {
+        if (spawnEnemies) {
             spawnManager.SetSpawning(true);
         }
         _currentGameTimer.Start();
@@ -122,8 +121,8 @@ public class MyGameManager : MonoBehaviour {
         timeManager.Update();
         
         if (timeManager.IsGamePaused()) return;
-        gameplayEventManager.Update(_currentGameTimer.CurrentTime);
-        
+        gameplayEventManager.Update(_currentGameTimer.CurrentTime, !spawnEnemies);
+
         if (Time.time < _nextTimerPoll) return;
         _nextTimerPoll = Time.time + timerPollingInterval;
         OnUpdateGameTimer?.Invoke(_currentGameTimer.CurrentTime);
@@ -136,7 +135,6 @@ public class MyGameManager : MonoBehaviour {
     }
     
     private void OnValidate() {
-        globalVariableManager.ResetPlayerVariables();
         gameplayEventManager.OnValidate();
     }
 

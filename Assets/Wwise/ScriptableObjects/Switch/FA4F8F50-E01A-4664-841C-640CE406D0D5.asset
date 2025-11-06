@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad57f9fa10493b1498d657568c7d1584, type: 3}
+  m_Name: FA4F8F50-E01A-4664-841C-640CE406D0D5
+  m_EditorClassIdentifier: 
+  objectName: Boomerang_Lev12
+  id: 152774810
+  guid: FA4F8F50-E01A-4664-841C-640CE406D0D5
+  WwiseSwitchGroupReference: {fileID: 11400000, guid: 8bf5f13c85244c645a72412e84ac73ea, type: 2}

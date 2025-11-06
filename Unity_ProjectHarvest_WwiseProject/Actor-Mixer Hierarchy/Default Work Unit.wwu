@@ -585,6 +585,47 @@
 								<ActiveSource Name="hvst_sfx_ui_buttonPress_v1" ID="{78FF311D-5B0E-43F4-9949-7815579B1448}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="hvst_sfx_pauseButton_v1" ID="{FD0FC02F-9EFC-4C13-B5D0-672DCB121408}" ShortID="858026137">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="hvst_sfx_pauseButton_v1" ID="{223FFC5D-825B-4537-B92F-CEB58BAB1C32}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.176539039611816"/>
+										<Property Name="LoopBegin" Type="Real64" Value="0"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>hvst_sfx_pauseButton_v1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="539330812"/>
+									</MediaIDList>
+								</AudioFileSource>
+								<AudioFileSource Name="hvst_sfx_pauseButton" ID="{7F916B3C-FB67-41C3-BABB-3A11E527EBAC}">
+									<Language>SFX</Language>
+									<AudioFile>hvst_sfx_pauseButton.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="268000570"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="hvst_sfx_pauseButton" ID="{7F916B3C-FB67-41C3-BABB-3A11E527EBAC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Enemigos" ID="{CF062D76-2975-4BC0-A193-0375D3C780F3}" ShortID="417569760">
@@ -592,11 +633,26 @@
 						<RandomSequenceContainer Name="MandragoraShooter" ID="{A2F8336D-88F7-4318-9C98-BB155D4EC2D9}" ShortID="765850060">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>20</Value>
+									</ValueList>
+								</Property>
 								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 								<Property Name="MaxSoundPerInstance" Type="int16">
 									<ValueList>
 										<Value>3</Value>
 									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>200</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{B238E6B1-AB64-42F6-947B-0C9D742F3AD3}"/>
+										</ModifierInfo>
+									</ModifierList>
 								</Property>
 								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="20"/>
 								<Property Name="UseMaxSoundPerInstance" Type="bool">
@@ -729,6 +785,350 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<BlendContainer Name="MandragoraShooterDeath" ID="{E1B2F549-A6CC-48B3-AEF3-81B4DCCE8C12}" ShortID="415008553">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{6BD1A792-49AA-4DC0-A1F8-FBA8DDA260DB}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="200"/>
+													<Property Name="Min" Type="Real64" Value="-200"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="5m" ID="{7B443898-9A9F-48F2-9B18-8249E7E06532}" WorkUnitID="{534FA15F-9837-4037-8FF4-5DDCE2062302}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Splat" ID="{27C267BE-877B-469A-9A8F-9B237DDE0C1C}" ShortID="727042823">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="20"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="5m" ID="{7B443898-9A9F-48F2-9B18-8249E7E06532}" WorkUnitID="{534FA15F-9837-4037-8FF4-5DDCE2062302}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="ph_sfx_blackberryDeath_splat_var1_v1" ID="{716E8486-ABA5-4119-96AD-0BC292F0C617}" ShortID="225565048">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ph_sfx_blackberryDeath_splat_var1_v1" ID="{736EAAE5-2093-4B40-9059-69E036A867FE}">
+													<Language>SFX</Language>
+													<AudioFile>ph_sfx_blackberryDeath_splat_var1_v1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="230122180"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="ph_sfx_blackberryDeath_splat_var1_v1" ID="{736EAAE5-2093-4B40-9059-69E036A867FE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ph_sfx_blackberryDeath_splat_var2_v1" ID="{67580D76-FCA5-4D45-8530-9097A9C6D43B}" ShortID="269999897">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ph_sfx_blackberryDeath_splat_var2_v1" ID="{B61341EA-F692-4710-A531-05B989899AFC}">
+													<Language>SFX</Language>
+													<AudioFile>ph_sfx_blackberryDeath_splat_var2_v1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="298526407"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="ph_sfx_blackberryDeath_splat_var2_v1" ID="{B61341EA-F692-4710-A531-05B989899AFC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ph_sfx_blackberryDeath_splat_var3_v1" ID="{338E5C42-9724-4F03-AB0F-A0B3724ED8DA}" ShortID="766623586">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ph_sfx_blackberryDeath_splat_var3_v1" ID="{EC78FDF9-E045-4E4F-8F64-A9F6EDECB750}">
+													<Language>SFX</Language>
+													<AudioFile>ph_sfx_blackberryDeath_splat_var3_v1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="692461348"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="ph_sfx_blackberryDeath_splat_var3_v1" ID="{EC78FDF9-E045-4E4F-8F64-A9F6EDECB750}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ph_sfx_blackberryDeath_splat_var4_v1" ID="{B22B860D-0F42-4D33-A589-4AC425B17459}" ShortID="1061616891">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ph_sfx_blackberryDeath_splat_var4_v1" ID="{69A2B78E-593C-49C7-ADA7-E847D4E7C5E9}">
+													<Language>SFX</Language>
+													<AudioFile>ph_sfx_blackberryDeath_splat_var4_v1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="430685881"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="ph_sfx_blackberryDeath_splat_var4_v1" ID="{69A2B78E-593C-49C7-ADA7-E847D4E7C5E9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Voice" ID="{E4AC6999-F521-4223-8AF3-D98FE0F01C29}" ShortID="340537634">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>0.15</Value>
+											</ValueList>
+										</Property>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="20"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="5m" ID="{7B443898-9A9F-48F2-9B18-8249E7E06532}" WorkUnitID="{534FA15F-9837-4037-8FF4-5DDCE2062302}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="ph_sfx_blackberryDeath_voice_var1_v1" ID="{233F7315-3036-4B13-93AA-DFA0378A5489}" ShortID="482921719">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ph_sfx_blackberryDeath_voice_var1_v1" ID="{7570D8FE-AB54-43DA-A405-706B9F9F8E89}">
+													<Language>SFX</Language>
+													<AudioFile>ph_sfx_blackberryDeath_voice_var1_v1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="930955490"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="ph_sfx_blackberryDeath_voice_var1_v1" ID="{7570D8FE-AB54-43DA-A405-706B9F9F8E89}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ph_sfx_blackberryDeath_voice_var2_v1" ID="{E82A424E-5992-4454-9BAE-8C71878C0EA4}" ShortID="1024347839">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ph_sfx_blackberryDeath_voice_var2_v1" ID="{FEE6F7B7-CDA1-4DB3-815E-EDE2583C416A}">
+													<Language>SFX</Language>
+													<AudioFile>ph_sfx_blackberryDeath_voice_var2_v1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="100910135"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="ph_sfx_blackberryDeath_voice_var2_v1" ID="{FEE6F7B7-CDA1-4DB3-815E-EDE2583C416A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ph_sfx_blackberryDeath_voice_var3_v1" ID="{31F4B282-9DC8-4062-A3AF-BF9C8B67D787}" ShortID="797122983">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ph_sfx_blackberryDeath_voice_var3_v1" ID="{073286E9-4D02-491A-8300-A267A02A8D7E}">
+													<Language>SFX</Language>
+													<AudioFile>ph_sfx_blackberryDeath_voice_var3_v1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="449319291"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="ph_sfx_blackberryDeath_voice_var3_v1" ID="{073286E9-4D02-491A-8300-A267A02A8D7E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ph_sfx_blackberryDeath_voice_var4_v1" ID="{0B0CD689-39E7-45A4-9BCA-AD8F13A2BF09}" ShortID="58660249">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ph_sfx_blackberryDeath_voice_var4_v1" ID="{1D451EBB-678F-4570-B15D-6E5D65FF0A1E}">
+													<Language>SFX</Language>
+													<AudioFile>ph_sfx_blackberryDeath_voice_var4_v1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="576972095"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="ph_sfx_blackberryDeath_voice_var4_v1" ID="{1D451EBB-678F-4570-B15D-6E5D65FF0A1E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="silencio" ID="{C43D3DB2-4C72-4C80-9B56-8ED25463E520}" ShortID="987821173">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-96</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ph_sfx_blackberryDeath_voice_var1_v1" ID="{10A39D7A-346B-412E-A140-DA09DD4F82CD}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.0356644050091032"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>ph_sfx_blackberryDeath_voice_var1_v1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="608186103"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="ph_sfx_blackberryDeath_voice_var1_v1" ID="{10A39D7A-346B-412E-A140-DA09DD4F82CD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="silencio2" ID="{D15ECC8B-21EE-41AB-B235-28ABF5ACF533}" ShortID="1061576328">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-96</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ph_sfx_blackberryDeath_voice_var1_v1" ID="{868D6A58-FB73-43E1-870C-26FEF75B7080}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.0356644050091032"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>ph_sfx_blackberryDeath_voice_var1_v1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="608186103"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="ph_sfx_blackberryDeath_voice_var1_v1" ID="{868D6A58-FB73-43E1-870C-26FEF75B7080}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</BlendContainer>
+						<Sound Name="MandragoraHealerSpawn" ID="{DF497F25-3F32-4468-B964-322CB0DF943E}" ShortID="275469647">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="hvst_sfx_mandragoraHealer_spawn_v1" ID="{44E06052-9DF5-4234-B7DA-C639E22543DC}">
+									<Language>SFX</Language>
+									<AudioFile>hvst_sfx_mandragoraHealer_spawn_v1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="641285182"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="hvst_sfx_mandragoraHealer_spawn_v1" ID="{44E06052-9DF5-4234-B7DA-C639E22543DC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

@@ -25,4 +25,4 @@ MonoBehaviour:
     upgradeDescription: Attack Speed increases by another 0.5
   - weaponPrefab: {fileID: 4038727559878163834, guid: 8653248e4304be34e9e2c1c4ebbcaf31, type: 3}
     upgradeDescription: Attack Damage increases by another 0.5
-  weaponIcon: {fileID: 21300000, guid: 7b5adb2e4d8a3784c840d198e19705d0, type: 3}
+  weaponIcon: {fileID: 21300000, guid: 6c93310fb0d8a494597c064185732bad, type: 3}

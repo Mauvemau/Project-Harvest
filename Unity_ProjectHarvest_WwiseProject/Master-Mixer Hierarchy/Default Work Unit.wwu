@@ -10,13 +10,6 @@
 						</Reference>
 					</ReferenceList>
 				</Bus>
-				<Bus Name="Distancia" ID="{14A05799-81F9-4641-BB7E-4B7B76E026B9}">
-					<ReferenceList>
-						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
-							<ObjectRef Name="System" ID="{A71B2FF9-15EC-45CB-932D-660469434D45}" WorkUnitID="{C5BF3387-3581-4B28-9032-03338418B0A3}"/>
-						</Reference>
-					</ReferenceList>
-				</Bus>
 				<Bus Name="MusicBus" ID="{56E2DF6F-FCC7-4A05-A0F4-ECD6D4C0E520}">
 					<ReferenceList>
 						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">

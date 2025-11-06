@@ -2,6 +2,8 @@ using UnityEngine;
 
 [System.Serializable]
 public class LinearShotStrategy : IBulletStrategy {
+    [SerializeField] private bool fixedRotation = false;
+    
     private Transform _bulletTransform;
     private Rigidbody2D _rb;
     private Vector2 _aimDirection;
@@ -25,6 +27,8 @@ public class LinearShotStrategy : IBulletStrategy {
 
         if (!_bulletTransform) return;
         float angle = Mathf.Atan2(_aimDirection.y, _aimDirection.x) * Mathf.Rad2Deg;
+        
+        if (fixedRotation) return;
         _bulletTransform.rotation = Quaternion.Euler(0f, 0f, angle);
     }
 

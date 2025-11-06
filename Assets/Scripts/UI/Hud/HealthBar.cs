@@ -10,6 +10,9 @@ public class HealthBar : ProgressBar {
     "Example: 0.1 = 0–10% stays Red, 90–100% stays Green, middle still blends Red→Yellow→Green.")]
     [SerializeField, Range(0f, 0.45f)] private float extremeOffset = 0.1f;
 
+    [Header("SFX Settings")] 
+    [SerializeField] private AK.Wwise.RTPC healthAmountRtpc;
+
     private void UpdateHealthBarColor() {
         if (!fillImage) return;
 
@@ -43,5 +46,6 @@ public class HealthBar : ProgressBar {
         }
         
         UpdateHealthBarColor();
+        healthAmountRtpc?.SetGlobalValue((currentValue / maxValue) * 100f);
     }
 }

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{B0584BF8-363A-4994-B333-BC68BAEE0201}" SchemaVersion="123" RootDocumentID="{D5FE0764-4F64-45A3-BBE5-9C04E443A2D8}" ParentDocumentID="{D5FE0764-4F64-45A3-BBE5-9C04E443A2D8}">
+	<Events>
+		<WorkUnit Name="RosarioWU" ID="{B0584BF8-363A-4994-B333-BC68BAEE0201}" OwnerID="{D5FE0764-4F64-45A3-BBE5-9C04E443A2D8}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="Witch_Steps" ID="{95AEFAB5-0294-473F-BDBB-48A0D71133B4}">
+					<ChildrenList>
+						<Action Name="" ID="{37564DA9-914E-484F-815D-1D0B9FED9AC3}" ShortID="139271775">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Steps" ID="{8709BC6A-AA90-4B17-8402-3FC1CF3280D2}" WorkUnitID="{061E61C0-CF7C-48F0-988D-B18066483043}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{74770DC0-D5F5-4F87-AA4A-F7A8BA748A42}" ShortID="302791521">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Cloths" ID="{268E93F5-652C-434D-90A4-578ACF3C10D2}" WorkUnitID="{061E61C0-CF7C-48F0-988D-B18066483043}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Mandrake_Steps" ID="{DAA10537-ED3C-4974-9691-73D87F26D5D6}">
+					<ChildrenList>
+						<Action Name="" ID="{CB821DA8-7FDC-4250-9107-2268A50A9B59}" ShortID="759394033">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MandrakeS_Steps" ID="{EB617E3B-9AAD-441C-8E4D-E1F2D3E048C6}" WorkUnitID="{061E61C0-CF7C-48F0-988D-B18066483043}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

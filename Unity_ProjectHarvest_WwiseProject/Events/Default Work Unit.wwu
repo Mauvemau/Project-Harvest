@@ -79,6 +79,105 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_SchytheAttack" ID="{EDB76901-2F48-4911-B519-E928D3BAD226}">
+					<ChildrenList>
+						<Action Name="" ID="{FF8CCC02-C0C4-4670-A90F-494309C993CC}" ShortID="302581254">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SchytheAttack" ID="{3933B38B-FAEA-4094-A6F1-62911675F02C}" WorkUnitID="{061E61C0-CF7C-48F0-988D-B18066483043}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Tarantula_Attack" ID="{EEFC995F-6743-48A1-AAF7-9FA72C2E3ED4}">
+					<ChildrenList>
+						<Action Name="" ID="{81BACA17-F966-4266-BBD4-2CEBCF0EA46C}" ShortID="138233885">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="23"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Loop" ID="{68F748C5-8919-4BCA-AAD9-21AFA1583814}" WorkUnitID="{DF53EFBD-A7B1-453C-9F7E-E77A28B7452B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{2C745813-2914-478D-983B-0C6A3DB2B379}" ShortID="326426964">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Tarantula" ID="{3B52C13B-A211-4690-8641-8362B0C9E8B1}" WorkUnitID="{061E61C0-CF7C-48F0-988D-B18066483043}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{948A8C77-A08C-456C-8990-A3CC7DAA851E}" ShortID="316312045">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Tarantula_Attack" ID="{003780D9-A2B7-49B2-8673-83AB410B8C59}" WorkUnitID="{061E61C0-CF7C-48F0-988D-B18066483043}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Tarantula_Hit" ID="{17EE7B9F-0EB1-4D8B-B1B6-0B40AD2CA2C3}">
+					<ChildrenList>
+						<Action Name="" ID="{82426633-37E2-48CB-8FAA-444BD036A94B}" ShortID="947512898">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="23"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Hit" ID="{652CD1DC-A0F5-4F85-965B-E9A7C7AFCB3B}" WorkUnitID="{DF53EFBD-A7B1-453C-9F7E-E77A28B7452B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{9C31406B-789F-4806-9A74-C2311EC2A908}" ShortID="1073466693">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Delay" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Tarantula" ID="{3B52C13B-A211-4690-8641-8362B0C9E8B1}" WorkUnitID="{061E61C0-CF7C-48F0-988D-B18066483043}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_MandragoraShooterDeath" ID="{29464442-2E13-4A13-8167-E5CA6609EA14}">
+					<ChildrenList>
+						<Action Name="" ID="{EB51E1D0-D76C-4276-85E6-612A2F9FAE11}" ShortID="32127719">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MandragoraShooterDeath" ID="{E1B2F549-A6CC-48B3-AEF3-81B4DCCE8C12}" WorkUnitID="{2A900AED-FB27-46FF-9350-EB1B5CFF717C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_ButtonPause" ID="{60D87090-188A-4DC2-8209-E2878E7F1DF3}">
+					<ChildrenList>
+						<Action Name="" ID="{55206E41-B413-44EF-A011-CBDE13C59436}" ShortID="916537810">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="hvst_sfx_pauseButton_v1" ID="{FD0FC02F-9EFC-4C13-B5D0-672DCB121408}" WorkUnitID="{2A900AED-FB27-46FF-9350-EB1B5CFF717C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_MandragoraHealerSpawn" ID="{341980F8-2F6A-4519-8471-A75C08131E35}">
+					<ChildrenList>
+						<Action Name="" ID="{A472B7D3-CD84-48E8-86CD-C82AB392C57B}" ShortID="241482560">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MandragoraHealerSpawn" ID="{DF497F25-3F32-4468-B964-322CB0DF943E}" WorkUnitID="{2A900AED-FB27-46FF-9350-EB1B5CFF717C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<WorkUnit Name="RosarioWU" ID="{B0584BF8-363A-4994-B333-BC68BAEE0201}" PersistMode="Reference"/>
+				<WorkUnit Name="Agustina_WU" ID="{326B3AC4-91B5-4FB7-AA05-E29BC4145962}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

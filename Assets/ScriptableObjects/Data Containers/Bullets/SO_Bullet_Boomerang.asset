@@ -14,6 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   behaviour:
     rid: 8748630608635756764
+  shotAudioEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 0c1c9de550d01fb4a91a4f371e0ad61e, type: 2}
   hitAudioEvent:
     idInternal: 0
     valueGuidInternal: 

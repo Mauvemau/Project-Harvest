@@ -10,6 +10,8 @@ public class Enemy : MonoBehaviour, IDamageable, IPushable, IFacingDirection {
     [SerializeField] private SpriteRenderer characterSpriteReference;
     [Tooltip("A health bar will be updated based on the entity's health values if set")]
     [SerializeField] private HealthBar healthBarReference;
+    [Tooltip("Set if you want the enemy to directly control a weapon")] 
+    [SerializeField] private Weapon weaponRemoteControl;
 
     [Header("Behaviour Settings")]
     [SerializeReference, SubclassSelector] private ICharacterBehaviourStrategy currentBehaviour = new StandbyStrategy();
@@ -25,6 +27,11 @@ public class Enemy : MonoBehaviour, IDamageable, IPushable, IFacingDirection {
     
     [Header("Feedback Settings")] 
     [SerializeField] private DamageFeedbackSprite damageFeedbackManager;
+
+    [Header("SFX Settings")] 
+    [SerializeField] private AK.Wwise.Event spawnAudioEvent;
+    [SerializeField] private AK.Wwise.Event hurtAudioEvent;
+    [SerializeField] private AK.Wwise.Event deathAudioEvent;
 
     [Header("Drops Settings")] 
     [SerializeField] private DropManager dropManager;
@@ -44,6 +51,7 @@ public class Enemy : MonoBehaviour, IDamageable, IPushable, IFacingDirection {
 
     private Rigidbody2D _rb;
     private bool _alive;
+    private bool _loaded;
     private Vector2 _pushVelocity;
 
     //
@@ -73,6 +81,7 @@ public class Enemy : MonoBehaviour, IDamageable, IPushable, IFacingDirection {
         currentHealth = 0;
         _alive = false;
         
+        deathAudioEvent?.Post(gameObject);
         dropManager.HandleRequestDrops(transform.position);
         
         if (disableOnDeath) {
@@ -111,7 +120,7 @@ public class Enemy : MonoBehaviour, IDamageable, IPushable, IFacingDirection {
         UpdateHealthBar();
         
         if (currentHealth > maxHealth) {
-            currentHealth = maxHealth;            
+            currentHealth = maxHealth;
         }
         if (currentHealth <= 0) {
             Kill();
@@ -126,6 +135,10 @@ public class Enemy : MonoBehaviour, IDamageable, IPushable, IFacingDirection {
     public void TakeDamage(float damage) {
         SetCurrentHealth(currentHealth - damage);
         HandleDamageFeedback(damage);
+
+        if (_alive && damage > 0) {
+            hurtAudioEvent?.Post(gameObject);
+        }
     }
     
     public void RequestPush(Vector2 direction, float force) {
@@ -165,6 +178,14 @@ public class Enemy : MonoBehaviour, IDamageable, IPushable, IFacingDirection {
         healthBarReference.SetCurrentValue(currentHealth);
         healthBarReference.gameObject.SetActive(currentHealth < maxHealth);
     }
+
+    private void UpdateWeaponControl() {
+        if (!weaponRemoteControl) return;
+        if (!_alive || currentBehaviour == null || !threatTargetReference) return;
+
+        if (!currentBehaviour.GetIsAtTargetPosition()) return;
+        weaponRemoteControl.PerformManualAttack();
+    }
     
     private void BaseInit() {
         _alive = false;
@@ -183,6 +204,7 @@ public class Enemy : MonoBehaviour, IDamageable, IPushable, IFacingDirection {
 
     private void Update() {
         damageFeedbackManager.Update();
+        UpdateWeaponControl();
     }
 
     private void Awake() {
@@ -194,8 +216,14 @@ public class Enemy : MonoBehaviour, IDamageable, IPushable, IFacingDirection {
     }
     
     private void OnEnable() {
+        currentBehaviour.Reset();
         Revive();
         TryFindThreatTarget();
+        
+        if (_loaded) {
+            spawnAudioEvent?.Post(gameObject);
+        }
+        _loaded = true;
     }
 
     private void OnDisable() {
@@ -207,7 +235,7 @@ public class Enemy : MonoBehaviour, IDamageable, IPushable, IFacingDirection {
         if (currentBehaviour == null) return;
         if (!drawAIGizmo) return;
         UnityEditor.Handles.color = comfortGizmoColor;
-        UnityEditor.Handles.DrawWireDisc(transform.position, Vector3.back, currentBehaviour.GetComforRadius());
+        UnityEditor.Handles.DrawWireDisc(transform.position, Vector3.back, currentBehaviour.GetComfortRadius());
         UnityEditor.Handles.color = awarenessGizmoColor;
         UnityEditor.Handles.DrawWireDisc(transform.position, Vector3.back, currentBehaviour.GetAwarenessRadius());
 #endif

@@ -6,7 +6,8 @@ public class FleeFromTargetStrategy : ICharacterBehaviourStrategy {
 
     public Vector2 GetDirectionVector() => _movementDirection;
 
-    public float GetComforRadius() => 0f;
+    public bool GetIsAtTargetPosition() => false;
+    public float GetComfortRadius() => 0f;
     public float GetAwarenessRadius() => 0f;
 
     public void HandleMovement(Transform transform, Rigidbody2D rb, Transform targetTransform, float movementSpeed, Vector2 pushVelocity) {
@@ -17,5 +18,9 @@ public class FleeFromTargetStrategy : ICharacterBehaviourStrategy {
         Vector2 newPosition = rb.position + move;
 
         rb.MovePosition(newPosition);
+    }
+
+    public void Reset() {
+        _movementDirection = Vector2.zero;
     }
 }

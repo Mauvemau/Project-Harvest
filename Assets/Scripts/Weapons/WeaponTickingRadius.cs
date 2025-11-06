@@ -22,7 +22,7 @@ public class WeaponTickingRadius : Weapon {
 
         scannerReference.SetRadius(BaseStats.attackSize);
         
-        currentOverlaps = scannerReference.GetAll();
+        currentOverlaps = scannerReference.GetAllOverlaps();
         foreach (GameObject other in currentOverlaps) {
             if (other.transform == transform.parent && ignoreParent) continue;
             if (!other.TryGetComponent(out IDamageable damageable)) continue;
