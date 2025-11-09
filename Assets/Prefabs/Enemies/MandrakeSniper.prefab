@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 8496097217356086025}
   - component: {fileID: 6046723007640733290}
   - component: {fileID: 7628224437859476084}
-  - component: {fileID: 5002202156563225772}
+  - component: {fileID: 6203982651953890975}
   m_Layer: 7
   m_Name: MandrakeSniper
   m_TagString: Untagged
@@ -295,7 +295,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         gripDuration: 0.25
---- !u!114 &5002202156563225772
+--- !u!114 &6203982651953890975
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -304,11 +304,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 4579851862573548496}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72c35ae2daac7274894de77ddbf75415, type: 3}
+  m_Script: {fileID: 11500000, guid: 93a337d348dd7604482225b175202c57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rendererReference: {fileID: 5717135572370234133}
-  animatorReference: {fileID: 0}
+  animatorReference: {fileID: 4816263071673566895}
 --- !u!1 &4870758651970462197
 GameObject:
   m_ObjectHideFlags: 0
