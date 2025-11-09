@@ -208,7 +208,7 @@ GameObject:
   - component: {fileID: 3864861913531434941}
   - component: {fileID: 518799155312524631}
   - component: {fileID: 511090880436390149}
-  - component: {fileID: 6604889904921649566}
+  - component: {fileID: 3089288590741208186}
   m_Layer: 6
   m_Name: PlayerCharacter
   m_TagString: Untagged
@@ -398,7 +398,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerCharacterReference: {fileID: 518799155312524631}
   onRequestReviveCharacter: {fileID: 11400000, guid: 4dcd71dcf2885534abb59c24d007d620, type: 2}
---- !u!114 &6604889904921649566
+--- !u!114 &3089288590741208186
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -407,7 +407,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6185150928903746312}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72c35ae2daac7274894de77ddbf75415, type: 3}
+  m_Script: {fileID: 11500000, guid: 93a337d348dd7604482225b175202c57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rendererReference: {fileID: 1777398882794038304}

@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
-public class PlayerCharacter : MonoBehaviour, IMovable, IDamageable, IFacingDirection {
+public class PlayerCharacter : MonoBehaviour, IMovable, IDamageable, IFacingDirection, IAnimable {
     [Header("References")] 
     [SerializeField] private SpriteRenderer characterSpriteReference;
     
@@ -33,10 +33,18 @@ public class PlayerCharacter : MonoBehaviour, IMovable, IDamageable, IFacingDire
     private float _currentSpeed;
     private bool _alive = false;
 
-    // IFacingDirection
-
+    // IAnimable
+    
     public Vector2 GetFacingDirection() {
         return GetMovementDirection();
+    }
+
+    public Vector2 GetMovementDirection() {
+        return _inputDir.normalized;
+    }
+
+    public float GetCurrentHealth() {
+        return currentHealth;
     }
 
     // IDamageable
@@ -119,10 +127,6 @@ public class PlayerCharacter : MonoBehaviour, IMovable, IDamageable, IFacingDire
     public void RequestMovement(Vector2 direction) {
         _inputDir = direction.normalized;
         _currentSpeed = moveSpeed;
-    }
-
-    public Vector2 GetMovementDirection() {
-        return _inputDir.normalized;
     }
 
     // PlayerCharacter
