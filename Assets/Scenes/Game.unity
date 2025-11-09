@@ -642,6 +642,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5522020651172768283, guid: dbcfed1e5bc403b49997de8a71b6dc3e, type: 3}
+      propertyPath: m_ShadowSoftness
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522020651172768283, guid: dbcfed1e5bc403b49997de8a71b6dc3e, type: 3}
+      propertyPath: m_ShadowIntensity
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522020651172768283, guid: dbcfed1e5bc403b49997de8a71b6dc3e, type: 3}
+      propertyPath: m_ShadowSoftnessFalloffIntensity
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 6185150928903746312, guid: dbcfed1e5bc403b49997de8a71b6dc3e, type: 3}
       propertyPath: m_Name
       value: PlayerCharacter
