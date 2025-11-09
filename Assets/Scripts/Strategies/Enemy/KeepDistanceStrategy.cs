@@ -18,10 +18,11 @@ public class KeepDistanceStrategy : ICharacterBehaviourStrategy {
 
     private float _gripTimer = 0f;
     private Vector2 _lookDirection = Vector2.zero;
+    private bool _moving = false;
 
     public Vector2 GetDirectionVector() => _lookDirection;
 
-    public bool GetIsAtTargetPosition() => false;
+    public bool GetIsAtTargetPosition() => !_moving;
     public float GetComfortRadius() => comfortRadius;
     public float GetAwarenessRadius() => awarenessRadius;
 
@@ -42,11 +43,14 @@ public class KeepDistanceStrategy : ICharacterBehaviourStrategy {
         float speedMultiplier = gripCurve.Evaluate(_gripTimer);
         float effectiveSpeed = movementSpeed * speedMultiplier;
 
+        _moving = false;
         if (shouldFlee) {
             _currentStrategy = _fleeStrategy;
+            _moving = true;
         }
         if (shouldFollow) {
             _currentStrategy = _followStrategy;
+            _moving = true;
         }
 
         _currentStrategy.HandleMovement(transform, rb, targetTransform, effectiveSpeed, pushVelocity);

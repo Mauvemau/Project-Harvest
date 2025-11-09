@@ -35,17 +35,9 @@ public class PlayerCharacter : MonoBehaviour, IMovable, IDamageable, IFacingDire
 
     // IAnimable
     
-    public Vector2 GetFacingDirection() {
-        return GetMovementDirection();
-    }
-
-    public Vector2 GetMovementDirection() {
-        return _inputDir.normalized;
-    }
-
-    public float GetCurrentHealth() {
-        return currentHealth;
-    }
+    public Vector2 GetFacingDirection() => GetMovementDirection();
+    public Vector2 GetMovementDirection() => _inputDir.normalized;
+    public float GetCurrentHealth() => currentHealth;
 
     // IDamageable
 

@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
-public class Enemy : MonoBehaviour, IDamageable, IPushable, IFacingDirection {
+public class Enemy : MonoBehaviour, IDamageable, IPushable, IFacingDirection, IAnimable {
     [Header("References")] 
     [Tooltip("The entity to target for behaviour")]
     [SerializeField] private GameObject threatTargetReference;
@@ -54,18 +54,25 @@ public class Enemy : MonoBehaviour, IDamageable, IPushable, IFacingDirection {
     private bool _loaded;
     private Vector2 _pushVelocity;
 
-    //
+    // IAnimable
 
     public Vector2 GetFacingDirection() {
         if (alwaysFaceTarget && threatTargetReference) {
             return (threatTargetReference.transform.position - transform.position).normalized;
         }
-        else {
-            return currentBehaviour.GetDirectionVector();
-        }
+        return currentBehaviour.GetDirectionVector();
     }
 
-    //
+    public Vector2 GetMovementDirection() {
+        if (!currentBehaviour.GetIsAtTargetPosition()) {
+            return (threatTargetReference.transform.position - transform.position).normalized;
+        }
+        return Vector2.zero;
+    }
+    
+    public float GetCurrentHealth() => currentHealth;
+
+    //IDamageable
 
     [ContextMenu("Debug - Revive")]
     public void Revive() {
