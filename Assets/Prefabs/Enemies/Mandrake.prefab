@@ -214,7 +214,7 @@ MonoBehaviour:
   healthBarReference: {fileID: 1449544048425970047}
   weaponReference: {fileID: 1024005839014074042}
   currentBehaviour:
-    rid: 8748630563905077402
+    rid: 3817803669751202114
   maxHealth: 10
   currentHealth: 0
   movementSpeed: 1.5
@@ -300,9 +300,35 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 8748630563905077402
-      type: {class: FollowTargetStrategy, ns: , asm: Assembly-CSharp}
-      data: 
+    - rid: 3817803669751202114
+      type: {class: FollowTargetDistanceStrategy, ns: , asm: Assembly-CSharp}
+      data:
+        stopDistance: 1
+        gripCurve:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 2
+            outSlope: 2
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        gripDuration: 0.25
 --- !u!114 &1393042892669081803
 MonoBehaviour:
   m_ObjectHideFlags: 0

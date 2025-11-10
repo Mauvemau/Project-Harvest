@@ -39,13 +39,13 @@ public class HealthBar : ProgressBar {
     
     protected override void OnValueUpdated() {
         if (!fillImage) return;
-        fillImage.fillAmount = Mathf.Clamp01(currentValue / maxValue);
+        fillImage.fillAmount = Mathf.Clamp01(CurrentValue / MaxValue);
         
         if (percentageText) {
-            percentageText.text = $"{Mathf.Round((currentValue / maxValue) * 100f)}%";
+            percentageText.text = $"{Mathf.Round((CurrentValue / MaxValue) * 100f)}%";
         }
         
         UpdateHealthBarColor();
-        healthAmountRtpc?.SetGlobalValue((currentValue / maxValue) * 100f);
+        healthAmountRtpc?.SetGlobalValue((CurrentValue / MaxValue) * 100f);
     }
 }
