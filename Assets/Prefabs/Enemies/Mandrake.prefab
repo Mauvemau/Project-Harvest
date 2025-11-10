@@ -212,7 +212,7 @@ MonoBehaviour:
   threatTargetReference: {fileID: 0}
   characterSpriteReference: {fileID: 4513896641768806966}
   healthBarReference: {fileID: 1449544048425970047}
-  weaponRemoteControl: {fileID: 0}
+  weaponReference: {fileID: 1024005839014074042}
   currentBehaviour:
     rid: 8748630563905077402
   maxHealth: 10
@@ -220,11 +220,37 @@ MonoBehaviour:
   movementSpeed: 1.5
   pushResistanceMultiplier: 1
   alwaysFaceTarget: 0
+  manuallyAttack: 0
   damageFeedbackManager:
     feedbackDuration: 0.25
     damageTint: {r: 1, g: 0, b: 0, a: 1}
     healingTint: {r: 0, g: 1, b: 0, a: 1}
     colorSwitchCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 2
+        outSlope: 2
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    fadeOutDuration: 5
+    fadeOutCurve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -267,6 +293,7 @@ MonoBehaviour:
     multipleDropOffsetDistance: 1
   findPlayer: 1
   disableOnDeath: 1
+  disableDelay: 4
   drawAIGizmo: 0
   awarenessGizmoColor: {r: 0, g: 1, b: 0, a: 1}
   comfortGizmoColor: {r: 1, g: 0, b: 0, a: 1}
@@ -631,7 +658,7 @@ MonoBehaviour:
     m_TrimEdge: 0.1
     m_FlipX: 0
     m_FlipY: 0
-    m_InitialTrim: 0.05
+    m_InitialTrim: 0
   m_CastingOption: 1
   m_PreviousTrimEdge: 0.1
   m_PreviousEdgeProcessing: 1

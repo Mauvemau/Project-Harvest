@@ -306,7 +306,7 @@ MonoBehaviour:
   threatTargetReference: {fileID: 0}
   characterSpriteReference: {fileID: 3736172957660891269}
   healthBarReference: {fileID: 7798327233268031791}
-  weaponRemoteControl: {fileID: 0}
+  weaponReference: {fileID: 3309110075809740592}
   currentBehaviour:
     rid: 8748630858817863857
   maxHealth: 25
@@ -314,11 +314,37 @@ MonoBehaviour:
   movementSpeed: 1
   pushResistanceMultiplier: 0.1
   alwaysFaceTarget: 0
+  manuallyAttack: 0
   damageFeedbackManager:
     feedbackDuration: 0.25
     damageTint: {r: 1, g: 0, b: 0, a: 1}
     healingTint: {r: 0, g: 1, b: 0, a: 1}
     colorSwitchCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 2
+        outSlope: 2
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    fadeOutDuration: 5
+    fadeOutCurve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -363,6 +389,7 @@ MonoBehaviour:
     multipleDropOffsetDistance: 1
   findPlayer: 1
   disableOnDeath: 1
+  disableDelay: 0
   drawAIGizmo: 1
   awarenessGizmoColor: {r: 0, g: 1, b: 0, a: 1}
   comfortGizmoColor: {r: 1, g: 0, b: 0, a: 1}
@@ -426,7 +453,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2357501004004482985}
   - component: {fileID: 3736172957660891269}
-  - component: {fileID: 3232264454107783087}
   m_Layer: 0
   m_Name: Visual
   m_TagString: Untagged
@@ -504,59 +530,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3232264454107783087
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3482910069086156161}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ShadowGroup: 0
-  m_Priority: 2
-  m_ComponentVersion: 5
-  m_HasRenderer: 1
-  m_UseRendererSilhouette: 1
-  m_CastsShadows: 1
-  m_SelfShadows: 0
-  m_AlphaCutoff: 0.1
-  m_ApplyToSortingLayers: 00000000
-  m_ShapePath:
-  - {x: -0.5, y: -0.5, z: 0}
-  - {x: -0.5, y: 0.5, z: 0}
-  - {x: 0.5, y: 0.5, z: 0}
-  - {x: 0.5, y: -0.5, z: 0}
-  m_ShapePathHash: 0
-  m_InstanceId: 0
-  m_ShadowShape2DComponent: {fileID: 3736172957660891269}
-  m_ShadowShape2DProvider:
-    rid: 3817803640986665292
-  m_ShadowCastingSource: 2
-  m_ShadowMesh:
-    m_Mesh: {fileID: 0}
-    m_LocalBounds:
-      m_Center: {x: -0.0625, y: 0, z: 0}
-      m_Extent: {x: 0.3374939, y: 0.3999939, z: 0}
-    m_EdgeProcessing: 1
-    m_TrimEdge: 0.1
-    m_FlipX: 0
-    m_FlipY: 0
-    m_InitialTrim: 0.1
-  m_CastingOption: 1
-  m_PreviousTrimEdge: 0.1
-  m_PreviousEdgeProcessing: 1
-  m_PreviousShadowCastingSource: 2
-  m_PreviousShadowShape2DSource: {fileID: 0}
-  references:
-    version: 2
-    RefIds:
-    - rid: 3817803640986665292
-      type: {class: ShadowShape2DProvider_SpriteRenderer, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
-      data: 
 --- !u!1001 &1176753431870531062
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -620,13 +593,84 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7927862167760988486, guid: d0ff0774812daed4dbfcbfbf53ddb103, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6988073639682788356}
   m_SourcePrefab: {fileID: 100100000, guid: d0ff0774812daed4dbfcbfbf53ddb103, type: 3}
+--- !u!114 &3309110075809740592 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4447578505610482374, guid: d0ff0774812daed4dbfcbfbf53ddb103, type: 3}
+  m_PrefabInstance: {fileID: 1176753431870531062}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d995a4fc359a53f49b0012391f75aeba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &8207388191333109929 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7039736522651219295, guid: d0ff0774812daed4dbfcbfbf53ddb103, type: 3}
   m_PrefabInstance: {fileID: 1176753431870531062}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9102275819006037168 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7927862167760988486, guid: d0ff0774812daed4dbfcbfbf53ddb103, type: 3}
+  m_PrefabInstance: {fileID: 1176753431870531062}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6988073639682788356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9102275819006037168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ComponentVersion: 2
+  m_LightType: 3
+  m_BlendStyleIndex: 0
+  m_FalloffIntensity: 0.5
+  m_Color: {r: 0.6197551, g: 0.8867924, b: 0.5479708, a: 1}
+  m_Intensity: 1
+  m_LightVolumeIntensity: 1
+  m_LightVolumeEnabled: 0
+  m_ApplyToSortingLayers: 00000000
+  m_LightCookieSprite: {fileID: 0}
+  m_DeprecatedPointLightCookieSprite: {fileID: 0}
+  m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
+  m_OverlapOperation: 0
+  m_NormalMapDistance: 3
+  m_NormalMapQuality: 2
+  m_UseNormalMap: 0
+  m_ShadowsEnabled: 1
+  m_ShadowIntensity: 0.75
+  m_ShadowSoftness: 0.3
+  m_ShadowSoftnessFalloffIntensity: 0.5
+  m_ShadowVolumeIntensityEnabled: 0
+  m_ShadowVolumeIntensity: 0.75
+  m_LocalBounds:
+    m_Center: {x: 0, y: -0.00000011920929, z: 0}
+    m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
+  m_PointLightInnerAngle: 360
+  m_PointLightOuterAngle: 360
+  m_PointLightInnerRadius: 0
+  m_PointLightOuterRadius: 15
+  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 1
+  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffOffset: {x: 0, y: 0}
+  m_ShapePath:
+  - {x: -0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: 0.5, z: 0}
+  - {x: -0.5, y: 0.5, z: 0}
 --- !u!1001 &5738375768693406050
 PrefabInstance:
   m_ObjectHideFlags: 0

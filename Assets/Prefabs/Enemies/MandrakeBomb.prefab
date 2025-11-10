@@ -124,14 +124,14 @@ MonoBehaviour:
     m_Mesh: {fileID: 0}
     m_LocalBounds:
       m_Center: {x: 0.015625, y: -0.15625, z: 0}
-      m_Extent: {x: 0.3843689, y: 0.2437439, z: 0}
+      m_Extent: {x: 0.484375, y: 0.34375, z: 0}
     m_EdgeProcessing: 1
-    m_TrimEdge: 0.1
+    m_TrimEdge: 0
     m_FlipX: 0
     m_FlipY: 0
-    m_InitialTrim: 0.07
+    m_InitialTrim: 0
   m_CastingOption: 1
-  m_PreviousTrimEdge: 0.1
+  m_PreviousTrimEdge: 0
   m_PreviousEdgeProcessing: 1
   m_PreviousShadowCastingSource: 2
   m_PreviousShadowShape2DSource: {fileID: 8645758078438689890}
@@ -258,7 +258,7 @@ MonoBehaviour:
   threatTargetReference: {fileID: 0}
   characterSpriteReference: {fileID: 8645758078438689890}
   healthBarReference: {fileID: 7452876693118103760}
-  weaponRemoteControl: {fileID: 8328827378351597943}
+  weaponReference: {fileID: 8328827378351597943}
   currentBehaviour:
     rid: 3817803483392508030
   maxHealth: 30
@@ -266,11 +266,37 @@ MonoBehaviour:
   movementSpeed: 15
   pushResistanceMultiplier: 1
   alwaysFaceTarget: 0
+  manuallyAttack: 1
   damageFeedbackManager:
     feedbackDuration: 0.25
     damageTint: {r: 1, g: 0, b: 0, a: 1}
     healingTint: {r: 0, g: 1, b: 0, a: 1}
     colorSwitchCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 2
+        outSlope: 2
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    fadeOutDuration: 5
+    fadeOutCurve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
@@ -313,6 +339,7 @@ MonoBehaviour:
     multipleDropOffsetDistance: 1
   findPlayer: 1
   disableOnDeath: 1
+  disableDelay: 0
   drawAIGizmo: 0
   awarenessGizmoColor: {r: 0, g: 1, b: 0, a: 1}
   comfortGizmoColor: {r: 1, g: 0, b: 0, a: 1}
