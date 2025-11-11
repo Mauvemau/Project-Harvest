@@ -83,7 +83,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <BaseStats>k__BackingField:
     attackDamage: 1
-    attackRateInSeconds: 2
+    attackRateInSeconds: 1.5
     attackSize: 0.34
   currentStats:
     attackDamage: 0
@@ -303,7 +303,7 @@ MonoBehaviour:
     - rid: 3817803669751202114
       type: {class: FollowTargetDistanceStrategy, ns: , asm: Assembly-CSharp}
       data:
-        stopDistance: 1
+        stopDistance: 0.75
         gripCurve:
           serializedVersion: 2
           m_Curve:

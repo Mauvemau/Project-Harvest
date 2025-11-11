@@ -9,9 +9,22 @@
 - ESC to close the program.
 
 ### Credits:
-- 2D Artist - Victoria Thjellesen
-- VFX & UI Artist - Lucio Campos
-- Sound Designer - *
-- Composer - *
-- Developer - [Mauvemau](https://github.com/Mauvemau)
-- QA - *
+2D Art:
+- Victoria Thjellesen
+- Lucio Campos
+
+Game Audio:
+- Rosario Añon Suarez
+- Bruno Boselli
+- Santiago Dawson
+- Agustina Soca Rodriguez
+
+Testing & Technical (QA):
+- [Santiago Holgado](https://www.linkedin.com/in/santiago-holgado-231b8530b)
+- Julieta Villalba
+- Gon Sigal
+- Kate Villamizar
+- [Ezequiel Rodriguez](https://www.linkedin.com/in/ezequiel-rodriguez-474041255)
+
+Programming:
+- [Mauvemau](https://github.com/Mauvemau)

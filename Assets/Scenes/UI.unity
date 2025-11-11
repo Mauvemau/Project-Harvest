@@ -1133,6 +1133,7 @@ MonoBehaviour:
   onRequestOpenRemotely: {fileID: 11400000, guid: 314fbefc6ea4c42428fb797d7245f361, type: 2}
   onOpenMenuGamePauseChannel: {fileID: 11400000, guid: bd71b75cc53da714ebacf9612b7c1658, type: 2}
   onToggleHudChannel: {fileID: 11400000, guid: 949c69b1086c4924292fc7990d8c38e9, type: 2}
+  pauseDelay: 0
 --- !u!114 &333730015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4842,6 +4843,7 @@ MonoBehaviour:
   onRequestOpenRemotely: {fileID: 11400000, guid: 12065afae534b5d44b27039d0a206374, type: 2}
   onOpenMenuGamePauseChannel: {fileID: 11400000, guid: bd71b75cc53da714ebacf9612b7c1658, type: 2}
   onToggleHudChannel: {fileID: 11400000, guid: 949c69b1086c4924292fc7990d8c38e9, type: 2}
+  pauseDelay: 0
 --- !u!114 &1133701429
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5247,6 +5249,7 @@ MonoBehaviour:
   onRequestOpenRemotely: {fileID: 11400000, guid: a2f0393f408a762428021fc4c47b7610, type: 2}
   onOpenMenuGamePauseChannel: {fileID: 0}
   onToggleHudChannel: {fileID: 11400000, guid: 949c69b1086c4924292fc7990d8c38e9, type: 2}
+  pauseDelay: 0
 --- !u!114 &1259518055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5341,8 +5344,10 @@ GameObject:
   - component: {fileID: 1276409180}
   - component: {fileID: 1276409179}
   - component: {fileID: 1276409178}
+  - component: {fileID: 1276409182}
   - component: {fileID: 1276409177}
   - component: {fileID: 1276409181}
+  - component: {fileID: 1276409183}
   m_Layer: 5
   m_Name: Defeat Menu
   m_TagString: Untagged
@@ -5450,6 +5455,56 @@ MonoBehaviour:
   onRequestOpenRemotely: {fileID: 11400000, guid: ce7f1d0139737054db83ae3adac812ea, type: 2}
   onOpenMenuGamePauseChannel: {fileID: 11400000, guid: bd71b75cc53da714ebacf9612b7c1658, type: 2}
   onToggleHudChannel: {fileID: 11400000, guid: 949c69b1086c4924292fc7990d8c38e9, type: 2}
+  pauseDelay: 1
+--- !u!225 &1276409182
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1276409176}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &1276409183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1276409176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0867d926044ad3b47b3a8b5c2481967c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeDurationInSeconds: 5
+  fadeCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0.50186485
+      value: 0.0000004847534
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1299804120
 GameObject:
   m_ObjectHideFlags: 0
@@ -6026,6 +6081,7 @@ MonoBehaviour:
   onRequestOpenRemotely: {fileID: 11400000, guid: 3ed85900cadae4f4c939f26768cac7fd, type: 2}
   onOpenMenuGamePauseChannel: {fileID: 0}
   onToggleHudChannel: {fileID: 11400000, guid: 949c69b1086c4924292fc7990d8c38e9, type: 2}
+  pauseDelay: 0
 --- !u!114 &1370717947
 MonoBehaviour:
   m_ObjectHideFlags: 0
