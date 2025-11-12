@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
-public class PlayerCharacter : MonoBehaviour, IMovable, IDamageable, IFacingDirection {
+public class PlayerCharacter : MonoBehaviour, IMovable, IDamageable, IFacingDirection, IAnimable {
     [Header("References")] 
     [SerializeField] private SpriteRenderer characterSpriteReference;
     
@@ -33,11 +33,11 @@ public class PlayerCharacter : MonoBehaviour, IMovable, IDamageable, IFacingDire
     private float _currentSpeed;
     private bool _alive = false;
 
-    // IFacingDirection
-
-    public Vector2 GetFacingDirection() {
-        return GetMovementDirection();
-    }
+    // IAnimable
+    
+    public Vector2 GetFacingDirection() => GetMovementDirection();
+    public Vector2 GetMovementDirection() => _inputDir.normalized;
+    public float GetCurrentHealth() => currentHealth;
 
     // IDamageable
 
@@ -102,6 +102,7 @@ public class PlayerCharacter : MonoBehaviour, IMovable, IDamageable, IFacingDire
         if (!_alive) return;
         currentHealth = 0;
         _alive = false;
+        ResetMovement();
         UpdateHealthBar();
         OnPlayerDeath.Invoke();
     }
@@ -119,10 +120,6 @@ public class PlayerCharacter : MonoBehaviour, IMovable, IDamageable, IFacingDire
     public void RequestMovement(Vector2 direction) {
         _inputDir = direction.normalized;
         _currentSpeed = moveSpeed;
-    }
-
-    public Vector2 GetMovementDirection() {
-        return _inputDir.normalized;
     }
 
     // PlayerCharacter
@@ -151,11 +148,16 @@ public class PlayerCharacter : MonoBehaviour, IMovable, IDamageable, IFacingDire
         damageFeedbackManager.Update();
     }
 
-    private void SoftInit() {
+    private void ResetMovement() {
         _inputDir =  Vector2.zero;
         _currentVelocity =  Vector2.zero; ;
         _slipTimer = 0;
         _currentSpeed = 0;
+        _rb.linearVelocity = _currentVelocity;
+    }
+    
+    private void SoftInit() {
+        ResetMovement();
         transform.position = _spawnPosition;
     }
     

@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class WeaponTickingRadius : Weapon {
@@ -17,12 +18,14 @@ public class WeaponTickingRadius : Weapon {
     [SerializeField, ReadOnly] private GameObject[] currentOverlaps;
     
     private void HandleAttack() {
+        currentOverlaps = scannerReference.GetAllOverlaps();
+        if (currentOverlaps.Length <= 0) return;
+        
         if (Time.time < NextAttack) return;
         NextAttack = Time.time + currentStats.attackRateInSeconds;
 
         scannerReference.SetRadius(BaseStats.attackSize);
         
-        currentOverlaps = scannerReference.GetAllOverlaps();
         foreach (GameObject other in currentOverlaps) {
             if (other.transform == transform.parent && ignoreParent) continue;
             if (!other.TryGetComponent(out IDamageable damageable)) continue;
@@ -37,6 +40,10 @@ public class WeaponTickingRadius : Weapon {
     
     private void Update() {
         HandleAttack();
+    }
+
+    private void OnEnable() {
+        NextAttack = 0;
     }
 
     private void OnDrawGizmos() {

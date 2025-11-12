@@ -11,6 +11,11 @@ public class PlayerController : MonoBehaviour {
         if (!playerCharacterReference) return;
         playerCharacterReference.Heal(amount);
     }
+
+    private void KillCharacter() {
+        if (!playerCharacterReference) return;
+        playerCharacterReference.Kill();
+    }
     
     private void MoveCharacter(Vector2 direction) {
         if (!playerCharacterReference) return;
@@ -36,6 +41,7 @@ public class PlayerController : MonoBehaviour {
     private void OnEnable() {
         InputManager.OnPlayerMoveInputPerformed += MoveCharacter;
         InputManager.OnPlayerInteractInputPerformed += PerformCharacterInteraction;
+        InputManager.OnDebugInstantDeathInputPerformed += KillCharacter;
         HealingCollectible.OnHealthPickup += HealCharacter;
         
         if (onRequestReviveCharacter) {
@@ -46,6 +52,7 @@ public class PlayerController : MonoBehaviour {
     private void OnDisable() {
         InputManager.OnPlayerMoveInputPerformed -= MoveCharacter;
         InputManager.OnPlayerInteractInputPerformed -= PerformCharacterInteraction;
+        InputManager.OnDebugInstantDeathInputPerformed -= KillCharacter;
         HealingCollectible.OnHealthPickup -= HealCharacter;
         
         if (onRequestReviveCharacter) {

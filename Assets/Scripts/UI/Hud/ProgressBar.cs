@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -12,15 +11,15 @@ public class ProgressBar : MonoBehaviour {
     [SerializeField] private FloatEventChannelSO setMaxValueListener;
     [SerializeField] private FloatEventChannelSO setCurrentValueListener;
 
-    protected float maxValue;
-    protected float currentValue;
+    protected float MaxValue;
+    protected float CurrentValue;
 
     protected virtual void OnValueUpdated() {
         if (!fillImage) return;
-        fillImage.fillAmount = Mathf.Clamp01(currentValue / maxValue);
+        fillImage.fillAmount = Mathf.Clamp01(CurrentValue / MaxValue);
         
         if (percentageText) {
-            percentageText.text = $"{Mathf.Round((currentValue / maxValue) * 100f)}%";
+            percentageText.text = $"{Mathf.Round((CurrentValue / MaxValue) * 100f)}%";
         }
     }
     
@@ -30,13 +29,13 @@ public class ProgressBar : MonoBehaviour {
             Debug.LogWarning($"{name}: Trying to set invalid max value: {amount}");
             return;
         }
-        maxValue = amount;
+        MaxValue = amount;
         SetCurrentValue(amount);
     }
     
     // ReSharper disable Unity.PerformanceAnalysis
     public void SetCurrentValue(float amount) {
-        if (maxValue <= 0) {
+        if (MaxValue <= 0) {
             Debug.LogWarning($"{name}: Trying to update value of progress bar with unset max value!");
             return;
         }
@@ -45,11 +44,11 @@ public class ProgressBar : MonoBehaviour {
             amount = 0;
         }
 
-        if (amount > maxValue) {
-            amount = maxValue;
+        if (amount > MaxValue) {
+            amount = MaxValue;
         }
         
-        currentValue = amount;
+        CurrentValue = amount;
         OnValueUpdated();
     }
 

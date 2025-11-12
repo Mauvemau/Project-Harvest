@@ -1,8 +1,7 @@
-using System;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
-public class Enemy : MonoBehaviour, IDamageable, IPushable, IFacingDirection {
+public class Enemy : MonoBehaviour, IDamageable, IPushable, IFacingDirection, IAnimable {
     [Header("References")] 
     [Tooltip("The entity to target for behaviour")]
     [SerializeField] private GameObject threatTargetReference;
@@ -11,7 +10,7 @@ public class Enemy : MonoBehaviour, IDamageable, IPushable, IFacingDirection {
     [Tooltip("A health bar will be updated based on the entity's health values if set")]
     [SerializeField] private HealthBar healthBarReference;
     [Tooltip("Set if you want the enemy to directly control a weapon")] 
-    [SerializeField] private Weapon weaponRemoteControl;
+    [SerializeField] private Weapon weaponReference;
 
     [Header("Behaviour Settings")]
     [SerializeReference, SubclassSelector] private ICharacterBehaviourStrategy currentBehaviour = new StandbyStrategy();
@@ -24,6 +23,9 @@ public class Enemy : MonoBehaviour, IDamageable, IPushable, IFacingDirection {
     [SerializeField] private float movementSpeed = 1f;
     [SerializeField, Range(0f, 1f)] private float pushResistanceMultiplier = 1f;
     [SerializeField] private bool alwaysFaceTarget = false;
+
+    [Header("Weapon Control")] 
+    [SerializeField] private bool manuallyAttack = false;
     
     [Header("Feedback Settings")] 
     [SerializeField] private DamageFeedbackSprite damageFeedbackManager;
@@ -41,6 +43,7 @@ public class Enemy : MonoBehaviour, IDamageable, IPushable, IFacingDirection {
     [SerializeField] private bool findPlayer = false;
     [Tooltip("The GameObject is disabled if currentHealth reaches 0")]
     [SerializeField] private bool disableOnDeath = false;
+    [SerializeField] private float disableDelay = 5f;
 
 #if UNITY_EDITOR
     [Header("Gizmo Settings")]
@@ -53,24 +56,34 @@ public class Enemy : MonoBehaviour, IDamageable, IPushable, IFacingDirection {
     private bool _alive;
     private bool _loaded;
     private Vector2 _pushVelocity;
+    private float _disableTimestamp;
 
-    //
+    // IAnimable
 
     public Vector2 GetFacingDirection() {
         if (alwaysFaceTarget && threatTargetReference) {
             return (threatTargetReference.transform.position - transform.position).normalized;
         }
-        else {
-            return currentBehaviour.GetDirectionVector();
-        }
+        return currentBehaviour.GetDirectionVector();
     }
 
-    //
+    public Vector2 GetMovementDirection() {
+        if(!threatTargetReference) return Vector2.zero;
+        if (!currentBehaviour.GetIsAtTargetPosition()) {
+            return (threatTargetReference.transform.position - transform.position).normalized;
+        }
+        return Vector2.zero;
+    }
+    
+    public float GetCurrentHealth() => currentHealth;
+
+    //IDamageable
 
     [ContextMenu("Debug - Revive")]
     public void Revive() {
         currentHealth = maxHealth;
         _alive = true;
+        weaponReference?.gameObject.SetActive(true);
         _pushVelocity = Vector2.zero;
         UpdateHealthBar();
     }
@@ -80,13 +93,13 @@ public class Enemy : MonoBehaviour, IDamageable, IPushable, IFacingDirection {
         if (!_alive) return;
         currentHealth = 0;
         _alive = false;
+        weaponReference?.gameObject.SetActive(false);
+        damageFeedbackManager.SetDead();
         
         deathAudioEvent?.Post(gameObject);
         dropManager.HandleRequestDrops(transform.position);
-        
-        if (disableOnDeath) {
-            gameObject.SetActive(false);
-        }
+
+        _disableTimestamp = Time.time + disableDelay;
     }
     
     public void SetMaxHealth(float value) {
@@ -167,6 +180,18 @@ public class Enemy : MonoBehaviour, IDamageable, IPushable, IFacingDirection {
     
     //
 
+    private void HandleDisabling() {
+        if (!disableOnDeath) return;
+        if (_disableTimestamp <= 0) return;
+        
+        if (disableDelay > 0) {
+            if (Time.time < _disableTimestamp) return;
+            _disableTimestamp = 0;
+        }
+
+        gameObject.SetActive(false);
+    }
+    
     private void HandleDamageFeedback(float damageReceived) {
         if (!characterSpriteReference) return;
         damageFeedbackManager.PlayDamageFeedback(damageReceived);
@@ -176,15 +201,16 @@ public class Enemy : MonoBehaviour, IDamageable, IPushable, IFacingDirection {
         if (!healthBarReference) return;
         healthBarReference.SetMaxValue(maxHealth);
         healthBarReference.SetCurrentValue(currentHealth);
-        healthBarReference.gameObject.SetActive(currentHealth < maxHealth);
+        healthBarReference.gameObject.SetActive(currentHealth > 0 && currentHealth < maxHealth);
     }
 
     private void UpdateWeaponControl() {
-        if (!weaponRemoteControl) return;
+        if (!manuallyAttack) return;
+        if (!weaponReference) return;
         if (!_alive || currentBehaviour == null || !threatTargetReference) return;
 
         if (!currentBehaviour.GetIsAtTargetPosition()) return;
-        weaponRemoteControl.PerformManualAttack();
+        weaponReference.PerformManualAttack();
     }
     
     private void BaseInit() {
@@ -203,6 +229,7 @@ public class Enemy : MonoBehaviour, IDamageable, IPushable, IFacingDirection {
     }
 
     private void Update() {
+        HandleDisabling();
         damageFeedbackManager.Update();
         UpdateWeaponControl();
     }
@@ -210,6 +237,12 @@ public class Enemy : MonoBehaviour, IDamageable, IPushable, IFacingDirection {
     private void Awake() {
         if (!TryGetComponent(out _rb)) {
             Debug.LogError($"{name}: missing reference \"{nameof(_rb)}\"");
+        }
+        if (!weaponReference && disableDelay > 0) {
+            Debug.LogWarning($"{name}: missing reference \"{nameof(weaponReference)}\", weapon will not be disabled on death!");
+        }
+        if (!weaponReference && manuallyAttack) {
+            Debug.LogWarning($"{name}: missing reference \"{nameof(weaponReference)}\", won't be able to manually attack!");
         }
         BaseInit();
         damageFeedbackManager.Init(characterSpriteReference);
@@ -219,6 +252,7 @@ public class Enemy : MonoBehaviour, IDamageable, IPushable, IFacingDirection {
         currentBehaviour.Reset();
         Revive();
         TryFindThreatTarget();
+        _disableTimestamp = 0;
         
         if (_loaded) {
             spawnAudioEvent?.Post(gameObject);

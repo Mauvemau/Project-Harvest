@@ -74,6 +74,7 @@ public class MyGameManager : MonoBehaviour {
     }
 
     private void HandlePlayerDeath() {
+        if (!_gameStarted) return;
         if (onDefeatChannel) {
             onDefeatChannel?.RaiseEvent();
         }

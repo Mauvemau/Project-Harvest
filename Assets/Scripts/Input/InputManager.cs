@@ -17,6 +17,7 @@ public class InputManager : MonoBehaviour {
     [Header("DebugAction")] 
     [SerializeField] private InputActionReference debugComboPrefixAction;
     [SerializeField] private InputActionReference debugLevelUpAction;
+    [SerializeField] private InputActionReference debugInstantDeathAction;
 
     [Header("Settings")] 
     [SerializeField, Range(0f, 1f)] private float stickDeadZone = .2f;
@@ -32,6 +33,7 @@ public class InputManager : MonoBehaviour {
     public static event Action OnUIPauseInputStarted = delegate {};
     
     public static event Action OnDebugLevelUpInputPerformed = delegate {};
+    public static event Action OnDebugInstantDeathInputPerformed = delegate {};
 
 
     private bool _shouldReadPlayerInput = false;
@@ -128,6 +130,12 @@ public class InputManager : MonoBehaviour {
         if (!Debug.isDebugBuild) return;
         OnDebugLevelUpInputPerformed?.Invoke();
     }
+    
+    private void HandleInstantDeathInput(InputAction.CallbackContext ctx) {
+        if (!_shouldReadDebugInput || !_shouldReadPlayerInput || IsGamePaused()) return;
+        if (!Debug.isDebugBuild) return;
+        OnDebugInstantDeathInputPerformed?.Invoke();
+    }
 
     // Input Events
 
@@ -172,6 +180,9 @@ public class InputManager : MonoBehaviour {
         if (debugLevelUpAction) {
             debugLevelUpAction.action.started += HandleLevelUpInput;
         }
+        if (debugInstantDeathAction) {
+            debugInstantDeathAction.action.started += HandleInstantDeathInput;
+        }
     }
 
     private void OnDisable() {
@@ -214,6 +225,9 @@ public class InputManager : MonoBehaviour {
 
         if (debugLevelUpAction) {
             debugLevelUpAction.action.started -= HandleLevelUpInput;
+        }
+        if (debugInstantDeathAction) {
+            debugInstantDeathAction.action.started -= HandleInstantDeathInput;
         }
     }
 }
