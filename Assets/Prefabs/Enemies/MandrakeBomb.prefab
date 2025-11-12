@@ -10,7 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2234940729134289349}
   - component: {fileID: 8645758078438689890}
-  - component: {fileID: 6703904873067085041}
+  - component: {fileID: 5592520868563804022}
+  - component: {fileID: 2441437701571459455}
+  - component: {fileID: 9150812560753053198}
   m_Layer: 0
   m_Name: Visual
   m_TagString: Untagged
@@ -77,7 +79,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 7b5adb2e4d8a3784c840d198e19705d0, type: 3}
+  m_Sprite: {fileID: 849651004, guid: e5448cef153c49d47a694fd549e2cef6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -88,7 +90,29 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6703904873067085041
+--- !u!95 &5592520868563804022
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441908282682672020}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2d67f1f9d20e0014d89ddf202c520329, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2441437701571459455
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -97,50 +121,64 @@ MonoBehaviour:
   m_GameObject: {fileID: 441908282682672020}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ShadowGroup: 0
-  m_Priority: 2
-  m_ComponentVersion: 5
-  m_HasRenderer: 1
-  m_UseRendererSilhouette: 1
-  m_CastsShadows: 1
-  m_SelfShadows: 0
-  m_AlphaCutoff: 0.1
+  m_ComponentVersion: 2
+  m_LightType: 3
+  m_BlendStyleIndex: 0
+  m_FalloffIntensity: 0.5
+  m_Color: {r: 1, g: 0.40253434, b: 0.3443396, a: 1}
+  m_Intensity: 1
+  m_LightVolumeIntensity: 1
+  m_LightVolumeEnabled: 0
   m_ApplyToSortingLayers: 00000000
+  m_LightCookieSprite: {fileID: 0}
+  m_DeprecatedPointLightCookieSprite: {fileID: 0}
+  m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
+  m_OverlapOperation: 0
+  m_NormalMapDistance: 3
+  m_NormalMapQuality: 2
+  m_UseNormalMap: 0
+  m_ShadowsEnabled: 1
+  m_ShadowIntensity: 0.75
+  m_ShadowSoftness: 0.3
+  m_ShadowSoftnessFalloffIntensity: 0.5
+  m_ShadowVolumeIntensityEnabled: 0
+  m_ShadowVolumeIntensity: 0.75
+  m_LocalBounds:
+    m_Center: {x: 0, y: -0.00000011920929, z: 0}
+    m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
+  m_PointLightInnerAngle: 360
+  m_PointLightOuterAngle: 360
+  m_PointLightInnerRadius: 0
+  m_PointLightOuterRadius: 15
+  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 1
+  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
-  - {x: -0.49999952, y: -0.5, z: 0}
-  - {x: -0.49999952, y: 0.5, z: 0}
-  - {x: 0.5, y: 0.5, z: 0}
+  - {x: -0.5, y: -0.5, z: 0}
   - {x: 0.5, y: -0.5, z: 0}
-  m_ShapePathHash: 0
-  m_InstanceId: 0
-  m_ShadowShape2DComponent: {fileID: 8645758078438689890}
-  m_ShadowShape2DProvider:
-    rid: 3817803640986665294
-  m_ShadowCastingSource: 2
-  m_ShadowMesh:
-    m_Mesh: {fileID: 0}
-    m_LocalBounds:
-      m_Center: {x: 0.015625, y: -0.15625, z: 0}
-      m_Extent: {x: 0.484375, y: 0.34375, z: 0}
-    m_EdgeProcessing: 1
-    m_TrimEdge: 0
-    m_FlipX: 0
-    m_FlipY: 0
-    m_InitialTrim: 0
-  m_CastingOption: 1
-  m_PreviousTrimEdge: 0
-  m_PreviousEdgeProcessing: 1
-  m_PreviousShadowCastingSource: 2
-  m_PreviousShadowShape2DSource: {fileID: 8645758078438689890}
-  references:
-    version: 2
-    RefIds:
-    - rid: 3817803640986665294
-      type: {class: ShadowShape2DProvider_SpriteRenderer, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
-      data: 
+  - {x: 0.5, y: 0.5, z: 0}
+  - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &9150812560753053198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441908282682672020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f9aec401f2ca4a42afdfa6b0b90ec96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minIntensity: 1
+  maxIntensity: 2
+  flickerInterval: 0.1
 --- !u!1 &480428550303005909
 GameObject:
   m_ObjectHideFlags: 0
@@ -153,7 +191,7 @@ GameObject:
   - component: {fileID: 697483003696661100}
   - component: {fileID: 3681216089775630561}
   - component: {fileID: 8855285629999862606}
-  - component: {fileID: 8728073555856062210}
+  - component: {fileID: 1030166904837416399}
   m_Layer: 7
   m_Name: MandrakeBomb
   m_TagString: Untagged
@@ -339,7 +377,7 @@ MonoBehaviour:
     multipleDropOffsetDistance: 1
   findPlayer: 1
   disableOnDeath: 1
-  disableDelay: 0
+  disableDelay: 0.75
   drawAIGizmo: 0
   awarenessGizmoColor: {r: 0, g: 1, b: 0, a: 1}
   comfortGizmoColor: {r: 1, g: 0, b: 0, a: 1}
@@ -378,7 +416,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         gripDuration: 0.5
---- !u!114 &8728073555856062210
+--- !u!114 &1030166904837416399
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -387,11 +425,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 480428550303005909}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72c35ae2daac7274894de77ddbf75415, type: 3}
+  m_Script: {fileID: 11500000, guid: 93a337d348dd7604482225b175202c57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rendererReference: {fileID: 8645758078438689890}
-  animatorReference: {fileID: 0}
+  animatorReference: {fileID: 5592520868563804022}
 --- !u!1 &984193170522403820
 GameObject:
   m_ObjectHideFlags: 0
