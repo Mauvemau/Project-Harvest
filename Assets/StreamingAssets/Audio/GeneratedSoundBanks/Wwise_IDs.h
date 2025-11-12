@@ -13,6 +13,9 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID LAWNMOWER_END = 773559505U;
+        static const AkUniqueID LAWNMOWER_HIT = 188167277U;
+        static const AkUniqueID LAWNMOWER_START = 3994001794U;
         static const AkUniqueID MANDRAKE_STEPS = 282088238U;
         static const AkUniqueID PLAY_BLACKBERRYHIT = 2538688676U;
         static const AkUniqueID PLAY_BOOMERANGTHROW = 2116017054U;
@@ -74,6 +77,17 @@ namespace AK
                 static const AkUniqueID BOOMERANG_LEV12 = 152774810U;
             } // namespace SWITCH
         } // namespace BOOMERANG
+
+        namespace LAWNMOWER
+        {
+            static const AkUniqueID GROUP = 2132422351U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace SWITCH
+        } // namespace LAWNMOWER
 
         namespace MANDRAKE_TORO
         {

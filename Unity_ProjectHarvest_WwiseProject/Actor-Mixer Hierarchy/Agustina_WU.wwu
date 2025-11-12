@@ -4,6 +4,13 @@
 		<WorkUnit Name="Agustina_WU" ID="{8C1E1988-488E-4D21-9DBB-6F3C3F36AB36}" PersistMode="Standalone">
 			<ChildrenList>
 				<ActorMixer Name="Small Mandrake" ID="{DC95A5C3-F6A5-40CB-A751-C04C17AF56E6}" ShortID="242938249">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-4</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -2363,6 +2370,13 @@
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="Shooter Mandrake" ID="{38694110-2124-424B-B627-D63B29AAF824}" ShortID="935475654">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-4</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -4662,6 +4676,13 @@
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="Toro Mandrake" ID="{7420A830-FC74-484E-B587-7E4D9E006F7B}" ShortID="167449980">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-4</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
