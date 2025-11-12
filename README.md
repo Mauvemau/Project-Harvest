@@ -10,7 +10,7 @@
 
 ### Credits:
 2D Art:
-- Victoria Thjellesen
+- [Victoria Thjellesen](https://www.artstation.com/victoria_thjellesen)
 - Lucio Campos
 
 Game Audio:
