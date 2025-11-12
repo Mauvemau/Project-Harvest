@@ -128,8 +128,8 @@ Transform:
   m_GameObject: {fileID: 1500329618351097330}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.07, y: -1.3, z: 0}
-  m_LocalScale: {x: 1.6, y: 0.8, z: 1}
+  m_LocalPosition: {x: -0.3, y: -1.3, z: 0}
+  m_LocalScale: {x: 2.68, y: 1.34, z: 1.675}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1696746635315949032}
@@ -201,7 +201,7 @@ GameObject:
   - component: {fileID: 2824593319498027786}
   - component: {fileID: 6058588328462200187}
   - component: {fileID: 1627601158321872954}
-  - component: {fileID: 6245194723480694647}
+  - component: {fileID: 3947395723160926572}
   m_Layer: 7
   m_Name: MandrakeHealer
   m_TagString: Untagged
@@ -271,7 +271,7 @@ CircleCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 439
+    m_Bits: 503
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -389,7 +389,7 @@ MonoBehaviour:
     multipleDropOffsetDistance: 1
   findPlayer: 1
   disableOnDeath: 1
-  disableDelay: 0
+  disableDelay: 4
   drawAIGizmo: 1
   awarenessGizmoColor: {r: 0, g: 1, b: 0, a: 1}
   comfortGizmoColor: {r: 1, g: 0, b: 0, a: 1}
@@ -426,7 +426,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         gripDuration: 0.5
---- !u!114 &6245194723480694647
+--- !u!114 &3947395723160926572
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -435,14 +435,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2717563465280112146}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a200768970173b441a1a0f0c3d3c0063, type: 3}
+  m_Script: {fileID: 11500000, guid: 93a337d348dd7604482225b175202c57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRendererReferences:
-  - {fileID: 3736172957660891269}
-  - {fileID: 3153080926364303866}
-  spinInterval: 0.5
-  flipPositionX: 1
+  rendererReference: {fileID: 0}
+  animatorReference: {fileID: 5535799802742832152}
 --- !u!1 &3482910069086156161
 GameObject:
   m_ObjectHideFlags: 0
@@ -453,6 +450,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2357501004004482985}
   - component: {fileID: 3736172957660891269}
+  - component: {fileID: 5535799802742832152}
   m_Layer: 0
   m_Name: Visual
   m_TagString: Untagged
@@ -469,8 +467,8 @@ Transform:
   m_GameObject: {fileID: 3482910069086156161}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.24, y: -0.29, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalPosition: {x: 0, y: 0.25, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1696746635315949032}
@@ -519,7 +517,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 1e4f2bc59804a2e4ba5cc0e17ad3410a, type: 3}
+  m_Sprite: {fileID: 542132361, guid: 0e98db03f545beb44b460aa0e4aea867, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -530,6 +528,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &5535799802742832152
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3482910069086156161}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e930778a8c0b8594a85fb75043cc05c1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1176753431870531062
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -705,7 +725,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 95517560978556372, guid: 8bb30c9e5513ec64b8c29a777b8f70b7, type: 3}
       propertyPath: m_SizeDelta.x
-      value: -3.6641
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 95517560978556372, guid: 8bb30c9e5513ec64b8c29a777b8f70b7, type: 3}
       propertyPath: m_SizeDelta.y
@@ -741,11 +761,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 95517560978556372, guid: 8bb30c9e5513ec64b8c29a777b8f70b7, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.00000023841858
+      value: -0.23
       objectReference: {fileID: 0}
     - target: {fileID: 95517560978556372, guid: 8bb30c9e5513ec64b8c29a777b8f70b7, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -1.66
+      value: -1.76
       objectReference: {fileID: 0}
     - target: {fileID: 95517560978556372, guid: 8bb30c9e5513ec64b8c29a777b8f70b7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
