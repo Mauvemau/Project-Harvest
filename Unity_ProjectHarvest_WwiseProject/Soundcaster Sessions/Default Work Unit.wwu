@@ -32,6 +32,7 @@
 						<CurrentSwitchRef Name="Hit" ID="{652CD1DC-A0F5-4F85-965B-E9A7C7AFCB3B}"/>
 						<CurrentSwitchRef Name="Boomerang_Lev3" ID="{F075D1E5-35A5-47BD-8CA7-56DC8BFBD0AE}"/>
 						<CurrentSwitchRef Name="No" ID="{AB94F416-0319-49E1-AAB2-DE33432CEDEA}"/>
+						<CurrentSwitchRef Name="Off" ID="{B13868AF-5F6A-4135-B014-7BBF0C3057E3}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 				<SoundcasterSession Name="WitchWeapons" ID="{5DFD1B7C-1698-4947-9E38-401616A89842}">
@@ -105,6 +106,27 @@
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Hit" ID="{652CD1DC-A0F5-4F85-965B-E9A7C7AFCB3B}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+				<SoundcasterSession Name="Lawnmower_Test" ID="{1760EBA4-F96E-4BA7-B95E-C5C13990D710}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Lawnmower_Start" ID="{2087BAAD-A818-4BFC-B35F-6EF357E7D77B}" WorkUnitID="{B0584BF8-363A-4994-B333-BC68BAEE0201}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Lawnmower_Hit" ID="{B9BD653A-D409-4D87-A24D-D307C0A726DA}" WorkUnitID="{B0584BF8-363A-4994-B333-BC68BAEE0201}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Lawnmower_End" ID="{995A7F07-1539-488D-960B-EE0AFB449CAA}" WorkUnitID="{B0584BF8-363A-4994-B333-BC68BAEE0201}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Off" ID="{B13868AF-5F6A-4135-B014-7BBF0C3057E3}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

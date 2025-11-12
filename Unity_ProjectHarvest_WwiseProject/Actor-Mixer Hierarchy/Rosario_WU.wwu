@@ -22,6 +22,11 @@
 						<SwitchContainer Name="Tarantula" ID="{3B52C13B-A211-4690-8641-8362B0C9E8B1}" ShortID="970293174">
 							<PropertyList>
 								<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>4</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -41,6 +46,11 @@
 								<Sound Name="Tarantula_loop" ID="{B003CB8A-3EAA-4CE5-95D3-D26C33660F4A}" ShortID="155690939">
 									<PropertyList>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1191,6 +1201,222 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="Lawnmower" ID="{5F51C6A8-1AF0-4CA1-9811-A6D5ED7D63A0}" ShortID="1032264619">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="5m" ID="{7B443898-9A9F-48F2-9B18-8249E7E06532}" WorkUnitID="{534FA15F-9837-4037-8FF4-5DDCE2062302}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<SwitchContainer Name="Lawnmower" ID="{F592E2DF-701C-415E-AB0D-60C3739458C2}" ShortID="267365269">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Lawnmower_start-post1500ms" ID="{95711CDC-F8E5-43AD-A5F9-D05710FC0A4C}" ShortID="589062372">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Lawnmower_start-post1500ms" ID="{5F1054AD-57BE-43FA-9DF0-9DD1B497616A}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.3512578769428"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Lawnmower_start-post1500ms.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1007429502"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Lawnmower_start-post1500ms" ID="{5F1054AD-57BE-43FA-9DF0-9DD1B497616A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<SwitchContainer Name="Lawnmower" ID="{E1A07826-FC12-4FD4-BB28-4A3313F4894B}" ShortID="307470695">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{235DD49E-29EA-4FC5-BF05-72288711817F}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="On" ID="{170EDC49-8CE1-4233-88C4-46E957806139}" WorkUnitID="{629943F5-639C-40F1-B8F0-7869F3A62EC8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Lawnmower" ID="{CF715D5A-82B6-4BBC-8885-034EE806C9E6}" WorkUnitID="{629943F5-639C-40F1-B8F0-7869F3A62EC8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Lawnmower_End" ID="{B214A30C-E029-471A-BCF8-9226A832B90F}" ShortID="859185585">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Lawnmower_End-pre1500ms" ID="{0C5D27CC-FFCE-4768-9856-9C0E4BB607AA}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0434384171555682"/>
+														<Property Name="LoopBegin" Type="Real64" Value="1.47256234157376"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.45518697471153"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Lawnmower_End-pre1500ms.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="886357222"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Lawnmower_End-pre1500ms" ID="{0C5D27CC-FFCE-4768-9856-9C0E4BB607AA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Lawnmower_loop" ID="{247301D4-B1A8-462C-99AD-710153261C4C}" ShortID="676842005">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Lawnmower_loop" ID="{C91D5511-931C-461A-9DEA-F93C88A34236}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.503495758917274"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.513272375595279"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0.518160683934281"/>
+														<Property Name="LoopEnd" Type="Real64" Value="3.50002863115642"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Lawnmower_loop.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1067670328"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Lawnmower_loop" ID="{C91D5511-931C-461A-9DEA-F93C88A34236}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="Lawnmower_End" ID="{B214A30C-E029-471A-BCF8-9226A832B90F}"/>
+												<PropertyList>
+													<Property Name="FadeOutTime" Type="Real64">
+														<ValueList>
+															<Value>1.5</Value>
+														</ValueList>
+													</Property>
+												</PropertyList>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Lawnmower_loop" ID="{247301D4-B1A8-462C-99AD-710153261C4C}"/>
+												<PropertyList>
+													<Property Name="FadeInTime" Type="Real64">
+														<ValueList>
+															<Value>1.5</Value>
+														</ValueList>
+													</Property>
+													<Property Name="FadeOutTime" Type="Real64">
+														<ValueList>
+															<Value>1.5</Value>
+														</ValueList>
+													</Property>
+												</PropertyList>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="On" ID="{170EDC49-8CE1-4233-88C4-46E957806139}"/>
+												<ItemList>
+													<ItemRef Name="Lawnmower_loop" ID="{247301D4-B1A8-462C-99AD-710153261C4C}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Off" ID="{B13868AF-5F6A-4135-B014-7BBF0C3057E3}"/>
+												<ItemList>
+													<ItemRef Name="Lawnmower_End" ID="{B214A30C-E029-471A-BCF8-9226A832B90F}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Lawnmower" ID="{E1A07826-FC12-4FD4-BB28-4A3313F4894B}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Lawnmower_start-post1500ms" ID="{95711CDC-F8E5-43AD-A5F9-D05710FC0A4C}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+							</GroupingInfo>
+						</SwitchContainer>
+						<WorkUnit Name="Lawnmower_Hit" ID="{DE37CD93-F026-4071-8D93-D1DF18BF2A3C}" PersistMode="Reference"/>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>

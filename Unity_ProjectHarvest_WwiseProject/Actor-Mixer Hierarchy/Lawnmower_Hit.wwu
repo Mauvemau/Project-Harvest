@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{DE37CD93-F026-4071-8D93-D1DF18BF2A3C}" SchemaVersion="123" RootDocumentID="{061E61C0-CF7C-48F0-988D-B18066483043}" ParentDocumentID="{061E61C0-CF7C-48F0-988D-B18066483043}">
+	<AudioObjects>
+		<WorkUnit Name="Lawnmower_Hit" ID="{DE37CD93-F026-4071-8D93-D1DF18BF2A3C}" OwnerID="{5F51C6A8-1AF0-4CA1-9811-A6D5ED7D63A0}" PersistMode="Nested">
+			<ChildrenList>
+				<RandomSequenceContainer Name="Lawnmower_Hit_Layer01" ID="{AC54DD76-B962-4114-887F-C75EACF526AB}" ShortID="809648050">
+					<PropertyList>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{1B1F4171-15BC-47D9-9123-37C90FAC5427}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="100"/>
+											<Property Name="Min" Type="Real64" Value="-100"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Lawnmower_Hit_Layer1_01" ID="{15277C8C-760A-4FED-9EE9-ED4AC58ED20B}" ShortID="652523246">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Lawnmower_Hit_Layer1_01" ID="{81D7441C-730D-425C-A5F3-68B27F4CB16F}">
+									<Language>SFX</Language>
+									<AudioFile>Lawnmower_Hit_Layer1_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="802084806"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Lawnmower_Hit_Layer1_01" ID="{81D7441C-730D-425C-A5F3-68B27F4CB16F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Lawnmower_Hit_Layer1_02" ID="{7FA553ED-8EBA-4E17-9CC5-3145C50A484A}" ShortID="104258008">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Lawnmower_Hit_Layer1_02" ID="{4C837CA8-34FB-44F9-B5BB-CEC25775FCEF}">
+									<Language>SFX</Language>
+									<AudioFile>Lawnmower_Hit_Layer1_02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="514549638"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Lawnmower_Hit_Layer1_02" ID="{4C837CA8-34FB-44F9-B5BB-CEC25775FCEF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Lawnmower_Hit_Layer1_03" ID="{98BA0000-17E6-4141-9019-2F49BC671519}" ShortID="625015150">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Lawnmower_Hit_Layer1_03" ID="{FD78ADE6-D382-4A6B-B9CA-26E4FBD725BB}">
+									<Language>SFX</Language>
+									<AudioFile>Lawnmower_Hit_Layer1_03.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="822435608"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Lawnmower_Hit_Layer1_03" ID="{FD78ADE6-D382-4A6B-B9CA-26E4FBD725BB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Lawnmower_Hit_Layer03" ID="{4150C679-8BB5-45DB-97F9-B810D4F64D85}" ShortID="357264519">
+					<PropertyList>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{CC822760-5A70-47CB-80A7-E6A7C42BBC05}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="100"/>
+											<Property Name="Min" Type="Real64" Value="-100"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Lawnmower_Hit_Layer3_01" ID="{D45290CC-5E00-4502-9D94-BD1DD6CAB73B}" ShortID="942024032">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Lawnmower_Hit_Layer3_01" ID="{E9B009A8-D28C-495F-A116-9B93A2F17482}">
+									<Language>SFX</Language>
+									<AudioFile>Lawnmower_Hit_Layer3_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="244061443"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Lawnmower_Hit_Layer3_01" ID="{E9B009A8-D28C-495F-A116-9B93A2F17482}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Lawnmower_Hit_Layer3_02" ID="{0644A657-CF22-4656-8CED-A5A65B06BED8}" ShortID="202320800">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Lawnmower_Hit_Layer3_02" ID="{FD9435F3-3BE9-46E5-8F28-0EA037E4126C}">
+									<Language>SFX</Language>
+									<AudioFile>Lawnmower_Hit_Layer3_02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="980913807"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Lawnmower_Hit_Layer3_02" ID="{FD9435F3-3BE9-46E5-8F28-0EA037E4126C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Lawnmower_Hit_Layer3_03" ID="{89ACE53A-6272-4761-8D1A-5EDD37FA6EAA}" ShortID="371268439">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Lawnmower_Hit_Layer3_03" ID="{7F01A517-D7BA-4E84-B54E-71948F538A25}">
+									<Language>SFX</Language>
+									<AudioFile>Lawnmower_Hit_Layer3_03.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="933812653"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Lawnmower_Hit_Layer3_03" ID="{7F01A517-D7BA-4E84-B54E-71948F538A25}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<Sound Name="Lawnmower_Hit_Layer02" ID="{B9441534-3268-4128-BF7C-5726105FCD88}" ShortID="575217432">
+					<PropertyList>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Lawnmower_Hit_Layer2_00" ID="{3F7E8B3B-19D7-4B39-98BA-41944AEB39C0}">
+							<Language>SFX</Language>
+							<AudioFile>Lawnmower_Hit_Layer2_00.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="377808289"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Lawnmower_Hit_Layer2_00" ID="{3F7E8B3B-19D7-4B39-98BA-41944AEB39C0}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
