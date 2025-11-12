@@ -5532,7 +5532,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_TargetDisplay: 0
 --- !u!224 &1133701432
 RectTransform:
@@ -6107,7 +6107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0867d926044ad3b47b3a8b5c2481967c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeDurationInSeconds: 4
+  fadeDurationInSeconds: 3
   fadeCurve:
     serializedVersion: 2
     m_Curve:
@@ -6517,8 +6517,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 256.46704, y: -121.2}
-  m_SizeDelta: {x: 512.9341, y: 190}
+  m_AnchoredPosition: {x: 256.467, y: -121.2}
+  m_SizeDelta: {x: 512.934, y: 190}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1353921533
 MonoBehaviour:
@@ -7724,7 +7724,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f0111d0d34ed414479aa3c8d9d5bfe32, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e1b93fec82eeae5488a473171bd91e35, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -8685,7 +8685,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 36f73361f3c741140bc29f2e82d9fc78, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f6bac3c9383b690459496ba438157466, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8877,8 +8877,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 256.46704, y: -347.4}
-  m_SizeDelta: {x: 512.9341, y: 190}
+  m_AnchoredPosition: {x: 256.467, y: -347.4}
+  m_SizeDelta: {x: 512.934, y: 190}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1925210379
 MonoBehaviour:

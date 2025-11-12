@@ -102,6 +102,7 @@ public class PlayerCharacter : MonoBehaviour, IMovable, IDamageable, IFacingDire
         if (!_alive) return;
         currentHealth = 0;
         _alive = false;
+        ResetMovement();
         UpdateHealthBar();
         OnPlayerDeath.Invoke();
     }
@@ -147,11 +148,16 @@ public class PlayerCharacter : MonoBehaviour, IMovable, IDamageable, IFacingDire
         damageFeedbackManager.Update();
     }
 
-    private void SoftInit() {
+    private void ResetMovement() {
         _inputDir =  Vector2.zero;
         _currentVelocity =  Vector2.zero; ;
         _slipTimer = 0;
         _currentSpeed = 0;
+        _rb.linearVelocity = _currentVelocity;
+    }
+    
+    private void SoftInit() {
+        ResetMovement();
         transform.position = _spawnPosition;
     }
     
