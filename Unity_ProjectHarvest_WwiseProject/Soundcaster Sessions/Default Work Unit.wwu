@@ -12,6 +12,10 @@
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
+							<GameParameterRef Name="XPBar" ID="{F7887297-79E5-4862-B0CC-724808B5BC27}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="Toro_Distance" ID="{B9C20ECB-8150-486C-8532-9773CF5A725A}"/>
 							<Value>100</Value>
 						</RTPCValue>
