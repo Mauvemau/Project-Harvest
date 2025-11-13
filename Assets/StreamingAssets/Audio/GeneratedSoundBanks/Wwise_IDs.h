@@ -17,6 +17,7 @@ namespace AK
         static const AkUniqueID LAWNMOWER_HIT = 188167277U;
         static const AkUniqueID LAWNMOWER_START = 3994001794U;
         static const AkUniqueID MANDRAKE_STEPS = 282088238U;
+        static const AkUniqueID PLAY_BEEP = 2063165418U;
         static const AkUniqueID PLAY_BLACKBERRYHIT = 2538688676U;
         static const AkUniqueID PLAY_BOOMERANGTHROW = 2116017054U;
         static const AkUniqueID PLAY_BUTTONHOVER = 479606568U;
@@ -32,6 +33,7 @@ namespace AK
         static const AkUniqueID PLAY_SMALLMANDRAKERECIBEDAMAGE = 1332341351U;
         static const AkUniqueID PLAY_TOROMANDRAKECRY = 4031256493U;
         static const AkUniqueID PLAY_TOROMANDRAKERECIBEDAMAGE = 1971773272U;
+        static const AkUniqueID PLAY_XPBAR = 3421228173U;
         static const AkUniqueID START = 1281810935U;
         static const AkUniqueID TARANTULA_ATTACK = 4165231998U;
         static const AkUniqueID TARANTULA_HIT = 3994421637U;
@@ -119,6 +121,7 @@ namespace AK
         static const AkUniqueID MUSIC_VOLUME = 1006694123U;
         static const AkUniqueID PLAYER_HEALTH = 215992295U;
         static const AkUniqueID TORO_DISTANCE = 1585544231U;
+        static const AkUniqueID XPBAR = 1013953904U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS

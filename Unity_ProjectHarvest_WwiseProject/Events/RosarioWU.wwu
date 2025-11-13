@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{B0584BF8-363A-4994-B333-BC68BAEE0201}" SchemaVersion="123" RootDocumentID="{D5FE0764-4F64-45A3-BBE5-9C04E443A2D8}" ParentDocumentID="{D5FE0764-4F64-45A3-BBE5-9C04E443A2D8}">
+<WwiseDocument Type="WorkUnit" ID="{B0584BF8-363A-4994-B333-BC68BAEE0201}" SchemaVersion="123">
 	<Events>
-		<WorkUnit Name="RosarioWU" ID="{B0584BF8-363A-4994-B333-BC68BAEE0201}" OwnerID="{D5FE0764-4F64-45A3-BBE5-9C04E443A2D8}" PersistMode="Nested">
+		<WorkUnit Name="RosarioWU" ID="{B0584BF8-363A-4994-B333-BC68BAEE0201}" PersistMode="Standalone">
 			<ChildrenList>
 				<Event Name="Witch_Steps" ID="{95AEFAB5-0294-473F-BDBB-48A0D71133B4}">
 					<ChildrenList>
@@ -105,6 +105,17 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Lawnmower_Hit_Layer02" ID="{B9441534-3268-4128-BF7C-5726105FCD88}" WorkUnitID="{DE37CD93-F026-4071-8D93-D1DF18BF2A3C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Beep" ID="{5A5A5F75-B6B2-433C-8A47-483241279989}">
+					<ChildrenList>
+						<Action Name="" ID="{DC58D8B2-877D-4171-B805-FAE3F13FB64C}" ShortID="65058729">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Beep" ID="{1031FBED-F44B-462E-9EDB-7A638AE4A090}" WorkUnitID="{061E61C0-CF7C-48F0-988D-B18066483043}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
