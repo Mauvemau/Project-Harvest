@@ -232,9 +232,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca0f950327a27f64b84fbe31732190a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vSyncSetting: 1
-  targetFrameRateDesktop: -1
-  targetFrameRateAndroid: 60
+  platforms:
+  - platform: 2
+    vSync: 1
+    targetFrameRate: -1
+  - platform: 11
+    vSync: 0
+    targetFrameRate: 60
 --- !u!4 &702084899
 Transform:
   m_ObjectHideFlags: 0
