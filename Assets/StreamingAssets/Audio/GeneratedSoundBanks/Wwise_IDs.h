@@ -13,6 +13,8 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID GAME_LOSE = 3425053597U;
+        static const AkUniqueID GAME_WIN = 3218375656U;
         static const AkUniqueID LAWNMOWER_END = 773559505U;
         static const AkUniqueID LAWNMOWER_HIT = 188167277U;
         static const AkUniqueID LAWNMOWER_START = 3994001794U;
