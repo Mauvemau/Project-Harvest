@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 [System.Serializable]
@@ -15,8 +16,9 @@ public class GlobalVariableManager {
     [SerializeField] private ProgressBarController xpBarController;
     
     [Header("Event Invokers")]
-    [SerializeField] private VoidEventChannelSO onLevelUp;
     [SerializeField] private StringEventChannelSo onUpdateLevelValue;
+    
+    public static event Action OnLevelUp = delegate {};
 
     private void UpdateXpBarUI() {
         xpBarController.UpdateValues(gameCurrentVariables.CurrentExperience, gameCurrentVariables.ExperienceNeeded);
@@ -38,9 +40,7 @@ public class GlobalVariableManager {
             }
 
             UpdateCurrentLevelUI();
-            if (onLevelUp) {
-                onLevelUp.RaiseEvent();
-            }
+            OnLevelUp?.Invoke();
         }
     }
     

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{629943F5-639C-40F1-B8F0-7869F3A62EC8}" SchemaVersion="123">
+	<Switches>
+		<WorkUnit Name="Lawnmower" ID="{629943F5-639C-40F1-B8F0-7869F3A62EC8}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Lawnmower" ID="{CF715D5A-82B6-4BBC-8885-034EE806C9E6}">
+					<ChildrenList>
+						<Switch Name="On" ID="{170EDC49-8CE1-4233-88C4-46E957806139}"/>
+						<Switch Name="Off" ID="{B13868AF-5F6A-4135-B014-7BBF0C3057E3}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

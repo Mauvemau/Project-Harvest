@@ -491,14 +491,38 @@
 									</ValueList>
 								</Property>
 								<Property Name="Pitch" Type="int32">
-									<ValueList>
-										<Value>700</Value>
-									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{CA7EA328-64BF-4D1B-AB44-D289DF667F94}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="200"/>
+													<Property Name="Min" Type="Real64" Value="-200"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
 								</Property>
 								<Property Name="UseMaxSoundPerInstance" Type="bool">
 									<ValueList>
 										<Value>True</Value>
 									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{5E8D939B-062D-4F20-8C29-8C80EE62BFD4}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="1"/>
+													<Property Name="Min" Type="Real64" Value="-1"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
@@ -510,7 +534,16 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="hvst_sfx_ui_mouseHover_var2_v1" ID="{09747136-B6C3-4BAA-B900-AD9EAA4CAD23}" ShortID="1067713349">
+								<Sound Name="hvst_sfx_ui_mouseHover_var1_v2" ID="{55460709-0EAB-44DB-87BD-32BE713CBB32}" ShortID="666832336">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{8FBF0B13-0A23-4291-99D9-24838BDE4626}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -520,19 +553,28 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="hvst_sfx_ui_mouseHover_var2_v1" ID="{DAE1E39A-493C-420B-B95A-DCF7357F1A1A}">
+										<AudioFileSource Name="hvst_sfx_ui_mouseHover_var1_v2" ID="{BAE473F8-2507-4837-834D-CA204981BB0A}">
 											<Language>SFX</Language>
-											<AudioFile>hvst_sfx_ui_mouseHover_var2_v1.wav</AudioFile>
+											<AudioFile>hvst_sfx_ui_mouseHover_var1_v2.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="346856575"/>
+												<MediaID ID="463115441"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="hvst_sfx_ui_mouseHover_var2_v1" ID="{DAE1E39A-493C-420B-B95A-DCF7357F1A1A}" Platform="Linked"/>
+										<ActiveSource Name="hvst_sfx_ui_mouseHover_var1_v2" ID="{BAE473F8-2507-4837-834D-CA204981BB0A}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="hvst_sfx_ui_mouseHover_var_v1" ID="{F0E7A02D-0DD8-4448-A778-48AAAFE5FA14}" ShortID="758967883">
+								<Sound Name="hvst_sfx_ui_mouseHover_var2_v2" ID="{5A44AF85-6E84-4C35-96EE-2A077066749A}" ShortID="866551942">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{9E9C51F8-E6BE-488A-A0EA-65398A7A0844}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -542,16 +584,16 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="hvst_sfx_ui_mouseHover_var_v1" ID="{8E6DE842-0E44-4AF9-BED1-CDF514F07260}">
+										<AudioFileSource Name="hvst_sfx_ui_mouseHover_var2_v2" ID="{9ACA61B0-8274-4747-ADAD-8BA98B65074D}">
 											<Language>SFX</Language>
-											<AudioFile>hvst_sfx_ui_mouseHover_var_v1.wav</AudioFile>
+											<AudioFile>hvst_sfx_ui_mouseHover_var2_v2.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="847504255"/>
+												<MediaID ID="271320792"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="hvst_sfx_ui_mouseHover_var_v1" ID="{8E6DE842-0E44-4AF9-BED1-CDF514F07260}" Platform="Linked"/>
+										<ActiveSource Name="hvst_sfx_ui_mouseHover_var2_v2" ID="{9ACA61B0-8274-4747-ADAD-8BA98B65074D}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
@@ -562,6 +604,11 @@
 									<ValueList>
 										<Value>-4</Value>
 									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{1DC8FB07-5810-4DB8-A51C-F9E272087667}"/>
+										</ModifierInfo>
+									</ModifierList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
@@ -580,9 +627,16 @@
 										<MediaID ID="893586690"/>
 									</MediaIDList>
 								</AudioFileSource>
+								<AudioFileSource Name="hvst_sfx_ui_buttonPress_v2" ID="{E680316D-C423-4AA4-8021-06795DB65438}">
+									<Language>SFX</Language>
+									<AudioFile>hvst_sfx_ui_buttonPress_v2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="721529202"/>
+									</MediaIDList>
+								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="hvst_sfx_ui_buttonPress_v1" ID="{78FF311D-5B0E-43F4-9949-7815579B1448}" Platform="Linked"/>
+								<ActiveSource Name="hvst_sfx_ui_buttonPress_v2" ID="{E680316D-C423-4AA4-8021-06795DB65438}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="hvst_sfx_pauseButton_v1" ID="{FD0FC02F-9EFC-4C13-B5D0-672DCB121408}" ShortID="858026137">
@@ -591,6 +645,11 @@
 									<ValueList>
 										<Value>-7</Value>
 									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{1DF9F764-FFEA-4F50-91B6-C98EEE7D410C}"/>
+										</ModifierInfo>
+									</ModifierList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
@@ -621,9 +680,151 @@
 										<MediaID ID="268000570"/>
 									</MediaIDList>
 								</AudioFileSource>
+								<AudioFileSource Name="hvst_sfx_ui_pauseButton_v2" ID="{5A315C34-2F5A-4CE2-A10C-6B561B1A078E}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.00304294939873353"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>hvst_sfx_ui_pauseButton_v2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="295298569"/>
+									</MediaIDList>
+								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="hvst_sfx_pauseButton" ID="{7F916B3C-FB67-41C3-BABB-3A11E527EBAC}" Platform="Linked"/>
+								<ActiveSource Name="hvst_sfx_ui_pauseButton_v2" ID="{5A315C34-2F5A-4CE2-A10C-6B561B1A078E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="XPBar" ID="{D2EAC87B-0272-49D0-B157-E287DB39D4DC}" ShortID="245784587">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{D7A97DB2-9E5F-450A-9B1B-3FE43A01F21A}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="50"/>
+													<Property Name="Min" Type="Real64" Value="-50"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{8603BAA6-E395-4D29-ADC8-56793F36B10F}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="3"/>
+													<Property Name="Min" Type="Real64" Value="-3"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="hvst_sfx_ui_xpbar_LOOP_v1" ID="{596B2A79-EFDF-41EC-8E4F-6C4D80C3094F}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0263387769586426"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.0333624508142807"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.117646559128898"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>hvst_sfx_ui_xpbar_LOOP_v1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="865079018"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{546E6515-23A8-47A6-AA1C-16197B729A9C}" ShortID="5255910">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Pitch"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="XPBar" ID="{F7887297-79E5-4862-B0CC-724808B5BC27}" WorkUnitID="{F71958F0-9A0F-47C0-B38D-15E5BB39915A}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{153F7D8F-FC31-414A-9E70-F8377B8E3F6D}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>600</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{8B8B5867-33E1-43F9-B43A-29AB97F84A34}" ShortID="147212085">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="XPBar" ID="{F7887297-79E5-4862-B0CC-724808B5BC27}" WorkUnitID="{F71958F0-9A0F-47C0-B38D-15E5BB39915A}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{BAD107C5-A33E-4727-977E-CD6B0390913C}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>3</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<ActiveSourceList>
+								<ActiveSource Name="hvst_sfx_ui_xpbar_LOOP_v1" ID="{596B2A79-EFDF-41EC-8E4F-6C4D80C3094F}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>

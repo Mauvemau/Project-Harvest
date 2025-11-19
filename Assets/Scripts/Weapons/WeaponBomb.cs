@@ -1,5 +1,3 @@
-using System;
-using System.Collections;
 using UnityEngine;
 
 [RequireComponent(typeof(LineRenderer), typeof(MeshFilter), typeof(MeshRenderer))]
@@ -17,6 +15,9 @@ public class WeaponBomb : Weapon {
     [SerializeField, Min(0.1f)] private float bombBeepRate = 1f;
     [SerializeField, Min(0.1f)] private float alphaFadeDuration = 0.15f;
     [SerializeField] private AnimationCurve beepDetonationCurve =  AnimationCurve.Linear(0, 0, 1, 1);
+
+    [Header("SFX Settings")] 
+    [SerializeField] private AK.Wwise.Event beepingSfxEvent;
     
     [Header("Debug")]
     [SerializeField, ReadOnly] private GameObject[] currentOverlaps;
@@ -105,7 +106,7 @@ public class WeaponBomb : Weapon {
         if (elapsed >= interval) {
             _lastBeepTime = Time.time;
             StartBeep(interval);
-            // TODO: Call Beep Audio Event
+            beepingSfxEvent?.Post(gameObject);
         }
     }
     

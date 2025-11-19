@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{326B3AC4-91B5-4FB7-AA05-E29BC4145962}" SchemaVersion="123" RootDocumentID="{D5FE0764-4F64-45A3-BBE5-9C04E443A2D8}" ParentDocumentID="{D5FE0764-4F64-45A3-BBE5-9C04E443A2D8}">
+<WwiseDocument Type="WorkUnit" ID="{326B3AC4-91B5-4FB7-AA05-E29BC4145962}" SchemaVersion="123">
 	<Events>
-		<WorkUnit Name="Agustina_WU" ID="{326B3AC4-91B5-4FB7-AA05-E29BC4145962}" OwnerID="{D5FE0764-4F64-45A3-BBE5-9C04E443A2D8}" PersistMode="Nested">
+		<WorkUnit Name="Agustina_WU" ID="{326B3AC4-91B5-4FB7-AA05-E29BC4145962}" PersistMode="Standalone">
 			<ChildrenList>
 				<Event Name="Play_SmallMandrakeCry" ID="{8C6085CB-4B54-4CF7-A0E5-E02F447B5080}">
 					<ChildrenList>

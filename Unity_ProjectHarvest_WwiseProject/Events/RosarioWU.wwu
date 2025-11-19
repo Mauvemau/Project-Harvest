@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{B0584BF8-363A-4994-B333-BC68BAEE0201}" SchemaVersion="123" RootDocumentID="{D5FE0764-4F64-45A3-BBE5-9C04E443A2D8}" ParentDocumentID="{D5FE0764-4F64-45A3-BBE5-9C04E443A2D8}">
+<WwiseDocument Type="WorkUnit" ID="{B0584BF8-363A-4994-B333-BC68BAEE0201}" SchemaVersion="123">
 	<Events>
-		<WorkUnit Name="RosarioWU" ID="{B0584BF8-363A-4994-B333-BC68BAEE0201}" OwnerID="{D5FE0764-4F64-45A3-BBE5-9C04E443A2D8}" PersistMode="Nested">
+		<WorkUnit Name="RosarioWU" ID="{B0584BF8-363A-4994-B333-BC68BAEE0201}" PersistMode="Standalone">
 			<ChildrenList>
 				<Event Name="Witch_Steps" ID="{95AEFAB5-0294-473F-BDBB-48A0D71133B4}">
 					<ChildrenList>
@@ -27,6 +27,95 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="MandrakeS_Steps" ID="{EB617E3B-9AAD-441C-8E4D-E1F2D3E048C6}" WorkUnitID="{061E61C0-CF7C-48F0-988D-B18066483043}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Lawnmower_Start" ID="{2087BAAD-A818-4BFC-B35F-6EF357E7D77B}">
+					<ChildrenList>
+						<Action Name="" ID="{CE95C769-E542-4ECB-B174-BCB64B79BFAD}" ShortID="773860957">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="23"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="On" ID="{170EDC49-8CE1-4233-88C4-46E957806139}" WorkUnitID="{629943F5-639C-40F1-B8F0-7869F3A62EC8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{5966596E-E62E-4B89-9C71-7147AA736252}" ShortID="9188266">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Lawnmower_start-post1500ms" ID="{95711CDC-F8E5-43AD-A5F9-D05710FC0A4C}" WorkUnitID="{061E61C0-CF7C-48F0-988D-B18066483043}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{360D8BEC-716C-4107-BAA0-525DD5CA50B6}" ShortID="360931380">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Lawnmower" ID="{E1A07826-FC12-4FD4-BB28-4A3313F4894B}" WorkUnitID="{061E61C0-CF7C-48F0-988D-B18066483043}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Lawnmower_End" ID="{995A7F07-1539-488D-960B-EE0AFB449CAA}">
+					<ChildrenList>
+						<Action Name="" ID="{BA60C490-82C4-4F54-826F-819033117180}" ShortID="365572430">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="23"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Off" ID="{B13868AF-5F6A-4135-B014-7BBF0C3057E3}" WorkUnitID="{629943F5-639C-40F1-B8F0-7869F3A62EC8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{6C45EC12-3279-4F26-A85E-F5CE6F5516EF}" ShortID="303332359">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Delay" Type="Real64" Value="2.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Lawnmower" ID="{E1A07826-FC12-4FD4-BB28-4A3313F4894B}" WorkUnitID="{061E61C0-CF7C-48F0-988D-B18066483043}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Lawnmower_Hit" ID="{B9BD653A-D409-4D87-A24D-D307C0A726DA}">
+					<ChildrenList>
+						<Action Name="" ID="{3983DD01-D6E4-4CAD-9F8D-65A358FA8EC8}" ShortID="169973721">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Lawnmower_Hit_Layer01" ID="{AC54DD76-B962-4114-887F-C75EACF526AB}" WorkUnitID="{DE37CD93-F026-4071-8D93-D1DF18BF2A3C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{CD29AADF-9336-45E3-88E5-275B78C795D1}" ShortID="383971034">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Lawnmower_Hit_Layer03" ID="{4150C679-8BB5-45DB-97F9-B810D4F64D85}" WorkUnitID="{DE37CD93-F026-4071-8D93-D1DF18BF2A3C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{4F0BA3D9-7234-4FE9-9813-9AD4706E0915}" ShortID="112601406">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Lawnmower_Hit_Layer02" ID="{B9441534-3268-4128-BF7C-5726105FCD88}" WorkUnitID="{DE37CD93-F026-4071-8D93-D1DF18BF2A3C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Beep" ID="{5A5A5F75-B6B2-433C-8A47-483241279989}">
+					<ChildrenList>
+						<Action Name="" ID="{DC58D8B2-877D-4171-B805-FAE3F13FB64C}" ShortID="65058729">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Beep" ID="{1031FBED-F44B-462E-9EDB-7A638AE4A090}" WorkUnitID="{061E61C0-CF7C-48F0-988D-B18066483043}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

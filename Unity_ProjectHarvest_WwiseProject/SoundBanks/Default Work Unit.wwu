@@ -5,17 +5,9 @@
 			<ChildrenList>
 				<SoundBank Name="General" ID="{7C9196CF-69E9-44BE-A661-7FBA322F7AB9}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Play_MandragoraShooter" ID="{9839EEC0-5FB3-434A-B945-1F0D672D71DE}" WorkUnitID="{D5FE0764-4F64-45A3-BBE5-9C04E443A2D8}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_ButtonHover" ID="{98189560-1FD0-438F-A9B2-8C37F2CFCCF4}" WorkUnitID="{D5FE0764-4F64-45A3-BBE5-9C04E443A2D8}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_MandragoraHealerSpawn" ID="{341980F8-2F6A-4519-8471-A75C08131E35}" WorkUnitID="{D5FE0764-4F64-45A3-BBE5-9C04E443A2D8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Default Work Unit" ID="{D5FE0764-4F64-45A3-BBE5-9C04E443A2D8}" WorkUnitID="{D5FE0764-4F64-45A3-BBE5-9C04E443A2D8}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_BlackberryHit" ID="{EF7748F9-C28E-4714-A1CE-2EEB807C5C36}" WorkUnitID="{D5FE0764-4F64-45A3-BBE5-9C04E443A2D8}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_ButtonPress" ID="{C48EC611-401F-47F7-8D96-88548E69E63D}" WorkUnitID="{D5FE0764-4F64-45A3-BBE5-9C04E443A2D8}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_BoomerangThrow" ID="{FF79C0D0-479A-4858-9AA6-736D8CCB29AD}" WorkUnitID="{D5FE0764-4F64-45A3-BBE5-9C04E443A2D8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="RosarioWU" ID="{B0584BF8-363A-4994-B333-BC68BAEE0201}" WorkUnitID="{B0584BF8-363A-4994-B333-BC68BAEE0201}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_MandragoraShooterDeath" ID="{29464442-2E13-4A13-8167-E5CA6609EA14}" WorkUnitID="{D5FE0764-4F64-45A3-BBE5-9C04E443A2D8}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_ButtonPause" ID="{60D87090-188A-4DC2-8209-E2878E7F1DF3}" WorkUnitID="{D5FE0764-4F64-45A3-BBE5-9C04E443A2D8}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Start" ID="{8A89D28D-A17C-4E61-AAC2-B5AA571525E8}" WorkUnitID="{D5FE0764-4F64-45A3-BBE5-9C04E443A2D8}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Agustina_WU" ID="{326B3AC4-91B5-4FB7-AA05-E29BC4145962}" WorkUnitID="{326B3AC4-91B5-4FB7-AA05-E29BC4145962}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
