@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: 2770d8bfcea4b264f91f217febe9eb1d
+guid: 68fa1455dd6280f43911b574b91066a1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2918026126367437232
-    second: BARRA DE XP_white_0
+      213: 4759556777024598640
+    second: fade_32_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
-    sRGBTexture: 1
+    sRGBTexture: 0
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
@@ -52,7 +52,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 90, y: 0, z: 90, w: 0}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -96,27 +96,40 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BARRA DE XP_white_0
+      name: fade_32_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 400
-        height: 37
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 05e4f8cc2b61187d0800000000000000
-      internalID: -2918026126367437232
+      spriteID: 072bad6eba75d0240800000000000000
+      internalID: 4759556777024598640
       vertices: []
       indices: 
       edges: []
@@ -126,7 +139,7 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 1537655665
+    internalID: 0
     vertices: []
     indices: 
     edges: []
@@ -135,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BARRA DE XP_white_0: -2918026126367437232
+      fade_32_0: 4759556777024598640
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

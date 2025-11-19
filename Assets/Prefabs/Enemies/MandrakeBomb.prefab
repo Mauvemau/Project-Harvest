@@ -301,7 +301,7 @@ MonoBehaviour:
     rid: 3817803483392508030
   maxHealth: 30
   currentHealth: 0
-  movementSpeed: 15
+  movementSpeed: 20
   pushResistanceMultiplier: 1
   alwaysFaceTarget: 0
   manuallyAttack: 1
