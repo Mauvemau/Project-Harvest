@@ -53,6 +53,7 @@ public class Enemy : MonoBehaviour, IDamageable, IPushable, IFacingDirection, IA
 #endif
 
     private Rigidbody2D _rb;
+    private Collider2D _collider;
     private bool _alive;
     private bool _loaded;
     private Vector2 _pushVelocity;
@@ -95,6 +96,10 @@ public class Enemy : MonoBehaviour, IDamageable, IPushable, IFacingDirection, IA
         _alive = false;
         weaponReference?.gameObject.SetActive(false);
         damageFeedbackManager.SetDead();
+        
+        if (_collider){
+            _collider.enabled = false;
+        }
         
         deathAudioEvent?.Post(gameObject);
         dropManager.HandleRequestDrops(transform.position);
@@ -238,6 +243,9 @@ public class Enemy : MonoBehaviour, IDamageable, IPushable, IFacingDirection, IA
         if (!TryGetComponent(out _rb)) {
             Debug.LogError($"{name}: missing reference \"{nameof(_rb)}\"");
         }
+        if (!TryGetComponent(out _collider)) {
+            Debug.LogWarning($"{name}: missing \"{nameof(Collider2D)}\" and won't be able to receive damage!");
+        }
         if (!weaponReference && disableDelay > 0) {
             Debug.LogWarning($"{name}: missing reference \"{nameof(weaponReference)}\", weapon will not be disabled on death!");
         }
@@ -249,9 +257,15 @@ public class Enemy : MonoBehaviour, IDamageable, IPushable, IFacingDirection, IA
     }
     
     private void OnEnable() {
+        if (_collider){
+            _collider.enabled = true;
+        }
+        
         currentBehaviour.Reset();
+        
         Revive();
         TryFindThreatTarget();
+        
         _disableTimestamp = 0;
         
         if (_loaded) {
