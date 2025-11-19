@@ -31,7 +31,7 @@ public class WeaponUpgradeManager {
     [SerializeField] private WeaponUpgradePlanSO playerStartingPlan;
     [SerializeField] private int upgradesAvailablePerLevel = 3;
     
-    [Header("Event Listeners")] 
+    [Header("Event Invokers")] 
     [SerializeField] private VoidEventChannelSO onLevelUpChannel;
     
     [Header("Debug")]
@@ -43,8 +43,20 @@ public class WeaponUpgradeManager {
     public static event Action<List<WeaponDisplayContainer>> OnUpgradesReady = delegate {};
     public static event Action<List<WeaponDisplayContainer>> OnUpdateInventory = delegate {};
     
-    public List<WeaponDisplayContainer> GetSelectableWeapons(int count)
-    {
+    private bool AllWeaponsUpgraded() {
+        if (playerCurrentlyEquippedPlans.Length < playerInventoryReference.WeaponInventoryLimit) return false;
+        foreach (WeaponUpgradePlanSO weaponPlan in playerCurrentlyEquippedPlans) {
+            int weaponLevel = playerInventoryReference.GetPlanLevel(weaponPlan) + 1;
+            int maxLevel = weaponPlan.UpgradesCount;
+            if (weaponLevel < maxLevel) {
+                return false;
+            }
+        }
+        return true;
+    }
+    
+    private List<WeaponDisplayContainer> GetSelectableWeapons(int count) {
+        if (AllWeaponsUpgraded()) return null;
         bool inventoryFull = playerCurrentlyEquippedPlans.Length >= _inventoryLimit;
         
         List<WeaponUpgradePlanSO> basePlans = inventoryFull
@@ -92,12 +104,12 @@ public class WeaponUpgradeManager {
 
         return result;
     }
-
-
+    
     private void HandleLevelUpgrades() {
         List<WeaponDisplayContainer> levelUpWeapons = GetSelectableWeapons(upgradesAvailablePerLevel);
-        if (levelUpWeapons.Count <= 0) return;
+        if (levelUpWeapons == null) return;
         OnUpgradesReady?.Invoke(levelUpWeapons);
+        onLevelUpChannel?.RaiseEvent();
     }
 
     private void HandleConfirmUpgrade(int option) {
@@ -174,18 +186,13 @@ public class WeaponUpgradeManager {
         if (!playerInventoryReference) {
             Debug.LogError($"{nameof(WeaponUpgradeManager)} is missing a player reference!");
         }
-
-        if (onLevelUpChannel) {
-            onLevelUpChannel.OnEventRaised += HandleLevelUpgrades;
-        }
+        GlobalVariableManager.OnLevelUp += HandleLevelUpgrades;
 
         UpgradesMenuManager.OnUpgradeOptionConfirmed += HandleConfirmUpgrade;
     }
 
     public void OnDisable() {
-        if (onLevelUpChannel) {
-            onLevelUpChannel.OnEventRaised -= HandleLevelUpgrades;
-        }
+        GlobalVariableManager.OnLevelUp -= HandleLevelUpgrades;
         
         UpgradesMenuManager.OnUpgradeOptionConfirmed -= HandleConfirmUpgrade;
     }
