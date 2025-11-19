@@ -6,6 +6,8 @@
 				<ActorMixer Name="Tarantula" ID="{AD82AA81-FA77-4BA1-919B-22EFB20CB060}" ShortID="46902231">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="Color" Type="int16" Value="19"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -15,7 +17,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+							<ObjectRef Name="Ataques_Spawn" ID="{536A0A52-2A73-4938-8077-D567D71D8FD6}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -278,6 +280,7 @@
 				</ActorMixer>
 				<Sound Name="SchytheAttack" ID="{3933B38B-FAEA-4094-A6F1-62911675F02C}" ShortID="213135163">
 					<PropertyList>
+						<Property Name="Color" Type="int16" Value="19"/>
 						<Property Name="Highpass" Type="int16">
 							<ValueList>
 								<Value>15</Value>
@@ -310,6 +313,7 @@
 								</ModifierInfo>
 							</ModifierList>
 						</Property>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="Pitch" Type="int32">
 							<ValueList>
 								<Value>-50</Value>
@@ -348,7 +352,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+							<ObjectRef Name="Ataques_Spawn" ID="{536A0A52-2A73-4938-8077-D567D71D8FD6}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -368,12 +372,14 @@
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+						<Property Name="Color" Type="int16" Value="8"/>
 						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 						<Property Name="MaxSoundPerInstance" Type="int16">
 							<ValueList>
 								<Value>4</Value>
 							</ValueList>
 						</Property>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="Pitch" Type="int32">
 							<ModifierList>
 								<ModifierInfo>
@@ -402,7 +408,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+							<ObjectRef Name="SfxBus" ID="{0C418ED4-63AF-4D2A-AE82-14D939E0E412}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -705,12 +711,16 @@
 					</ObjectLists>
 				</RandomSequenceContainer>
 				<ActorMixer Name="Witch_Steps" ID="{AB50AD0B-98F8-4570-BD6B-13F25E42A787}" ShortID="339571615">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="8"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+							<ObjectRef Name="SfxBus" ID="{0C418ED4-63AF-4D2A-AE82-14D939E0E412}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -1206,6 +1216,8 @@
 				<ActorMixer Name="Lawnmower" ID="{5F51C6A8-1AF0-4CA1-9811-A6D5ED7D63A0}" ShortID="1032264619">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="Color" Type="int16" Value="19"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -1215,7 +1227,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+							<ObjectRef Name="Ataques_Spawn" ID="{536A0A52-2A73-4938-8077-D567D71D8FD6}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -1422,11 +1434,13 @@
 				<Sound Name="Beep" ID="{1031FBED-F44B-462E-9EDB-7A638AE4A090}" ShortID="517523253">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="Color" Type="int16" Value="19"/>
 						<Property Name="MaxSoundPerInstance" Type="int16">
 							<ValueList>
 								<Value>1</Value>
 							</ValueList>
 						</Property>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="UseMaxSoundPerInstance" Type="bool">
 							<ValueList>
 								<Value>True</Value>
@@ -1441,11 +1455,16 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+							<ObjectRef Name="Ataques_Spawn" ID="{536A0A52-2A73-4938-8077-D567D71D8FD6}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="Beep" ID="{C5C25651-480A-4453-AEEE-2441A1188ED9}">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.0063508297267713"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.00346408894187526"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>Beep.wav</AudioFile>
 							<MediaIDList>
