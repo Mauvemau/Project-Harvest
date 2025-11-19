@@ -14,10 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   behaviour:
     rid: 1122120478021648485
+  shotAudioEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 72943af04502f7540946530bdfc26be9, type: 2}
   hitAudioEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 0b4e49cd436e7c242834258982deb722, type: 2}
+  destroyAudioEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: feae723d3fa82da4ca2c853e0df829cd, type: 2}
   sprite: {fileID: 21300000, guid: da7b5324d4e90cf4288f4732c68754df, type: 3}
   tint: {r: 1, g: 1, b: 1, a: 1}
   references:
