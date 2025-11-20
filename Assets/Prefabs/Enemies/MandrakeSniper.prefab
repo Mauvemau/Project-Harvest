@@ -269,7 +269,7 @@ MonoBehaviour:
   spawnAudioEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: f0ac928e351f6f5419729eb0b32638d1, type: 2}
   hurtAudioEvent:
     idInternal: 0
     valueGuidInternal: 

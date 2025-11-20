@@ -9,6 +9,8 @@
 							<ChildrenList>
 								<SwitchContainer Name="Boomerang" ID="{E62CE0CF-ACAC-47BA-A97D-B2AB92192CF1}" ShortID="956226269">
 									<PropertyList>
+										<Property Name="Color" Type="int16" Value="19"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
@@ -18,7 +20,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-4</Value>
+												<Value>-6</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -27,7 +29,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+											<ObjectRef Name="Ataques_Spawn" ID="{536A0A52-2A73-4938-8077-D567D71D8FD6}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
 										</Reference>
 										<Reference Name="SwitchGroupOrStateGroup">
 											<ObjectRef Name="Boomerang" ID="{F63E557F-D8F0-486A-ABD7-BA216DB13C1A}" WorkUnitID="{DF53EFBD-A7B1-453C-9F7E-E77A28B7452B}"/>
@@ -211,6 +213,11 @@
 														</ModifierInfo>
 													</ModifierList>
 												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -366,12 +373,14 @@
 								<RandomSequenceContainer Name="BlackberryHit" ID="{C4D6EBC0-F6B9-49D8-A3F3-CCD963BBC53E}" ShortID="1013199313">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="Color" Type="int16" Value="19"/>
 										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 										<Property Name="Highpass" Type="int16">
 											<ValueList>
 												<Value>15</Value>
 											</ValueList>
 										</Property>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-2</Value>
@@ -383,7 +392,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+											<ObjectRef Name="Ataques_Spawn" ID="{536A0A52-2A73-4938-8077-D567D71D8FD6}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -485,11 +494,13 @@
 					<ChildrenList>
 						<RandomSequenceContainer Name="ButtonHover" ID="{4CB74D23-8051-4154-B763-F428F91BA65F}" ShortID="1053155134">
 							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
 								<Property Name="MaxSoundPerInstance" Type="int16">
 									<ValueList>
 										<Value>2</Value>
 									</ValueList>
 								</Property>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
 										<ModifierInfo>
@@ -530,7 +541,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+									<ObjectRef Name="UI" ID="{C2EC3E33-9483-4D74-B974-3A7B17081732}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -600,6 +611,8 @@
 						</RandomSequenceContainer>
 						<Sound Name="hvst_sfx_ui_buttonPress_v1" ID="{D964ED29-E964-4AEF-8E51-1638608D1EC6}" ShortID="32200648">
 							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-4</Value>
@@ -616,7 +629,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+									<ObjectRef Name="UI" ID="{C2EC3E33-9483-4D74-B974-3A7B17081732}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -641,6 +654,8 @@
 						</Sound>
 						<Sound Name="hvst_sfx_pauseButton_v1" ID="{FD0FC02F-9EFC-4C13-B5D0-672DCB121408}" ShortID="858026137">
 							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-7</Value>
@@ -657,7 +672,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+									<ObjectRef Name="UI" ID="{C2EC3E33-9483-4D74-B974-3A7B17081732}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -698,7 +713,8 @@
 						</Sound>
 						<Sound Name="XPBar" ID="{D2EAC87B-0272-49D0-B157-E287DB39D4DC}" ShortID="245784587">
 							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Color" Type="int16" Value="8"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
 										<ModifierInfo>
@@ -731,7 +747,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+									<ObjectRef Name="SfxBus" ID="{0C418ED4-63AF-4D2A-AE82-14D939E0E412}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -834,6 +850,7 @@
 						<RandomSequenceContainer Name="MandragoraShooter" ID="{A2F8336D-88F7-4318-9C98-BB155D4EC2D9}" ShortID="765850060">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="Color" Type="int16" Value="19"/>
 								<Property Name="Highpass" Type="int16">
 									<ValueList>
 										<Value>20</Value>
@@ -845,6 +862,7 @@
 										<Value>3</Value>
 									</ValueList>
 								</Property>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
 									<ValueList>
 										<Value>200</Value>
@@ -870,7 +888,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+									<ObjectRef Name="Ataques_Spawn" ID="{536A0A52-2A73-4938-8077-D567D71D8FD6}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -988,6 +1006,8 @@
 						</RandomSequenceContainer>
 						<BlendContainer Name="MandragoraShooterDeath" ID="{E1B2F549-A6CC-48B3-AEF3-81B4DCCE8C12}" ShortID="415008553">
 							<PropertyList>
+								<Property Name="Color" Type="int16" Value="19"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
 										<ModifierInfo>
@@ -1015,13 +1035,14 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+									<ObjectRef Name="Ataques_Spawn" ID="{536A0A52-2A73-4938-8077-D567D71D8FD6}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
 								<RandomSequenceContainer Name="Splat" ID="{27C267BE-877B-469A-9A8F-9B237DDE0C1C}" ShortID="727042823">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="Color" Type="int16" Value="19"/>
 										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="20"/>
 									</PropertyList>
 									<ReferenceList>
@@ -1129,6 +1150,7 @@
 								<RandomSequenceContainer Name="Voice" ID="{E4AC6999-F521-4223-8AF3-D98FE0F01C29}" ShortID="340537634">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="Color" Type="int16" Value="24"/>
 										<Property Name="InitialDelay" Type="Real64">
 											<ValueList>
 												<Value>0.15</Value>
@@ -1309,12 +1331,16 @@
 							</ChildrenList>
 						</BlendContainer>
 						<Sound Name="MandragoraHealerSpawn" ID="{DF497F25-3F32-4468-B964-322CB0DF943E}" ShortID="275469647">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="19"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+									<ObjectRef Name="Ataques_Spawn" ID="{536A0A52-2A73-4938-8077-D567D71D8FD6}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>

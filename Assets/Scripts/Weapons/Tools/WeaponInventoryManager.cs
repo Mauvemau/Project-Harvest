@@ -25,7 +25,7 @@ public class WeaponInventoryManager: MonoBehaviour {
     [SerializeField, ReadOnly] private List<EquippedWeaponTracker> equippedWeapons;
 
     private Factory _weaponFactory = new Factory();
-
+    
     public WeaponUpgradePlanSO[] GetEquippedPlans() {
         WeaponUpgradePlanSO[] plans = new WeaponUpgradePlanSO[equippedWeapons.Count];
         for (int i = 0; i < equippedWeapons.Count; i++) {

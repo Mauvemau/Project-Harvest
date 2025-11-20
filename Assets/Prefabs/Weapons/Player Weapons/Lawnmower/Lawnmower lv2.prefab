@@ -64,15 +64,17 @@ MonoBehaviour:
   preset: {fileID: 11400000, guid: 288c8ee57a2da3c429ed045ef7061f15, type: 2}
   bulletStats:
     speed: 400
-    lifeTime: 5
+    lifeTime: 9
     penetrationCount: 12
     pushForce: 0
   firstShotOffset: 0
   useParentTransform: 0
   destroyOnWeaponDestroy: 0
-  fireAudioEvent:
+  levelAudioSwitch:
     idInternal: 0
     valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
     WwiseObjectReference: {fileID: 0}
   offset: 2
   left: 1

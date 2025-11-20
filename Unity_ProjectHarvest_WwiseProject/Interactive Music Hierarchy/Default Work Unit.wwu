@@ -4,6 +4,10 @@
 		<WorkUnit Name="Default Work Unit" ID="{B365DC48-74D9-4F7E-8A72-7B4FD897F564}" PersistMode="Standalone">
 			<ChildrenList>
 				<MusicSwitchContainer Name="Project_Harvest_Music" ID="{D9BBFC07-2A3D-4F51-BFFE-F0B6D3A1BCC6}" ShortID="753789405">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="26"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>

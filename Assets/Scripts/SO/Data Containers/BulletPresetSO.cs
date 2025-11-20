@@ -11,6 +11,7 @@ public class BulletPresetSO : ScriptableObject {
     [Header("Audio Settings")] 
     [SerializeField] private AK.Wwise.Event shotAudioEvent;
     [SerializeField] private AK.Wwise.Event hitAudioEvent;
+    [SerializeField] private AK.Wwise.Event destroyAudioEvent;
     
     [Header("Visual Settings")]
     [SerializeField] private Sprite sprite;
@@ -21,4 +22,5 @@ public class BulletPresetSO : ScriptableObject {
     public Color Tint => tint;
     public AK.Wwise.Event ShotAudioEvent => shotAudioEvent;
     public AK.Wwise.Event HitAudioEvent => hitAudioEvent;
+    public AK.Wwise.Event DestroyAudioEvent => destroyAudioEvent;
 }

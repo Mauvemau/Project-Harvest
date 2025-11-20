@@ -50,7 +50,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <BaseStats>k__BackingField:
     attackDamage: 6
-    attackRateInSeconds: 1.5
+    attackRateInSeconds: 1
     attackSize: 5
   currentStats:
     attackDamage: 0
@@ -91,6 +91,10 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  beepingSfxEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 7cbc3c6f99f008e44b5baa4ccb7b4185, type: 2}
   currentOverlaps: []
 --- !u!120 &8495443041820173770
 LineRenderer:

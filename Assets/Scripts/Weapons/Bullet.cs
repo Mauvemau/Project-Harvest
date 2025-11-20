@@ -16,6 +16,7 @@ public class Bullet : MonoBehaviour, IBullet {
     private float _damage = 0f;
     private AK.Wwise.Event _shotSoundEffect;
     private AK.Wwise.Event _hitSoundEffect;
+    private AK.Wwise.Event _destroySoundEffect;
 
     private BulletStats _currentBulletStats;
 
@@ -39,6 +40,7 @@ public class Bullet : MonoBehaviour, IBullet {
 
         _shotSoundEffect = preset.ShotAudioEvent;
         _hitSoundEffect = preset.HitAudioEvent;
+        _destroySoundEffect = preset.DestroyAudioEvent;
 
         _timeOfDeath = Time.time + _currentBulletStats.lifeTime;
         currentBehaviour.Init(transform, _rb, _aimDirection, _currentBulletStats.speed, weaponTransform);
@@ -151,6 +153,7 @@ public class Bullet : MonoBehaviour, IBullet {
         _shot = false;
         _targetsPenetratedCount = 0;
         _currentOverlaps.Clear();
+        _destroySoundEffect?.Post(gameObject);
     }
 
     private void OnValidate() {

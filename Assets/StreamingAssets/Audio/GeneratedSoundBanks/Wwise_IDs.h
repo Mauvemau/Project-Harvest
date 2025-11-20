@@ -134,8 +134,12 @@ namespace AK
 
     namespace BUSSES
     {
+        static const AkUniqueID ATAQUES_SPAWN = 3213435389U;
+        static const AkUniqueID GRITOS = 89996055U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
         static const AkUniqueID MUSICBUS = 2886307548U;
+        static const AkUniqueID SFXBUS = 3803850708U;
+        static const AkUniqueID UI = 1551306167U;
     } // namespace BUSSES
 
     namespace AUDIO_DEVICES
