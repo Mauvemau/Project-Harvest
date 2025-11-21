@@ -5,6 +5,8 @@ using UnityEngine;
 public class PlayerCharacter : MonoBehaviour, IMovable, IDamageable, IFacingDirection, IAnimable {
     [Header("References")] 
     [SerializeField] private SpriteRenderer characterSpriteReference;
+    [Tooltip("Assign if you want the weapons to be disabled on death")]
+    [SerializeField] private WeaponInventoryManager inventoryManagerReference;
     
     [Header("Health Settings")] 
     [SerializeField] private float maxHealth = 10f;
@@ -102,6 +104,7 @@ public class PlayerCharacter : MonoBehaviour, IMovable, IDamageable, IFacingDire
         if (!_alive) return;
         currentHealth = 0;
         _alive = false;
+        inventoryManagerReference?.ToggleWeapons(false);
         ResetMovement();
         UpdateHealthBar();
         OnPlayerDeath.Invoke();
@@ -114,6 +117,8 @@ public class PlayerCharacter : MonoBehaviour, IMovable, IDamageable, IFacingDire
         UpdateHealthBar();
         SoftInit();
     }
+    
+    public bool IsAlive() => _alive;
     
     // IMovable
     
@@ -159,6 +164,7 @@ public class PlayerCharacter : MonoBehaviour, IMovable, IDamageable, IFacingDire
     private void SoftInit() {
         ResetMovement();
         transform.position = _spawnPosition;
+        inventoryManagerReference?.ToggleWeapons(true);
     }
     
     private void BaseInit() {

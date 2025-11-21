@@ -12,6 +12,7 @@ public class Collector : MonoBehaviour {
 #endif
 
     private void HandleTrigger(Collider2D collision) {
+        if (!enabled) return;
         if (!collision.TryGetComponent(out ICollectable collectable)) return;
         collectable.Collect(gameObject);
     }

@@ -1,5 +1,7 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 /// <summary>
 /// Used for tracking internally a reference to a weapon and it's current level
@@ -25,6 +27,17 @@ public class WeaponInventoryManager: MonoBehaviour {
     [SerializeField, ReadOnly] private List<EquippedWeaponTracker> equippedWeapons;
 
     private Factory _weaponFactory = new Factory();
+    private bool _weaponsToggled = true;
+    
+    public bool WeaponsToggled => _weaponsToggled;
+    
+    public void ToggleWeapons(bool toggle) {
+        _weaponsToggled = toggle;
+        foreach (EquippedWeaponTracker weaponTracker in equippedWeapons) {
+            GameObject weaponReference = weaponTracker.weaponReference;
+            weaponReference.SetActive(toggle);
+        }
+    }
     
     public WeaponUpgradePlanSO[] GetEquippedPlans() {
         WeaponUpgradePlanSO[] plans = new WeaponUpgradePlanSO[equippedWeapons.Count];

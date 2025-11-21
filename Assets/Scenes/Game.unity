@@ -591,17 +591,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1972705331 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6185150928903746312, guid: dbcfed1e5bc403b49997de8a71b6dc3e, type: 3}
-  m_PrefabInstance: {fileID: 3431711331352404105}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1972705332 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3864861913531434941, guid: dbcfed1e5bc403b49997de8a71b6dc3e, type: 3}
   m_PrefabInstance: {fileID: 3431711331352404105}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1972705331}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 38eddc9e026ffbe49858bf3aee380e51, type: 3}
@@ -741,6 +736,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dbcfed1e5bc403b49997de8a71b6dc3e, type: 3}
+--- !u!114 &3431711331352404106 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 518799155312524631, guid: dbcfed1e5bc403b49997de8a71b6dc3e, type: 3}
+  m_PrefabInstance: {fileID: 3431711331352404105}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31b8a3cbbc4052d438552eaf79d4fae4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6811938645184986932
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -764,7 +770,7 @@ PrefabInstance:
     - target: {fileID: 901040559531970695, guid: e4b5b5b1eeac59648beda440a153c5cd, type: 3}
       propertyPath: playerCharacter
       value: 
-      objectReference: {fileID: 1972705331}
+      objectReference: {fileID: 3431711331352404106}
     - target: {fileID: 901040559531970695, guid: e4b5b5b1eeac59648beda440a153c5cd, type: 3}
       propertyPath: weaponUpgradeManager.playerInventoryReference
       value: 

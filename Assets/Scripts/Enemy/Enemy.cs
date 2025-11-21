@@ -107,6 +107,8 @@ public class Enemy : MonoBehaviour, IDamageable, IPushable, IFacingDirection, IA
         _disableTimestamp = Time.time + disableDelay;
     }
     
+    public bool IsAlive() => _alive;
+    
     public void SetMaxHealth(float value) {
         if (value <= 0) {
             Debug.LogWarning($"{name}: Trying to set max health to a value less or equal to zero.");
