@@ -14,6 +14,9 @@ public class GlobalVariableManager {
 
     [Header("Controllers")]
     [SerializeField] private ProgressBarController xpBarController;
+
+    [Header("SFX Settings")] 
+    [SerializeField] private AK.Wwise.RTPC xpProgressRtpc; 
     
     [Header("Event Invokers")]
     [SerializeField] private StringEventChannelSo onUpdateLevelValue;
@@ -46,6 +49,7 @@ public class GlobalVariableManager {
     
     public void AddCurrentExperience(float amount) {
         gameCurrentVariables.CurrentExperience += amount;
+        xpProgressRtpc?.SetGlobalValue((gameCurrentVariables.CurrentExperience / gameCurrentVariables.ExperienceNeeded) * 100f);
         CheckIfLevelUp();
         UpdateXpBarUI();
     }

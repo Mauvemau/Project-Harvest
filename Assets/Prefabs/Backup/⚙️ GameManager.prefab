@@ -263,7 +263,10 @@ MonoBehaviour:
     xpBarController:
       onMaxValueUpdated: {fileID: 11400000, guid: 40ddeb8e2dbdd0743bc9384284179e46, type: 2}
       onCurrentValueUpdated: {fileID: 11400000, guid: c28db6d21fd4cc548a72f8815dcee919, type: 2}
-    onLevelUp: {fileID: 11400000, guid: 12065afae534b5d44b27039d0a206374, type: 2}
+    xpProgressRtpc:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: 20585836bacc5894cb663284339f52b1, type: 2}
     onUpdateLevelValue: {fileID: 11400000, guid: 990f16423c416864db0028b0e405fd15, type: 2}
   playerCharacter: {fileID: 0}
   spawnManager: {fileID: 0}
