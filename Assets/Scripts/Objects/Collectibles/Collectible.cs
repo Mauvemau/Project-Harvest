@@ -7,6 +7,9 @@ public abstract class Collectible : MonoBehaviour, ICollectable {
     [SerializeField] private float collectAnimationDuration = .2f;
     [SerializeField] private AnimationCurve animationCurve = AnimationCurve.Linear(0f, 0f, 1f, 1f);
 
+    [Header("SFX Settings")] 
+    [SerializeField] private AK.Wwise.Event collectSfxEvent;
+
     private bool _collected = false;
 
     IEnumerator PerformCollectAnimation(Vector3 startPoint, Vector3 endPoint) {
@@ -21,6 +24,7 @@ public abstract class Collectible : MonoBehaviour, ICollectable {
         }
 
         transform.position = endPoint;
+        collectSfxEvent?.Post(gameObject);
         OnCollect();
         gameObject.SetActive(false);
     }
