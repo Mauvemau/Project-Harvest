@@ -13,6 +13,8 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID GAME_LOSE = 3425053597U;
+        static const AkUniqueID GAME_WIN = 3218375656U;
         static const AkUniqueID LAWNMOWER_END = 773559505U;
         static const AkUniqueID LAWNMOWER_HIT = 188167277U;
         static const AkUniqueID LAWNMOWER_START = 3994001794U;
@@ -132,8 +134,12 @@ namespace AK
 
     namespace BUSSES
     {
+        static const AkUniqueID ATAQUES_SPAWN = 3213435389U;
+        static const AkUniqueID GRITOS = 89996055U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
         static const AkUniqueID MUSICBUS = 2886307548U;
+        static const AkUniqueID SFXBUS = 3803850708U;
+        static const AkUniqueID UI = 1551306167U;
     } // namespace BUSSES
 
     namespace AUDIO_DEVICES

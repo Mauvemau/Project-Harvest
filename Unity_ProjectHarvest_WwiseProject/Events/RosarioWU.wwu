@@ -121,6 +121,8 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Game_Win" ID="{9CD15B05-0C88-4B54-958D-4BA412F2704F}"/>
+				<Event Name="Game_Lose" ID="{CDE33071-1BE6-4CD4-836C-D1BD6AF718C1}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{0C381564-2027-4215-9157-13019DD7B9D3}" SchemaVersion="123">
 	<MixingSessions>
-		<WorkUnit Name="Default Work Unit" ID="{0C381564-2027-4215-9157-13019DD7B9D3}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{0C381564-2027-4215-9157-13019DD7B9D3}" PersistMode="Standalone">
+			<ChildrenList>
+				<MixingSession Name="Shooter" ID="{CDA8D46D-6748-4213-A44A-F9B72E134E1E}">
+					<ObjectList>
+						<ObjectRef Name="hvst_sfx_mandragoraShooter_shot_var_001" ID="{9BD35D1D-9B67-43BA-BFB5-1F66C3CEC831}" WorkUnitID="{2A900AED-FB27-46FF-9350-EB1B5CFF717C}"/>
+						<ObjectRef Name="hvst_sfx_mandragoraShooter_shot_var_002" ID="{E7497604-81D7-4572-8DEA-326E80443108}" WorkUnitID="{2A900AED-FB27-46FF-9350-EB1B5CFF717C}"/>
+					</ObjectList>
+				</MixingSession>
+			</ChildrenList>
+		</WorkUnit>
 	</MixingSessions>
 </WwiseDocument>
