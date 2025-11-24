@@ -30,6 +30,22 @@ public class CentralizedFactory : MonoBehaviour {
         return obj;
     }
 
+    public List<GameObject> GetAllActiveObjects(GameObject prefab) {
+        List<GameObject> activeObjects = new  List<GameObject>();
+        
+        foreach (MyObjectPool pool in objectPools) {
+            if (pool.GetObjectToPool() != prefab) continue;
+            
+            GameObject[] pooledObjects = pool.GetPooledObjects();
+            foreach (GameObject pooledObject in pooledObjects) {
+                if(!pooledObject.activeInHierarchy) continue;
+                activeObjects.Add(pooledObject);
+            }
+        }
+
+        return activeObjects;
+    }
+    
     private void SoftWipe() {
         foreach (MyObjectPool pool in objectPools) {
             pool.PoolCleanup();

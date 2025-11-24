@@ -45,4 +45,6 @@ public class FollowTargetDistanceStrategy : ICharacterBehaviourStrategy {
         _lookDirection = Vector2.zero;
         _followStrategy.Reset();
     }
+    
+    public object Clone() => MemberwiseClone();
 }

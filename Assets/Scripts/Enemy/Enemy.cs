@@ -184,6 +184,10 @@ public class Enemy : MonoBehaviour, IDamageable, IPushable, IFacingDirection, IA
     public void SetThreatTarget(GameObject target) {
         threatTargetReference = target;
     }
+
+    public void SetBehaviourStrategy(ICharacterBehaviourStrategy strategy) {
+        currentBehaviour = (ICharacterBehaviourStrategy)strategy.Clone();
+    }
     
     //
 

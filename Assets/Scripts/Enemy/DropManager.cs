@@ -34,46 +34,23 @@ public class DropManager {
         if (drops == null || drops.Count == 0) return;
         if (!TryFindCentralizedFactory()) return;
 
-        float roll = Random.value;
-        float cumulative = 0f;
-        
         int droppedCount = 0;
 
-        foreach (var drop in drops) {
-            cumulative += drop.DropChance;
-            if (!(roll <= cumulative)) continue;
+        foreach (CollectibleDrop drop in drops) {
+            if (Random.value > drop.DropChance) {
+                continue;
+            }
+
             Vector2 finalPosition = position;
-                
+            
             if (droppedCount > 0) {
-                Vector2 offset = Random.insideUnitCircle * multipleDropOffsetDistance;
+                Vector2 offset = Random.insideUnitCircle.normalized * multipleDropOffsetDistance;
+
                 finalPosition += offset;
             }
 
             drop.RequestDrop(_centralizedFactory, finalPosition);
             droppedCount++;
-        }
-    }
-    
-    private void OnValidate() {
-        if (drops == null || drops.Count == 0) return;
-
-        float total = 0f;
-
-        for (int i = 0; i < drops.Count; i++) {
-            if (total >= 1f) {
-                drops[i].DropChance = 0f;
-                continue;
-            }
-
-            total += drops[i].DropChance;
-
-            if (!(total > 1f)) continue;
-            float excess = total - 1f;
-            drops[i].DropChance -= excess;
-            total = 1f;
-
-            Debug.LogWarning($"[CollectibleDropManager] Total drop chance exceeded 100%. " +
-                             $"Clamped element at index {i} to keep total at 100%.");
         }
     }
 }
