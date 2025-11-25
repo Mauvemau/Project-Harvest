@@ -6366,6 +6366,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="Recibir daño-Gain_03-01" ID="{70193715-FB78-42D4-84F6-2222E9D1A7D3}" ShortID="680140076">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>35</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -6388,6 +6395,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="susp-DynA-Gain_02-02" ID="{BADD7622-4367-4CB2-BEAD-F8B5BA5DDBDC}" ShortID="491844080">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>39</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -6416,6 +6430,11 @@
 												<Value>-5</Value>
 											</ValueList>
 										</Property>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>33</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -6439,6 +6458,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="susp-DynA-Gain_02-05" ID="{B4E4E8FF-9217-4CCE-AC89-84AF544C8718}" ShortID="880378643">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>40</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -6461,6 +6487,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Suspiros_01-43" ID="{6F563E99-FEE5-46B3-8FF0-6A282B358F4D}" ShortID="684355536">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>36</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -6483,6 +6516,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Suspiros_01-45" ID="{C9FB764C-B1B9-4DCA-84A2-1271980C4FF6}" ShortID="1031542516">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>23</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -6505,6 +6545,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Mandrágora_02-29" ID="{0B933D17-0085-47CF-81A8-57FB4DF727B4}" ShortID="855183981">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>39</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -6527,6 +6574,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Recibir daño_02-42" ID="{85320310-CFBC-4D18-9945-C3A6DAB7078D}" ShortID="853138095">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>36</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -6571,6 +6625,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Recibir daño_02-66" ID="{2529CE60-A34A-4E02-88B2-29A983C6676F}" ShortID="277059290">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>34</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -6659,6 +6720,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Recibir daño-DynA-Gain_01-05" ID="{DC30CC14-1D24-4E5F-9E2E-BD98E1CADF99}" ShortID="114303576">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>33</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -6703,6 +6771,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Recibir daño-Gain_02-01" ID="{A88C0E86-3959-42F2-9AF2-FA18D6309CF0}" ShortID="1007094253">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>37</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -6722,6 +6797,93 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="Recibir daño-Gain_02-01" ID="{D892B8BE-005C-4ABC-A557-68897D2627E9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Sil 3" ID="{966FC401-D71D-403E-94FE-36C755F2B3F9}" ShortID="289694005">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>74</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Sil 3" ID="{1CAFCA0A-A69A-40A0-B550-C1989CE52B36}">
+											<Language>SFX</Language>
+											<AudioFile>Sil 3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="330830439"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Sil 3" ID="{1CAFCA0A-A69A-40A0-B550-C1989CE52B36}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Sil 4" ID="{DA9544B9-B175-49D1-A437-50A879052238}" ShortID="641924804">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>70</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Sil 4" ID="{CE3B51DF-BBA3-4998-90A6-DD3F8145807A}">
+											<Language>SFX</Language>
+											<AudioFile>Sil 4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="686495137"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Sil 4" ID="{CE3B51DF-BBA3-4998-90A6-DD3F8145807A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Sil 5" ID="{70DC7CAA-0A9F-4D53-9999-D1A10140B35A}" ShortID="459213808">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>70</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Sil 5" ID="{E0AF0D8E-4A55-4188-91B5-4218CF7FBC76}">
+											<Language>SFX</Language>
+											<AudioFile>Sil 5.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="581480299"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Sil 5" ID="{E0AF0D8E-4A55-4188-91B5-4218CF7FBC76}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
