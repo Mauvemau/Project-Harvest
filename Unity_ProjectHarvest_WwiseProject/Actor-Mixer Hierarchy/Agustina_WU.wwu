@@ -35,9 +35,10 @@
 						<RandomSequenceContainer Name="Damage" ID="{D4C59AB3-A83D-48A2-B913-0FC7C310F935}" ShortID="750715773">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 								<Property Name="MaxSoundPerInstance" Type="int16">
 									<ValueList>
-										<Value>2</Value>
+										<Value>1</Value>
 									</ValueList>
 								</Property>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
@@ -616,9 +617,10 @@
 						<RandomSequenceContainer Name="Cry" ID="{52FEDAC8-F6AD-456A-B07E-59ADDCFFE6B3}" ShortID="62987464">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 								<Property Name="MaxSoundPerInstance" Type="int16">
 									<ValueList>
-										<Value>2</Value>
+										<Value>1</Value>
 									</ValueList>
 								</Property>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
@@ -2389,9 +2391,10 @@
 						<RandomSequenceContainer Name="Damage" ID="{D1064CDB-9BB8-4928-9C33-00792018D376}" ShortID="21998303">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 								<Property Name="MaxSoundPerInstance" Type="int16">
 									<ValueList>
-										<Value>2</Value>
+										<Value>1</Value>
 									</ValueList>
 								</Property>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
@@ -2891,9 +2894,10 @@
 						<RandomSequenceContainer Name="Cry" ID="{8CD83FC9-1E28-4F3B-97CA-0C0D4AB9418A}" ShortID="938366576">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 								<Property Name="MaxSoundPerInstance" Type="int16">
 									<ValueList>
-										<Value>2</Value>
+										<Value>1</Value>
 									</ValueList>
 								</Property>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
@@ -4682,9 +4686,10 @@
 						<RandomSequenceContainer Name="Damage" ID="{A775E598-4171-475E-99E6-703D2CE94875}" ShortID="994996406">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 								<Property Name="MaxSoundPerInstance" Type="int16">
 									<ValueList>
-										<Value>2</Value>
+										<Value>1</Value>
 									</ValueList>
 								</Property>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
@@ -5393,9 +5398,10 @@
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Cry" ID="{87673B9C-0B90-4CCE-AAB5-CBD5B2164B62}" ShortID="531141990">
 							<PropertyList>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 								<Property Name="MaxSoundPerInstance" Type="int16">
 									<ValueList>
-										<Value>2</Value>
+										<Value>1</Value>
 									</ValueList>
 								</Property>
 								<Property Name="UseMaxSoundPerInstance" Type="bool">
@@ -6863,6 +6869,17 @@
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Death" ID="{A83AF378-2CBD-4FCD-AA2E-E3E695942716}" ShortID="1059989345">
 							<PropertyList>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-2</Value>

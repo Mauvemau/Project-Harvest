@@ -41,7 +41,7 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Lose" ID="{87607643-4686-4F40-8128-990CCC7A4C2B}"/>
+						<CurrentStateRef Name="MainMenu" ID="{9BF45D73-D844-465B-A357-12F24A31AD4D}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Healthy" ID="{B52D66F8-AA47-4F9F-BDAD-8BC6EC7FA98F}"/>

@@ -58,6 +58,7 @@ namespace AK
                 static const AkUniqueID HARVEST_COMBAT = 4182149263U;
                 static const AkUniqueID HARVEST_UPGRADEMENU = 2802927180U;
                 static const AkUniqueID LOSE = 221232726U;
+                static const AkUniqueID MAINMENU = 3604647259U;
                 static const AkUniqueID NONE = 748895195U;
                 static const AkUniqueID WIN = 979765101U;
             } // namespace STATE

@@ -5,13 +5,6 @@
 			<ChildrenList>
 				<Event Name="Start" ID="{8A89D28D-A17C-4E61-AAC2-B5AA571525E8}">
 					<ChildrenList>
-						<Action Name="" ID="{E08F5660-586B-4970-AE70-432207E48C63}" ShortID="329789142">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Project_Harvest_Music" ID="{D9BBFC07-2A3D-4F51-BFFE-F0B6D3A1BCC6}" WorkUnitID="{B365DC48-74D9-4F7E-8A72-7B4FD897F564}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
 						<Action Name="" ID="{DFCA4137-0DA5-4D98-B0D7-1BAA909A5A4D}" ShortID="165908762">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="22"/>
@@ -19,6 +12,13 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Harvest_Combat" ID="{093046DC-DF7A-407D-B5BD-086421FD76E3}" WorkUnitID="{E2758875-EF17-4E75-A3A7-BCEA4BFFE52F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{E08F5660-586B-4970-AE70-432207E48C63}" ShortID="329789142">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Project_Harvest_Music" ID="{D9BBFC07-2A3D-4F51-BFFE-F0B6D3A1BCC6}" WorkUnitID="{B365DC48-74D9-4F7E-8A72-7B4FD897F564}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

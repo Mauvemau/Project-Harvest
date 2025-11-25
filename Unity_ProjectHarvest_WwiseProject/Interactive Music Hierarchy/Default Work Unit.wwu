@@ -389,6 +389,10 @@
 														<CustomState Name="" ID="{58E598AB-7555-45E1-8B26-33638A6F5EBD}" ShortID="623771499"/>
 													</CustomState>
 													<CustomState>
+														<StateRef Name="MainMenu" ID="{9BF45D73-D844-465B-A357-12F24A31AD4D}"/>
+														<CustomState Name="" ID="{39CC86AA-BD0D-42F0-9408-5B7C5B3F3452}" ShortID="223174831"/>
+													</CustomState>
+													<CustomState>
 														<StateRef Name="Harvest_UpgradeMenu" ID="{EEC93FC1-8933-482F-854B-7218BEADECBA}"/>
 														<CustomState Name="" ID="{436FCC65-ED70-4294-A7AB-58E4A2226061}" ShortID="705529007">
 															<PropertyList>
@@ -1223,6 +1227,10 @@
 													<CustomState>
 														<StateRef Name="Harvest_Combat" ID="{093046DC-DF7A-407D-B5BD-086421FD76E3}"/>
 														<CustomState Name="" ID="{2832C08C-61EF-45D9-B5CA-D50492458625}" ShortID="1055050717"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="MainMenu" ID="{9BF45D73-D844-465B-A357-12F24A31AD4D}"/>
+														<CustomState Name="" ID="{5FD229A4-DE9F-4CC7-A964-85AE7A78D239}" ShortID="35581448"/>
 													</CustomState>
 													<CustomState>
 														<StateRef Name="Harvest_UpgradeMenu" ID="{EEC93FC1-8933-482F-854B-7218BEADECBA}"/>
@@ -2060,6 +2068,10 @@
 													<CustomState>
 														<StateRef Name="Harvest_Combat" ID="{093046DC-DF7A-407D-B5BD-086421FD76E3}"/>
 														<CustomState Name="" ID="{6EB2F76B-F6FD-4315-B88B-952B32DF2B2F}" ShortID="814169198"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="MainMenu" ID="{9BF45D73-D844-465B-A357-12F24A31AD4D}"/>
+														<CustomState Name="" ID="{CAF21417-7D5B-4E83-B1EB-2729881F336F}" ShortID="161794747"/>
 													</CustomState>
 													<CustomState>
 														<StateRef Name="Harvest_UpgradeMenu" ID="{EEC93FC1-8933-482F-854B-7218BEADECBA}"/>
@@ -2902,6 +2914,10 @@
 														<CustomState Name="" ID="{02395A44-0215-4B0A-A2F6-52D66C9FFC5C}" ShortID="527561745"/>
 													</CustomState>
 													<CustomState>
+														<StateRef Name="MainMenu" ID="{9BF45D73-D844-465B-A357-12F24A31AD4D}"/>
+														<CustomState Name="" ID="{A4276185-3C9C-41DD-8A93-D5FFC08E7DC0}" ShortID="241285961"/>
+													</CustomState>
+													<CustomState>
 														<StateRef Name="Harvest_UpgradeMenu" ID="{EEC93FC1-8933-482F-854B-7218BEADECBA}"/>
 														<CustomState Name="" ID="{AB35E575-94DB-49CB-B9AA-D89E7DBF35F9}" ShortID="361724311">
 															<PropertyList>
@@ -3737,6 +3753,10 @@
 													<CustomState>
 														<StateRef Name="Harvest_Combat" ID="{093046DC-DF7A-407D-B5BD-086421FD76E3}"/>
 														<CustomState Name="" ID="{DA2721DB-E84C-4E47-B6A0-DD057A496CC9}" ShortID="698541065"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="MainMenu" ID="{9BF45D73-D844-465B-A357-12F24A31AD4D}"/>
+														<CustomState Name="" ID="{03B56C22-CA02-4FDC-AA61-10F600D0AC4B}" ShortID="222959123"/>
 													</CustomState>
 													<CustomState>
 														<StateRef Name="Harvest_UpgradeMenu" ID="{EEC93FC1-8933-482F-854B-7218BEADECBA}"/>
@@ -4580,6 +4600,10 @@
 														<CustomState Name="" ID="{7BE7FEF6-4DD9-44D8-975B-FFB673460EEA}" ShortID="353211138"/>
 													</CustomState>
 													<CustomState>
+														<StateRef Name="MainMenu" ID="{9BF45D73-D844-465B-A357-12F24A31AD4D}"/>
+														<CustomState Name="" ID="{CB658D35-331A-4FAC-BF30-D246E8DFDF6F}" ShortID="191582113"/>
+													</CustomState>
+													<CustomState>
 														<StateRef Name="Harvest_UpgradeMenu" ID="{EEC93FC1-8933-482F-854B-7218BEADECBA}"/>
 														<CustomState Name="" ID="{578D44D6-EA87-45D5-8AFB-3D433CB88F33}" ShortID="772589305">
 															<PropertyList>
@@ -5311,14 +5335,22 @@
 								<CustomStateList>
 									<CustomState>
 										<StateRef Name="Harvest_Combat" ID="{093046DC-DF7A-407D-B5BD-086421FD76E3}"/>
-										<CustomState Name="" ID="{D5D96666-ACA7-4E6B-A9B5-0717A2045E2E}" ShortID="896935601"/>
+										<CustomState Name="" ID="{D5D96666-ACA7-4E6B-A9B5-0717A2045E2E}" ShortID="896935601">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-13"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="MainMenu" ID="{9BF45D73-D844-465B-A357-12F24A31AD4D}"/>
+										<CustomState Name="" ID="{F36F2C33-3F85-46C9-9725-C9FF8D049EAF}" ShortID="209758814"/>
 									</CustomState>
 									<CustomState>
 										<StateRef Name="Harvest_UpgradeMenu" ID="{EEC93FC1-8933-482F-854B-7218BEADECBA}"/>
 										<CustomState Name="" ID="{4D97FFDB-8075-47E2-A1F8-04E700999FE0}" ShortID="345506945">
 											<PropertyList>
 												<Property Name="Lowpass" Type="int16" Value="49"/>
-												<Property Name="Volume" Type="Real64" Value="-11"/>
+												<Property Name="Volume" Type="Real64" Value="-20"/>
 											</PropertyList>
 										</CustomState>
 									</CustomState>
@@ -6151,6 +6183,24 @@
 											<ObjectList Name="EntryPath">
 												<Reference>
 													<ObjectRef Name="Win" ID="{67DDE0DE-9497-4E7E-AA81-53CEA220F829}" WorkUnitID="{E2758875-EF17-4E75-A3A7-BCEA4BFFE52F}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{D947DAE7-BCDF-42D9-9007-9EDD58E6049F}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Harvest_Combat" ID="{1348C944-1A4F-4D75-8E7E-D6431BBC68A1}" WorkUnitID="{B365DC48-74D9-4F7E-8A72-7B4FD897F564}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="MainMenu" ID="{9BF45D73-D844-465B-A357-12F24A31AD4D}" WorkUnitID="{E2758875-EF17-4E75-A3A7-BCEA4BFFE52F}"/>
 												</Reference>
 											</ObjectList>
 										</ObjectLists>
