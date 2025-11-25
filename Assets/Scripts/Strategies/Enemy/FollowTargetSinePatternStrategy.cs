@@ -81,4 +81,6 @@ public class FollowTargetSinePatternStrategy : ICharacterBehaviourStrategy {
         _time = 0f;
         _gripTimer = 1f;
     }
+    
+    public object Clone() => MemberwiseClone();
 }

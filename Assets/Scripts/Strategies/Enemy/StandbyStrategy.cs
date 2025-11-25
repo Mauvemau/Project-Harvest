@@ -13,4 +13,6 @@ public class StandbyStrategy : ICharacterBehaviourStrategy {
     }
 
     public void Reset() {}
+    
+    public object Clone() => MemberwiseClone();
 }

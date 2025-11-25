@@ -192,6 +192,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collectRadius: 2.5
+  batchCollectInterval: 0.02
   drawRadiusGizmo: 1
   gizmoColor: {r: 1, g: 0, b: 1, a: 1}
 --- !u!1 &6185150928903746312
