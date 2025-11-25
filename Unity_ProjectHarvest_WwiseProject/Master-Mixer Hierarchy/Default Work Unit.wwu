@@ -103,6 +103,14 @@
 									</PropertyList>
 								</CustomState>
 							</CustomState>
+							<CustomState>
+								<StateRef Name="Win" ID="{67DDE0DE-9497-4E7E-AA81-53CEA220F829}"/>
+								<CustomState Name="" ID="{BFADFBB2-954D-40D0-8859-759EFBF7BDA0}" ShortID="363865809"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Lose" ID="{87607643-4686-4F40-8128-990CCC7A4C2B}"/>
+								<CustomState Name="" ID="{0EB11AE4-8718-4B82-81E4-7B4A724952BE}" ShortID="213686042"/>
+							</CustomState>
 						</CustomStateList>
 					</StateInfo>
 				</Bus>

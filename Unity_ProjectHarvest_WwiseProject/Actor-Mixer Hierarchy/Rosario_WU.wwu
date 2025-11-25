@@ -1440,6 +1440,11 @@
 								<Value>1</Value>
 							</ValueList>
 						</Property>
+						<Property Name="OutputBusVolume" Type="Real64">
+							<ValueList>
+								<Value>6</Value>
+							</ValueList>
+						</Property>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="UseMaxSoundPerInstance" Type="bool">
 							<ValueList>
@@ -1474,6 +1479,258 @@
 					</ChildrenList>
 					<ActiveSourceList>
 						<ActiveSource Name="Beep" ID="{C5C25651-480A-4453-AEEE-2441A1188ED9}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="SFX_Health" ID="{86638B2C-FA13-4452-8394-A00EABB219DD}" ShortID="843740336">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="SFX_Health" ID="{197B17A1-EECD-40BE-86BC-A7D2FF7804F5}">
+							<Language>SFX</Language>
+							<AudioFile>SFX_Health.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="33395560"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="SFX_Health" ID="{197B17A1-EECD-40BE-86BC-A7D2FF7804F5}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="SXF_XPExtra" ID="{7CE7061E-DEDD-46A8-87E5-6D89054F4A5D}" ShortID="933445307">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="SXF_XPExtra" ID="{28BB9FDF-6578-42BC-81A8-7E6F379500D3}">
+							<Language>SFX</Language>
+							<AudioFile>SXF_XPExtra.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="845709566"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="SXF_XPExtra" ID="{28BB9FDF-6578-42BC-81A8-7E6F379500D3}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<RandomSequenceContainer Name="Sickle_Hit" ID="{3D784F3A-CFFD-41CD-A898-4401E4013AAE}" ShortID="30448638">
+					<PropertyList>
+						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Sickle_Hit_01" ID="{A9AF4C40-48B8-4973-A005-9A8461443140}" ShortID="602428735">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Sickle_Hit_01" ID="{C1FF5879-7FEE-4F81-944C-34CB16008FF5}">
+									<Language>SFX</Language>
+									<AudioFile>Sickle_Hit\Sickle_Hit_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="132017279"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Sickle_Hit_01" ID="{C1FF5879-7FEE-4F81-944C-34CB16008FF5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Sickle_Hit_02" ID="{232C2D0B-08BF-46BC-B726-0CAAB5C2CE44}" ShortID="473400044">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Sickle_Hit_02" ID="{87B8131E-850B-49B1-9907-FDFC1B29BA57}">
+									<Language>SFX</Language>
+									<AudioFile>Sickle_Hit\Sickle_Hit_02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="717986520"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Sickle_Hit_02" ID="{87B8131E-850B-49B1-9907-FDFC1B29BA57}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Sickle_Hit_03" ID="{EFA79172-1320-4CD8-B114-98825D1F76CF}" ShortID="155922995">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Sickle_Hit_03" ID="{8EF26F5E-3C91-40BA-B9CC-A9A6A0A56C59}">
+									<Language>SFX</Language>
+									<AudioFile>Sickle_Hit\Sickle_Hit_03.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="603158603"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Sickle_Hit_03" ID="{8EF26F5E-3C91-40BA-B9CC-A9A6A0A56C59}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Sickle_Hit_04" ID="{7117772B-C729-4EB5-B071-750B9E2EF297}" ShortID="89395662">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Sickle_Hit_04" ID="{727DADC1-1390-4B04-9164-5F827BDEEDB0}">
+									<Language>SFX</Language>
+									<AudioFile>Sickle_Hit\Sickle_Hit_04.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="360085868"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Sickle_Hit_04" ID="{727DADC1-1390-4B04-9164-5F827BDEEDB0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Sickle_Hit_05" ID="{2DD0F066-9CF2-48B7-831B-CAC9C7338DFF}" ShortID="677555843">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Sickle_Hit_05" ID="{960B99DA-B1CA-4D61-A206-305EBD5E0ECE}">
+									<Language>SFX</Language>
+									<AudioFile>Sickle_Hit\Sickle_Hit_05.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="536601739"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Sickle_Hit_05" ID="{960B99DA-B1CA-4D61-A206-305EBD5E0ECE}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Sickle_Hit_06" ID="{11B5EA57-EE64-413A-A0C3-281ADC5DB2E6}" ShortID="102838250">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Sickle_Hit_06" ID="{62D3C42C-041E-46C7-9AE5-67DD4CB2365C}">
+									<Language>SFX</Language>
+									<AudioFile>Sickle_Hit\Sickle_Hit_06.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="410178250"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Sickle_Hit_06" ID="{62D3C42C-041E-46C7-9AE5-67DD4CB2365C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<Sound Name="Weapons_Flame" ID="{B6A47CF8-C374-4AEC-AAD8-7B185CEA4B57}" ShortID="1040210723">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{062BDDB4-97C5-4D9B-B84C-9AEBCB792CF5}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="100"/>
+											<Property Name="Min" Type="Real64" Value="-100"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-9</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="5m" ID="{7B443898-9A9F-48F2-9B18-8249E7E06532}" WorkUnitID="{534FA15F-9837-4037-8FF4-5DDCE2062302}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Weapons_Flame" ID="{F1999ADD-93A6-4E8D-B847-461AC452975B}">
+							<PropertyList>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.501725918585711"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimEnd" Type="Real64" Value="1.76942017691811"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>Weapons_Flame.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="983239859"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Weapons_Flame" ID="{F1999ADD-93A6-4E8D-B847-461AC452975B}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>
