@@ -171,6 +171,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Sickle_Hit" ID="{79CF1037-7A77-4E22-910E-D9A7B768A8E8}">
+					<ChildrenList>
+						<Action Name="" ID="{26685C77-8657-4B1C-A348-2E5210899061}" ShortID="155331482">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Sickle_Hit" ID="{3D784F3A-CFFD-41CD-A898-4401E4013AAE}" WorkUnitID="{061E61C0-CF7C-48F0-988D-B18066483043}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Flame" ID="{7DEEACB9-797B-4B1D-B468-9FB566BE284D}">
+					<ChildrenList>
+						<Action Name="" ID="{8F8545E3-8A1D-4477-8C5B-70A87287043D}" ShortID="123606473">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Weapons_Flame" ID="{B6A47CF8-C374-4AEC-AAD8-7B185CEA4B57}" WorkUnitID="{061E61C0-CF7C-48F0-988D-B18066483043}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
