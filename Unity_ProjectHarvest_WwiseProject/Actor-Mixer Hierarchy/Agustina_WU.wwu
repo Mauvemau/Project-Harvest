@@ -19,7 +19,7 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-12</Value>
+								<Value>-6</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -143,14 +143,9 @@
 								</Sound>
 								<Sound Name="comun 1_01_01-175" ID="{0C633729-CD0E-45A6-B15E-275C3CF24F3D}" ShortID="454782995">
 									<PropertyList>
-										<Property Name="Inclusion" Type="bool">
-											<ValueList>
-												<Value>False</Value>
-											</ValueList>
-										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>1</Value>
+												<Value>10</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -177,14 +172,9 @@
 								</Sound>
 								<Sound Name="comun 1_01_01-179" ID="{8A85C62C-DBD1-41A0-B977-874B703B1BEF}" ShortID="420959330">
 									<PropertyList>
-										<Property Name="Inclusion" Type="bool">
-											<ValueList>
-												<Value>False</Value>
-											</ValueList>
-										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>1</Value>
+												<Value>10</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -211,14 +201,9 @@
 								</Sound>
 								<Sound Name="comun 1_01_01-183" ID="{17E27319-C3F5-4CD0-AA5A-1BF595911977}" ShortID="963879353">
 									<PropertyList>
-										<Property Name="Inclusion" Type="bool">
-											<ValueList>
-												<Value>False</Value>
-											</ValueList>
-										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>1</Value>
+												<Value>10</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -303,14 +288,9 @@
 								</Sound>
 								<Sound Name="comun 1_01_01-195" ID="{A45ED75D-742C-46F7-801B-6207F924464E}" ShortID="548658704">
 									<PropertyList>
-										<Property Name="Inclusion" Type="bool">
-											<ValueList>
-												<Value>False</Value>
-											</ValueList>
-										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>1</Value>
+												<Value>10</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -337,14 +317,9 @@
 								</Sound>
 								<Sound Name="comun 1_01_01-199" ID="{AA78AADE-D2AC-4A31-8CF4-4F868DA45C88}" ShortID="870702742">
 									<PropertyList>
-										<Property Name="Inclusion" Type="bool">
-											<ValueList>
-												<Value>False</Value>
-											</ValueList>
-										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>1</Value>
+												<Value>10</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2450,11 +2425,6 @@
 							<ChildrenList>
 								<Sound Name="Sil 5" ID="{7796C7A0-146F-4684-9402-F5BFF98DCE08}" ShortID="377733507">
 									<PropertyList>
-										<Property Name="Inclusion" Type="bool">
-											<ValueList>
-												<Value>False</Value>
-											</ValueList>
-										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
 												<Value>66</Value>
@@ -2615,11 +2585,6 @@
 								</Sound>
 								<Sound Name="Shooter 1_01_01-123" ID="{F3C8359F-0EAA-4C3A-9736-6A74541C9315}" ShortID="368703444">
 									<PropertyList>
-										<Property Name="Inclusion" Type="bool">
-											<ValueList>
-												<Value>False</Value>
-											</ValueList>
-										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
 												<Value>36</Value>
@@ -2649,11 +2614,6 @@
 								</Sound>
 								<Sound Name="Shooter 1_01_01-143" ID="{59B605B1-CD7F-480F-A841-6C3FA3BB84BE}" ShortID="549590256">
 									<PropertyList>
-										<Property Name="Inclusion" Type="bool">
-											<ValueList>
-												<Value>False</Value>
-											</ValueList>
-										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
 												<Value>37</Value>
