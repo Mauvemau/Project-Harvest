@@ -20,6 +20,10 @@
 							<Value>100</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="Melody_Volume" ID="{AC3E023C-3E5D-4AC5-8677-3F57384CCBDC}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="Player_Health" ID="{3F9A1CB9-1438-4BCE-8194-924B5CC15166}"/>
 							<Value>100</Value>
 						</RTPCValue>
@@ -29,7 +33,7 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Harvest_UpgradeMenu" ID="{EEC93FC1-8933-482F-854B-7218BEADECBA}"/>
+						<CurrentStateRef Name="Lose" ID="{87607643-4686-4F40-8128-990CCC7A4C2B}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Healthy" ID="{B52D66F8-AA47-4F9F-BDAD-8BC6EC7FA98F}"/>

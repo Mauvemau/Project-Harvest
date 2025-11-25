@@ -121,8 +121,34 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Game_Win" ID="{9CD15B05-0C88-4B54-958D-4BA412F2704F}"/>
-				<Event Name="Game_Lose" ID="{CDE33071-1BE6-4CD4-836C-D1BD6AF718C1}"/>
+				<Event Name="Game_Win" ID="{9CD15B05-0C88-4B54-958D-4BA412F2704F}">
+					<ChildrenList>
+						<Action Name="" ID="{81590AEA-825C-41BA-9C3C-DA32E06FEA60}" ShortID="713359038">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Win" ID="{67DDE0DE-9497-4E7E-AA81-53CEA220F829}" WorkUnitID="{E2758875-EF17-4E75-A3A7-BCEA4BFFE52F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Game_Lose" ID="{CDE33071-1BE6-4CD4-836C-D1BD6AF718C1}">
+					<ChildrenList>
+						<Action Name="" ID="{F87B505B-BC79-4182-9F48-EEE454B1DC97}" ShortID="418898191">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Lose" ID="{87607643-4686-4F40-8128-990CCC7A4C2B}" WorkUnitID="{E2758875-EF17-4E75-A3A7-BCEA4BFFE52F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
