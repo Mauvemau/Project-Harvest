@@ -6350,6 +6350,19 @@
 					<ChildrenList>
 						<RandomSequenceContainer Name="Witch receive damage" ID="{5CE725CF-6628-4EEE-A469-78B264ED3329}" ShortID="156529978">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-4</Value>
@@ -6889,6 +6902,13 @@
 							</ChildrenList>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Death" ID="{A83AF378-2CBD-4FCD-AA2E-E3E695942716}" ShortID="1059989345">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -6950,6 +6970,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Recibir daño-Gain_01-01 m" ID="{ABF7D05C-7B88-4BB6-AE17-A756CB2C1235}" ShortID="308603463">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -7026,6 +7053,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="susp-DynA-Gain_01-01" ID="{E4F600BE-FAC2-4893-834A-B01DBF9E51FF}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.172282177327883"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.38544555066993"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>susp-DynA-Gain_01-01.wav</AudioFile>
 											<MediaIDList>
@@ -7048,10 +7080,15 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="susp-DynA-Gain_02-02" ID="{EA280E90-D530-45EA-99F2-266B104BE7FE}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0221534659809405"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>susp-DynA-Gain_02-02.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="566571854"/>
+												<MediaID ID="796853085"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>

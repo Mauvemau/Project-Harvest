@@ -147,6 +147,13 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{B9BB627F-95F1-495E-9FD7-C7F41126F83E}" ShortID="775168098">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Death" ID="{A83AF378-2CBD-4FCD-AA2E-E3E695942716}" WorkUnitID="{8C1E1988-488E-4D21-9DBB-6F3C3F36AB36}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Play_SFX_Health" ID="{DE492DC2-AE44-4596-84A5-DD85AABA8238}">

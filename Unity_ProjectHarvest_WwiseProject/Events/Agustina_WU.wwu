@@ -71,12 +71,13 @@
 				</Event>
 				<Event Name="Play_PlayerReceiveDamage" ID="{7DD9614B-92DD-4D90-8832-D25339A15BD0}">
 					<ChildrenList>
-						<Action Name="" ID="{30DE6B01-9339-443C-B1A1-3FF6E163E09F}" ShortID="866210101"/>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_WitchDeath" ID="{3ED851D2-B8A3-4683-97CE-EAD565D68CA4}">
-					<ChildrenList>
-						<Action Name="" ID="{CCB2D261-7832-45F7-A2C1-7FC761C88213}" ShortID="155748055"/>
+						<Action Name="" ID="{30DE6B01-9339-443C-B1A1-3FF6E163E09F}" ShortID="866210101">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Witch receive damage" ID="{5CE725CF-6628-4EEE-A469-78B264ED3329}" WorkUnitID="{8C1E1988-488E-4D21-9DBB-6F3C3F36AB36}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 			</ChildrenList>

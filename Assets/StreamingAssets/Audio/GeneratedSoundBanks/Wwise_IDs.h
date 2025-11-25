@@ -25,14 +25,19 @@ namespace AK
         static const AkUniqueID PLAY_BUTTONHOVER = 479606568U;
         static const AkUniqueID PLAY_BUTTONPAUSE = 2750761056U;
         static const AkUniqueID PLAY_BUTTONPRESS = 2652178615U;
+        static const AkUniqueID PLAY_FLAME = 1506124227U;
         static const AkUniqueID PLAY_MANDRAGORAHEALERSPAWN = 255250776U;
         static const AkUniqueID PLAY_MANDRAGORASHOOTER = 3211203716U;
         static const AkUniqueID PLAY_MANDRAGORASHOOTERDEATH = 3898840282U;
+        static const AkUniqueID PLAY_PLAYERRECEIVEDAMAGE = 1724187815U;
         static const AkUniqueID PLAY_SCHYTHEATTACK = 126154U;
+        static const AkUniqueID PLAY_SFX_HEALTH = 645491656U;
         static const AkUniqueID PLAY_SHOOTERMANDRAKECRY = 1803350251U;
         static const AkUniqueID PLAY_SHOOTERMANDRAKERECIBEDAMAGE = 1618169002U;
+        static const AkUniqueID PLAY_SICKLE_HIT = 14983643U;
         static const AkUniqueID PLAY_SMALLMANDRAKECRY = 3814284364U;
         static const AkUniqueID PLAY_SMALLMANDRAKERECIBEDAMAGE = 1332341351U;
+        static const AkUniqueID PLAY_SXF_XPEXTRA = 2569333368U;
         static const AkUniqueID PLAY_TOROMANDRAKECRY = 4031256493U;
         static const AkUniqueID PLAY_TOROMANDRAKERECIBEDAMAGE = 1971773272U;
         static const AkUniqueID PLAY_XPBAR = 3421228173U;
@@ -52,7 +57,9 @@ namespace AK
             {
                 static const AkUniqueID HARVEST_COMBAT = 4182149263U;
                 static const AkUniqueID HARVEST_UPGRADEMENU = 2802927180U;
+                static const AkUniqueID LOSE = 221232726U;
                 static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID WIN = 979765101U;
             } // namespace STATE
         } // namespace GAMEPLAYSITUATION
 
@@ -120,6 +127,7 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID MELODY_VOLUME = 363245510U;
         static const AkUniqueID MUSIC_VOLUME = 1006694123U;
         static const AkUniqueID PLAYER_HEALTH = 215992295U;
         static const AkUniqueID TORO_DISTANCE = 1585544231U;

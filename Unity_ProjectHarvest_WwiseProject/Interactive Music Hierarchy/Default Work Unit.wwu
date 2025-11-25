@@ -5553,7 +5553,7 @@
 											<MusicCue Name="Ended" ID="{9BD25A64-17B6-4943-8177-8E2D2A9D5C14}">
 												<PropertyList>
 													<Property Name="CueType" Type="int16" Value="2"/>
-													<Property Name="TimeMs" Type="Real64" Value="7875"/>
+													<Property Name="TimeMs" Type="Real64" Value="7954.21913026393"/>
 												</PropertyList>
 											</MusicCue>
 										</Local>
@@ -5563,7 +5563,7 @@
 						</MusicSegment>
 						<MusicSegment Name="Harvest_Finales_Perder" ID="{428E0696-3987-42AD-8C50-066A77177694}" ShortID="175458646">
 							<PropertyList>
-								<Property Name="EndPosition" Type="Real64" Value="19084.2403628118"/>
+								<Property Name="EndPosition" Type="Real64" Value="20584.2403628118"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -5617,12 +5617,144 @@
 																	<Local>
 																		<MusicClip Name="Harvest_Finales_Perder" ID="{BFF00090-5049-44EB-A698-78878AAADC78}">
 																			<PropertyList>
-																				<Property Name="EndTrimOffset" Type="Real64" Value="17084.2403628118"/>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="1683.09480543477"/>
 																				<Property Name="FadeInDuration" Type="Real64" Value="270.009539593225"/>
 																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																				<Property Name="PlayAt" Type="Real64" Value="1000"/>
+																				<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																			</PropertyList>
 																			<AudioSourceRef Name="Harvest_Finales_Perder" ID="{FF26673F-1826-4041-BDBC-83ED8019F9E5}"/>
+																			<PropertyCurveList>
+																				<PropertyCurve PropertyName="Highpass">
+																					<Curve Name="" ID="{54B8F464-01E5-4252-9B39-BA5BFE010B5E}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>1.68309</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																				<PropertyCurve PropertyName="Lowpass">
+																					<Curve Name="" ID="{CBBD8BB8-CEB1-43D8-A303-180DC21CF409}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>1.68309</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																				<PropertyCurve PropertyName="Volume">
+																					<Curve Name="" ID="{3B711DCF-CFAD-45C8-B608-1F18AD5B7860}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>1.68309</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																			</PropertyCurveList>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicClip Name="Harvest_Finales_Perder" ID="{108C85D4-BD67-4D97-9448-AFEC5821A6A8}">
+																			<PropertyList>
+																				<Property Name="BeginTrimOffset" Type="Real64" Value="2267.33516824657"/>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="16500"/>
+																				<Property Name="FadeInDuration" Type="Real64" Value="400.759207221937"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="198.737062501332"/>
+																				<Property Name="PlayAt" Type="Real64" Value="1232.66483175343"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="Harvest_Finales_Perder" ID="{FF26673F-1826-4041-BDBC-83ED8019F9E5}"/>
+																			<PropertyCurveList>
+																				<PropertyCurve PropertyName="Highpass">
+																					<Curve Name="" ID="{5726CBCE-6335-4F44-9F14-D2285843A6CF}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>2.26733516824657</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>16.5</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																				<PropertyCurve PropertyName="Lowpass">
+																					<Curve Name="" ID="{EFC104BF-EA13-48BF-9F7B-E53588345907}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>2.26733516824657</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>16.5</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																				<PropertyCurve PropertyName="Volume">
+																					<Curve Name="" ID="{2580B51E-8E03-4230-BC55-CE60E530C8A3}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>2.26733516824657</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>16.5</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																			</PropertyCurveList>
 																		</MusicClip>
 																	</Local>
 																</Reference>
@@ -5678,7 +5810,7 @@
 																		<MusicClip Name="Music_1_Loop1_Player_Health_Wounded" ID="{A486F844-711F-46E0-B92A-3E25CE9625AA}">
 																			<PropertyList>
 																				<Property Name="BeginTrimOffset" Type="Real64" Value="2222.22222222222"/>
-																				<Property Name="EndTrimOffset" Type="Real64" Value="19029.0029989805"/>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="19796.1591379578"/>
 																				<Property Name="FadeInDuration" Type="Real64" Value="1497.06205768901"/>
 																				<Property Name="FadeOutDuration" Type="Real64" Value="5857.9995296225"/>
 																				<Property Name="PlayAt" Type="Real64" Value="-2222.22222222222"/>
@@ -5697,7 +5829,7 @@
 																								<Flags>5</Flags>
 																							</Point>
 																							<Point>
-																								<XPos>19.029</XPos>
+																								<XPos>19.79616</XPos>
 																								<YPos>0</YPos>
 																								<Flags>37</Flags>
 																							</Point>
@@ -5716,7 +5848,7 @@
 																								<Flags>5</Flags>
 																							</Point>
 																							<Point>
-																								<XPos>19.029</XPos>
+																								<XPos>19.79616</XPos>
 																								<YPos>0</YPos>
 																								<Flags>37</Flags>
 																							</Point>
@@ -5735,7 +5867,7 @@
 																								<Flags>5</Flags>
 																							</Point>
 																							<Point>
-																								<XPos>19.029</XPos>
+																								<XPos>19.79616</XPos>
 																								<YPos>0</YPos>
 																								<Flags>37</Flags>
 																							</Point>
@@ -5771,7 +5903,7 @@
 											<MusicCue Name="Exit Cue" ID="{FBCB40DB-390E-4932-BD98-89163BCF4C49}">
 												<PropertyList>
 													<Property Name="CueType" Type="int16" Value="1"/>
-													<Property Name="TimeMs" Type="Real64" Value="18500"/>
+													<Property Name="TimeMs" Type="Real64" Value="17750"/>
 												</PropertyList>
 											</MusicCue>
 										</Local>
@@ -5781,7 +5913,7 @@
 											<MusicCue Name="Ended" ID="{97A05C79-A60A-498B-8A60-6F29C4492F9A}">
 												<PropertyList>
 													<Property Name="CueType" Type="int16" Value="2"/>
-													<Property Name="TimeMs" Type="Real64" Value="17722.4443260281"/>
+													<Property Name="TimeMs" Type="Real64" Value="17750"/>
 												</PropertyList>
 											</MusicCue>
 										</Local>

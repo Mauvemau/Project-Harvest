@@ -372,7 +372,7 @@
 							<ChildrenList>
 								<RandomSequenceContainer Name="BlackberryHit" ID="{C4D6EBC0-F6B9-49D8-A3F3-CCD963BBC53E}" ShortID="1013199313">
 									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="Color" Type="int16" Value="19"/>
 										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 										<Property Name="Highpass" Type="int16">
@@ -383,7 +383,7 @@
 										<Property Name="OverrideColor" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-2</Value>
+												<Value>-9</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
