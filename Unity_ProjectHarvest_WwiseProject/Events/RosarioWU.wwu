@@ -149,6 +149,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_SFX_Health" ID="{DE492DC2-AE44-4596-84A5-DD85AABA8238}">
+					<ChildrenList>
+						<Action Name="" ID="{D56CB947-2083-457E-A813-434584B0A455}" ShortID="95266347">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Health" ID="{86638B2C-FA13-4452-8394-A00EABB219DD}" WorkUnitID="{061E61C0-CF7C-48F0-988D-B18066483043}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_SXF_XPExtra" ID="{731B4210-FC4C-4C1F-9F1A-03A41C4D806F}">
+					<ChildrenList>
+						<Action Name="" ID="{939D0C6C-AE84-481E-B328-9A5A8D9561DC}" ShortID="133475436">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SXF_XPExtra" ID="{7CE7061E-DEDD-46A8-87E5-6D89054F4A5D}" WorkUnitID="{061E61C0-CF7C-48F0-988D-B18066483043}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -1481,6 +1481,50 @@
 						<ActiveSource Name="Beep" ID="{C5C25651-480A-4453-AEEE-2441A1188ED9}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="SFX_Health" ID="{86638B2C-FA13-4452-8394-A00EABB219DD}" ShortID="843740336">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="SFX_Health" ID="{197B17A1-EECD-40BE-86BC-A7D2FF7804F5}">
+							<Language>SFX</Language>
+							<AudioFile>SFX_Health.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="33395560"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="SFX_Health" ID="{197B17A1-EECD-40BE-86BC-A7D2FF7804F5}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="SXF_XPExtra" ID="{7CE7061E-DEDD-46A8-87E5-6D89054F4A5D}" ShortID="933445307">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="SXF_XPExtra" ID="{28BB9FDF-6578-42BC-81A8-7E6F379500D3}">
+							<Language>SFX</Language>
+							<AudioFile>SXF_XPExtra.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="845709566"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="SXF_XPExtra" ID="{28BB9FDF-6578-42BC-81A8-7E6F379500D3}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
