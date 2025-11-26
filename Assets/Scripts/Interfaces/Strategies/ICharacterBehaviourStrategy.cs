@@ -1,6 +1,7 @@
+using System;
 using UnityEngine;
 
-public interface ICharacterBehaviourStrategy {
+public interface ICharacterBehaviourStrategy : ICloneable {
     /// <summary>
     /// Returns where the entity should be facing during each action
     /// </summary>

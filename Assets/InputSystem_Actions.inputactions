@@ -763,6 +763,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "InstantWin",
+                    "type": "Button",
+                    "id": "cd4c0497-f7dc-4481-87fe-90eaf4d9dddf",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -796,6 +805,17 @@
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
                     "action": "InstantDeath",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "379614a7-0222-4f06-8e1a-92e3c4c99ba8",
+                    "path": "<Keyboard>/9",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "InstantWin",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

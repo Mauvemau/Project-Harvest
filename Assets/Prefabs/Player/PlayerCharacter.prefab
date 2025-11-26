@@ -192,6 +192,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collectRadius: 2.5
+  batchCollectInterval: 0.02
   drawRadiusGizmo: 1
   gizmoColor: {r: 1, g: 0, b: 1, a: 1}
 --- !u!1 &6185150928903746312
@@ -326,6 +327,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterSpriteReference: {fileID: 1777398882794038304}
+  inventoryManagerReference: {fileID: 3864861913531434941}
   maxHealth: 17
   currentHealth: 0
   moveSpeed: 6
@@ -407,6 +409,14 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  hurtAudioEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 6db9238f150a165489714927fac8a423, type: 2}
+  deathAudioEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
   healthBarController:
     onMaxValueUpdated: {fileID: 11400000, guid: dbb5ab292a8dcac4491b4493c52a926d, type: 2}
     onCurrentValueUpdated: {fileID: 11400000, guid: 9731a1e098353e0498f52730d2b05479, type: 2}

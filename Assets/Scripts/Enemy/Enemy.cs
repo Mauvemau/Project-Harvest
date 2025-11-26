@@ -45,6 +45,9 @@ public class Enemy : MonoBehaviour, IDamageable, IPushable, IFacingDirection, IA
     [SerializeField] private bool disableOnDeath = false;
     [SerializeField] private float disableDelay = 5f;
 
+    [Header("Event Invokers")] 
+    [SerializeField] private VoidEventChannelSO onDeathEventChannel;
+
 #if UNITY_EDITOR
     [Header("Gizmo Settings")]
     [SerializeField] private bool drawAIGizmo = false;
@@ -53,6 +56,7 @@ public class Enemy : MonoBehaviour, IDamageable, IPushable, IFacingDirection, IA
 #endif
 
     private Rigidbody2D _rb;
+    private Collider2D _collider;
     private bool _alive;
     private bool _loaded;
     private Vector2 _pushVelocity;
@@ -96,11 +100,17 @@ public class Enemy : MonoBehaviour, IDamageable, IPushable, IFacingDirection, IA
         weaponReference?.gameObject.SetActive(false);
         damageFeedbackManager.SetDead();
         
+        if (_collider){
+            _collider.enabled = false;
+        }
+        
         deathAudioEvent?.Post(gameObject);
         dropManager.HandleRequestDrops(transform.position);
 
         _disableTimestamp = Time.time + disableDelay;
     }
+    
+    public bool IsAlive() => _alive;
     
     public void SetMaxHealth(float value) {
         if (value <= 0) {
@@ -177,6 +187,10 @@ public class Enemy : MonoBehaviour, IDamageable, IPushable, IFacingDirection, IA
     public void SetThreatTarget(GameObject target) {
         threatTargetReference = target;
     }
+
+    public void SetBehaviourStrategy(ICharacterBehaviourStrategy strategy) {
+        currentBehaviour = (ICharacterBehaviourStrategy)strategy.Clone();
+    }
     
     //
 
@@ -238,6 +252,9 @@ public class Enemy : MonoBehaviour, IDamageable, IPushable, IFacingDirection, IA
         if (!TryGetComponent(out _rb)) {
             Debug.LogError($"{name}: missing reference \"{nameof(_rb)}\"");
         }
+        if (!TryGetComponent(out _collider)) {
+            Debug.LogWarning($"{name}: missing \"{nameof(Collider2D)}\" and won't be able to receive damage!");
+        }
         if (!weaponReference && disableDelay > 0) {
             Debug.LogWarning($"{name}: missing reference \"{nameof(weaponReference)}\", weapon will not be disabled on death!");
         }
@@ -249,9 +266,15 @@ public class Enemy : MonoBehaviour, IDamageable, IPushable, IFacingDirection, IA
     }
     
     private void OnEnable() {
+        if (_collider){
+            _collider.enabled = true;
+        }
+        
         currentBehaviour.Reset();
+        
         Revive();
         TryFindThreatTarget();
+        
         _disableTimestamp = 0;
         
         if (_loaded) {
@@ -262,6 +285,9 @@ public class Enemy : MonoBehaviour, IDamageable, IPushable, IFacingDirection, IA
 
     private void OnDisable() {
         damageFeedbackManager.Reset();
+        if (!_alive) {
+            onDeathEventChannel?.RaiseEvent();
+        }
     }
 
     private void OnDrawGizmos() {

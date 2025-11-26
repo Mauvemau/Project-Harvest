@@ -194,4 +194,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  collectSfxEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 13a862bb894dfad43ad9c5501851c760, type: 2}
   experienceAmount: 2

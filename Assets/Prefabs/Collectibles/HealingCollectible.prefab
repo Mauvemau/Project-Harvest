@@ -194,4 +194,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  collectSfxEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: da0c87beee1879446803f2ed85375b4b, type: 2}
   healAmount: 5

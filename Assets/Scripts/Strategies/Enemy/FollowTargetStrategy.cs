@@ -23,4 +23,6 @@ public class FollowTargetStrategy : ICharacterBehaviourStrategy {
     public void Reset() {
         _movementDirection = Vector2.zero;
     }
+    
+    public object Clone() => MemberwiseClone();
 }

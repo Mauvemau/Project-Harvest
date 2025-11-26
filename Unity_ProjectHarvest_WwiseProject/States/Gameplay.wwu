@@ -8,6 +8,9 @@
 						<State Name="None" ID="{1949EEB3-69F2-4CE7-8631-684B93938458}"/>
 						<State Name="Harvest_Combat" ID="{093046DC-DF7A-407D-B5BD-086421FD76E3}"/>
 						<State Name="Harvest_UpgradeMenu" ID="{EEC93FC1-8933-482F-854B-7218BEADECBA}"/>
+						<State Name="Win" ID="{67DDE0DE-9497-4E7E-AA81-53CEA220F829}"/>
+						<State Name="Lose" ID="{87607643-4686-4F40-8128-990CCC7A4C2B}"/>
+						<State Name="MainMenu" ID="{9BF45D73-D844-465B-A357-12F24A31AD4D}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>

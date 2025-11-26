@@ -14,10 +14,11 @@ public class InputManager : MonoBehaviour {
     [SerializeField] private InputActionReference uiCancelAction;
     [SerializeField] private InputActionReference uiPauseAction;
 
-    [Header("DebugAction")] 
+    [Header("Debug Actions")] 
     [SerializeField] private InputActionReference debugComboPrefixAction;
     [SerializeField] private InputActionReference debugLevelUpAction;
     [SerializeField] private InputActionReference debugInstantDeathAction;
+    [SerializeField] private InputActionReference debugInstantWinAction;
 
     [Header("Settings")] 
     [SerializeField, Range(0f, 1f)] private float stickDeadZone = .2f;
@@ -34,6 +35,7 @@ public class InputManager : MonoBehaviour {
     
     public static event Action OnDebugLevelUpInputPerformed = delegate {};
     public static event Action OnDebugInstantDeathInputPerformed = delegate {};
+    public static event Action OnDebugInstantWinInputPerformed = delegate {};
 
 
     private bool _shouldReadPlayerInput = false;
@@ -137,6 +139,12 @@ public class InputManager : MonoBehaviour {
         OnDebugInstantDeathInputPerformed?.Invoke();
     }
 
+    private void HandleInstantWinInput(InputAction.CallbackContext ctx) {
+        if (!_shouldReadDebugInput || !_shouldReadPlayerInput || IsGamePaused()) return;
+        if (!Debug.isDebugBuild) return;
+        OnDebugInstantWinInputPerformed?.Invoke();
+    }
+
     // Input Events
 
     private void OnEnable() {
@@ -183,6 +191,9 @@ public class InputManager : MonoBehaviour {
         if (debugInstantDeathAction) {
             debugInstantDeathAction.action.started += HandleInstantDeathInput;
         }
+        if (debugInstantWinAction) {
+            debugInstantWinAction.action.started  += HandleInstantWinInput;
+        }
     }
 
     private void OnDisable() {
@@ -228,6 +239,9 @@ public class InputManager : MonoBehaviour {
         }
         if (debugInstantDeathAction) {
             debugInstantDeathAction.action.started -= HandleInstantDeathInput;
+        }
+        if (debugInstantWinAction) {
+            debugInstantWinAction.action.started  -= HandleInstantWinInput;
         }
     }
 }

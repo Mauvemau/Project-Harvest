@@ -5,4 +5,5 @@ public interface IDamageable {
     public void Heal(float value);
     public void Kill();
     public void Revive();
+    public bool IsAlive();
 }

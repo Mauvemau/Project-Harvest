@@ -9,6 +9,14 @@
 							<ObjectRef Name="Start" ID="{8A89D28D-A17C-4E61-AAC2-B5AA571525E8}" WorkUnitID="{D5FE0764-4F64-45A3-BBE5-9C04E443A2D8}"/>
 							<Position X="0" Y="0"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="Game_Lose" ID="{CDE33071-1BE6-4CD4-836C-D1BD6AF718C1}" WorkUnitID="{B0584BF8-363A-4994-B333-BC68BAEE0201}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Game_Win" ID="{9CD15B05-0C88-4B54-958D-4BA412F2704F}" WorkUnitID="{B0584BF8-363A-4994-B333-BC68BAEE0201}"/>
+							<Position X="0" Y="2"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
@@ -20,6 +28,10 @@
 							<Value>100</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="Melody_Volume" ID="{AC3E023C-3E5D-4AC5-8677-3F57384CCBDC}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="Player_Health" ID="{3F9A1CB9-1438-4BCE-8194-924B5CC15166}"/>
 							<Value>100</Value>
 						</RTPCValue>
@@ -29,7 +41,7 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Harvest_Combat" ID="{093046DC-DF7A-407D-B5BD-086421FD76E3}"/>
+						<CurrentStateRef Name="MainMenu" ID="{9BF45D73-D844-465B-A357-12F24A31AD4D}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Healthy" ID="{B52D66F8-AA47-4F9F-BDAD-8BC6EC7FA98F}"/>

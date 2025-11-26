@@ -66,4 +66,6 @@ public class KeepDistanceStrategy : ICharacterBehaviourStrategy {
         _gripTimer = 0f;
         _lookDirection = Vector2.zero;
     }
+    
+    public object Clone() => MemberwiseClone();
 }

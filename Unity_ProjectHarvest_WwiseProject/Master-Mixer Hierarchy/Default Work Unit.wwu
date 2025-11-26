@@ -11,6 +11,15 @@
 					</ReferenceList>
 				</Bus>
 				<Bus Name="MusicBus" ID="{56E2DF6F-FCC7-4A05-A0F4-ECD6D4C0E520}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="26"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-4</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
 							<ObjectRef Name="System" ID="{A71B2FF9-15EC-45CB-932D-660469434D45}" WorkUnitID="{C5BF3387-3581-4B28-9032-03338418B0A3}"/>
@@ -55,6 +64,80 @@
 							</Reference>
 						</ObjectList>
 					</ObjectLists>
+				</Bus>
+				<Bus Name="SfxBus" ID="{0C418ED4-63AF-4D2A-AE82-14D939E0E412}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="8"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+							<ObjectRef Name="System" ID="{A71B2FF9-15EC-45CB-932D-660469434D45}" WorkUnitID="{C5BF3387-3581-4B28-9032-03338418B0A3}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="Ataques_Spawn" ID="{536A0A52-2A73-4938-8077-D567D71D8FD6}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="19"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</Bus>
+						<Bus Name="Gritos" ID="{FC6C03D9-7663-44E2-93C3-DC3DD7F34941}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Color" Type="int16" Value="24"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</Bus>
+					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="GameplaySituation" ID="{922CA5F2-466D-4623-A546-9270AD4233A3}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="Harvest_Combat" ID="{093046DC-DF7A-407D-B5BD-086421FD76E3}"/>
+								<CustomState Name="" ID="{6899D94F-9EB6-46D1-97C6-575C4A09D757}" ShortID="69439504"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="MainMenu" ID="{9BF45D73-D844-465B-A357-12F24A31AD4D}"/>
+								<CustomState Name="" ID="{5600207B-ED93-48AF-A73E-A2605CFE5BE4}" ShortID="530264757"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Harvest_UpgradeMenu" ID="{EEC93FC1-8933-482F-854B-7218BEADECBA}"/>
+								<CustomState Name="" ID="{5C1ED3E7-F221-4873-A19C-DBC96F5BDA73}" ShortID="899263228">
+									<PropertyList>
+										<Property Name="BusVolume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Win" ID="{67DDE0DE-9497-4E7E-AA81-53CEA220F829}"/>
+								<CustomState Name="" ID="{BFADFBB2-954D-40D0-8859-759EFBF7BDA0}" ShortID="363865809"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Lose" ID="{87607643-4686-4F40-8128-990CCC7A4C2B}"/>
+								<CustomState Name="" ID="{0EB11AE4-8718-4B82-81E4-7B4A724952BE}" ShortID="213686042"/>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
+				</Bus>
+				<Bus Name="UI" ID="{C2EC3E33-9483-4D74-B974-3A7B17081732}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+							<ObjectRef Name="System" ID="{A71B2FF9-15EC-45CB-932D-660469434D45}" WorkUnitID="{C5BF3387-3581-4B28-9032-03338418B0A3}"/>
+						</Reference>
+					</ReferenceList>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>

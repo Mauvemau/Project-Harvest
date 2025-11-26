@@ -5,6 +5,8 @@ using UnityEngine;
 public class PlayerCharacter : MonoBehaviour, IMovable, IDamageable, IFacingDirection, IAnimable {
     [Header("References")] 
     [SerializeField] private SpriteRenderer characterSpriteReference;
+    [Tooltip("Assign if you want the weapons to be disabled on death")]
+    [SerializeField] private WeaponInventoryManager inventoryManagerReference;
     
     [Header("Health Settings")] 
     [SerializeField] private float maxHealth = 10f;
@@ -19,6 +21,10 @@ public class PlayerCharacter : MonoBehaviour, IMovable, IDamageable, IFacingDire
 
     [Header("Feedback Settings")] 
     [SerializeField] private DamageFeedbackSprite damageFeedbackManager;
+    
+    [Header("Sfx Settings")]
+    [SerializeField] private AK.Wwise.Event hurtAudioEvent;
+    [SerializeField] private AK.Wwise.Event deathAudioEvent;
 
     [Header("Event Invokers")] 
     [SerializeField] private ProgressBarController healthBarController;
@@ -91,6 +97,10 @@ public class PlayerCharacter : MonoBehaviour, IMovable, IDamageable, IFacingDire
     public void TakeDamage(float damage) {
         SetCurrentHealth(currentHealth - damage);
         HandleDamageFeedback(damage);
+        
+        if (_alive && damage > 0) {
+            hurtAudioEvent?.Post(gameObject);
+        }
     }
     public void Heal(float value) {
         SetCurrentHealth(currentHealth + value);
@@ -102,8 +112,10 @@ public class PlayerCharacter : MonoBehaviour, IMovable, IDamageable, IFacingDire
         if (!_alive) return;
         currentHealth = 0;
         _alive = false;
+        inventoryManagerReference?.ToggleWeapons(false);
         ResetMovement();
         UpdateHealthBar();
+        deathAudioEvent?.Post(gameObject);
         OnPlayerDeath.Invoke();
     }
 
@@ -114,6 +126,8 @@ public class PlayerCharacter : MonoBehaviour, IMovable, IDamageable, IFacingDire
         UpdateHealthBar();
         SoftInit();
     }
+    
+    public bool IsAlive() => _alive;
     
     // IMovable
     
@@ -159,6 +173,7 @@ public class PlayerCharacter : MonoBehaviour, IMovable, IDamageable, IFacingDire
     private void SoftInit() {
         ResetMovement();
         transform.position = _spawnPosition;
+        inventoryManagerReference?.ToggleWeapons(true);
     }
     
     private void BaseInit() {

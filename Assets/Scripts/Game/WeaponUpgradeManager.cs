@@ -106,6 +106,7 @@ public class WeaponUpgradeManager {
     }
     
     private void HandleLevelUpgrades() {
+        if (!playerInventoryReference.WeaponsToggled) return;
         List<WeaponDisplayContainer> levelUpWeapons = GetSelectableWeapons(upgradesAvailablePerLevel);
         if (levelUpWeapons == null) return;
         OnUpgradesReady?.Invoke(levelUpWeapons);

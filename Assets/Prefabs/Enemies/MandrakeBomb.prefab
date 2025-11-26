@@ -301,7 +301,7 @@ MonoBehaviour:
     rid: 3817803483392508030
   maxHealth: 30
   currentHealth: 0
-  movementSpeed: 20
+  movementSpeed: 1000
   pushResistanceMultiplier: 1
   alwaysFaceTarget: 0
   manuallyAttack: 1
@@ -374,10 +374,13 @@ MonoBehaviour:
     drops:
     - collectiblePrefab: {fileID: 8325983632572383665, guid: fd3b8b79613a36847b4ae453d3ed5234, type: 3}
       <DropChance>k__BackingField: 1
+    - collectiblePrefab: {fileID: 8325983632572383665, guid: 4b2843fa30a10e748b507dbc1b6f00da, type: 3}
+      <DropChance>k__BackingField: 0.05
     multipleDropOffsetDistance: 1
   findPlayer: 1
   disableOnDeath: 1
   disableDelay: 0.75
+  onDeathEventChannel: {fileID: 0}
   drawAIGizmo: 0
   awarenessGizmoColor: {r: 0, g: 1, b: 0, a: 1}
   comfortGizmoColor: {r: 1, g: 0, b: 0, a: 1}
@@ -387,7 +390,7 @@ MonoBehaviour:
     - rid: 3817803483392508030
       type: {class: FollowTargetSinePatternStrategy, ns: , asm: Assembly-CSharp}
       data:
-        sineAmplitude: 5
+        sineAmplitude: 500
         sineFrequency: 10
         stopDistance: 3
         lockOnTargetPosition: 1

@@ -1,4 +1,5 @@
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -13,7 +14,7 @@ public class MyGameManager : MonoBehaviour {
     [SerializeField] private GlobalVariableManager globalVariableManager;
 
     [Header("References")]
-    [SerializeField] private GameObject playerCharacter;
+    [SerializeField] private PlayerCharacter playerCharacter;
     [SerializeField] private SpawnerPH spawnManager;
     [SerializeField] private InputManager inputManager;
 
@@ -25,6 +26,7 @@ public class MyGameManager : MonoBehaviour {
     [SerializeField] private VoidEventChannelSO onDefeatChannel;
     [SerializeField] private VoidEventChannelSO onOpenPauseMenuChannel;
     [SerializeField] private VoidEventChannelSO onCloseAllMenusChannel;
+    [SerializeField] private VoidEventChannelSO onInstantWinChannel;
     [SerializeField] private BoolEventChannelSO onToggleHudChannel;
 
     [Header("Event Listeners")]
@@ -47,7 +49,16 @@ public class MyGameManager : MonoBehaviour {
     private void DebugLevelUp() {
         if (!Debug.isDebugBuild) return;
         if (timeManager.IsGamePaused()) return;
+        if (!playerCharacter.IsAlive()) return;
         globalVariableManager.DebugLevelUp();
+    }
+
+    private void DebugInstantWin() {
+        if (!Debug.isDebugBuild) return;
+        if (timeManager.IsGamePaused()) return;
+        if (!playerCharacter.IsAlive()) return;
+        Debug.Log("Winning!");
+        onInstantWinChannel?.RaiseEvent();
     }
     
     /// <summary>
@@ -56,9 +67,10 @@ public class MyGameManager : MonoBehaviour {
     public void DebugTimestampMessage(string message) {
         Debug.Log($"{name}: " + message);
     }
-
+    
     private void TogglePause() {
         if (!_gameStarted) return;
+        if (!playerCharacter.IsAlive()) return;
         if (!timeManager.IsGamePaused()) {
             onOpenPauseMenuChannel?.RaiseEvent();
         }
@@ -98,7 +110,7 @@ public class MyGameManager : MonoBehaviour {
         weaponUpgradeManager.UnequipAll();
         OnGameEnd?.Invoke();
         inputManager.SetPlayerInputEnabled(false);
-        playerCharacter.SetActive(false);
+        playerCharacter.gameObject.SetActive(false);
         SetHudEnabled(false);
     }
     
@@ -106,7 +118,7 @@ public class MyGameManager : MonoBehaviour {
     private void StartGame() {
         gameplayEventManager.Reset();
         weaponUpgradeManager.Init();
-        playerCharacter.SetActive(true);
+        playerCharacter.gameObject.SetActive(true);
         inputManager.SetPlayerInputEnabled(true);
         SetHudEnabled(true);
         if (spawnEnemies) {
@@ -147,6 +159,7 @@ public class MyGameManager : MonoBehaviour {
         ExperienceCollectible.OnExperienceCollected += globalVariableManager.AddCurrentExperience;
         InputManager.OnDebugLevelUpInputPerformed += DebugLevelUp;
         InputManager.OnUIPauseInputStarted += TogglePause;
+        InputManager.OnDebugInstantWinInputPerformed += DebugInstantWin;
         
         if (onStartGameChannel) {
             onStartGameChannel.OnEventRaised += StartGame;
@@ -167,6 +180,7 @@ public class MyGameManager : MonoBehaviour {
         ExperienceCollectible.OnExperienceCollected -= globalVariableManager.AddCurrentExperience;
         InputManager.OnDebugLevelUpInputPerformed -= DebugLevelUp;
         InputManager.OnUIPauseInputStarted -= TogglePause;
+        InputManager.OnDebugInstantWinInputPerformed -= DebugInstantWin;
         
         if (onStartGameChannel) {
             onStartGameChannel.OnEventRaised -= StartGame;
