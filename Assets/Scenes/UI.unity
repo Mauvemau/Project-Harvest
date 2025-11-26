@@ -7453,7 +7453,7 @@ MonoBehaviour:
   onRequestOpenRemotely: {fileID: 11400000, guid: 8f23f6b5e79ece74ca2358a304693e90, type: 2}
   onOpenMenuGamePauseChannel: {fileID: 11400000, guid: bd71b75cc53da714ebacf9612b7c1658, type: 2}
   onToggleHudChannel: {fileID: 11400000, guid: 949c69b1086c4924292fc7990d8c38e9, type: 2}
-  pauseDelay: 0
+  pauseDelay: 0.1
 --- !u!114 &1434929034
 MonoBehaviour:
   m_ObjectHideFlags: 0

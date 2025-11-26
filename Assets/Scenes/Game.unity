@@ -200,6 +200,7 @@ MonoBehaviour:
     WwiseObjectReference: {fileID: 11400000, guid: f9556d3f9ad65cd49a3a4cb6cb8e9141, type: 2}
   autoplayOnStart: 1
   onSetGamePaused: {fileID: 11400000, guid: bd71b75cc53da714ebacf9612b7c1658, type: 2}
+  onVictory: {fileID: 11400000, guid: 8f23f6b5e79ece74ca2358a304693e90, type: 2}
 --- !u!114 &179329568
 MonoBehaviour:
   m_ObjectHideFlags: 0

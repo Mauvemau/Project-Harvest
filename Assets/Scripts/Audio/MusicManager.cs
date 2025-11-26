@@ -16,10 +16,15 @@ public class MusicManager : MonoBehaviour {
     
     [Header("Event Listeners")]
     [SerializeField] private BoolEventChannelSO onSetGamePaused;
+    [SerializeField] private VoidEventChannelSO onVictory;
     
     private System.Action _onGameStartHandler;
     private System.Action _onGameEndHandler;
     private System.Action _onPlayerDeathHandler;
+
+    private void HandleVictory() {
+        ChangeState(victoryGameState);
+    }
     
     private void ChangeState(AK.Wwise.State newState) {
         newState?.SetValue();
@@ -47,6 +52,9 @@ public class MusicManager : MonoBehaviour {
         if (onSetGamePaused) {
             onSetGamePaused.OnEventRaised += HandleGamePaused;
         }
+        if (onVictory) {
+            onVictory.OnEventRaised += HandleVictory;
+        }
     }
 
     private void OnDisable() {
@@ -56,6 +64,9 @@ public class MusicManager : MonoBehaviour {
         
         if (onSetGamePaused) {
             onSetGamePaused.OnEventRaised -= HandleGamePaused;
+        }
+        if (onVictory) {
+            onVictory.OnEventRaised -= HandleVictory;
         }
     }
 }
