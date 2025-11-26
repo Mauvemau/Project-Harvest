@@ -5,6 +5,7 @@ public class ChargeStrategy : ICharacterBehaviourStrategy {
     [Header("References")] 
     [Tooltip("These Objects will be enabled when the standby timer is about to run out. (Used to visually warn the player)")]
     [SerializeField] private GameObject[] enableOnStandbyWarning;
+    [SerializeField] private GameObject[] enableOnCharge;
     
     [Header("Standby & Charge Durations")]
     [SerializeField] private float standbyMinDuration = 1f;
@@ -49,6 +50,12 @@ public class ChargeStrategy : ICharacterBehaviourStrategy {
             gameObject.SetActive(shouldEnable);
         }
     }
+
+    private void HandleEnabling() {
+        foreach (GameObject gameObject in enableOnCharge) {
+            gameObject.SetActive(_isCharging);
+        }
+    }
     
     public void HandleMovement(Transform transform, Rigidbody2D rb, Transform targetTransform, float movementSpeed, Vector2 pushVelocity) {
         if (!rb || !targetTransform) return;
@@ -60,6 +67,7 @@ public class ChargeStrategy : ICharacterBehaviourStrategy {
             HandleCharge(transform, rb, targetTransform, movementSpeed);
         }
         
+        HandleEnabling();
         HandleVisualFeedback();
     }
     

@@ -212,6 +212,8 @@ MonoBehaviour:
       data:
         enableOnStandbyWarning:
         - {fileID: 8163327939896841628}
+        enableOnCharge:
+        - {fileID: 3336743162179973863}
         standbyMinDuration: 0.5
         standbyMaxDuration: 1.5
         chargeMinDuration: 2
@@ -748,12 +750,17 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4530630233791697912, guid: c7837d39eabdbdd42b17cb5ac3dfaeef, type: 3}
   m_PrefabInstance: {fileID: 3937643427856421053}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 3336743162179973863}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d995a4fc359a53f49b0012391f75aeba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &3336743162179973863 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1795581583772344922, guid: c7837d39eabdbdd42b17cb5ac3dfaeef, type: 3}
+  m_PrefabInstance: {fileID: 3937643427856421053}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6075228230043788508 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7127749289700750433, guid: c7837d39eabdbdd42b17cb5ac3dfaeef, type: 3}

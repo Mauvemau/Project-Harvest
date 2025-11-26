@@ -807,11 +807,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 901040559531970695, guid: e4b5b5b1eeac59648beda440a153c5cd, type: 3}
       propertyPath: gameplayEventManager.spawnDebugEnemyEvents.Array.data[0].timestampFormatted
-      value: 00:10
+      value: 00:03
       objectReference: {fileID: 0}
     - target: {fileID: 901040559531970695, guid: e4b5b5b1eeac59648beda440a153c5cd, type: 3}
       propertyPath: gameplayEventManager.spawnDebugEnemyEvents.Array.data[0].timestampInSeconds
-      value: 10
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 901040559531970695, guid: e4b5b5b1eeac59648beda440a153c5cd, type: 3}
       propertyPath: gameplayEventManager.spawnDebugEnemyEvents.Array.data[0].enemyBatch.Array.size

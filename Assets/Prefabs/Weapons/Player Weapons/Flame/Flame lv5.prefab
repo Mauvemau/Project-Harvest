@@ -135,7 +135,7 @@ MonoBehaviour:
   <BaseStats>k__BackingField:
     attackDamage: 5
     attackRateInSeconds: 3.5
-    attackSize: 2.5
+    attackSize: 3.5
   currentStats:
     attackDamage: 0
     attackRateInSeconds: 0
@@ -158,9 +158,9 @@ MonoBehaviour:
       playbackSpeed: 1
       animationStartOffset: 0
       color: {r: 1, g: 1, b: 1, a: 0.627451}
-    scaleOffset: {x: 4, y: 4, z: 1}
+    scaleOffset: {x: 7, y: 7, z: 1}
   attackSfxEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: fc13784b875eed44ab718c42c9d4e1ce, type: 2}
   targetAreaGizmoColor: {r: 1, g: 0, b: 1, a: 1}
