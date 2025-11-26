@@ -6103,6 +6103,11 @@
 								</Sound>
 								<Sound Name="Sil 1" ID="{0FF8B10F-161E-4E67-A505-A2CC1F4665AD}" ShortID="632296761">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
 												<Value>65</Value>

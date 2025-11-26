@@ -1,4 +1,5 @@
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -25,6 +26,7 @@ public class MyGameManager : MonoBehaviour {
     [SerializeField] private VoidEventChannelSO onDefeatChannel;
     [SerializeField] private VoidEventChannelSO onOpenPauseMenuChannel;
     [SerializeField] private VoidEventChannelSO onCloseAllMenusChannel;
+    [SerializeField] private VoidEventChannelSO onInstantWinChannel;
     [SerializeField] private BoolEventChannelSO onToggleHudChannel;
 
     [Header("Event Listeners")]
@@ -50,6 +52,14 @@ public class MyGameManager : MonoBehaviour {
         if (!playerCharacter.IsAlive()) return;
         globalVariableManager.DebugLevelUp();
     }
+
+    private void DebugInstantWin() {
+        if (!Debug.isDebugBuild) return;
+        if (timeManager.IsGamePaused()) return;
+        if (!playerCharacter.IsAlive()) return;
+        Debug.Log("Winning!");
+        onInstantWinChannel?.RaiseEvent();
+    }
     
     /// <summary>
     /// Used for debugging gameplay events
@@ -57,7 +67,7 @@ public class MyGameManager : MonoBehaviour {
     public void DebugTimestampMessage(string message) {
         Debug.Log($"{name}: " + message);
     }
-
+    
     private void TogglePause() {
         if (!_gameStarted) return;
         if (!playerCharacter.IsAlive()) return;
@@ -149,6 +159,7 @@ public class MyGameManager : MonoBehaviour {
         ExperienceCollectible.OnExperienceCollected += globalVariableManager.AddCurrentExperience;
         InputManager.OnDebugLevelUpInputPerformed += DebugLevelUp;
         InputManager.OnUIPauseInputStarted += TogglePause;
+        InputManager.OnDebugInstantWinInputPerformed += DebugInstantWin;
         
         if (onStartGameChannel) {
             onStartGameChannel.OnEventRaised += StartGame;
@@ -169,6 +180,7 @@ public class MyGameManager : MonoBehaviour {
         ExperienceCollectible.OnExperienceCollected -= globalVariableManager.AddCurrentExperience;
         InputManager.OnDebugLevelUpInputPerformed -= DebugLevelUp;
         InputManager.OnUIPauseInputStarted -= TogglePause;
+        InputManager.OnDebugInstantWinInputPerformed -= DebugInstantWin;
         
         if (onStartGameChannel) {
             onStartGameChannel.OnEventRaised -= StartGame;

@@ -409,6 +409,14 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+  hurtAudioEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 6db9238f150a165489714927fac8a423, type: 2}
+  deathAudioEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
   healthBarController:
     onMaxValueUpdated: {fileID: 11400000, guid: dbb5ab292a8dcac4491b4493c52a926d, type: 2}
     onCurrentValueUpdated: {fileID: 11400000, guid: 9731a1e098353e0498f52730d2b05479, type: 2}

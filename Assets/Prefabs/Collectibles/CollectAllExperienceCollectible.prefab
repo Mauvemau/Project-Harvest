@@ -197,5 +197,5 @@ MonoBehaviour:
   collectSfxEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 96df6406ef1fd7e409dd4ba8a70b1ace, type: 2}
   collectiblePrefab: {fileID: 8325983632572383665, guid: fd3b8b79613a36847b4ae453d3ed5234, type: 3}

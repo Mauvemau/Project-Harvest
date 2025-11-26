@@ -54,6 +54,9 @@ public class WeaponAOE : Weapon {
     [Header("Vfx Settings")]
     [SerializeField] private VFXPlayer vfxPlayer;
 
+    [Header("Sfx Settings")] 
+    [SerializeField] private AK.Wwise.Event attackSfxEvent;
+
 #if UNITY_EDITOR
     [Header("Visual Settings")] 
     [SerializeField] private Color targetAreaGizmoColor = Color.magenta;
@@ -97,6 +100,7 @@ public class WeaponAOE : Weapon {
             aoeLifeTime, BaseStats.attackDamage, BaseStats.attackSize, aoeTickRate);
         _targetPoints.Add(newTargetPoint);
         vfxPlayer.PlayVFX(newTargetPoint.TargetPoint, Quaternion.identity, aoeLifeTime);
+        attackSfxEvent?.Post(gameObject);
     }
     
     private void HandleAoeSpawning() {

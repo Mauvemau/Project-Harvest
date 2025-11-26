@@ -21,6 +21,10 @@ public class PlayerCharacter : MonoBehaviour, IMovable, IDamageable, IFacingDire
 
     [Header("Feedback Settings")] 
     [SerializeField] private DamageFeedbackSprite damageFeedbackManager;
+    
+    [Header("Sfx Settings")]
+    [SerializeField] private AK.Wwise.Event hurtAudioEvent;
+    [SerializeField] private AK.Wwise.Event deathAudioEvent;
 
     [Header("Event Invokers")] 
     [SerializeField] private ProgressBarController healthBarController;
@@ -93,6 +97,10 @@ public class PlayerCharacter : MonoBehaviour, IMovable, IDamageable, IFacingDire
     public void TakeDamage(float damage) {
         SetCurrentHealth(currentHealth - damage);
         HandleDamageFeedback(damage);
+        
+        if (_alive && damage > 0) {
+            hurtAudioEvent?.Post(gameObject);
+        }
     }
     public void Heal(float value) {
         SetCurrentHealth(currentHealth + value);
@@ -107,6 +115,7 @@ public class PlayerCharacter : MonoBehaviour, IMovable, IDamageable, IFacingDire
         inventoryManagerReference?.ToggleWeapons(false);
         ResetMovement();
         UpdateHealthBar();
+        deathAudioEvent?.Post(gameObject);
         OnPlayerDeath.Invoke();
     }
 

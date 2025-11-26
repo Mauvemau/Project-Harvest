@@ -576,6 +576,7 @@ MonoBehaviour:
   - {fileID: 333730014}
   - {fileID: 1276409181}
   - {fileID: 1133701428}
+  - {fileID: 1434929033}
   currentlySelectedMenu: 0
   startOnAwake: 1
   openOnBoot: {fileID: 1259518054}
@@ -3017,7 +3018,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de666241e34d33b4eab2ce771712c8b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeLimit: 240
+  timeLimit: 300
   countdown: 1
   timeLimitReachedColor: {r: 0.745283, g: 0.10760122, b: 0.08788714, a: 1}
 --- !u!1 &608237608
@@ -5453,7 +5454,9 @@ MonoBehaviour:
     Instant Level Up: Right Alt + 1
 
     Die Intantly: Right
-    Alt + 0'
+    Alt + 0
+
+    Win Instantly: Right Alt + 9'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7073,7 +7076,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.13725491, g: 0.8862745, b: 0.23921569, a: 1}
+  m_Color: {r: 0.5529412, g: 0.10980392, b: 0.10980392, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7425,6 +7428,7 @@ GameObject:
   - component: {fileID: 1434929035}
   - component: {fileID: 1434929034}
   - component: {fileID: 1434929033}
+  - component: {fileID: 1434929039}
   m_Layer: 5
   m_Name: Victory Menu
   m_TagString: Untagged
@@ -7445,8 +7449,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventSystem: {fileID: 2018067451}
-  initialButton: {fileID: 0}
-  onRequestOpenRemotely: {fileID: 0}
+  initialButton: {fileID: 1710496723}
+  onRequestOpenRemotely: {fileID: 11400000, guid: 8f23f6b5e79ece74ca2358a304693e90, type: 2}
   onOpenMenuGamePauseChannel: {fileID: 11400000, guid: bd71b75cc53da714ebacf9612b7c1658, type: 2}
   onToggleHudChannel: {fileID: 11400000, guid: 949c69b1086c4924292fc7990d8c38e9, type: 2}
   pauseDelay: 0
@@ -7545,6 +7549,43 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1434929039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1434929031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0867d926044ad3b47b3a8b5c2481967c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeDurationInSeconds: 3
+  fadeCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1505639506
 GameObject:
   m_ObjectHideFlags: 0
@@ -7675,9 +7716,9 @@ MonoBehaviour:
   percentageText: {fileID: 0}
   setMaxValueListener: {fileID: 11400000, guid: dbb5ab292a8dcac4491b4493c52a926d, type: 2}
   setCurrentValueListener: {fileID: 11400000, guid: 9731a1e098353e0498f52730d2b05479, type: 2}
-  fullHealthColor: {r: 0.13803846, g: 0.8867924, b: 0.24080865, a: 1}
-  midHealthColor: {r: 0.9339623, g: 0.9302531, b: 0.066082224, a: 1}
-  emptyHealthColor: {r: 0.8867924, g: 0.11991217, b: 0.10457456, a: 1}
+  fullHealthColor: {r: 0.5529412, g: 0.10980392, b: 0.10980392, a: 1}
+  midHealthColor: {r: 0.41960785, g: 0.09411765, b: 0.09411765, a: 1}
+  emptyHealthColor: {r: 0.3137255, g: 0.05490196, b: 0.05490196, a: 1}
   extremeOffset: 0.1
   healthAmountRtpc:
     idInternal: 0

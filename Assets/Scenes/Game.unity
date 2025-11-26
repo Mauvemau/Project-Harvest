@@ -173,7 +173,7 @@ MonoBehaviour:
     valueGuidInternal: 
     groupIdInternal: 0
     groupGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 896da33bb97d29e4f873bd421bbbf267, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 1d8a98861ee12b243ab4dfb114958b5f, type: 2}
   inCombatState:
     idInternal: 0
     valueGuidInternal: 
@@ -186,6 +186,18 @@ MonoBehaviour:
     groupIdInternal: 0
     groupGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 741b54b11b25106488e9b6968a25f8c0, type: 2}
+  victoryGameState:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 71819b66cf0624d449b6582f37f64ddb, type: 2}
+  defeatGameState:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: f9556d3f9ad65cd49a3a4cb6cb8e9141, type: 2}
   autoplayOnStart: 1
   onSetGamePaused: {fileID: 11400000, guid: bd71b75cc53da714ebacf9612b7c1658, type: 2}
 --- !u!114 &179329568
@@ -516,6 +528,7 @@ MonoBehaviour:
   debugComboPrefixAction: {fileID: 5039080804167421277, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   debugLevelUpAction: {fileID: 7827404728468856214, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   debugInstantDeathAction: {fileID: -1745036332790860623, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  debugInstantWinAction: {fileID: 9090491959457226261, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   stickDeadZone: 0.1
 --- !u!4 &1125368742
 Transform:
@@ -667,11 +680,19 @@ MonoBehaviour:
     poolSize: 4
     expandable: 1
     pool: []
+  - objectToPool: {fileID: 4210210132979722889, guid: 5fff26d2418b80447a1a6660f9d1f44e, type: 3}
+    poolSize: 1
+    expandable: 1
+    pool: []
   - objectToPool: {fileID: 8325983632572383665, guid: fd3b8b79613a36847b4ae453d3ed5234, type: 3}
     poolSize: 500
     expandable: 1
     pool: []
   - objectToPool: {fileID: 8325983632572383665, guid: d44cf55090c9587488c6634cecc6a94f, type: 3}
+    poolSize: 5
+    expandable: 1
+    pool: []
+  - objectToPool: {fileID: 8325983632572383665, guid: 4b2843fa30a10e748b507dbc1b6f00da, type: 3}
     poolSize: 5
     expandable: 1
     pool: []
@@ -764,6 +785,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1125368741}
     - target: {fileID: 901040559531970695, guid: e4b5b5b1eeac59648beda440a153c5cd, type: 3}
+      propertyPath: spawnEnemies
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 901040559531970695, guid: e4b5b5b1eeac59648beda440a153c5cd, type: 3}
       propertyPath: spawnManager
       value: 
       objectReference: {fileID: 1414712854}
@@ -781,11 +806,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 901040559531970695, guid: e4b5b5b1eeac59648beda440a153c5cd, type: 3}
       propertyPath: gameplayEventManager.spawnDebugEnemyEvents.Array.data[0].timestampFormatted
-      value: 00:03
+      value: 00:10
       objectReference: {fileID: 0}
     - target: {fileID: 901040559531970695, guid: e4b5b5b1eeac59648beda440a153c5cd, type: 3}
       propertyPath: gameplayEventManager.spawnDebugEnemyEvents.Array.data[0].timestampInSeconds
-      value: 3
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 901040559531970695, guid: e4b5b5b1eeac59648beda440a153c5cd, type: 3}
       propertyPath: gameplayEventManager.spawnDebugEnemyEvents.Array.data[0].enemyBatch.Array.size
@@ -794,7 +819,7 @@ PrefabInstance:
     - target: {fileID: 901040559531970695, guid: e4b5b5b1eeac59648beda440a153c5cd, type: 3}
       propertyPath: 'gameplayEventManager.spawnDebugEnemyEvents.Array.data[0].enemyBatch.Array.data[0]'
       value: 
-      objectReference: {fileID: 4210210132979722889, guid: 84b7bcc7de792cf41a042a532aa2a880, type: 3}
+      objectReference: {fileID: 4210210132979722889, guid: 5fff26d2418b80447a1a6660f9d1f44e, type: 3}
     - target: {fileID: 3429000851342337797, guid: e4b5b5b1eeac59648beda440a153c5cd, type: 3}
       propertyPath: m_Name
       value: "\u2699\uFE0F GameManager"

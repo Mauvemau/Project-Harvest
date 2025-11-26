@@ -196,12 +196,11 @@ MonoBehaviour:
     drops:
     - collectiblePrefab: {fileID: 8325983632572383665, guid: fd3b8b79613a36847b4ae453d3ed5234, type: 3}
       <DropChance>k__BackingField: 1
-    - collectiblePrefab: {fileID: 8325983632572383665, guid: 4b2843fa30a10e748b507dbc1b6f00da, type: 3}
-      <DropChance>k__BackingField: 0.02
     multipleDropOffsetDistance: 1
   findPlayer: 1
   disableOnDeath: 1
   disableDelay: 4
+  onDeathEventChannel: {fileID: 0}
   drawAIGizmo: 0
   awarenessGizmoColor: {r: 0, g: 1, b: 0, a: 1}
   comfortGizmoColor: {r: 1, g: 0, b: 0, a: 1}
@@ -216,8 +215,8 @@ MonoBehaviour:
         standbyMinDuration: 0.5
         standbyMaxDuration: 1.5
         chargeMinDuration: 2
-        chargeMaxDuration: 4
-        dazeDuration: 10
+        chargeMaxDuration: 3
+        dazeDuration: 8
         obstacleLayer:
           serializedVersion: 2
           m_Bits: 1024

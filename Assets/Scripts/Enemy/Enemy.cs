@@ -45,6 +45,9 @@ public class Enemy : MonoBehaviour, IDamageable, IPushable, IFacingDirection, IA
     [SerializeField] private bool disableOnDeath = false;
     [SerializeField] private float disableDelay = 5f;
 
+    [Header("Event Invokers")] 
+    [SerializeField] private VoidEventChannelSO onDeathEventChannel;
+
 #if UNITY_EDITOR
     [Header("Gizmo Settings")]
     [SerializeField] private bool drawAIGizmo = false;
@@ -282,6 +285,9 @@ public class Enemy : MonoBehaviour, IDamageable, IPushable, IFacingDirection, IA
 
     private void OnDisable() {
         damageFeedbackManager.Reset();
+        if (!_alive) {
+            onDeathEventChannel?.RaiseEvent();
+        }
     }
 
     private void OnDrawGizmos() {

@@ -159,4 +159,8 @@ MonoBehaviour:
       animationStartOffset: 0
       color: {r: 1, g: 1, b: 1, a: 0.627451}
     scaleOffset: {x: 3, y: 3, z: 1}
+  attackSfxEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: fc13784b875eed44ab718c42c9d4e1ce, type: 2}
   targetAreaGizmoColor: {r: 1, g: 0, b: 1, a: 1}
