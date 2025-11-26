@@ -69,7 +69,7 @@ public class FollowTargetSinePatternStrategy : ICharacterBehaviourStrategy {
 
         Vector2 sineWaveMotion = (_movementDirection * movementSpeed + perpendicular * sineOffset) * (Time.fixedDeltaTime * speedMultiplier);
 
-        Vector2 newPosition = rb.position + sineWaveMotion + pushVelocity * Time.fixedDeltaTime;
+        Vector2 newPosition = rb.position + sineWaveMotion * Time.fixedDeltaTime;
         rb.MovePosition(newPosition);
     }
     

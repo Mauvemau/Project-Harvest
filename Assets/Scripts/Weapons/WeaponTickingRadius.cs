@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 public class WeaponTickingRadius : Weapon {
@@ -46,8 +45,8 @@ public class WeaponTickingRadius : Weapon {
         NextAttack = 0;
     }
 
-    private void OnDrawGizmos() {
 #if UNITY_EDITOR
+    private void OnDrawGizmos() {
         Gizmos.color = radiusGizmoColor;
         
         Vector3 prevPoint = Vector3.zero;
@@ -65,7 +64,7 @@ public class WeaponTickingRadius : Weapon {
 
             prevPoint = newPoint;
         }
-#endif
     }
+#endif
 }
 

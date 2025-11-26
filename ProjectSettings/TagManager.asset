@@ -15,7 +15,7 @@ TagManager:
   - Entity
   - Collectable
   - Weapons
-  - LevelBounds
+  - Obstacles
   - 
   - 
   - 

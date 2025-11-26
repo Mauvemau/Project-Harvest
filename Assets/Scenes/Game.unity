@@ -656,11 +656,15 @@ MonoBehaviour:
     expandable: 1
     pool: []
   - objectToPool: {fileID: 2717563465280112146, guid: 45ac2d3e72879db41bf9ee1bd5ce9501, type: 3}
-    poolSize: 6
+    poolSize: 4
     expandable: 1
     pool: []
   - objectToPool: {fileID: 480428550303005909, guid: d78780e8869c06743bfc2dcf1c26c4aa, type: 3}
     poolSize: 6
+    expandable: 1
+    pool: []
+  - objectToPool: {fileID: 4210210132979722889, guid: 84b7bcc7de792cf41a042a532aa2a880, type: 3}
+    poolSize: 4
     expandable: 1
     pool: []
   - objectToPool: {fileID: 8325983632572383665, guid: fd3b8b79613a36847b4ae453d3ed5234, type: 3}
@@ -760,10 +764,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1125368741}
     - target: {fileID: 901040559531970695, guid: e4b5b5b1eeac59648beda440a153c5cd, type: 3}
-      propertyPath: spawnEnemies
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 901040559531970695, guid: e4b5b5b1eeac59648beda440a153c5cd, type: 3}
       propertyPath: spawnManager
       value: 
       objectReference: {fileID: 1414712854}
@@ -775,6 +775,26 @@ PrefabInstance:
       propertyPath: weaponUpgradeManager.playerInventoryReference
       value: 
       objectReference: {fileID: 1972705332}
+    - target: {fileID: 901040559531970695, guid: e4b5b5b1eeac59648beda440a153c5cd, type: 3}
+      propertyPath: gameplayEventManager.spawnDebugEnemyEvents.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 901040559531970695, guid: e4b5b5b1eeac59648beda440a153c5cd, type: 3}
+      propertyPath: gameplayEventManager.spawnDebugEnemyEvents.Array.data[0].timestampFormatted
+      value: 00:03
+      objectReference: {fileID: 0}
+    - target: {fileID: 901040559531970695, guid: e4b5b5b1eeac59648beda440a153c5cd, type: 3}
+      propertyPath: gameplayEventManager.spawnDebugEnemyEvents.Array.data[0].timestampInSeconds
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 901040559531970695, guid: e4b5b5b1eeac59648beda440a153c5cd, type: 3}
+      propertyPath: gameplayEventManager.spawnDebugEnemyEvents.Array.data[0].enemyBatch.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 901040559531970695, guid: e4b5b5b1eeac59648beda440a153c5cd, type: 3}
+      propertyPath: 'gameplayEventManager.spawnDebugEnemyEvents.Array.data[0].enemyBatch.Array.data[0]'
+      value: 
+      objectReference: {fileID: 4210210132979722889, guid: 84b7bcc7de792cf41a042a532aa2a880, type: 3}
     - target: {fileID: 3429000851342337797, guid: e4b5b5b1eeac59648beda440a153c5cd, type: 3}
       propertyPath: m_Name
       value: "\u2699\uFE0F GameManager"
