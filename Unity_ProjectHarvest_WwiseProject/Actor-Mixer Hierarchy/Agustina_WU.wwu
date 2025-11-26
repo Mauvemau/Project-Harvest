@@ -19,7 +19,7 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-10</Value>
+								<Value>-6</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -35,9 +35,10 @@
 						<RandomSequenceContainer Name="Damage" ID="{D4C59AB3-A83D-48A2-B913-0FC7C310F935}" ShortID="750715773">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 								<Property Name="MaxSoundPerInstance" Type="int16">
 									<ValueList>
-										<Value>2</Value>
+										<Value>1</Value>
 									</ValueList>
 								</Property>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
@@ -143,14 +144,9 @@
 								</Sound>
 								<Sound Name="comun 1_01_01-175" ID="{0C633729-CD0E-45A6-B15E-275C3CF24F3D}" ShortID="454782995">
 									<PropertyList>
-										<Property Name="Inclusion" Type="bool">
-											<ValueList>
-												<Value>False</Value>
-											</ValueList>
-										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>1</Value>
+												<Value>10</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -177,14 +173,9 @@
 								</Sound>
 								<Sound Name="comun 1_01_01-179" ID="{8A85C62C-DBD1-41A0-B977-874B703B1BEF}" ShortID="420959330">
 									<PropertyList>
-										<Property Name="Inclusion" Type="bool">
-											<ValueList>
-												<Value>False</Value>
-											</ValueList>
-										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>1</Value>
+												<Value>10</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -211,14 +202,9 @@
 								</Sound>
 								<Sound Name="comun 1_01_01-183" ID="{17E27319-C3F5-4CD0-AA5A-1BF595911977}" ShortID="963879353">
 									<PropertyList>
-										<Property Name="Inclusion" Type="bool">
-											<ValueList>
-												<Value>False</Value>
-											</ValueList>
-										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>1</Value>
+												<Value>10</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -303,14 +289,9 @@
 								</Sound>
 								<Sound Name="comun 1_01_01-195" ID="{A45ED75D-742C-46F7-801B-6207F924464E}" ShortID="548658704">
 									<PropertyList>
-										<Property Name="Inclusion" Type="bool">
-											<ValueList>
-												<Value>False</Value>
-											</ValueList>
-										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>1</Value>
+												<Value>10</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -337,14 +318,9 @@
 								</Sound>
 								<Sound Name="comun 1_01_01-199" ID="{AA78AADE-D2AC-4A31-8CF4-4F868DA45C88}" ShortID="870702742">
 									<PropertyList>
-										<Property Name="Inclusion" Type="bool">
-											<ValueList>
-												<Value>False</Value>
-											</ValueList>
-										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
-												<Value>1</Value>
+												<Value>10</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -641,9 +617,10 @@
 						<RandomSequenceContainer Name="Cry" ID="{52FEDAC8-F6AD-456A-B07E-59ADDCFFE6B3}" ShortID="62987464">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 								<Property Name="MaxSoundPerInstance" Type="int16">
 									<ValueList>
-										<Value>2</Value>
+										<Value>1</Value>
 									</ValueList>
 								</Property>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
@@ -2398,7 +2375,7 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-10</Value>
+								<Value>-12</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -2414,9 +2391,10 @@
 						<RandomSequenceContainer Name="Damage" ID="{D1064CDB-9BB8-4928-9C33-00792018D376}" ShortID="21998303">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 								<Property Name="MaxSoundPerInstance" Type="int16">
 									<ValueList>
-										<Value>2</Value>
+										<Value>1</Value>
 									</ValueList>
 								</Property>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
@@ -2450,11 +2428,6 @@
 							<ChildrenList>
 								<Sound Name="Sil 5" ID="{7796C7A0-146F-4684-9402-F5BFF98DCE08}" ShortID="377733507">
 									<PropertyList>
-										<Property Name="Inclusion" Type="bool">
-											<ValueList>
-												<Value>False</Value>
-											</ValueList>
-										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
 												<Value>66</Value>
@@ -2615,11 +2588,6 @@
 								</Sound>
 								<Sound Name="Shooter 1_01_01-123" ID="{F3C8359F-0EAA-4C3A-9736-6A74541C9315}" ShortID="368703444">
 									<PropertyList>
-										<Property Name="Inclusion" Type="bool">
-											<ValueList>
-												<Value>False</Value>
-											</ValueList>
-										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
 												<Value>36</Value>
@@ -2649,11 +2617,6 @@
 								</Sound>
 								<Sound Name="Shooter 1_01_01-143" ID="{59B605B1-CD7F-480F-A841-6C3FA3BB84BE}" ShortID="549590256">
 									<PropertyList>
-										<Property Name="Inclusion" Type="bool">
-											<ValueList>
-												<Value>False</Value>
-											</ValueList>
-										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
 												<Value>37</Value>
@@ -2931,9 +2894,10 @@
 						<RandomSequenceContainer Name="Cry" ID="{8CD83FC9-1E28-4F3B-97CA-0C0D4AB9418A}" ShortID="938366576">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 								<Property Name="MaxSoundPerInstance" Type="int16">
 									<ValueList>
-										<Value>2</Value>
+										<Value>1</Value>
 									</ValueList>
 								</Property>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
@@ -4706,7 +4670,7 @@
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-4</Value>
+								<Value>-6</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -4722,9 +4686,10 @@
 						<RandomSequenceContainer Name="Damage" ID="{A775E598-4171-475E-99E6-703D2CE94875}" ShortID="994996406">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 								<Property Name="MaxSoundPerInstance" Type="int16">
 									<ValueList>
-										<Value>2</Value>
+										<Value>1</Value>
 									</ValueList>
 								</Property>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
@@ -5433,9 +5398,10 @@
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Cry" ID="{87673B9C-0B90-4CCE-AAB5-CBD5B2164B62}" ShortID="531141990">
 							<PropertyList>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 								<Property Name="MaxSoundPerInstance" Type="int16">
 									<ValueList>
-										<Value>2</Value>
+										<Value>1</Value>
 									</ValueList>
 								</Property>
 								<Property Name="UseMaxSoundPerInstance" Type="bool">
@@ -6332,6 +6298,779 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="Sil 6" ID="{4813C89A-8810-4DB6-BAF1-F954040778E2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="Witch" ID="{42595B66-7D11-454A-A70D-EA937830E965}" ShortID="51322202">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Witch receive damage" ID="{5CE725CF-6628-4EEE-A469-78B264ED3329}" ShortID="156529978">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Recibir daño-Gain_03-01" ID="{70193715-FB78-42D4-84F6-2222E9D1A7D3}" ShortID="680140076">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>35</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Recibir daño-Gain_03-01" ID="{58147704-4EB1-4C58-84A9-C13D9FF5FED2}">
+											<Language>SFX</Language>
+											<AudioFile>Recibir daño-Gain_03-01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="599515593"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Recibir daño-Gain_03-01" ID="{58147704-4EB1-4C58-84A9-C13D9FF5FED2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="susp-DynA-Gain_02-02" ID="{BADD7622-4367-4CB2-BEAD-F8B5BA5DDBDC}" ShortID="491844080">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>39</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="susp-DynA-Gain_02-02" ID="{47AF1966-41FF-4A24-9BE0-D373306E5300}">
+											<Language>SFX</Language>
+											<AudioFile>susp-DynA-Gain_02-02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="566571854"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="susp-DynA-Gain_02-02" ID="{47AF1966-41FF-4A24-9BE0-D373306E5300}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="susp-DynA-Gain_02-04" ID="{9C0717C9-4E4E-4889-92CB-CDAC71198804}" ShortID="610947773">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>33</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="susp-DynA-Gain_02-04" ID="{E35BAD7F-A5BA-40AA-9FDA-0BC6AD4D2D3E}">
+											<Language>SFX</Language>
+											<AudioFile>susp-DynA-Gain_02-04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="120312068"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="susp-DynA-Gain_02-04" ID="{E35BAD7F-A5BA-40AA-9FDA-0BC6AD4D2D3E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="susp-DynA-Gain_02-05" ID="{B4E4E8FF-9217-4CCE-AC89-84AF544C8718}" ShortID="880378643">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>40</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="susp-DynA-Gain_02-05" ID="{8B02532F-8A40-4EE8-8988-1A6F1D07A66E}">
+											<Language>SFX</Language>
+											<AudioFile>susp-DynA-Gain_02-05.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="307044857"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="susp-DynA-Gain_02-05" ID="{8B02532F-8A40-4EE8-8988-1A6F1D07A66E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Suspiros_01-43" ID="{6F563E99-FEE5-46B3-8FF0-6A282B358F4D}" ShortID="684355536">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>36</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Suspiros_01-43" ID="{5B23E5A9-FDAF-4684-9007-342B529113E9}">
+											<Language>SFX</Language>
+											<AudioFile>Suspiros_01-43.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="529218698"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Suspiros_01-43" ID="{5B23E5A9-FDAF-4684-9007-342B529113E9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Suspiros_01-45" ID="{C9FB764C-B1B9-4DCA-84A2-1271980C4FF6}" ShortID="1031542516">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>23</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Suspiros_01-45" ID="{33B225AA-BF90-44DA-995C-579720C88ADF}">
+											<Language>SFX</Language>
+											<AudioFile>Suspiros_01-45.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="210137686"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Suspiros_01-45" ID="{33B225AA-BF90-44DA-995C-579720C88ADF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Mandrágora_02-29" ID="{0B933D17-0085-47CF-81A8-57FB4DF727B4}" ShortID="855183981">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>39</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Mandrágora_02-29" ID="{133D12E5-2F92-4A8A-A41E-0A74B02695EA}">
+											<Language>SFX</Language>
+											<AudioFile>Mandrágora_02-29.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="11587094"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Mandrágora_02-29" ID="{133D12E5-2F92-4A8A-A41E-0A74B02695EA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Recibir daño_02-42" ID="{85320310-CFBC-4D18-9945-C3A6DAB7078D}" ShortID="853138095">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>36</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Recibir daño_02-42" ID="{27BE08D8-F8F8-4D01-BE51-840A1CBF4777}">
+											<Language>SFX</Language>
+											<AudioFile>Recibir daño_02-42.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="239571125"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Recibir daño_02-42" ID="{27BE08D8-F8F8-4D01-BE51-840A1CBF4777}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Recibir daño_02-64" ID="{40B526DB-3D0D-460A-A63C-EB01939A90E4}" ShortID="1071727676">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Recibir daño_02-64" ID="{254D8A65-298F-495B-9980-C8E8F1051401}">
+											<Language>SFX</Language>
+											<AudioFile>Recibir daño_02-64.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="146347922"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Recibir daño_02-64" ID="{254D8A65-298F-495B-9980-C8E8F1051401}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Recibir daño_02-66" ID="{2529CE60-A34A-4E02-88B2-29A983C6676F}" ShortID="277059290">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>34</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Recibir daño_02-66" ID="{47E8BD01-99D4-46E6-872C-AC8BCB1F1F01}">
+											<Language>SFX</Language>
+											<AudioFile>Recibir daño_02-66.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="573699166"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Recibir daño_02-66" ID="{47E8BD01-99D4-46E6-872C-AC8BCB1F1F01}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Recibir daño_02-74" ID="{4110EAE0-A117-4CC5-A7BA-6712DD599261}" ShortID="911154445">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Recibir daño_02-74" ID="{1509AE5F-7009-42FB-9EB2-04129604353C}">
+											<Language>SFX</Language>
+											<AudioFile>Recibir daño_02-74.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="569914561"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Recibir daño_02-74" ID="{1509AE5F-7009-42FB-9EB2-04129604353C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Recibir daño_02-75" ID="{3C98741A-F1C5-447B-AB4E-BAF624B11EC9}" ShortID="436148842">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Recibir daño_02-75" ID="{F700C590-D0BC-46F4-BBD3-79FBE50D63A5}">
+											<Language>SFX</Language>
+											<AudioFile>Recibir daño_02-75.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="418845789"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Recibir daño_02-75" ID="{F700C590-D0BC-46F4-BBD3-79FBE50D63A5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Recibir daño_02-79" ID="{8C2A18F0-6DA1-497C-B4D2-A684E14FC68D}" ShortID="521788587">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Recibir daño_02-79" ID="{7743F4C7-7F06-4C70-B618-41793777632D}">
+											<Language>SFX</Language>
+											<AudioFile>Recibir daño_02-79.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="828420825"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Recibir daño_02-79" ID="{7743F4C7-7F06-4C70-B618-41793777632D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Recibir daño-DynA-Gain_01-05" ID="{DC30CC14-1D24-4E5F-9E2E-BD98E1CADF99}" ShortID="114303576">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>33</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Recibir daño-DynA-Gain_01-05" ID="{03F39089-E789-4298-8847-8CBB15285B85}">
+											<Language>SFX</Language>
+											<AudioFile>Recibir daño-DynA-Gain_01-05.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="516386447"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Recibir daño-DynA-Gain_01-05" ID="{03F39089-E789-4298-8847-8CBB15285B85}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Recibir daño-Gain_02-01 m" ID="{0D738DEA-45F6-4B8E-ADA8-7D78315A15E7}" ShortID="626691181">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Recibir daño-Gain_02-01 m" ID="{EE70A8DD-F4B6-423E-BD28-C1B22560BC95}">
+											<Language>SFX</Language>
+											<AudioFile>Recibir daño-Gain_02-01 m.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="107881455"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Recibir daño-Gain_02-01 m" ID="{EE70A8DD-F4B6-423E-BD28-C1B22560BC95}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Recibir daño-Gain_02-01" ID="{A88C0E86-3959-42F2-9AF2-FA18D6309CF0}" ShortID="1007094253">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>37</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Recibir daño-Gain_02-01" ID="{D892B8BE-005C-4ABC-A557-68897D2627E9}">
+											<Language>SFX</Language>
+											<AudioFile>Recibir daño-Gain_02-01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="807672892"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Recibir daño-Gain_02-01" ID="{D892B8BE-005C-4ABC-A557-68897D2627E9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Sil 3" ID="{966FC401-D71D-403E-94FE-36C755F2B3F9}" ShortID="289694005">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>74</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Sil 3" ID="{1CAFCA0A-A69A-40A0-B550-C1989CE52B36}">
+											<Language>SFX</Language>
+											<AudioFile>Sil 3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="330830439"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Sil 3" ID="{1CAFCA0A-A69A-40A0-B550-C1989CE52B36}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Sil 4" ID="{DA9544B9-B175-49D1-A437-50A879052238}" ShortID="641924804">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>70</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Sil 4" ID="{CE3B51DF-BBA3-4998-90A6-DD3F8145807A}">
+											<Language>SFX</Language>
+											<AudioFile>Sil 4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="686495137"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Sil 4" ID="{CE3B51DF-BBA3-4998-90A6-DD3F8145807A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Sil 5" ID="{70DC7CAA-0A9F-4D53-9999-D1A10140B35A}" ShortID="459213808">
+									<PropertyList>
+										<Property Name="Weight" Type="Real64">
+											<ValueList>
+												<Value>70</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Sil 5" ID="{E0AF0D8E-4A55-4188-91B5-4218CF7FBC76}">
+											<Language>SFX</Language>
+											<AudioFile>Sil 5.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="581480299"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Sil 5" ID="{E0AF0D8E-4A55-4188-91B5-4218CF7FBC76}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Death" ID="{A83AF378-2CBD-4FCD-AA2E-E3E695942716}" ShortID="1059989345">
+							<PropertyList>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Mandrágora-Gain_02-01" ID="{CA95D4DF-ED68-4F6A-8C51-603F0EE04B44}" ShortID="877822301">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-9</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Mandrágora-Gain_02-01" ID="{79E2767C-F133-48A3-9B3D-B9E89023DB11}">
+											<Language>SFX</Language>
+											<AudioFile>Mandrágora-Gain_02-01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="37362199"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Mandrágora-Gain_02-01" ID="{79E2767C-F133-48A3-9B3D-B9E89023DB11}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Recibir daño_02-68" ID="{27B566FC-A1F8-4588-A992-1434B8255F8D}" ShortID="711280232">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Recibir daño_02-68" ID="{C79BDA2E-7C90-4F7C-8E8C-5996CD0113CF}">
+											<Language>SFX</Language>
+											<AudioFile>Recibir daño_02-68.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="4683701"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Recibir daño_02-68" ID="{C79BDA2E-7C90-4F7C-8E8C-5996CD0113CF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Recibir daño-Gain_01-01 m" ID="{ABF7D05C-7B88-4BB6-AE17-A756CB2C1235}" ShortID="308603463">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Recibir daño-Gain_01-01 m" ID="{D1C22971-A634-49FA-B115-3DCFC1B805D3}">
+											<Language>SFX</Language>
+											<AudioFile>Recibir daño-Gain_01-01 m.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="693593840"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Recibir daño-Gain_01-01 m" ID="{D1C22971-A634-49FA-B115-3DCFC1B805D3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="susp-DynA-02" ID="{307CAD77-4E46-4B5F-9F10-2591325FD047}" ShortID="1053226512">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="susp-DynA-02" ID="{9288C82D-72EB-4C07-8368-4B1F1B8FF83C}">
+											<Language>SFX</Language>
+											<AudioFile>susp-DynA-02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="434221591"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="susp-DynA-02" ID="{9288C82D-72EB-4C07-8368-4B1F1B8FF83C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="susp-DynA-03" ID="{20196B8A-5423-44B6-8D4B-2814D2199753}" ShortID="332350271">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="susp-DynA-03" ID="{B19AB215-FCF5-4AA3-9A8B-FA263ADF3B0B}">
+											<Language>SFX</Language>
+											<AudioFile>susp-DynA-03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="484790390"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="susp-DynA-03" ID="{B19AB215-FCF5-4AA3-9A8B-FA263ADF3B0B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="susp-DynA-Gain_01-01" ID="{97A24110-8CA6-4991-93BE-AD7E7DF5DC71}" ShortID="1039236833">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="susp-DynA-Gain_01-01" ID="{E4F600BE-FAC2-4893-834A-B01DBF9E51FF}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.172282177327883"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.38544555066993"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>susp-DynA-Gain_01-01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="142512123"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="susp-DynA-Gain_01-01" ID="{E4F600BE-FAC2-4893-834A-B01DBF9E51FF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="susp-DynA-Gain_02-02" ID="{0CFA4023-57E9-4C19-A8AA-B7124A0EB2F9}" ShortID="387119715">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="susp-DynA-Gain_02-02" ID="{EA280E90-D530-45EA-99F2-266B104BE7FE}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0221534659809405"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>susp-DynA-Gain_02-02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="796853085"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="susp-DynA-Gain_02-02" ID="{EA280E90-D530-45EA-99F2-266B104BE7FE}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
