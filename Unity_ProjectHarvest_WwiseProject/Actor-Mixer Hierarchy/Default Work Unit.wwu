@@ -607,16 +607,6 @@
 										<ActiveSource Name="hvst_sfx_ui_mouseHover_var2_v2" ID="{9ACA61B0-8274-4747-ADAD-8BA98B65074D}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Blablablah" ID="{DA15511E-7A5F-4A73-AEC1-05E8CE10944E}" ShortID="166180085">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
-										</Reference>
-									</ReferenceList>
-								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
 						<Sound Name="hvst_sfx_ui_buttonPress_v1" ID="{D964ED29-E964-4AEF-8E51-1638608D1EC6}" ShortID="32200648">
