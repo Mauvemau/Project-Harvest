@@ -78,8 +78,17 @@
 							<ObjectRef Name="Play_ButtonPress" ID="{C48EC611-401F-47F7-8D96-88548E69E63D}" WorkUnitID="{D5FE0764-4F64-45A3-BBE5-9C04E443A2D8}"/>
 							<Position X="1" Y="0"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="XPBar" ID="{D2EAC87B-0272-49D0-B157-E287DB39D4DC}" WorkUnitID="{2A900AED-FB27-46FF-9350-EB1B5CFF717C}"/>
+							<Position X="2" Y="0"/>
+						</Module>
 					</ModuleList>
-					<RTPCValueList ShowAll="true"/>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="XPBar" ID="{F7887297-79E5-4862-B0CC-724808B5BC27}"/>
+							<Value>69</Value>
+						</RTPCValue>
+					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
@@ -90,7 +99,12 @@
 							<Position X="0" Y="0"/>
 						</Module>
 					</ModuleList>
-					<RTPCValueList ShowAll="true"/>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="XPBar" ID="{F7887297-79E5-4862-B0CC-724808B5BC27}"/>
+							<Value>69</Value>
+						</RTPCValue>
+					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
