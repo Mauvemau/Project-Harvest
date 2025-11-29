@@ -57,7 +57,6 @@ public class MyGameManager : MonoBehaviour {
         if (!Debug.isDebugBuild) return;
         if (timeManager.IsGamePaused()) return;
         if (!playerCharacter.IsAlive()) return;
-        Debug.Log("Winning!");
         onInstantWinChannel?.RaiseEvent();
     }
     

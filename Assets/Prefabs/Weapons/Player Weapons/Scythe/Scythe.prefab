@@ -213,6 +213,7 @@ MonoBehaviour:
       controller: {fileID: 9100000, guid: b57f4554f34f05f4ab39964324a12cc8, type: 2}
       playbackSpeed: 1
       animationStartOffset: 0
+      drawOrder: 3
       color: {r: 1, g: 1, b: 1, a: 0.627451}
     scaleOffset: {x: 4.45, y: 4.45, z: 1}
   vfxOffsetInSeconds: -0.2
