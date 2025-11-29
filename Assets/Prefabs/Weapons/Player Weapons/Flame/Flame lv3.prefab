@@ -157,6 +157,7 @@ MonoBehaviour:
       controller: {fileID: 9100000, guid: d7dd0398b16a41540b1227b4f8d4da47, type: 2}
       playbackSpeed: 1
       animationStartOffset: 0
+      drawOrder: 0
       color: {r: 1, g: 1, b: 1, a: 0.627451}
     scaleOffset: {x: 5, y: 5, z: 1}
   attackSfxEvent:
