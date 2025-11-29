@@ -17,22 +17,29 @@
 									<PointList>
 										<Point>
 											<XPos>0</XPos>
-											<YPos>-2.90845</YPos>
+											<YPos>-1.4962</YPos>
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>0.32518337408313</XPos>
-											<YPos>-3.41628451884248</YPos>
+											<XPos>0.30243</XPos>
+											<YPos>-1.53538</YPos>
 											<Flags>0</Flags>
+											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>0.78395</XPos>
-											<YPos>-17.97085</YPos>
+											<XPos>0.303921568627451</XPos>
+											<YPos>-1.53874187773444</YPos>
+											<Flags>0</Flags>
+											<SegmentShape>SCurve</SegmentShape>
+										</Point>
+										<Point>
+											<XPos>0.75717</XPos>
+											<YPos>-8.19044</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
 											<XPos>1</XPos>
-											<YPos>-18.72662</YPos>
+											<YPos>-9.05358</YPos>
 											<Flags>37</Flags>
 										</Point>
 									</PointList>
