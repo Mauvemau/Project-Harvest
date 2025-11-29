@@ -33,6 +33,10 @@
 					</ChildrenList>
 				</Event>
 				<Event Name="Lawnmower_Start" ID="{2087BAAD-A818-4BFC-B35F-6EF357E7D77B}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="23"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Action Name="" ID="{CE95C769-E542-4ECB-B174-BCB64B79BFAD}" ShortID="773860957">
 							<PropertyList>
@@ -61,6 +65,9 @@
 					</ChildrenList>
 				</Event>
 				<Event Name="Lawnmower_End" ID="{995A7F07-1539-488D-960B-EE0AFB449CAA}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+					</PropertyList>
 					<ChildrenList>
 						<Action Name="" ID="{BA60C490-82C4-4F54-826F-819033117180}" ShortID="365572430">
 							<PropertyList>
@@ -86,6 +93,10 @@
 					</ChildrenList>
 				</Event>
 				<Event Name="Lawnmower_Hit" ID="{B9BD653A-D409-4D87-A24D-D307C0A726DA}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Action Name="" ID="{3983DD01-D6E4-4CAD-9F8D-65A358FA8EC8}" ShortID="169973721">
 							<ReferenceList>
@@ -179,6 +190,10 @@
 					</ChildrenList>
 				</Event>
 				<Event Name="Play_Sickle_Hit" ID="{79CF1037-7A77-4E22-910E-D9A7B768A8E8}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Action Name="" ID="{26685C77-8657-4B1C-A348-2E5210899061}" ShortID="155331482">
 							<ReferenceList>
@@ -190,6 +205,10 @@
 					</ChildrenList>
 				</Event>
 				<Event Name="Play_Flame" ID="{7DEEACB9-797B-4B1D-B468-9FB566BE284D}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="23"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Action Name="" ID="{8F8545E3-8A1D-4477-8C5B-70A87287043D}" ShortID="123606473">
 							<ReferenceList>

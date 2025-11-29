@@ -11,7 +11,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Harvest_Combat" ID="{093046DC-DF7A-407D-B5BD-086421FD76E3}" WorkUnitID="{E2758875-EF17-4E75-A3A7-BCEA4BFFE52F}"/>
+									<ObjectRef Name="MainMenu" ID="{9BF45D73-D844-465B-A357-12F24A31AD4D}" WorkUnitID="{E2758875-EF17-4E75-A3A7-BCEA4BFFE52F}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -25,6 +25,10 @@
 					</ChildrenList>
 				</Event>
 				<Event Name="Play_BoomerangThrow" ID="{FF79C0D0-479A-4858-9AA6-736D8CCB29AD}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="23"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Action Name="" ID="{B3183D83-D6AC-4DC0-820D-7A2E4E81D36A}" ShortID="874233146">
 							<ReferenceList>
@@ -47,6 +51,10 @@
 					</ChildrenList>
 				</Event>
 				<Event Name="Play_MandragoraShooter" ID="{9839EEC0-5FB3-434A-B945-1F0D672D71DE}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="15"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Action Name="" ID="{6DC2C53D-2D6F-4734-80B9-DC139C8A1067}" ShortID="378398034">
 							<ReferenceList>
@@ -69,6 +77,10 @@
 					</ChildrenList>
 				</Event>
 				<Event Name="Play_BlackberryHit" ID="{EF7748F9-C28E-4714-A1CE-2EEB807C5C36}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="2"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Action Name="" ID="{01F0830E-2BC1-45CA-97B1-CCC16C3690F8}" ShortID="282429718">
 							<ReferenceList>
@@ -80,6 +92,10 @@
 					</ChildrenList>
 				</Event>
 				<Event Name="Play_SchytheAttack" ID="{EDB76901-2F48-4911-B519-E928D3BAD226}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="23"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Action Name="" ID="{FF8CCC02-C0C4-4670-A90F-494309C993CC}" ShortID="302581254">
 							<ReferenceList>
@@ -91,6 +107,10 @@
 					</ChildrenList>
 				</Event>
 				<Event Name="Tarantula_Attack" ID="{EEFC995F-6743-48A1-AAF7-9FA72C2E3ED4}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="23"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Action Name="" ID="{81BACA17-F966-4266-BBD4-2CEBCF0EA46C}" ShortID="138233885">
 							<PropertyList>
@@ -119,6 +139,10 @@
 					</ChildrenList>
 				</Event>
 				<Event Name="Tarantula_Hit" ID="{17EE7B9F-0EB1-4D8B-B1B6-0B40AD2CA2C3}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Action Name="" ID="{82426633-37E2-48CB-8FAA-444BD036A94B}" ShortID="947512898">
 							<PropertyList>

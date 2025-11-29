@@ -2394,7 +2394,7 @@
 								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 								<Property Name="MaxSoundPerInstance" Type="int16">
 									<ValueList>
-										<Value>1</Value>
+										<Value>2</Value>
 									</ValueList>
 								</Property>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
@@ -2428,6 +2428,11 @@
 							<ChildrenList>
 								<Sound Name="Sil 5" ID="{7796C7A0-146F-4684-9402-F5BFF98DCE08}" ShortID="377733507">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
 												<Value>66</Value>
@@ -2731,11 +2736,6 @@
 								</Sound>
 								<Sound Name="Shooter 1_01_01-183" ID="{6FA6B803-5BA2-4808-98C0-A9737720975F}" ShortID="256884548">
 									<PropertyList>
-										<Property Name="Inclusion" Type="bool">
-											<ValueList>
-												<Value>False</Value>
-											</ValueList>
-										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
 												<Value>33</Value>
@@ -2857,11 +2857,6 @@
 								</Sound>
 								<Sound Name="Shooter 1_01_01-199" ID="{B9E26853-E579-434E-B7F3-332146F4C2C8}" ShortID="259677336">
 									<PropertyList>
-										<Property Name="Inclusion" Type="bool">
-											<ValueList>
-												<Value>False</Value>
-											</ValueList>
-										</Property>
 										<Property Name="Weight" Type="Real64">
 											<ValueList>
 												<Value>63</Value>
