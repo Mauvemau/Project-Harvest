@@ -42,6 +42,7 @@ namespace AK
         static const AkUniqueID PLAY_SXF_XPEXTRA = 2569333368U;
         static const AkUniqueID PLAY_TOROMANDRAKECRY = 4031256493U;
         static const AkUniqueID PLAY_TOROMANDRAKERECIBEDAMAGE = 1971773272U;
+        static const AkUniqueID PLAY_WITCH_DEATH = 4294261068U;
         static const AkUniqueID PLAY_XPBAR = 3421228173U;
         static const AkUniqueID START = 1281810935U;
         static const AkUniqueID STOP_MANDRAKEEXPLOSIONBEEP = 3019132932U;

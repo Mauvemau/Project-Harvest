@@ -49,7 +49,13 @@
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
+										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
@@ -60,7 +66,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
-											<ObjectRef Name="5m" ID="{7B443898-9A9F-48F2-9B18-8249E7E06532}" WorkUnitID="{534FA15F-9837-4037-8FF4-5DDCE2062302}"/>
+											<ObjectRef Name="TarantulaAttenuation" ID="{DFC0A048-9F43-488B-90F6-D6023437479C}" WorkUnitID="{534FA15F-9837-4037-8FF4-5DDCE2062302}"/>
 										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -1321,12 +1327,18 @@
 				<ActorMixer Name="Lawnmower" ID="{5F51C6A8-1AF0-4CA1-9811-A6D5ED7D63A0}" ShortID="1032264619">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
 						<Property Name="Color" Type="int16" Value="19"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-7</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
-							<ObjectRef Name="5m" ID="{7B443898-9A9F-48F2-9B18-8249E7E06532}" WorkUnitID="{534FA15F-9837-4037-8FF4-5DDCE2062302}"/>
+							<ObjectRef Name="TarantulaAttenuation" ID="{DFC0A048-9F43-488B-90F6-D6023437479C}" WorkUnitID="{534FA15F-9837-4037-8FF4-5DDCE2062302}"/>
 						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>

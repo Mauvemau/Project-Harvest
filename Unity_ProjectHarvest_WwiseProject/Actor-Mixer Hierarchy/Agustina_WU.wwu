@@ -5515,6 +5515,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="Recibir daño-Gain_03-01" ID="{70193715-FB78-42D4-84F6-2222E9D1A7D3}" ShortID="680140076">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -5525,6 +5532,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Recibir daño-Gain_03-01" ID="{58147704-4EB1-4C58-84A9-C13D9FF5FED2}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0736963710203619"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Recibir daño-Gain_03-01.wav</AudioFile>
 											<MediaIDList>
@@ -5664,6 +5676,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Mandrágora_02-29" ID="{133D12E5-2F92-4A8A-A41E-0A74B02695EA}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0571881197761782"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Mandrágora_02-29.wav</AudioFile>
 											<MediaIDList>
@@ -5686,6 +5703,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Recibir daño_02-42" ID="{27BE08D8-F8F8-4D01-BE51-840A1CBF4777}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0665577555646991"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Recibir daño_02-42.wav</AudioFile>
 											<MediaIDList>
@@ -5730,6 +5752,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Recibir daño_02-66" ID="{47E8BD01-99D4-46E6-872C-AC8BCB1F1F01}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0828910874258174"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Recibir daño_02-66.wav</AudioFile>
 											<MediaIDList>
@@ -5752,6 +5779,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Recibir daño_02-74" ID="{1509AE5F-7009-42FB-9EB2-04129604353C}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0736386133450092"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Recibir daño_02-74.wav</AudioFile>
 											<MediaIDList>
@@ -5761,28 +5793,6 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="Recibir daño_02-74" ID="{1509AE5F-7009-42FB-9EB2-04129604353C}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Recibir daño_02-75" ID="{3C98741A-F1C5-447B-AB4E-BAF624B11EC9}" ShortID="436148842">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Recibir daño_02-75" ID="{F700C590-D0BC-46F4-BBD3-79FBE50D63A5}">
-											<Language>SFX</Language>
-											<AudioFile>Recibir daño_02-75.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="418845789"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Recibir daño_02-75" ID="{F700C590-D0BC-46F4-BBD3-79FBE50D63A5}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Recibir daño_02-79" ID="{8C2A18F0-6DA1-497C-B4D2-A684E14FC68D}" ShortID="521788587">
@@ -5796,6 +5806,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Recibir daño_02-79" ID="{7743F4C7-7F06-4C70-B618-41793777632D}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0828341608590419"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Recibir daño_02-79.wav</AudioFile>
 											<MediaIDList>
@@ -5818,6 +5833,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Recibir daño-DynA-Gain_01-05" ID="{03F39089-E789-4298-8847-8CBB15285B85}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0118399340438076"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0372524754061262"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Recibir daño-DynA-Gain_01-05.wav</AudioFile>
 											<MediaIDList>
@@ -5840,6 +5860,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Recibir daño-Gain_02-01 m" ID="{EE70A8DD-F4B6-423E-BD28-C1B22560BC95}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.032135313764067"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Recibir daño-Gain_02-01 m.wav</AudioFile>
 											<MediaIDList>
@@ -5862,6 +5887,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Recibir daño-Gain_02-01" ID="{D892B8BE-005C-4ABC-A557-68897D2627E9}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0183226065986817"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Recibir daño-Gain_02-01.wav</AudioFile>
 											<MediaIDList>
@@ -5943,6 +5973,7 @@
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Death" ID="{A83AF378-2CBD-4FCD-AA2E-E3E695942716}" ShortID="1059989345">
 							<PropertyList>
+								<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
 								<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
 								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 								<Property Name="MaxSoundPerInstance" Type="int16">
@@ -5950,6 +5981,8 @@
 										<Value>1</Value>
 									</ValueList>
 								</Property>
+								<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+								<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
 								<Property Name="UseMaxSoundPerInstance" Type="bool">
 									<ValueList>
 										<Value>True</Value>

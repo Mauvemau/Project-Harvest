@@ -96,7 +96,6 @@
 											<PropertyList>
 												<Property Name="SourceContextType" Type="int16" Value="1"/>
 											</PropertyList>
-											<ReferenceList/>
 											<TransitionInfo/>
 										</MusicTransition>
 									</ChildrenList>
@@ -5351,7 +5350,7 @@
 										<StateRef Name="Harvest_Combat" ID="{093046DC-DF7A-407D-B5BD-086421FD76E3}"/>
 										<CustomState Name="" ID="{D5D96666-ACA7-4E6B-A9B5-0717A2045E2E}" ShortID="896935601">
 											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-13"/>
+												<Property Name="Volume" Type="Real64" Value="-10"/>
 											</PropertyList>
 										</CustomState>
 									</CustomState>
@@ -5364,7 +5363,7 @@
 										<CustomState Name="" ID="{4D97FFDB-8075-47E2-A1F8-04E700999FE0}" ShortID="345506945">
 											<PropertyList>
 												<Property Name="Lowpass" Type="int16" Value="49"/>
-												<Property Name="Volume" Type="Real64" Value="-20"/>
+												<Property Name="Volume" Type="Real64" Value="-13"/>
 											</PropertyList>
 										</CustomState>
 									</CustomState>
@@ -5666,7 +5665,7 @@
 																				<Property Name="EndTrimOffset" Type="Real64" Value="1683.09480543477"/>
 																				<Property Name="FadeInDuration" Type="Real64" Value="270.009539593225"/>
 																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																				<Property Name="PlayAt" Type="Real64" Value="2000"/>
+																				<Property Name="PlayAt" Type="Real64" Value="1500"/>
 																			</PropertyList>
 																			<AudioSourceRef Name="Harvest_Finales_Perder" ID="{FF26673F-1826-4041-BDBC-83ED8019F9E5}"/>
 																			<PropertyCurveList>
@@ -5739,7 +5738,7 @@
 																				<Property Name="EndTrimOffset" Type="Real64" Value="16500"/>
 																				<Property Name="FadeInDuration" Type="Real64" Value="400.759207221937"/>
 																				<Property Name="FadeOutDuration" Type="Real64" Value="198.737062501332"/>
-																				<Property Name="PlayAt" Type="Real64" Value="1232.66483175343"/>
+																				<Property Name="PlayAt" Type="Real64" Value="732.664831753431"/>
 																			</PropertyList>
 																			<AudioSourceRef Name="Harvest_Finales_Perder" ID="{FF26673F-1826-4041-BDBC-83ED8019F9E5}"/>
 																			<PropertyCurveList>
@@ -5856,7 +5855,7 @@
 																		<MusicClip Name="Music_1_Loop1_Player_Health_Wounded" ID="{A486F844-711F-46E0-B92A-3E25CE9625AA}">
 																			<PropertyList>
 																				<Property Name="BeginTrimOffset" Type="Real64" Value="2222.22222222222"/>
-																				<Property Name="EndTrimOffset" Type="Real64" Value="19796.1591379578"/>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="18722.2222222222"/>
 																				<Property Name="FadeInDuration" Type="Real64" Value="1497.06205768901"/>
 																				<Property Name="FadeOutDuration" Type="Real64" Value="5857.9995296225"/>
 																				<Property Name="PlayAt" Type="Real64" Value="-2222.22222222222"/>
@@ -5875,7 +5874,7 @@
 																								<Flags>5</Flags>
 																							</Point>
 																							<Point>
-																								<XPos>19.79616</XPos>
+																								<XPos>18.72222</XPos>
 																								<YPos>0</YPos>
 																								<Flags>37</Flags>
 																							</Point>
@@ -5894,7 +5893,7 @@
 																								<Flags>5</Flags>
 																							</Point>
 																							<Point>
-																								<XPos>19.79616</XPos>
+																								<XPos>18.72222</XPos>
 																								<YPos>0</YPos>
 																								<Flags>37</Flags>
 																							</Point>
@@ -5913,7 +5912,7 @@
 																								<Flags>5</Flags>
 																							</Point>
 																							<Point>
-																								<XPos>19.79616</XPos>
+																								<XPos>18.72222</XPos>
 																								<YPos>0</YPos>
 																								<Flags>37</Flags>
 																							</Point>
@@ -5959,7 +5958,7 @@
 											<MusicCue Name="Ended" ID="{97A05C79-A60A-498B-8A60-6F29C4492F9A}">
 												<PropertyList>
 													<Property Name="CueType" Type="int16" Value="2"/>
-													<Property Name="TimeMs" Type="Real64" Value="17750"/>
+													<Property Name="TimeMs" Type="Real64" Value="17000"/>
 												</PropertyList>
 											</MusicCue>
 										</Local>
