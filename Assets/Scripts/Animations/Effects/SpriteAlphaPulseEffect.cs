@@ -25,7 +25,9 @@ public class SpriteAlphaPulse : MonoBehaviour {
     }
     
     private void Awake() {
-        _spriteRenderer = GetComponent<SpriteRenderer>();
+        if (!TryGetComponent(out _spriteRenderer)) {
+            Debug.LogError($"{name}: missing required component; {nameof(SpriteRenderer)}!");
+        }
     }
     
     private void OnEnable() {
