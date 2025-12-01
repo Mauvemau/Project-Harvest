@@ -10635,7 +10635,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   versionPrefix: v
-  specialVersionText: Pre-Release
+  specialVersionText: Pre-Release Demo
 --- !u!114 &1785916706
 MonoBehaviour:
   m_ObjectHideFlags: 0
