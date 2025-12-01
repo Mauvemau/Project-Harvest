@@ -11,7 +11,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Harvest_Combat" ID="{093046DC-DF7A-407D-B5BD-086421FD76E3}" WorkUnitID="{E2758875-EF17-4E75-A3A7-BCEA4BFFE52F}"/>
+									<ObjectRef Name="MainMenu" ID="{9BF45D73-D844-465B-A357-12F24A31AD4D}" WorkUnitID="{E2758875-EF17-4E75-A3A7-BCEA4BFFE52F}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -25,6 +25,10 @@
 					</ChildrenList>
 				</Event>
 				<Event Name="Play_BoomerangThrow" ID="{FF79C0D0-479A-4858-9AA6-736D8CCB29AD}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="23"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Action Name="" ID="{B3183D83-D6AC-4DC0-820D-7A2E4E81D36A}" ShortID="874233146">
 							<ReferenceList>
@@ -47,6 +51,10 @@
 					</ChildrenList>
 				</Event>
 				<Event Name="Play_MandragoraShooter" ID="{9839EEC0-5FB3-434A-B945-1F0D672D71DE}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="15"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Action Name="" ID="{6DC2C53D-2D6F-4734-80B9-DC139C8A1067}" ShortID="378398034">
 							<ReferenceList>
@@ -69,6 +77,10 @@
 					</ChildrenList>
 				</Event>
 				<Event Name="Play_BlackberryHit" ID="{EF7748F9-C28E-4714-A1CE-2EEB807C5C36}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="2"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Action Name="" ID="{01F0830E-2BC1-45CA-97B1-CCC16C3690F8}" ShortID="282429718">
 							<ReferenceList>
@@ -80,6 +92,10 @@
 					</ChildrenList>
 				</Event>
 				<Event Name="Play_SchytheAttack" ID="{EDB76901-2F48-4911-B519-E928D3BAD226}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="23"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Action Name="" ID="{FF8CCC02-C0C4-4670-A90F-494309C993CC}" ShortID="302581254">
 							<ReferenceList>
@@ -91,6 +107,10 @@
 					</ChildrenList>
 				</Event>
 				<Event Name="Tarantula_Attack" ID="{EEFC995F-6743-48A1-AAF7-9FA72C2E3ED4}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="23"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Action Name="" ID="{81BACA17-F966-4266-BBD4-2CEBCF0EA46C}" ShortID="138233885">
 							<PropertyList>
@@ -119,6 +139,10 @@
 					</ChildrenList>
 				</Event>
 				<Event Name="Tarantula_Hit" ID="{17EE7B9F-0EB1-4D8B-B1B6-0B40AD2CA2C3}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Action Name="" ID="{82426633-37E2-48CB-8FAA-444BD036A94B}" ShortID="947512898">
 							<PropertyList>
@@ -182,6 +206,75 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="XPBar" ID="{D2EAC87B-0272-49D0-B157-E287DB39D4DC}" WorkUnitID="{2A900AED-FB27-46FF-9350-EB1B5CFF717C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_MandrakeExplosion" ID="{41D2652D-CE0E-4FE0-AE61-40510A19A510}">
+					<ChildrenList>
+						<Action Name="" ID="{3BCAD7A4-8EEA-4DBD-9C76-857EA1964565}" ShortID="1018353295">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MandrakeExplosion" ID="{FFB8DC03-B334-443E-8A98-B00BD8DB19D4}" WorkUnitID="{2A900AED-FB27-46FF-9350-EB1B5CFF717C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{565ED00A-AC2C-46A5-9B58-DB3FB6E81C52}" ShortID="154234875">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MandrakeExplosionBeep" ID="{7388BB0D-03A5-46AB-AF15-7D59B0C74CAF}" WorkUnitID="{2A900AED-FB27-46FF-9350-EB1B5CFF717C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_MandrakeExplosionBeep" ID="{FE2E4A3E-742C-47DD-A0FF-D2F7096111BE}">
+					<ChildrenList>
+						<Action Name="" ID="{422A9B83-F8FB-45D5-9734-62EDAE05DE0C}" ShortID="55143127">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="39"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="BeepSpeed" ID="{2CB87140-EB03-40E1-AE13-0AA0B6E71BA4}" WorkUnitID="{F71958F0-9A0F-47C0-B38D-15E5BB39915A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{CC77560C-F8CF-4894-A972-4BD43803E861}" ShortID="649521007">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MandrakeExplosionBeep" ID="{7388BB0D-03A5-46AB-AF15-7D59B0C74CAF}" WorkUnitID="{2A900AED-FB27-46FF-9350-EB1B5CFF717C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{6045532E-8A09-4CB8-B166-579603E52ED5}" ShortID="890872476">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+								<Property Name="FadeTime" Type="Real64" Value="2.5"/>
+								<Property Name="GameParameterValue" Type="Real64" Value="5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="BeepSpeed" ID="{2CB87140-EB03-40E1-AE13-0AA0B6E71BA4}" WorkUnitID="{F71958F0-9A0F-47C0-B38D-15E5BB39915A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_MandrakeExplosionBeep" ID="{57CAF415-DACD-4057-93AA-833C81A77BAA}">
+					<ChildrenList>
+						<Action Name="" ID="{76A8A8B3-8B57-4954-8445-ECA3E4E313A3}" ShortID="858440725">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MandrakeExplosionBeep" ID="{7388BB0D-03A5-46AB-AF15-7D59B0C74CAF}" WorkUnitID="{2A900AED-FB27-46FF-9350-EB1B5CFF717C}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
