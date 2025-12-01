@@ -98,15 +98,30 @@
 							<ObjectRef Name="Play_MandragoraShooter" ID="{9839EEC0-5FB3-434A-B945-1F0D672D71DE}" WorkUnitID="{D5FE0764-4F64-45A3-BBE5-9C04E443A2D8}"/>
 							<Position X="0" Y="0"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="Play_MandrakeExplosionBeep" ID="{FE2E4A3E-742C-47DD-A0FF-D2F7096111BE}" WorkUnitID="{D5FE0764-4F64-45A3-BBE5-9C04E443A2D8}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_MandrakeExplosion" ID="{41D2652D-CE0E-4FE0-AE61-40510A19A510}" WorkUnitID="{D5FE0764-4F64-45A3-BBE5-9C04E443A2D8}"/>
+							<Position X="1" Y="1"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="BeepSpeed" ID="{2CB87140-EB03-40E1-AE13-0AA0B6E71BA4}"/>
+							<Value>0</Value>
+						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="XPBar" ID="{F7887297-79E5-4862-B0CC-724808B5BC27}"/>
 							<Value>69</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
-					<CurrentSwitchList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Healthy" ID="{B52D66F8-AA47-4F9F-BDAD-8BC6EC7FA98F}"/>
+						<CurrentSwitchRef Name="No" ID="{AB94F416-0319-49E1-AAB2-DE33432CEDEA}"/>
+					</CurrentSwitchList>
 				</SoundcasterSession>
 				<SoundcasterSession Name="Tarantula_Test" ID="{4FE698C5-38EB-4457-BD19-D9095DC80902}">
 					<ModuleList>
