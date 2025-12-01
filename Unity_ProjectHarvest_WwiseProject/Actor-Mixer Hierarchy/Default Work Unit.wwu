@@ -1440,6 +1440,10 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="ph_sfx_mandrakeExplosion_var2_v1" ID="{0AA7B797-A199-4FC1-BBD6-E65968915112}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0243096806035183"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>ph_sfx_mandrakeExplosion_var2_v1.wav</AudioFile>
 											<MediaIDList>
