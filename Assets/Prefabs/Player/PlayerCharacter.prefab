@@ -416,7 +416,7 @@ MonoBehaviour:
   deathAudioEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 8d1bdcd70290ae04197166c63bdc1a59, type: 2}
   healthBarController:
     onMaxValueUpdated: {fileID: 11400000, guid: dbb5ab292a8dcac4491b4493c52a926d, type: 2}
     onCurrentValueUpdated: {fileID: 11400000, guid: 9731a1e098353e0498f52730d2b05479, type: 2}

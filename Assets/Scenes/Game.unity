@@ -786,10 +786,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1125368741}
     - target: {fileID: 901040559531970695, guid: e4b5b5b1eeac59648beda440a153c5cd, type: 3}
-      propertyPath: spawnEnemies
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 901040559531970695, guid: e4b5b5b1eeac59648beda440a153c5cd, type: 3}
       propertyPath: spawnManager
       value: 
       objectReference: {fileID: 1414712854}
@@ -801,26 +797,6 @@ PrefabInstance:
       propertyPath: weaponUpgradeManager.playerInventoryReference
       value: 
       objectReference: {fileID: 1972705332}
-    - target: {fileID: 901040559531970695, guid: e4b5b5b1eeac59648beda440a153c5cd, type: 3}
-      propertyPath: gameplayEventManager.spawnDebugEnemyEvents.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 901040559531970695, guid: e4b5b5b1eeac59648beda440a153c5cd, type: 3}
-      propertyPath: gameplayEventManager.spawnDebugEnemyEvents.Array.data[0].timestampFormatted
-      value: 00:03
-      objectReference: {fileID: 0}
-    - target: {fileID: 901040559531970695, guid: e4b5b5b1eeac59648beda440a153c5cd, type: 3}
-      propertyPath: gameplayEventManager.spawnDebugEnemyEvents.Array.data[0].timestampInSeconds
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 901040559531970695, guid: e4b5b5b1eeac59648beda440a153c5cd, type: 3}
-      propertyPath: gameplayEventManager.spawnDebugEnemyEvents.Array.data[0].enemyBatch.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 901040559531970695, guid: e4b5b5b1eeac59648beda440a153c5cd, type: 3}
-      propertyPath: 'gameplayEventManager.spawnDebugEnemyEvents.Array.data[0].enemyBatch.Array.data[0]'
-      value: 
-      objectReference: {fileID: 4210210132979722889, guid: 5fff26d2418b80447a1a6660f9d1f44e, type: 3}
     - target: {fileID: 3429000851342337797, guid: e4b5b5b1eeac59648beda440a153c5cd, type: 3}
       propertyPath: m_Name
       value: "\u2699\uFE0F GameManager"

@@ -14,15 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponLevel:
   - weaponPrefab: {fileID: 4038727559878163834, guid: 2cb06854798a16e44b3be463b86c919e, type: 3}
-    upgradeDescription: A powerful companion that will shoot webs at enemies automatically
+    upgradeDescription: A companion that will shoot webs at enemies automatically
   - weaponPrefab: {fileID: 4038727559878163834, guid: 1fa4416712a9bc047999de88e7e4d3bf, type: 3}
     upgradeDescription: Attack Speed increases by 0.5
   - weaponPrefab: {fileID: 4038727559878163834, guid: 9b0330e89d13b1842810ac9ee8fff466, type: 3}
-    upgradeDescription: Attack Damage increases by 0.5
+    upgradeDescription: Attack Damage increases by 1
   - weaponPrefab: {fileID: 4038727559878163834, guid: f325fdde67932f24d9b86bbf82730e44, type: 3}
     upgradeDescription: Projectile penetrates trough 1 target
   - weaponPrefab: {fileID: 4038727559878163834, guid: 6bf1053bef0bbd94fbb7f639dd0773d1, type: 3}
     upgradeDescription: Attack Speed increases by another 0.5
   - weaponPrefab: {fileID: 4038727559878163834, guid: 8653248e4304be34e9e2c1c4ebbcaf31, type: 3}
-    upgradeDescription: Attack Damage increases by another 0.5
+    upgradeDescription: Attack Damage increases by 1.5
   weaponIcon: {fileID: 21300000, guid: 6c93310fb0d8a494597c064185732bad, type: 3}
