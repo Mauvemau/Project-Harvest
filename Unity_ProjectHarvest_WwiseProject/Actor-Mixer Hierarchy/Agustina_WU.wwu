@@ -12,11 +12,6 @@
 							</ValueList>
 						</Property>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
-						<Property Name="UseMaxSoundPerInstance" Type="bool">
-							<ValueList>
-								<Value>True</Value>
-							</ValueList>
-						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>-6</Value>
@@ -35,13 +30,17 @@
 						<RandomSequenceContainer Name="Damage" ID="{D4C59AB3-A83D-48A2-B913-0FC7C310F935}" ShortID="750715773">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+								<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
 								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 								<Property Name="MaxSoundPerInstance" Type="int16">
 									<ValueList>
 										<Value>1</Value>
 									</ValueList>
 								</Property>
+								<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
 										<ModifierInfo>
@@ -85,13 +84,6 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="comun 1_01_01-123" ID="{8A5EE389-A33B-484E-8A44-2AA24DA52BE7}" ShortID="226406313">
-									<PropertyList>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>10</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -114,13 +106,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="comun 1_01_01-171" ID="{54E12A2C-8A33-4F46-A366-A6BD626ABD72}" ShortID="977456466">
-									<PropertyList>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>10</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -143,13 +128,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="comun 1_01_01-175" ID="{0C633729-CD0E-45A6-B15E-275C3CF24F3D}" ShortID="454782995">
-									<PropertyList>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>10</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -172,13 +150,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="comun 1_01_01-179" ID="{8A85C62C-DBD1-41A0-B977-874B703B1BEF}" ShortID="420959330">
-									<PropertyList>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>10</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -201,13 +172,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="comun 1_01_01-183" ID="{17E27319-C3F5-4CD0-AA5A-1BF595911977}" ShortID="963879353">
-									<PropertyList>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>10</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -230,13 +194,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="comun 1_01_01-187" ID="{F01EDC60-C205-4BCD-89A0-F5669BAFC702}" ShortID="163489501">
-									<PropertyList>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>10</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -259,13 +216,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="comun 1_01_01-191" ID="{836C70F7-5C87-46E7-AC13-9A146E8ABF67}" ShortID="89007219">
-									<PropertyList>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>10</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -288,13 +238,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="comun 1_01_01-195" ID="{A45ED75D-742C-46F7-801B-6207F924464E}" ShortID="548658704">
-									<PropertyList>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>10</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -317,13 +260,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="comun 1_01_01-199" ID="{AA78AADE-D2AC-4A31-8CF4-4F868DA45C88}" ShortID="870702742">
-									<PropertyList>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>10</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -346,13 +282,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Sil 1" ID="{93B0B5F0-7CAC-433D-B512-C28EA9792953}" ShortID="184247262">
-									<PropertyList>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>30</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -379,11 +308,6 @@
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -415,11 +339,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -447,11 +366,6 @@
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -483,11 +397,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -515,11 +424,6 @@
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -551,11 +455,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -585,11 +484,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -617,13 +511,17 @@
 						<RandomSequenceContainer Name="Cry" ID="{52FEDAC8-F6AD-456A-B07E-59ADDCFFE6B3}" ShortID="62987464">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+								<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
 								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 								<Property Name="MaxSoundPerInstance" Type="int16">
 									<ValueList>
 										<Value>1</Value>
 									</ValueList>
 								</Property>
+								<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
 								<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
 								<Property Name="UseMaxSoundPerInstance" Type="bool">
 									<ValueList>
@@ -641,13 +539,6 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="comun 1_01_01-27" ID="{D28ED3F5-1B56-4442-9246-9CEA83734A5F}" ShortID="431512224">
-									<PropertyList>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>5</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -674,11 +565,6 @@
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -710,11 +596,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -742,11 +623,6 @@
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -778,11 +654,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -810,11 +681,6 @@
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -846,11 +712,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -878,11 +739,6 @@
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -914,11 +770,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -946,11 +797,6 @@
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -982,11 +828,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1014,11 +855,6 @@
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1050,11 +886,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1082,11 +913,6 @@
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1118,11 +944,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1150,11 +971,6 @@
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1186,11 +1002,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1214,13 +1025,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="comun 1_01_01-15" ID="{78EB7856-11AB-41F7-8632-C52B29476E0C}" ShortID="1067091102">
-									<PropertyList>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>5</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -1249,11 +1053,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1277,13 +1076,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="comun 1_01_01-23" ID="{63FBB7F0-AD29-4E8C-B0B9-3F28FE7CD57D}" ShortID="477189812">
-									<PropertyList>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>5</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -1310,11 +1102,6 @@
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1346,11 +1133,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1374,13 +1156,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="comun 1_01_01-43" ID="{381050A8-F1A9-4450-8888-43E85E895792}" ShortID="1028677063">
-									<PropertyList>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>5</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -1414,11 +1189,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1446,11 +1216,6 @@
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1482,11 +1247,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1514,11 +1274,6 @@
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1550,11 +1305,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1582,11 +1332,6 @@
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1618,11 +1363,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1650,11 +1390,6 @@
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1686,11 +1421,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1718,11 +1448,6 @@
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1754,11 +1479,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1786,11 +1506,6 @@
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1822,11 +1537,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1854,11 +1564,6 @@
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1890,11 +1595,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1924,11 +1624,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1952,13 +1647,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Sil 1" ID="{A5FF9139-48F5-4D2A-AC05-75E5BA399550}" ShortID="14997157">
-									<PropertyList>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>70</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -1985,11 +1673,6 @@
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2021,11 +1704,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -2053,11 +1731,6 @@
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2089,11 +1762,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -2121,11 +1789,6 @@
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2157,11 +1820,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -2189,11 +1847,6 @@
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2225,11 +1878,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -2257,11 +1905,6 @@
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2293,11 +1936,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -2325,11 +1963,6 @@
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2368,11 +2001,6 @@
 							</ValueList>
 						</Property>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
-						<Property Name="UseMaxSoundPerInstance" Type="bool">
-							<ValueList>
-								<Value>True</Value>
-							</ValueList>
-						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>-12</Value>
@@ -2391,13 +2019,17 @@
 						<RandomSequenceContainer Name="Damage" ID="{D1064CDB-9BB8-4928-9C33-00792018D376}" ShortID="21998303">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+								<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
 								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 								<Property Name="MaxSoundPerInstance" Type="int16">
 									<ValueList>
-										<Value>1</Value>
+										<Value>2</Value>
 									</ValueList>
 								</Property>
+								<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
 										<ModifierInfo>
@@ -2428,9 +2060,9 @@
 							<ChildrenList>
 								<Sound Name="Sil 5" ID="{7796C7A0-146F-4684-9402-F5BFF98DCE08}" ShortID="377733507">
 									<PropertyList>
-										<Property Name="Weight" Type="Real64">
+										<Property Name="Inclusion" Type="bool">
 											<ValueList>
-												<Value>66</Value>
+												<Value>False</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2462,11 +2094,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>64</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -2494,11 +2121,6 @@
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>54</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2559,11 +2181,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>34</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -2587,13 +2204,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Shooter 1_01_01-123" ID="{F3C8359F-0EAA-4C3A-9736-6A74541C9315}" ShortID="368703444">
-									<PropertyList>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>36</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -2616,13 +2226,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Shooter 1_01_01-143" ID="{59B605B1-CD7F-480F-A841-6C3FA3BB84BE}" ShortID="549590256">
-									<PropertyList>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>37</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -2667,13 +2270,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Shooter 1_01_01-175" ID="{15052F09-34DA-4052-8DE8-7C509D531C78}" ShortID="432286853">
-									<PropertyList>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>39</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -2702,11 +2298,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>30</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -2730,18 +2321,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Shooter 1_01_01-183" ID="{6FA6B803-5BA2-4808-98C0-A9737720975F}" ShortID="256884548">
-									<PropertyList>
-										<Property Name="Inclusion" Type="bool">
-											<ValueList>
-												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>33</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -2764,13 +2343,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Shooter 1_01_01-187" ID="{FD2F5AEA-578D-4851-99A4-5FC2EEE2BBE1}" ShortID="910295037">
-									<PropertyList>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>36</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -2793,13 +2365,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Shooter 1_01_01-191" ID="{7FE2DB74-9339-44DD-9D70-1D587557D227}" ShortID="141140169">
-									<PropertyList>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>40</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -2828,11 +2393,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>29</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -2856,18 +2416,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Shooter 1_01_01-199" ID="{B9E26853-E579-434E-B7F3-332146F4C2C8}" ShortID="259677336">
-									<PropertyList>
-										<Property Name="Inclusion" Type="bool">
-											<ValueList>
-												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>63</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -2894,13 +2442,17 @@
 						<RandomSequenceContainer Name="Cry" ID="{8CD83FC9-1E28-4F3B-97CA-0C0D4AB9418A}" ShortID="938366576">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+								<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
 								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 								<Property Name="MaxSoundPerInstance" Type="int16">
 									<ValueList>
 										<Value>1</Value>
 									</ValueList>
 								</Property>
+								<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
 								<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
 								<Property Name="UseMaxSoundPerInstance" Type="bool">
 									<ValueList>
@@ -2922,11 +2474,6 @@
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2958,11 +2505,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -2990,11 +2532,6 @@
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3026,11 +2563,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -3058,11 +2590,6 @@
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3094,11 +2621,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -3126,11 +2648,6 @@
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3162,11 +2679,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -3190,13 +2702,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Shooter 1_01_01-69" ID="{8FD4E778-1171-4F9C-98BB-C0C62EEC7A08}" ShortID="802723210">
-									<PropertyList>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>3</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -3223,11 +2728,6 @@
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3259,11 +2759,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -3291,11 +2786,6 @@
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3327,11 +2817,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -3359,11 +2844,6 @@
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3395,11 +2875,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -3427,11 +2902,6 @@
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3463,11 +2933,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -3491,13 +2956,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Shooter 1_01_01-03" ID="{CDA8D058-8515-4D7C-90B7-FAA3158F259C}" ShortID="734239313">
-									<PropertyList>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>5</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -3524,11 +2982,6 @@
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3560,11 +3013,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -3592,11 +3040,6 @@
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3628,11 +3071,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -3656,13 +3094,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Shooter 1_01_01-23" ID="{33C39043-9BAA-444D-B35B-4D8B571EE1D0}" ShortID="28298523">
-									<PropertyList>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>5</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -3691,11 +3122,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -3719,13 +3145,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Shooter 1_01_01-31" ID="{3BE55C03-AFEB-4B94-948F-D955EA66019C}" ShortID="552660825">
-									<PropertyList>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>5</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -3752,11 +3171,6 @@
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3788,11 +3202,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -3820,11 +3229,6 @@
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3856,11 +3260,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -3888,11 +3287,6 @@
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3924,11 +3318,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -3956,11 +3345,6 @@
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3992,11 +3376,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -4024,11 +3403,6 @@
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -4060,11 +3434,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -4092,11 +3461,6 @@
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -4128,11 +3492,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -4160,11 +3519,6 @@
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -4196,11 +3550,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -4228,11 +3577,6 @@
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -4264,11 +3608,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -4296,11 +3635,6 @@
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -4332,11 +3666,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -4364,11 +3693,6 @@
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -4400,11 +3724,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -4432,11 +3751,6 @@
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -4468,11 +3782,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -4497,9 +3806,9 @@
 								</Sound>
 								<Sound Name="Sil 1" ID="{7C24C5C0-5266-42CF-8C59-17CAD3D59430}" ShortID="397029689">
 									<PropertyList>
-										<Property Name="Weight" Type="Real64">
+										<Property Name="Inclusion" Type="bool">
 											<ValueList>
-												<Value>70</Value>
+												<Value>False</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -4531,11 +3840,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -4563,11 +3867,6 @@
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -4599,11 +3898,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -4631,11 +3925,6 @@
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -4686,13 +3975,17 @@
 						<RandomSequenceContainer Name="Damage" ID="{A775E598-4171-475E-99E6-703D2CE94875}" ShortID="994996406">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+								<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
 								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 								<Property Name="MaxSoundPerInstance" Type="int16">
 									<ValueList>
 										<Value>1</Value>
 									</ValueList>
 								</Property>
+								<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
 										<ModifierInfo>
@@ -5398,17 +4691,22 @@
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Cry" ID="{87673B9C-0B90-4CCE-AAB5-CBD5B2164B62}" ShortID="531141990">
 							<PropertyList>
+								<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+								<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
 								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 								<Property Name="MaxSoundPerInstance" Type="int16">
 									<ValueList>
 										<Value>1</Value>
 									</ValueList>
 								</Property>
+								<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+								<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
 								<Property Name="UseMaxSoundPerInstance" Type="bool">
 									<ValueList>
 										<Value>True</Value>
 									</ValueList>
 								</Property>
+								<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -5420,13 +4718,6 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="Toro 1_01_01-27" ID="{1FD62446-80A1-45A2-9DFF-1E0E9CCEAA63}" ShortID="775554227">
-									<PropertyList>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>10</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -5462,11 +4753,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -5494,11 +4780,6 @@
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -5530,11 +4811,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -5564,11 +4840,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -5592,13 +4863,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Toro 1_01_01-71" ID="{6EBB0861-AA4C-44D5-B5F9-91B946283E26}" ShortID="290412898">
-									<PropertyList>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>10</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -5626,13 +4890,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Toro 1_01_01-87" ID="{8394F416-35DA-4AF3-9B17-86619F965C23}" ShortID="570895245">
-									<PropertyList>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>10</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -5666,11 +4923,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -5698,11 +4950,6 @@
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -5734,11 +4981,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -5766,11 +5008,6 @@
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -5802,11 +5039,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -5834,11 +5066,6 @@
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -5870,11 +5097,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -5902,11 +5124,6 @@
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -5938,11 +5155,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -5966,13 +5178,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Toro 1_01_01-79" ID="{2E88592A-1A2A-489B-835A-6B6DE30AAF5C}" ShortID="65784227">
-									<PropertyList>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>10</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -6006,11 +5211,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -6038,11 +5238,6 @@
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -6074,11 +5269,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -6106,11 +5296,6 @@
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>65</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -6142,11 +5327,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -6174,11 +5354,6 @@
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -6210,11 +5385,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -6244,11 +5414,6 @@
 												<Value>False</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -6276,11 +5441,6 @@
 										<Property Name="Inclusion" Type="bool">
 											<ValueList>
 												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -6322,18 +5482,23 @@
 						<RandomSequenceContainer Name="Witch receive damage" ID="{5CE725CF-6628-4EEE-A469-78B264ED3329}" ShortID="156529978">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+								<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
 								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 								<Property Name="MaxSoundPerInstance" Type="int16">
 									<ValueList>
 										<Value>1</Value>
 									</ValueList>
 								</Property>
+								<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
 								<Property Name="UseMaxSoundPerInstance" Type="bool">
 									<ValueList>
 										<Value>True</Value>
 									</ValueList>
 								</Property>
+								<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-4</Value>
@@ -6351,9 +5516,9 @@
 							<ChildrenList>
 								<Sound Name="Recibir daño-Gain_03-01" ID="{70193715-FB78-42D4-84F6-2222E9D1A7D3}" ShortID="680140076">
 									<PropertyList>
-										<Property Name="Weight" Type="Real64">
+										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>35</Value>
+												<Value>8</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -6367,6 +5532,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Recibir daño-Gain_03-01" ID="{58147704-4EB1-4C58-84A9-C13D9FF5FED2}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0736963710203619"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Recibir daño-Gain_03-01.wav</AudioFile>
 											<MediaIDList>
@@ -6379,13 +5549,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="susp-DynA-Gain_02-02" ID="{BADD7622-4367-4CB2-BEAD-F8B5BA5DDBDC}" ShortID="491844080">
-									<PropertyList>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>39</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -6414,11 +5577,6 @@
 												<Value>-5</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>33</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -6442,13 +5600,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="susp-DynA-Gain_02-05" ID="{B4E4E8FF-9217-4CCE-AC89-84AF544C8718}" ShortID="880378643">
-									<PropertyList>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>40</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -6471,13 +5622,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Suspiros_01-43" ID="{6F563E99-FEE5-46B3-8FF0-6A282B358F4D}" ShortID="684355536">
-									<PropertyList>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>36</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -6500,13 +5644,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Suspiros_01-45" ID="{C9FB764C-B1B9-4DCA-84A2-1271980C4FF6}" ShortID="1031542516">
-									<PropertyList>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>23</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -6529,13 +5666,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Mandrágora_02-29" ID="{0B933D17-0085-47CF-81A8-57FB4DF727B4}" ShortID="855183981">
-									<PropertyList>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>39</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -6546,6 +5676,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Mandrágora_02-29" ID="{133D12E5-2F92-4A8A-A41E-0A74B02695EA}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0571881197761782"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Mandrágora_02-29.wav</AudioFile>
 											<MediaIDList>
@@ -6558,13 +5693,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Recibir daño_02-42" ID="{85320310-CFBC-4D18-9945-C3A6DAB7078D}" ShortID="853138095">
-									<PropertyList>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>36</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -6575,6 +5703,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Recibir daño_02-42" ID="{27BE08D8-F8F8-4D01-BE51-840A1CBF4777}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0665577555646991"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Recibir daño_02-42.wav</AudioFile>
 											<MediaIDList>
@@ -6609,13 +5742,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Recibir daño_02-66" ID="{2529CE60-A34A-4E02-88B2-29A983C6676F}" ShortID="277059290">
-									<PropertyList>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>34</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -6626,6 +5752,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Recibir daño_02-66" ID="{47E8BD01-99D4-46E6-872C-AC8BCB1F1F01}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0828910874258174"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Recibir daño_02-66.wav</AudioFile>
 											<MediaIDList>
@@ -6648,6 +5779,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Recibir daño_02-74" ID="{1509AE5F-7009-42FB-9EB2-04129604353C}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0736386133450092"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Recibir daño_02-74.wav</AudioFile>
 											<MediaIDList>
@@ -6657,28 +5793,6 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="Recibir daño_02-74" ID="{1509AE5F-7009-42FB-9EB2-04129604353C}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Recibir daño_02-75" ID="{3C98741A-F1C5-447B-AB4E-BAF624B11EC9}" ShortID="436148842">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Recibir daño_02-75" ID="{F700C590-D0BC-46F4-BBD3-79FBE50D63A5}">
-											<Language>SFX</Language>
-											<AudioFile>Recibir daño_02-75.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="418845789"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Recibir daño_02-75" ID="{F700C590-D0BC-46F4-BBD3-79FBE50D63A5}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Recibir daño_02-79" ID="{8C2A18F0-6DA1-497C-B4D2-A684E14FC68D}" ShortID="521788587">
@@ -6692,6 +5806,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Recibir daño_02-79" ID="{7743F4C7-7F06-4C70-B618-41793777632D}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0828341608590419"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Recibir daño_02-79.wav</AudioFile>
 											<MediaIDList>
@@ -6704,13 +5823,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Recibir daño-DynA-Gain_01-05" ID="{DC30CC14-1D24-4E5F-9E2E-BD98E1CADF99}" ShortID="114303576">
-									<PropertyList>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>33</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -6721,6 +5833,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Recibir daño-DynA-Gain_01-05" ID="{03F39089-E789-4298-8847-8CBB15285B85}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0118399340438076"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0372524754061262"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Recibir daño-DynA-Gain_01-05.wav</AudioFile>
 											<MediaIDList>
@@ -6743,6 +5860,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Recibir daño-Gain_02-01 m" ID="{EE70A8DD-F4B6-423E-BD28-C1B22560BC95}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.032135313764067"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Recibir daño-Gain_02-01 m.wav</AudioFile>
 											<MediaIDList>
@@ -6755,13 +5877,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Recibir daño-Gain_02-01" ID="{A88C0E86-3959-42F2-9AF2-FA18D6309CF0}" ShortID="1007094253">
-									<PropertyList>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>37</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -6772,6 +5887,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Recibir daño-Gain_02-01" ID="{D892B8BE-005C-4ABC-A557-68897D2627E9}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0183226065986817"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Recibir daño-Gain_02-01.wav</AudioFile>
 											<MediaIDList>
@@ -6784,13 +5904,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Sil 3" ID="{966FC401-D71D-403E-94FE-36C755F2B3F9}" ShortID="289694005">
-									<PropertyList>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>74</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -6813,13 +5926,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Sil 4" ID="{DA9544B9-B175-49D1-A437-50A879052238}" ShortID="641924804">
-									<PropertyList>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>70</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -6842,13 +5948,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Sil 5" ID="{70DC7CAA-0A9F-4D53-9999-D1A10140B35A}" ShortID="459213808">
-									<PropertyList>
-										<Property Name="Weight" Type="Real64">
-											<ValueList>
-												<Value>70</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
@@ -6874,12 +5973,16 @@
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Death" ID="{A83AF378-2CBD-4FCD-AA2E-E3E695942716}" ShortID="1059989345">
 							<PropertyList>
+								<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+								<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
 								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 								<Property Name="MaxSoundPerInstance" Type="int16">
 									<ValueList>
 										<Value>1</Value>
 									</ValueList>
 								</Property>
+								<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+								<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
 								<Property Name="UseMaxSoundPerInstance" Type="bool">
 									<ValueList>
 										<Value>True</Value>

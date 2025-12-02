@@ -1512,7 +1512,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1350689070}
   - component: {fileID: 1350689071}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Fence Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}

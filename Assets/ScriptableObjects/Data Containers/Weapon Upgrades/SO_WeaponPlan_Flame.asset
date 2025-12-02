@@ -15,7 +15,7 @@ MonoBehaviour:
   weaponLevel:
   - weaponPrefab: {fileID: 9156999661277644453, guid: 6196c21d4a0f0e044b32aa928350d9aa, type: 3}
     upgradeDescription: Randomly casts a flame, burning the floor and damaging enemies
-      every second
+      every second.
   - weaponPrefab: {fileID: 9156999661277644453, guid: ffa8b06426d3002438dfddc96f8c6def, type: 3}
     upgradeDescription: The flame lasts 2 more seconds
   - weaponPrefab: {fileID: 9156999661277644453, guid: 093ddba06fa526f44b56715ef6dba189, type: 3}

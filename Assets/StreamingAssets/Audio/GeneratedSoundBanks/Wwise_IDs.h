@@ -29,6 +29,8 @@ namespace AK
         static const AkUniqueID PLAY_MANDRAGORAHEALERSPAWN = 255250776U;
         static const AkUniqueID PLAY_MANDRAGORASHOOTER = 3211203716U;
         static const AkUniqueID PLAY_MANDRAGORASHOOTERDEATH = 3898840282U;
+        static const AkUniqueID PLAY_MANDRAKEEXPLOSION = 568556130U;
+        static const AkUniqueID PLAY_MANDRAKEEXPLOSIONBEEP = 2058664570U;
         static const AkUniqueID PLAY_PLAYERRECEIVEDAMAGE = 1724187815U;
         static const AkUniqueID PLAY_SCHYTHEATTACK = 126154U;
         static const AkUniqueID PLAY_SFX_HEALTH = 645491656U;
@@ -40,8 +42,10 @@ namespace AK
         static const AkUniqueID PLAY_SXF_XPEXTRA = 2569333368U;
         static const AkUniqueID PLAY_TOROMANDRAKECRY = 4031256493U;
         static const AkUniqueID PLAY_TOROMANDRAKERECIBEDAMAGE = 1971773272U;
+        static const AkUniqueID PLAY_WITCH_DEATH = 4294261068U;
         static const AkUniqueID PLAY_XPBAR = 3421228173U;
         static const AkUniqueID START = 1281810935U;
+        static const AkUniqueID STOP_MANDRAKEEXPLOSIONBEEP = 3019132932U;
         static const AkUniqueID TARANTULA_ATTACK = 4165231998U;
         static const AkUniqueID TARANTULA_HIT = 3994421637U;
         static const AkUniqueID WITCH_STEPS = 2001225474U;
@@ -128,6 +132,7 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID BEEPSPEED = 1101615186U;
         static const AkUniqueID MELODY_VOLUME = 363245510U;
         static const AkUniqueID MUSIC_VOLUME = 1006694123U;
         static const AkUniqueID PLAYER_HEALTH = 215992295U;

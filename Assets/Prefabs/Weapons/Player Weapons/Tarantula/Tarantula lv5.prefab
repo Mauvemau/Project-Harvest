@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <BaseStats>k__BackingField:
-    attackDamage: 1.5
+    attackDamage: 2.5
     attackRateInSeconds: 0.5
     attackSize: 0.6
   currentStats:

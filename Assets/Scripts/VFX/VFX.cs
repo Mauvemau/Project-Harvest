@@ -26,6 +26,7 @@ public class VFX : MonoBehaviour, IVFX {
         }
         if (_spriteRenderer) {
             _spriteRenderer.color = preset.Color;
+            _spriteRenderer.sortingOrder = preset.DrawOrder;
         }
         
         _animator.runtimeAnimatorController = preset.Controller;

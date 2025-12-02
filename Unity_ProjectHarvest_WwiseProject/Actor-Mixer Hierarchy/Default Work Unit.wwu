@@ -1356,6 +1356,296 @@
 								<ActiveSource Name="hvst_sfx_mandragoraHealer_spawn_v1" ID="{44E06052-9DF5-4234-B7DA-C639E22543DC}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<RandomSequenceContainer Name="MandrakeExplosion" ID="{FFB8DC03-B334-443E-8A98-B00BD8DB19D4}" ShortID="414759661">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="19"/>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{9D6E06AB-66F5-4E5B-8FD9-EF6979E037BB}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{BE11845E-4DD5-48D3-A85A-369181FD2897}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="1.5"/>
+													<Property Name="Min" Type="Real64" Value="-1.5"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="5m" ID="{7B443898-9A9F-48F2-9B18-8249E7E06532}" WorkUnitID="{534FA15F-9837-4037-8FF4-5DDCE2062302}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="ph_sfx_mandrakeExplosion_var1_v1" ID="{4EE598C5-9237-48EC-813C-16A3F9E1A4BF}" ShortID="135927131">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ph_sfx_mandrakeExplosion_var1_v1" ID="{5118C706-4B24-4C1A-9322-389701D74D25}">
+											<Language>SFX</Language>
+											<AudioFile>ph_sfx_mandrakeExplosion_var1_v1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="672799689"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ph_sfx_mandrakeExplosion_var1_v1" ID="{5118C706-4B24-4C1A-9322-389701D74D25}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ph_sfx_mandrakeExplosion_var2_v1" ID="{037D73B1-3A19-4EFB-81EB-9479662AF791}" ShortID="1028558668">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ph_sfx_mandrakeExplosion_var2_v1" ID="{0AA7B797-A199-4FC1-BBD6-E65968915112}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0243096806035183"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>ph_sfx_mandrakeExplosion_var2_v1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="598247170"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ph_sfx_mandrakeExplosion_var2_v1" ID="{0AA7B797-A199-4FC1-BBD6-E65968915112}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ph_sfx_mandrakeExplosion_var3_v1" ID="{74CF27D7-3942-4E68-889B-DCB58B154733}" ShortID="23271744">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ph_sfx_mandrakeExplosion_var3_v1" ID="{E438520A-5F49-48F6-BEF5-F9A32B0E2A48}">
+											<Language>SFX</Language>
+											<AudioFile>ph_sfx_mandrakeExplosion_var3_v1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="176647995"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ph_sfx_mandrakeExplosion_var3_v1" ID="{E438520A-5F49-48F6-BEF5-F9A32B0E2A48}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="MandrakeExplosionBeep" ID="{7388BB0D-03A5-46AB-AF15-7D59B0C74CAF}" ShortID="21761754">
+							<PropertyList>
+								<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.5"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Beep" ID="{677CF620-230E-4760-AF9E-BCB43001F8F1}" ShortID="118473219">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="Color" Type="int16" Value="19"/>
+										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OutputBusVolume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{740E2284-DB23-415F-81CE-B9ADE4A09AD4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Ataques_Spawn" ID="{536A0A52-2A73-4938-8077-D567D71D8FD6}" WorkUnitID="{6958D663-5AC5-445B-8CD8-EE9C7FCBD76A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Beep" ID="{8521060F-B8F0-4E02-AFC1-B8DADA4AA31C}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0063508297267713"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.00346408894187526"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Beep.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="901586286"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Beep" ID="{8521060F-B8F0-4E02-AFC1-B8DADA4AA31C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{0ACAA489-7E88-46CF-A8E0-B698B866E615}" ShortID="109207927">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="PlayMechanismSpecialTransitionsValue"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="BeepSpeed" ID="{2CB87140-EB03-40E1-AE13-0AA0B6E71BA4}" WorkUnitID="{F71958F0-9A0F-47C0-B38D-15E5BB39915A}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{4BC0A8CC-15B9-4D5B-9660-5ADC356E714E}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-0.05</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>3.49398</XPos>
+																		<YPos>-0.4</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>5</XPos>
+																		<YPos>-0.41</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{0EC3FA1E-DFED-49E3-8975-F2CF73EBB238}" ShortID="407922260">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="BeepSpeed" ID="{2CB87140-EB03-40E1-AE13-0AA0B6E71BA4}" WorkUnitID="{F71958F0-9A0F-47C0-B38D-15E5BB39915A}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{9C067AE0-D439-4185-B8A2-2EE0489F0968}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-2</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>5</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

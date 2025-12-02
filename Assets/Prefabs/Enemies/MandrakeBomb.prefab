@@ -369,7 +369,7 @@ MonoBehaviour:
   deathAudioEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 31449955f15922240874f4130e98761c, type: 2}
   dropManager:
     drops:
     - collectiblePrefab: {fileID: 8325983632572383665, guid: fd3b8b79613a36847b4ae453d3ed5234, type: 3}

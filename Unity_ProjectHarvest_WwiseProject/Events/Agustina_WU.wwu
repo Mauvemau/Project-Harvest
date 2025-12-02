@@ -6,6 +6,9 @@
 				<Event Name="Play_SmallMandrakeCry" ID="{8C6085CB-4B54-4CF7-A0E5-E02F447B5080}">
 					<ChildrenList>
 						<Action Name="" ID="{40BCDD1F-6475-4C41-AF18-673396E9BD33}" ShortID="437909629">
+							<PropertyList>
+								<Property Name="Probability" Type="Real64" Value="60"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Cry" ID="{52FEDAC8-F6AD-456A-B07E-59ADDCFFE6B3}" WorkUnitID="{8C1E1988-488E-4D21-9DBB-6F3C3F36AB36}"/>
@@ -17,6 +20,9 @@
 				<Event Name="Play_SmallMandrakeRecibeDamage" ID="{52CFC720-8387-467C-A3FB-85E720BAE3CC}">
 					<ChildrenList>
 						<Action Name="" ID="{98CF40B6-C474-4E54-975E-D544C943E121}" ShortID="382242489">
+							<PropertyList>
+								<Property Name="Probability" Type="Real64" Value="80"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Damage" ID="{D4C59AB3-A83D-48A2-B913-0FC7C310F935}" WorkUnitID="{8C1E1988-488E-4D21-9DBB-6F3C3F36AB36}"/>
@@ -72,9 +78,23 @@
 				<Event Name="Play_PlayerReceiveDamage" ID="{7DD9614B-92DD-4D90-8832-D25339A15BD0}">
 					<ChildrenList>
 						<Action Name="" ID="{30DE6B01-9339-443C-B1A1-3FF6E163E09F}" ShortID="866210101">
+							<PropertyList>
+								<Property Name="Probability" Type="Real64" Value="60"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Witch receive damage" ID="{5CE725CF-6628-4EEE-A469-78B264ED3329}" WorkUnitID="{8C1E1988-488E-4D21-9DBB-6F3C3F36AB36}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Witch_Death" ID="{43486CD6-1577-4CD5-BA3F-4422FED82416}">
+					<ChildrenList>
+						<Action Name="" ID="{37422C7A-0E12-4820-BBE5-377FFDBD66AA}" ShortID="417500201">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Death" ID="{A83AF378-2CBD-4FCD-AA2E-E3E695942716}" WorkUnitID="{8C1E1988-488E-4D21-9DBB-6F3C3F36AB36}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

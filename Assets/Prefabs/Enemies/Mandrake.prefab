@@ -196,9 +196,9 @@ MonoBehaviour:
     - collectiblePrefab: {fileID: 8325983632572383665, guid: fd3b8b79613a36847b4ae453d3ed5234, type: 3}
       <DropChance>k__BackingField: 1
     - collectiblePrefab: {fileID: 8325983632572383665, guid: 4b2843fa30a10e748b507dbc1b6f00da, type: 3}
-      <DropChance>k__BackingField: 0.0035
-    - collectiblePrefab: {fileID: 8325983632572383665, guid: d44cf55090c9587488c6634cecc6a94f, type: 3}
       <DropChance>k__BackingField: 0.005
+    - collectiblePrefab: {fileID: 8325983632572383665, guid: d44cf55090c9587488c6634cecc6a94f, type: 3}
+      <DropChance>k__BackingField: 0.0075
     multipleDropOffsetDistance: 1
   findPlayer: 1
   disableOnDeath: 1

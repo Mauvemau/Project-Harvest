@@ -41,7 +41,7 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="MainMenu" ID="{9BF45D73-D844-465B-A357-12F24A31AD4D}"/>
+						<CurrentStateRef Name="Lose" ID="{87607643-4686-4F40-8128-990CCC7A4C2B}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Healthy" ID="{B52D66F8-AA47-4F9F-BDAD-8BC6EC7FA98F}"/>
@@ -65,7 +65,7 @@
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Boomerang_Lev12" ID="{FA4F8F50-E01A-4664-841C-640CE406D0D5}"/>
+						<CurrentSwitchRef Name="Boomerang_Lev3" ID="{F075D1E5-35A5-47BD-8CA7-56DC8BFBD0AE}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 				<SoundcasterSession Name="Menu" ID="{7B586069-FEF6-4BA5-81C2-F6890AF0AE67}">
@@ -78,8 +78,17 @@
 							<ObjectRef Name="Play_ButtonPress" ID="{C48EC611-401F-47F7-8D96-88548E69E63D}" WorkUnitID="{D5FE0764-4F64-45A3-BBE5-9C04E443A2D8}"/>
 							<Position X="1" Y="0"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="XPBar" ID="{D2EAC87B-0272-49D0-B157-E287DB39D4DC}" WorkUnitID="{2A900AED-FB27-46FF-9350-EB1B5CFF717C}"/>
+							<Position X="2" Y="0"/>
+						</Module>
 					</ModuleList>
-					<RTPCValueList ShowAll="true"/>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="XPBar" ID="{F7887297-79E5-4862-B0CC-724808B5BC27}"/>
+							<Value>69</Value>
+						</RTPCValue>
+					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
@@ -89,10 +98,32 @@
 							<ObjectRef Name="Play_MandragoraShooter" ID="{9839EEC0-5FB3-434A-B945-1F0D672D71DE}" WorkUnitID="{D5FE0764-4F64-45A3-BBE5-9C04E443A2D8}"/>
 							<Position X="0" Y="0"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="Play_MandrakeExplosionBeep" ID="{FE2E4A3E-742C-47DD-A0FF-D2F7096111BE}" WorkUnitID="{D5FE0764-4F64-45A3-BBE5-9C04E443A2D8}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_MandrakeExplosion" ID="{41D2652D-CE0E-4FE0-AE61-40510A19A510}" WorkUnitID="{D5FE0764-4F64-45A3-BBE5-9C04E443A2D8}"/>
+							<Position X="1" Y="1"/>
+						</Module>
 					</ModuleList>
-					<RTPCValueList ShowAll="true"/>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="BeepSpeed" ID="{2CB87140-EB03-40E1-AE13-0AA0B6E71BA4}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="XPBar" ID="{F7887297-79E5-4862-B0CC-724808B5BC27}"/>
+							<Value>69</Value>
+						</RTPCValue>
+					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
-					<CurrentSwitchList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Healthy" ID="{B52D66F8-AA47-4F9F-BDAD-8BC6EC7FA98F}"/>
+						<CurrentSwitchRef Name="Hit" ID="{652CD1DC-A0F5-4F85-965B-E9A7C7AFCB3B}"/>
+						<CurrentSwitchRef Name="No" ID="{AB94F416-0319-49E1-AAB2-DE33432CEDEA}"/>
+						<CurrentSwitchRef Name="On" ID="{170EDC49-8CE1-4233-88C4-46E957806139}"/>
+					</CurrentSwitchList>
 				</SoundcasterSession>
 				<SoundcasterSession Name="Tarantula_Test" ID="{4FE698C5-38EB-4457-BD19-D9095DC80902}">
 					<ModuleList>
@@ -142,6 +173,55 @@
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Off" ID="{B13868AF-5F6A-4135-B014-7BBF0C3057E3}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+				<SoundcasterSession Name="Witch_Attacks" ID="{4164AE53-C10F-48C6-84B5-0FC19E3D648D}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_Flame" ID="{7DEEACB9-797B-4B1D-B468-9FB566BE284D}" WorkUnitID="{B0584BF8-363A-4994-B333-BC68BAEE0201}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_SchytheAttack" ID="{EDB76901-2F48-4911-B519-E928D3BAD226}" WorkUnitID="{D5FE0764-4F64-45A3-BBE5-9C04E443A2D8}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_BoomerangThrow" ID="{FF79C0D0-479A-4858-9AA6-736D8CCB29AD}" WorkUnitID="{D5FE0764-4F64-45A3-BBE5-9C04E443A2D8}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Tarantula_Attack" ID="{EEFC995F-6743-48A1-AAF7-9FA72C2E3ED4}" WorkUnitID="{D5FE0764-4F64-45A3-BBE5-9C04E443A2D8}"/>
+							<Position X="0" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Lawnmower_Start" ID="{2087BAAD-A818-4BFC-B35F-6EF357E7D77B}" WorkUnitID="{B0584BF8-363A-4994-B333-BC68BAEE0201}"/>
+							<Position X="0" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Tarantula_Hit" ID="{17EE7B9F-0EB1-4D8B-B1B6-0B40AD2CA2C3}" WorkUnitID="{D5FE0764-4F64-45A3-BBE5-9C04E443A2D8}"/>
+							<Position X="1" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Lawnmower_Hit" ID="{B9BD653A-D409-4D87-A24D-D307C0A726DA}" WorkUnitID="{B0584BF8-363A-4994-B333-BC68BAEE0201}"/>
+							<Position X="1" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Sickle_Hit" ID="{79CF1037-7A77-4E22-910E-D9A7B768A8E8}" WorkUnitID="{B0584BF8-363A-4994-B333-BC68BAEE0201}"/>
+							<Position X="1" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Lawnmower_End" ID="{995A7F07-1539-488D-960B-EE0AFB449CAA}" WorkUnitID="{B0584BF8-363A-4994-B333-BC68BAEE0201}"/>
+							<Position X="2" Y="4"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Lose" ID="{87607643-4686-4F40-8128-990CCC7A4C2B}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Hit" ID="{652CD1DC-A0F5-4F85-965B-E9A7C7AFCB3B}"/>
+						<CurrentSwitchRef Name="Boomerang_Lev3" ID="{F075D1E5-35A5-47BD-8CA7-56DC8BFBD0AE}"/>
 						<CurrentSwitchRef Name="Off" ID="{B13868AF-5F6A-4135-B014-7BBF0C3057E3}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>

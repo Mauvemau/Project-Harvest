@@ -249,7 +249,15 @@ MonoBehaviour:
             m_Calls: []
       enemyBatch:
       - {fileID: 4210210132979722889, guid: 5fff26d2418b80447a1a6660f9d1f44e, type: 3}
-    spawnDebugEnemyEvents: []
+    spawnDebugEnemyEvents:
+    - timestampInSeconds: 3
+      timestampFormatted: 00:03
+      eventCallbacks:
+        unityEvent:
+          m_PersistentCalls:
+            m_Calls: []
+      enemyBatch:
+      - {fileID: 4210210132979722889, guid: 5fff26d2418b80447a1a6660f9d1f44e, type: 3}
   weaponUpgradeManager:
     weaponDatabase:
     - {fileID: 11400000, guid: 5a389d344323a0940a88548151be01a0, type: 2}
@@ -297,5 +305,4 @@ MonoBehaviour:
   onStartGameChannel: {fileID: 11400000, guid: 4d8c5cf7ea872e544b46843ac88fd4c1, type: 2}
   onEndGameChannel: {fileID: 11400000, guid: 642bc0dc330ce60499a85b8e230efb84, type: 2}
   onExitAppChannel: {fileID: 11400000, guid: e22111df79a38544c9dd2a2f309d1164, type: 2}
-  onFinalBossKilledChannel: {fileID: 0}
   spawnEnemies: 1

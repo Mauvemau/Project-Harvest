@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponLevel:
   - weaponPrefab: {fileID: 3563621314620407211, guid: 0d42c5f9c70e2ca489eb7b15b3e45f94, type: 3}
-    upgradeDescription: Goes from one side of the screen to the other (It also is
+    upgradeDescription: Goes from one side of the screen to the other (It is also
       really loud!)
   - weaponPrefab: {fileID: 3563621314620407211, guid: be524569fa4a7c2489b2647863dcd1d6, type: 3}
     upgradeDescription: Attack penetrates trough 6 more targets
@@ -26,4 +26,4 @@ MonoBehaviour:
     upgradeDescription: Attack Speed increases by 1.5
   - weaponPrefab: {fileID: 3563621314620407211, guid: 07fe45c0fd4097d45bf1cfdef0b39e8f, type: 3}
     upgradeDescription: Attack penetrates trough unlimited targets
-  weaponIcon: {fileID: 21300000, guid: f2fd7415c6709214cb4f9860197becb0, type: 3}
+  weaponIcon: {fileID: 21300000, guid: 11fb8c0e28a88834db6bf1ec71eb8e28, type: 3}
